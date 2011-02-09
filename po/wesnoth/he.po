@@ -1,0 +1,5580 @@
+# translation of he.po to Hebrew
+# ----wesnoth.po
+# Hebrew translations for Battle for Wesnoth package.
+# Copyright (C) 2005 Wesnoth development team
+# This file is distributed under the same license as the wesnoth package.
+#
+#
+# Oron Peled <oron@actcom.co.il>, 2005, 2009.
+# Ely Levy <nakeee@gmail.com>, 2005, 2006.
+# Ariel Ben-Yehuda <ariel.bys@gmail.com>, 2009, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: he\n"
+"Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2011-01-15 13:09+0100\n"
+"PO-Revision-Date: 2011-01-09 19:58+0200\n"
+"Last-Translator: Ariel Ben-Yehuda <ariel.bys@gmail.com>\n"
+"Language-Team: Hebrew\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:5
+msgid "Compressed Saves"
+msgstr "דחוס שמירות"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:12
+msgid "Confirm deleting saves"
+msgstr "אשר מחיקת שמירות"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:19
+msgid "Mouse Scrolling"
+msgstr "גלגול ע\"י עכבר"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:26
+msgid "Middle-click Scrolling"
+msgstr "גלגול ע\"י כפתור מרכזי"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:33
+msgid "Keep scrolling when mouse leaves window"
+msgstr "המשך לגלגל כשהסמן יוצא מגבולות החלון"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:40
+msgid "Animate Map"
+msgstr "הנפש מפה"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:47
+msgid "Local time of day light"
+msgstr "אור שעה מקומי"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:48
+msgid "Local time of day light effect (use more memory)."
+msgstr "אפקט אור שעה מקומי (צורך יותר זכרון)."
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:55
+msgid "Show Titlescreen Animation"
+msgstr "הנפש מסך המתנה"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:62
+msgid "Unit Standing Animations"
+msgstr "הנפש יחידות עומדות"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:69
+msgid "Show Combat"
+msgstr "הצג קרב"
+
+#. [advanced_preference]: type=int
+#: data/advanced_preferences.cfg:76
+msgid "Ping Timeout"
+msgstr "המתנת אות"
+
+#. [advanced_preference]: type=int
+#: data/advanced_preferences.cfg:77
+msgid ""
+"Number of seconds to wait for a ping reply before we time out. Disable with "
+"0."
+msgstr "מספר השניות שווסנות' ימתין למענה אות לפני שהקשר יתנתק. בטל עם 0."
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:87
+msgid "Accept whisper messages from friends only"
+msgstr "קבל לחישות מחברים בלבד"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:94
+msgid "Auto-open whisper windows in lobby"
+msgstr "פתח לחישות באופן אוטומטי בלובי"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:101
+msgid "Group players in lobby"
+msgstr "קבץ שחקנים בלובי"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:108
+msgid "Lobby sounds"
+msgstr "צלילי לובי"
+
+#. [advanced_preference]: type=boolean
+#: data/advanced_preferences.cfg:115
+msgid "Disable notifications"
+msgstr "בטל התראות"
+
+#. [ai]: id=testing_ai_default
+#: data/ai/ais/testing_ai_default.cfg:5
+msgid "Multiplayer_AI^RCA AI"
+msgstr "מחשב (RCA)"
+
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
+#. [unstore_unit]
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:306
+#: data/lua/wml-tags.lua:707 src/actions.cpp:1275
+msgid "poisoned"
+msgstr "מורעל"
+
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
+#. [then]
+#: data/campaigns/Under_the_Burning_Suns/scenarios/12_The_Final_Confrontation.cfg:1352
+#: data/lua/wml-tags.lua:708 src/actions.cpp:1280
+msgid "female^slowed"
+msgstr "מואטת"
+
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
+#. [else]
+#: data/campaigns/Under_the_Burning_Suns/scenarios/12_The_Final_Confrontation.cfg:1355
+#: data/lua/wml-tags.lua:708 src/actions.cpp:1280
+msgid "slowed"
+msgstr "מואט"
+
+#. [about]
+#: data/core/about.cfg:7
+msgid "Programming"
+msgstr "מתכנתים"
+
+#. [about]
+#: data/core/about.cfg:228
+msgid "General Purpose Administration and Coordination"
+msgstr "מנהלי מערכת כלליים"
+
+#. [about]
+#: data/core/about.cfg:250
+msgid "Artwork and Graphics"
+msgstr "עיצוב אומנותי וגרפיקה"
+
+#. [about]
+#: data/core/about.cfg:630
+msgid "Music"
+msgstr "מוסיקה"
+
+#. [about]
+#: data/core/about.cfg:667
+msgid "Sound Effects"
+msgstr "אפקטים קוליים"
+
+#. [about]
+#: data/core/about.cfg:683
+msgid "Campaign Design"
+msgstr "עיצוב מערכות"
+
+#. [about]
+#: data/core/about.cfg:754
+msgid "Multiplayer Maps and Balancing"
+msgstr "מפות למשחק רב משתתפים"
+
+#. [about]
+#: data/core/about.cfg:795
+msgid "Packagers"
+msgstr "התקנות"
+
+#. [about]
+#: data/core/about.cfg:866
+msgid "Miscellaneous Contributors"
+msgstr "שונות"
+
+#. [about]
+#: data/core/about.cfg:1150
+msgid "Internationalization Managers"
+msgstr "מנהלי תרגום"
+
+#. [about]
+#: data/core/about.cfg:1175
+msgid "English strings edition"
+msgstr "תרגום לאנגלית (ארצות הברית)"
+
+#. [about]
+#: data/core/about.cfg:1182
+msgid "Afrikaans Translation"
+msgstr "תרגום לאפריקנית"
+
+#. [about]
+#: data/core/about.cfg:1198
+msgid "Arabic Translation"
+msgstr "תרגום לערבית"
+
+#. [about]
+#: data/core/about.cfg:1205
+msgid "Basque Translation"
+msgstr "תרגום לבסקית"
+
+#. [about]
+#: data/core/about.cfg:1218
+msgid "Bulgarian Translation"
+msgstr "תרגום לבולגרית"
+
+#. [about]
+#: data/core/about.cfg:1237
+msgid "Catalan Translation"
+msgstr "תרגום לקטאלאנית"
+
+#. [about]
+#: data/core/about.cfg:1278
+msgid "Chinese Translation"
+msgstr "תרגום לסינית"
+
+#. [about]
+#: data/core/about.cfg:1340
+msgid "Chinese (Taiwan) Translation"
+msgstr "תרגום לסינית (טיוואן)"
+
+#. [about]
+#: data/core/about.cfg:1362
+msgid "Croatian Translation"
+msgstr "תרגום לקרואטית"
+
+#. [about]
+#: data/core/about.cfg:1369
+msgid "Czech Translation"
+msgstr "תרגום לצ'כית"
+
+#. [about]
+#: data/core/about.cfg:1429
+msgid "Danish Translation"
+msgstr "תרגום לדנית"
+
+#. [about]
+#: data/core/about.cfg:1460
+msgid "Dutch Translation"
+msgstr "תרגום להולנדית"
+
+#. [about]
+#: data/core/about.cfg:1521
+msgid "English (GB) Translation"
+msgstr "תרגום לאנגלית (אנגליה)"
+
+#. [about]
+#: data/core/about.cfg:1534
+msgid "English (Shaw) Translation"
+msgstr "תרגום לאנגלית (שאו)"
+
+#. [about]
+#: data/core/about.cfg:1558
+msgid "Esperanto Translation"
+msgstr "תרגום לאספרנטו"
+
+#. [about]
+#: data/core/about.cfg:1577
+msgid "Estonian Translation"
+msgstr "תרגום לאסטונית"
+
+#. [about]
+#: data/core/about.cfg:1587
+msgid "Filipino Translation"
+msgstr "תרגום לפיליפינית"
+
+#. [about]
+#: data/core/about.cfg:1597
+msgid "Finnish Translation"
+msgstr "תרגום לפינית"
+
+#. [about]
+#: data/core/about.cfg:1643
+msgid "French Translation"
+msgstr "תרגום לצרפתית"
+
+#. [about]
+#: data/core/about.cfg:1799
+msgid "Friulian Translation"
+msgstr "תרגום לפורלן"
+
+#. [about]
+#: data/core/about.cfg:1806
+msgid "Galician Translation"
+msgstr "תרגום לגליסית"
+
+#. [about]
+#: data/core/about.cfg:1842
+msgid "German Translation"
+msgstr "תרגום לגרמנית"
+
+#. [about]
+#: data/core/about.cfg:1909
+msgid "Greek Translation"
+msgstr "תרגום ליוונית"
+
+#. [about]
+#: data/core/about.cfg:1943
+msgid "Hebrew Translation"
+msgstr "תרגום לעברית"
+
+#. [about]
+#: data/core/about.cfg:1956
+msgid "Hungarian Translation"
+msgstr "תרגום להונגרית"
+
+#. [about]
+#: data/core/about.cfg:2017
+msgid "Icelandic Translation"
+msgstr "תרגום לאיסלנדית"
+
+#. [about]
+#: data/core/about.cfg:2027
+msgid "Indonesian Translation"
+msgstr "תרגום לאינדונזית"
+
+#. [about]
+#: data/core/about.cfg:2044
+#, fuzzy
+msgid "Irish Translation"
+msgstr "תרגום לתורכית"
+
+#. [about]
+#: data/core/about.cfg:2051
+msgid "Italian Translation"
+msgstr "תרגום לאיטלקית"
+
+#. [about]
+#: data/core/about.cfg:2086
+msgid "Japanese Translation"
+msgstr "תרגום ליפנית"
+
+#. [about]
+#: data/core/about.cfg:2146
+msgid "Korean Translation"
+msgstr "תרגום לקוריאנית"
+
+#. [about]
+#: data/core/about.cfg:2158
+msgid "Latin Translation"
+msgstr "תרגום ללטינית"
+
+#. [about]
+#: data/core/about.cfg:2185
+msgid "Latvian Translation"
+msgstr "תרגום ללטבית"
+
+#. [about]
+#: data/core/about.cfg:2196
+msgid "Lithuanian Translation"
+msgstr "תרגום לליטאית"
+
+#. [about]
+#: data/core/about.cfg:2219
+msgid "Macedonian Translation"
+msgstr "תרגום למקדונית"
+
+#. [about]
+#: data/core/about.cfg:2227
+msgid "Marathi Translation"
+msgstr "תרגום למרטהי"
+
+#. [about]
+#: data/core/about.cfg:2236
+msgid "Norwegian Translation"
+msgstr "תרגום לנורווגית"
+
+#. [about]
+#: data/core/about.cfg:2261
+msgid "Polish Translation"
+msgstr "תרגום לפולנית"
+
+#. [about]
+#: data/core/about.cfg:2301
+msgid "Portuguese Translation"
+msgstr "תרגום לפורטוגזית"
+
+#. [about]
+#: data/core/about.cfg:2308
+msgid "Portuguese (Brazil) Translation"
+msgstr "תרגום לפורטוגזית (ברזיל)"
+
+#. [about]
+#: data/core/about.cfg:2350
+msgid "Romanian Translation"
+msgstr "תרגום לרומנית"
+
+#. [about]
+#: data/core/about.cfg:2358
+msgid "Russian Translation"
+msgstr "תרגום לרוסית"
+
+#. [about]
+#: data/core/about.cfg:2428
+msgid "Serbian Translation"
+msgstr "תרגום לסרבית"
+
+#. [about]
+#: data/core/about.cfg:2447
+msgid "Slovak Translation"
+msgstr "תרגום לסלובקית"
+
+#. [about]
+#: data/core/about.cfg:2473
+msgid "Slovenian Translation"
+msgstr "תרגום לסלובנית"
+
+#. [about]
+#: data/core/about.cfg:2489
+msgid "Spanish Translation"
+msgstr "תרגום לספרדית"
+
+#. [about]
+#: data/core/about.cfg:2556
+msgid "Swedish Translation"
+msgstr "תרגום לשוודית"
+
+#. [about]
+#: data/core/about.cfg:2585
+msgid "Turkish Translation"
+msgstr "תרגום לתורכית"
+
+#. [about]
+#: data/core/about.cfg:2607
+msgid "Valencian (southern Catalan) Translation"
+msgstr "תרגום לולנסית (דרום קטלן)"
+
+#. [about]
+#: data/core/about.cfg:2620
+msgid "Vietnamese Translation"
+msgstr "תרגום לוויאטנמית"
+
+#. [about]
+#: data/core/about.cfg:2639
+msgid "RACV’s Translation"
+msgstr "התרגום של RACV"
+
+#. [about]
+#: data/core/about.cfg:2646
+msgid "Bots"
+msgstr "בוטים"
+
+#. [set_menu_item]: id=ai_controller_leader_control_{CONTROLLED_SIDE}
+#: data/core/macros/ai.cfg:494
+msgid "Ask $ally_leader.name (leader of side $ally_leader.side) to move here"
+msgstr "בקש מ $ally_leader.name (המנהיג של צד $ally_leader.side) לבוא לכאן"
+
+#. [note]
+#: data/core/macros/ai_controller.cfg:5
+msgid ""
+"In this scenario, you may issue instructions to an allied side by right-"
+"clicking on them."
+msgstr "בהתקלות זו, תוכל לתת הוראות לצד בעל-ברית על-ידי לחיצה ימנית על מנהיגו."
+
+#. [overview_message_has_instructions]: speaker=narrator
+#. [overview_message_no_instructions]: speaker=narrator
+#. [literal]
+#: data/core/macros/ai_controller.cfg:19 data/core/macros/ai_controller.cfg:26
+#: data/core/macros/ai_controller.cfg:33
+msgid "Instruct ally"
+msgstr "תן פקודה לבעל ברית"
+
+#. [overview_message_has_instructions]: speaker=narrator
+#: data/core/macros/ai_controller.cfg:27
+msgid ""
+"$ally_leader.name (side $ally_side|) is carrying out the following "
+"instructions:"
+msgstr "כרגע, $ally_leader.name (צד $ally_side|) מבצע פקודות אלו:"
+
+#. [overview_message_no_instructions]: speaker=narrator
+#: data/core/macros/ai_controller.cfg:34
+msgid ""
+"$ally_leader.name (side $ally_side|) has not been given any instructions and "
+"is acting normally."
+msgstr "ל$ally_leader.name (צד $ally_side|) לא ניתנו פקודות והו מתנהג כרגיל. "
+
+#. [aggression]
+#: data/core/macros/ai_controller.cfg:41
+msgid "Be more aggressive"
+msgstr "הפוך ליותר אגרסיבי"
+
+#. [aggression]
+#: data/core/macros/ai_controller.cfg:42
+msgid "aggressive."
+msgstr "אגרסיבי."
+
+#. [caution]
+#: data/core/macros/ai_controller.cfg:59
+msgid "Be more defensive"
+msgstr "הפוך ליותר הגנתי"
+
+#. [caution]
+#: data/core/macros/ai_controller.cfg:60
+msgid "defensive."
+msgstr "הגנתי."
+
+#. [focus_on_enemy]
+#: data/core/macros/ai_controller.cfg:71
+msgid "Focus on defeating..."
+msgstr "התמקד בהבסת..."
+
+#. [focus_on_enemy]
+#: data/core/macros/ai_controller.cfg:72
+msgid ""
+"focusing on defeating $ai_controller.side_$ally_side|_current_settings."
+"focus_on_enemy.side_description|."
+msgstr ""
+"מתמקד על הבסת $ai_controller.side_$ally_side|_current_settings."
+"focus_on_enemy.side_description|."
+
+#. [then]
+#. [else]
+#: data/core/macros/ai_controller.cfg:138
+#: data/core/macros/ai_controller.cfg:142
+#: data/core/macros/ai_controller.cfg:273
+#: data/core/macros/ai_controller.cfg:277
+msgid "(side $temp_i|)"
+msgstr "(צד $temp_i|)"
+
+#. [else]
+#: data/core/macros/ai_controller.cfg:143
+#: data/core/macros/ai_controller.cfg:278
+msgid "side $temp_i"
+msgstr "צד $temp_i"
+
+#. [command]
+#: data/core/macros/ai_controller.cfg:156
+#: data/core/macros/ai_controller.cfg:291
+msgid "$side_i_leader.name (side $temp_i|)"
+msgstr "$side_i_leader.name (צד $temp_i|)"
+
+#. [value]
+#: data/core/macros/ai_controller.cfg:182
+#: data/core/macros/ai_controller.cfg:320
+#: data/core/macros/ai_controller.cfg:709
+#: data/core/macros/ai_controller.cfg:800
+msgid "Back"
+msgstr "הקודם"
+
+#. [protect]
+#: data/core/macros/ai_controller.cfg:201
+msgid "Focus on protecting..."
+msgstr "התמקד בהגנה על..."
+
+#. [protect]
+#: data/core/macros/ai_controller.cfg:202
+msgid ""
+"focusing on protecting $ai_controller.side_$ally_side|_current_settings."
+"protect.side_description|."
+msgstr ""
+"מתמקד על הגנת $ai_controller.side_$ally_side|_current_settings.protect."
+"side_description|."
+
+#. [option]: type=objective
+#: data/core/macros/ai_controller.cfg:352
+msgid "Defend a location..."
+msgstr "הגן על מיקום..."
+
+#. [print]
+#: data/core/macros/ai_controller.cfg:368
+msgid "Right-click to select a location to defend"
+msgstr ".כפתור ימני לבחירת מיקום להגן עליו"
+
+#. [set_menu_item]: id=ai_controller_defend_location_picker
+#: data/core/macros/ai_controller.cfg:375
+msgid "Defend this location"
+msgstr "הגן על מקום זה"
+
+#. [command]
+#: data/core/macros/ai_controller.cfg:392
+msgid "focusing on defending the area around $x1|,$y1|."
+msgstr "מקמקד על הגנת האזור ליד $x1|,$y1|."
+
+#. [print]
+#: data/core/macros/ai_controller.cfg:434
+msgid "Location selection canceled"
+msgstr "בחירת מיקום בוטלה"
+
+#. [revoke_objective_orders]
+#: data/core/macros/ai_controller.cfg:449
+msgid "Clear objective orders"
+msgstr "בטל מטרות"
+
+#. [revoke_behavior_orders]
+#: data/core/macros/ai_controller.cfg:461
+msgid "Clear behavior orders"
+msgstr "בטל פקודות התנהגות"
+
+#. [revoke_all_orders]
+#: data/core/macros/ai_controller.cfg:474
+msgid "Clear all orders"
+msgstr "בטל את כל הפקודות"
+
+#. [then]
+#: data/core/macros/ai_controller.cfg:591
+#: data/core/macros/ai_controller.cfg:602
+msgid "none set."
+msgstr "לא נקבעו דברים."
+
+#. [do]
+#: data/core/macros/ai_controller.cfg:644
+msgid ""
+"Objective: $ai_controller.side_$ally_side|_current_settings."
+"currently_doing_objective_description\n"
+"Behavior: $ai_controller.side_$ally_side|_current_settings."
+"currently_doing_behavior_description"
+msgstr ""
+"מטרה: $ai_controller.side_$ally_side|_current_settings."
+"currently_doing_objective_description\n"
+"התנהגות: $ai_controller.side_$ally_side|_current_settings."
+"currently_doing_behaviour_description"
+
+#. [literal]
+#: data/core/macros/ai_controller.cfg:652
+msgid "Set objective..."
+msgstr "בחר מטרה..."
+
+#. [literal]
+#: data/core/macros/ai_controller.cfg:743
+msgid "Set behavior..."
+msgstr "בחר התנהגות..."
+
+#. [literal]
+#: data/core/macros/ai_controller.cfg:848
+msgid "Exit"
+msgstr "צא"
+
+#: data/core/macros/ai_controller.cfg:975
+msgid "Set special orders..."
+msgstr "בחר פקודות מיוחדות..."
+
+#: data/core/macros/ai_controller.cfg:976
+msgid "Move leader to..."
+msgstr "שלח מנהיג ל..."
+
+#: data/core/macros/ai_controller.cfg:977
+msgid "Right-click to select a location to move leader to"
+msgstr "כפתור ימני לבחירת מקום לשלוח את המנהיג אליו"
+
+#: data/core/macros/ai_controller.cfg:978
+msgid "Move leader here"
+msgstr "שלח מנהיג לכאן"
+
+#: data/core/macros/ai_controller.cfg:979
+msgid "moving leader to $x1|,$y1|."
+msgstr "שולח מנהיג ל $x1|,$y1|"
+
+#: data/core/macros/ai_controller.cfg:980
+msgid "Clear special orders"
+msgstr "בטל פקודות מיוחדות"
+
+#: data/core/macros/ai_controller.cfg:981
+msgid ""
+"Special: $ai_controller.side_$ally_side|_current_settings."
+"currently_doing_special_description"
+msgstr ""
+"מיוחד: $ai_controller.side_$ally_side|_current_settings."
+"currently_doing_special_description"
+
+#. [advancement]: id=tough_{HP_ADVANCE_NUMBER}
+#: data/core/macros/deprecated-utils.cfg:416
+msgid ", MAX XP +25%"
+msgstr ", נק\"ן מרבי +25%"
+
+#. [advancement]: id=tough_{HP_ADVANCE_NUMBER}
+#: data/core/macros/deprecated-utils.cfg:416
+msgid "Max HP bonus +"
+msgstr "בונוס לנק\"פ מרבי +"
+
+#. [message]: speaker=narrator
+#: data/core/macros/items.cfg:23
+msgid "You have come across a wishing well. What would you like to wish for?"
+msgstr ""
+"מצאת בדרכך באר משאלות.\n"
+"מה המשאלה שתרצה לבקש?"
+
+#. [option]: speaker=narrator
+#: data/core/macros/items.cfg:26
+msgid "A swift victory"
+msgstr "נצחון מהיר"
+
+#. [message]: speaker=unit
+#: data/core/macros/items.cfg:33
+msgid ""
+"With this golden coin, I wish that this battle end in a swift and safe "
+"victory."
+msgstr "עם מטבע זהב אני מבקש שקרב זה יגמר בנצחון מהיר ובטוח."
+
+#. [option]: speaker=narrator
+#: data/core/macros/items.cfg:39
+msgid "Lots of gold"
+msgstr "המון זהב"
+
+#. [message]: speaker=unit
+#: data/core/macros/items.cfg:46
+msgid "I wish this single gold coin be returned ten-fold to me."
+msgstr "אני מבקש שמטבע הזהב היחיד הזה יוחזר אלי פי עשר."
+
+#. [option]: speaker=narrator
+#: data/core/macros/items.cfg:52
+msgid "Peace throughout Wesnoth."
+msgstr "שלום בכל רחבי ווסנות'"
+
+#. [message]: speaker=unit
+#: data/core/macros/items.cfg:59
+msgid "The only thing worth wishing for is peace throughout the land."
+msgstr "הדבר היחיד ששווה לבקש הוא שלום בכל רחבי הארץ."
+
+#. [option]: speaker=narrator
+#: data/core/macros/items.cfg:65
+msgid "Don’t make a wish."
+msgstr "אל תבקש משאלה."
+
+#. [option]: speaker=narrator
+#: data/core/macros/items.cfg:123
+msgid "Take it"
+msgstr "קח חפץ"
+
+#. [option]: speaker=narrator
+#: data/core/macros/items.cfg:141
+msgid "Leave it"
+msgstr "עזוב חפץ"
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:201
+msgid "Potion of Healing"
+msgstr "שיקוי מרפא"
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:204
+msgid "A feeling of well-being overwhelms the drinker."
+msgstr "גל של הרגשת בריאות מציף את השתה."
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:205
+msgid "You are not worthy of healing."
+msgstr "אתה לא ראוי למרפא."
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:239
+msgid "Poison"
+msgstr "רעל"
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:242
+msgid "Poison is seeping through the veins of this unit at this very moment."
+msgstr "רעל מתפשט בעורקי יחידה זו ברגע זה ממש."
+
+#: data/core/macros/items.cfg:262
+msgid ""
+"Sprinkling this water on melee weapons grants them the <i>arcane</i> damage "
+"type until the end of the current scenario. Should $unit.name use it?"
+msgstr ""
+"פיזור מים אלו על נשקי קפא\"פ יעשה שיגרמו לנזק <i>כוח</i> עד לסוף ההתקלות "
+"הנוכחית. האם אתה רוצה ש$unit.name ישתמש בהם?"
+
+#: data/core/macros/items.cfg:263
+msgid "I am not suited to the use of this item! Let another take it."
+msgstr "אני לא יכול להשתמש בחפץ הזה! תן למישהו אחר לקחת אותו."
+
+#. [object]
+#: data/core/macros/items.cfg:265
+msgid "Holy Water"
+msgstr "מים קדושים"
+
+#. [object]
+#: data/core/macros/items.cfg:268
+msgid ""
+"This water will make melee weapons have the <i>arcane</i> damage type until "
+"the end of the current scenario."
+msgstr "מים אלו יגרמו לנשקי קפא\"פ לגרום לנזק <i>כוח</i> עד לסוף ההתקלות."
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:297
+msgid "Potion of Strength"
+msgstr "שיקוי כח"
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:300
+msgid "Strength is given to the drinker."
+msgstr "כח ניתן לשותה."
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:340
+msgid "Potion of Decay"
+msgstr "שיקוי רקבון"
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:343
+msgid "This poor unit drank something really bad."
+msgstr "היחידה המסכנה שתתה משהו רע מאד."
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:377
+msgid "Ring of Regeneration"
+msgstr "טבעת התחדשות"
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:380
+msgid "This ring will heal the bearer a little each turn."
+msgstr "הטבעת הזאת מרפאה את הנושא אותה מעט בכל תור."
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:416
+msgid "Ring of Slowness"
+msgstr "טבעת איטיות"
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:419
+msgid "The bearer of this ring is slowed."
+msgstr "טבעת זו מאיטה את נושאה."
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:453
+msgid "Staff of Swiftness"
+msgstr "מטה מהירות"
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:456
+msgid "This staff will grant the bearer swift movement."
+msgstr "מטה זה יתן לנושאו תנועה מהירה."
+
+#. [object]: id={ID}
+#: data/core/macros/items.cfg:457
+msgid "Only magical beings can wield such an object."
+msgstr "רק יצורים קסומים יכולים להשתמש בחפץ כזה."
+
+#: data/core/macros/items.cfg:507
+msgid "Only the mermen can use this item!"
+msgstr "רק בני-הים יכול להשתמש בחפץ זה!"
+
+#: data/core/macros/items.cfg:507
+msgid "Should $unit.name pick up the trident?"
+msgstr "האם אתה רוצה ש-$unit.name תרים את הקלשון?"
+
+#. [object]
+#: data/core/macros/items.cfg:509
+msgid "Storm Trident"
+msgstr "קלשון סערה"
+
+#. [object]
+#: data/core/macros/items.cfg:512
+msgid "This trident allows a merman to shoot electric bolts at his enemies!"
+msgstr "קלשון זה יתן לבן ים לירות ברקים חשמליים על אויביו!"
+
+#. [effect]: type=fire
+#: data/core/macros/items.cfg:516
+msgid "storm trident"
+msgstr "קלשון סערה"
+
+# BEGIN [NAME SECTION] WILL TRANSLATE LATER
+# XXX: TRANSLATE NAMES
+#: data/core/macros/names.cfg:18
+msgid ""
+"Egar,Elch,Ga’ash,Gadé Ihn,Gakré Ohm,Galeck,Galsh,Garadin,Garchin,Gark,Garlan,"
+"Garlin Ohn,Garrutin,Gart’lo,Garushi,Gashinar,Gashol,Gaushii,Gaustun,Gegchi,"
+"Gelka Kon,Gelknick,Gillan,Gisharri,Gost,Grada,Græt Ihn,Grashen,Gravlan,Grag,"
+"Grelnit,Grenn Ohn,Greth,Gribbel,Gridda,Grish,Gron Ihn,Ka,Kahn Ih,Karigan,"
+"Karri Kon,Karron,Kask,Kegrid,Kerath Ihn,Kerath Kor,Klash,Kon Garashé,Kraag,"
+"Krall Ohn,Kran Kor,Krash,Kraslar,Krenli,Kruggen,Kun,Mah Toa,Margian,"
+"Mar’Ildian,Markan,Markinos,Mar Ohn,Marra Di’lek,Marrito,Marritos,Merkush,"
+"Merritos Gark,Morusté,Murr,Omataké,Reshan,Vashitt,Velnick,Veralon,Veramo,"
+"Verath,Verditt,Verkon,Verlinn,Vermad,Vertick,Vladnir"
+msgstr ""
+
+#: data/core/macros/names.cfg:19
+msgid ""
+"Alen Ka,Alinash Mal,Ashirt,Auginet Ka,Auuglann,Damell,Dell,Demla,Dinsill,"
+"Eshi,Olath,Omage,Omagrra,Orra Ka,Orridan,Orrida,Oshibi,Vallin,Valnirra,"
+"Valnitt,Velisk,Verra,Vellin Ka,Veshtar,Vushtin"
+msgstr ""
+
+#: data/core/macros/names.cfg:23
+msgid ""
+"Aigaithas,Aigaithil,Aigaithing,Aigaithol,Aigalas,Aigaling,Aigalis,Aigalol,"
+"Aigalsil,Aigatas,Aigatis,Aigatlos,Aigatsil,Aigatsol,Aigatus,Aigcatas,"
+"Aigcatil,Aigcating,Aigcatis,Aigcatsil,Aigcatsol,Aigcatus,Aigdring,Aigdris,"
+"Aigdrlos,Aigdrsil,Aigdrsol,Aigduras,Aigdurlos,Aigdursol,Aigthaing,Aigthais,"
+"Aigthasil,Aigthaus,Alaithas,Alaithis,Alaithlos,Alaithol,Alaithsol,Alaithus,"
+"Alalas,Alalil,Alalol,Alalsol,Alalus,Alatas,Alatil,Alating,Alatlos,Alatsil,"
+"Alcatil,Alcatis,Alcatlos,Alcatsil,Aldras,Aldril,Aldring,Aldris,Aldrlos,"
+"Aldrol,Aldrsol,Alduras,Aldurlos,Aldurol,Althaas,Althail,Althalos,Althaol,"
+"Althasil,Althasol,Althaus,Anaithas,Anaithil,Anaithing,Anaithis,Anaithsil,"
+"Anaithus,Analil,Anallos,Analol,Analsil,Analus,Anatas,Anating,Anatis,Anatol,"
+"Anatsol,Ancatas,Ancatil,Ancatol,Ancatus,Andril,Andris,Andrlos,Andrus,Anduril,"
+"Andurol,Andursol,Andurus,Anthaas,Anthaing,Anthais,Anthaol,Anthasil,Anthasol,"
+"Anthaus,Augaithas,Augaithing,Augaithsil,Augaithus,Augalas,Augaling,Augalol,"
+"Augating,Augatlos,Augatol,Augatsil,Augatsol,Augcatas,Augcatil,Augcatis,"
+"Augcatol,Augcatsil,Augcatus,Augdras,Augdris,Augdrsil,Augdrus,Augduras,"
+"Augduril,Augduring,Augdurol,Augdursol,Augdurus,Augthail,Augthais,Augthalos,"
+"Augthaol,Dulaithil,Dulaithing,Dulaithlos,Dulaithsil,Dulaithsol,Dulalas,"
+"Dulaling,Dulalis,Dulalsil,Dulatil,Dulating,Dulatol,Dulatsol,Dulatus,Dulcatil,"
+"Dulcating,Dulcatlos,Dulcatol,Dulcatsil,Dulcatsol,Duldril,Duldris,Duldrlos,"
+"Duldrol,Duldrsil,Duldrus,Dulduras,Dulduring,Duldursil,Duldurus,Dulthalos,"
+"Dulthasil,Dulthasol,Dulthaus,Glamaithil,Glamaithis,Glamaithol,Glamaithsol,"
+"Glamalil,Glamaling,Glamalis,Glamallos,Glamalsil,Glamalus,Glamatil,Glamatus,"
+"Glamcatas,Glamcatil,Glamcating,Glamcatsil,Glamcatus,Glamdras,Glamdril,"
+"Glamdrlos,Glamdrsol,Glamduras,Glamduril,Glamduring,Glamduris,Glamdursol,"
+"Glamthaas,Glamthaol,Glamthasil,Glamthasol,Glamthaus,Glomin,Gomaithas,"
+"Gomaithil,Gomaithol,Gomaithsol,Gomalil,Gomalis,Gomalus,Gomatas,Gomatil,"
+"Gomating,Gomatis,Gomatlos,Gomatol,Gomcatil,Gomcatis,Gomcatlos,Gomdras,"
+"Gomdril,Gomdring,Gomdris,Gomdrol,Gomdrsil,Gomduris,Gomdurlos,Gomdursil,"
+"Gomdursol,Gomdurus,Gomthaas,Gomthalos,Gomthasol,Naraithil,Naraithing,"
+"Naraithol,Naraithsil,Naraithsol,Naraithus,Naralas,Naralil,Naralsil,Naralus,"
+"Naratlos,Naratol,Naratsil,Narcating,Narcatis,Narcatol,Narcatsil,Narcatsol,"
+"Nardras,Nardril,Nardring,Nardris,Nardrol,Nardrsil,Nardrsol,Nardrus,Narduras,"
+"Narduril,Nardurol,Narthalos,Narthaol,Pelaithas,Pelaithil,Pelaithing,"
+"Pelaithis,Pelaithlos,Pelaithol,Pelaithsil,Pelaithsol,Pelalil,Pelaling,"
+"Pelalis,Pelalsil,Pelalsol,Pelalus,Pelatil,Pelating,Pelatis,Pelatol,Pelatsil,"
+"Pelatus,Pelcating,Pelcatlos,Pelcatol,Pelcatsil,Peldras,Peldril,Peldrsol,"
+"Peldrus,Pelduril,Pelduring,Pelduris,Peldurol,Peldursol,Peldurus,Pelthaas,"
+"Pelthail,Pelthasil,Trithaithas,Trithaithil,Trithaithis,Trithaithlos,"
+"Trithaithol,Trithaithsil,Trithaithsol,Trithaithus,Trithalis,Trithalol,"
+"Trithatas,Trithatil,Trithatlos,Trithatsol,Trithcatlos,Trithcatsol,Trithcatus,"
+"Trithdril,Trithdring,Trithdris,Trithdrlos,Trithdrol,Trithdrsol,Trithdrus,"
+"Trithduril,Trithduring,Trithdurlos,Trithdurol,Trithdursil,Trithdurus,"
+"Triththaas,Triththail,Triththaing,Triththasol,Triththaus"
+msgstr ""
+
+#: data/core/macros/names.cfg:27
+msgid ""
+"Amadrieriand,Amáril,Amelad,Ameldor,Amendel,Ameng,Amilmaldur,Amilmalith,"
+"Amilmandir,Amind,Amiol,Amiorion,Amithrarion,Amóldor,Amorfimir,Amorfir,Amowyn,"
+"Amulas,Amundil,Anán,Anebrin,Anebrir,Anémbor,Anénduil,Anerion,Anilad,Anil-"
+"Gawyn,Anilmambor,Anilmariand,Anior,Anithranduil,Anol,Anon,Anorfing,Anundil,"
+"Belán,Belandil,Belarandel,Belel,Belén,Belil-Gandil,Belilmand,Belilmang,"
+"Beliondil,Beliril,Belithraldor,Belithrawyn,Belólad,Belómir,Belondel,Belyrion,"
+"Cadriembor,Cadrieriand,Cálad,Caladrielas,Calándel,Caldur,Cáldur,Calebrindel,"
+"Calebrindir,Calénduil,Calil-Gandir,Calil-Gawyn,Calioriand,Caliril,Calónduil,"
+"Caloril,Cándir,Canduil,Caraldur,Carang,Célad,Celadrieriand,Celang,Celaral,"
+"Celarandil,Celáriand,Celebririon,Celelas,Celendel,Celér,Celilmalas,Celiondir,"
+"Celior,Celiorion,Celong,Celór,Celóril,Celorion,Celundir,Celuwyn,Celyndel,"
+"Cénduil,Cindil,Ciong,Cithralad,Cithraldur,Cithrand,Cithrandel,Cithraril,Col,"
+"Corfil,Corfildur,Cówyn,Cun,Cundir,Cylas,Delán,Delánd,Delandel,Delaraldur,"
+"Deláril,Delawyn,Deléng,Delilmaldor,Deliol,Delithrar,Deliwyn,Delóldor,"
+"Delorfilad,Delorfilith,Delorion,Delundil,Eäradriendel,Eäradrier,Eäránduil,"
+"Eäraralad,Eärebrindel,Eäréldor,Eäreng,Eärérion,Eärithrandil,Eäromir,"
+"Eärorfiriand,Eäryldur,Eäryriand,Eladrieng,Elálith,Elánd,Elándil,Elebrildor,"
+"Elebrindel,Elebriril,Elélas,Elémbor,Elemir,Elen,Elil-Garil,Elilmaldur,"
+"Eliomir,Eliondil,Elolas,Elólas,Elor,Elorfilad,Elradrien,Elralith,Elran,"
+"Elreldur,Elrilmand,Elrioldor,Elriolith,Elrithralith,Elrithranduil,Elrorfir,"
+"Elval,Elvandir,Elvaramir,Elváwyn,Elvebrind,Elvebrindel,Elvélith,Elvémir,"
+"Elverion,Elvil-Garion,Elvilmaldur,Elvilmaril,Elvioldur,Elvombor,Elvónduil,"
+"Elvorfimir,Elvorfiriand,Elvorfiril,Elvóriand,Elvund,Elyldor,Elyrion,Eowambor,"
+"Eowanduil,Eowar,Eowaraldor,Eowaran,Eowarar,Eowariand,Eowarion,Eowebrind,"
+"Eowémir,Eowil-Garion,Eowimbor,Eowiomir,Eowithrawyn,Eowóldur,Eoworfildor,"
+"Eowówyn,Eowylas,Fadriendel,Fandel,Farandir,Fáwyn,Fendel,Fer,Filman,Fioril,"
+"Fithraril,Forfilas,Fyrion,Gadriendil,Gadrieng,Galadrieldor,Galálad,Galálas,"
+"Galalith,Galar,Galelas,Galeldur,Galelith,Galémbor,Galithrariand,Galoldur,"
+"Galuldur,Galur,Galurion,Gambor,Gán,Ganduil,Garaldor,Gararil,Gelad,Géril,Gil-"
+"Gandel,Gil-Gang,Giombor,Githral,Githralad,Gladriendil,Glal,Glámbor,Glandil,"
+"Glarang,Glararil,Glilmal,Glimir,Glior,Glólas,Gloldor,Glómir,Glon,Glul,Golad,"
+"Gor,Gumbor,Gyl,Gymbor,Gyn,Harariand,Háriand,Hebril,Hemir,Hénduil,Hilas,Hil-"
+"Garion,Hilmariand,Hiong,Hirion,Hithrandel,Horfilad,Horfindel,Hundel,Hymir,"
+"Hyrion,Hywyn,Isadrieng,Isándir,Isarandel,Isarar,Iselas,Isér,Isilmandel,"
+"Isirion,Isithral,Isól,Isóndel,Isóng,Isorfilad,Isorfindir,Isuwyn,Isyndel,"
+"Legal,Legaran,Legémir,Legéril,Legilad,Legil-Gal,Legiondel,Legithralith,"
+"Legorfindil,Legorfirion,Legówyn,Legyl,Legyn,Linduilas,Lómadrieril,Lómarand,"
+"Lómariand,Lómebrilad,Lómebrind,Lómémbor,Lómilmaril,Lómiriand,Lómorfindil,"
+"Lómowyn,Madrieril,Maldur,Mánduil,Maraldur,Mebrin,Méng,Mérion,Miolith,Miomir,"
+"Mithrand,Mondir,Móndir,Morfilas,Morfin,Morfiriand,Mylith,Nadrieldor,Nalith,"
+"Nán,Nél,Nil-Galas,Nil-Galith,Nil-Gar,Nilmar,Nóndel,Norfildor,Norfilith,"
+"Norfindil,Norfindir,Numbor,Nyldur,Padrieriand,Padrieril,Pamir,Paraldor,"
+"Parariand,Pilmalad,Pindir,Pór,Porfildur,Pumbor,Pyldur,Rebrir,Réndir,"
+"Rilmandil,Rithrandil,Ról,Róldor,Roldur,Róldur,Rorfilad,Rorfindil,Rówyn,Ryn,"
+"Sadrielas,Sebrin,Sebriril,Sénd,Sil-Gal,Sólad,Sorfind,Sóriand,Tadriendir,"
+"Taral,Taraldur,Táriand,Tendel,Téwyn,Thradrieriand,Thrambor,Thraral,Threbring,"
+"Thrélad,Thréldur,Thril-Gamir,Thril-Gandir,Thril-Gar,Thrilmandel,Thrimir,"
+"Thrion,Thrithran,Throlas,Thrón,Thróng,Thrund,Thryriand,Til-Gan,Tilmalad,"
+"Tilmalas,Tinandir,Tinarambor,Tinarariand,Tinén,Tinil-Ganduil,Tinilmand,"
+"Tinilmawyn,Tinimir,Tinindil,Tinithrar,Tinoldor,Tinond,Tinorfind,Tinorfiriand,"
+"Tinóriand,Tinowyn,Tinun,Tinyl,Tion,Tolas,Torfildur,Tówyn,Tylad,Unadrieldor,"
+"Unadrier,Unál,Unalas,Unálas,Unaraldur,Unaril,Unárion,Unebrin,Unebrind,"
+"Uneldor,Unil,Unil-Gan,Uniolith,Unioril,Unólith,Unombor,Unóndel,Unondir,"
+"Unorfildor,Unorfiril,Unorfiwyn,Unulad,Uradrielas,Uradrierion,Urálas,Urálith,"
+"Urambor,Urér,Uril-Gambor,Urilmalith,Uróldor,Urorfildor,Urul,Urymir,Válad,Ván,"
+"Vándel,Vandir,Varalas,Vararion,Vebril,Vebrilas,Vebrinduil,Vel,Vilith,Vol,"
+"Vólas,Vóldur,Vondel,Vorfin,Vorfindil,Vulas,Vuldur,Vunduil,Vylas,Vyldor"
+msgstr ""
+
+#: data/core/macros/names.cfg:28
+msgid ""
+"Amadrielia,Amadrielindë,Amadriendra,Amadriewen,Amarang,Amebrilindë,Amedë,"
+"Améthien,Amewien,Amil-Gadith,Amil-Garith,Amilmadia,Amiolith,Amionia,"
+"Amithraniel,Amithrawien,Amiwen,Amodë,Amorfilith,Amorith,Amulia,Amuviel,"
+"Amuwen,Analia,Anang,Anaraclya,Anáthien,Anebriniel,Anilmarith,Aning,Aniorith,"
+"Anówien,Anundra,Anuthiel,Anuthien,Anylindë,Anythien,Anywien,Belaclya,"
+"Beladrielith,Beladriewen,Beladriewien,Belarania,Belaraviel,Belebrindra,"
+"Belendra,Beliolia,Belithraniel,Belithrawiel,Belithrawien,Belowen,Belulindë,"
+"Cádë,Cadriewen,Caladrieng,Calándra,Calang,Calánia,Calebriwien,Calewen,"
+"Calewiel,Calil-Galith,Calilmalith,Calithraclya,Calóniel,Calorfiniel,Calówien,"
+"Caluclya,Ceclya,Celadë,Celália,Celálindë,Celarandra,Celararith,Celárith,"
+"Celebriniel,Celebriviel,Celelith,Celéng,Celérith,Celidien,Celilith,Celindë,"
+"Celiodë,Celioniel,Celith,Celithradith,Celódith,Celorfilindë,Celorfing,"
+"Celorfiwien,Celówien,Celylia,Cethien,Cing,Cithralith,Cithrania,Cithrawen,"
+"Cólindë,Corfiviel,Cydia,Delararith,Delebrinia,Deléthien,Delil-Ganiel,"
+"Deliowen,Delithrathiel,Delóndra,Delorfilindë,Delorfithien,Deloviel,Delydien,"
+"Eäradriedien,Eärániel,Eärarawien,Eärélia,Eärenia,Eärewen,Eäréwiel,Eärilmadë,"
+"Eärilmathien,Eäriolith,Eärithrang,Eärorfiwien,Eärudë,Eladriedë,Eladrielia,"
+"Elarawiel,Elebrindra,Eledë,Elelith,Elil-Gang,Elilmalia,Elilmawien,"
+"Elithraclya,Elithradien,Elóndra,Elorfing,Elorfithien,Elradrierith,Elránia,"
+"Elrebridith,Elréthiel,Elrilindë,Elrilmandra,Elrilmathien,Elrithiel,"
+"Elrithradith,Elriwen,Elródith,Elrorfidia,Eluviel,Elvádia,Elvánia,Elvil-"
+"Gawien,Elvilmathiel,Elviniel,Elviondra,Elvithrang,Elvithrathien,Elvowien,"
+"Elvyniel,Elvyviel,Elynia,Elywen,Eowalia,Eowarawien,Eowathiel,Eowebridith,"
+"Eowedith,Eowidien,Eowil-Galindë,Eowilindë,Eowiowien,Eowylia,Eowyniel,"
+"Fadriedith,Fadrielia,Fadriendra,Fadrienia,Falindë,Fáthiel,Fathien,Fáwien,"
+"Feclya,Féthiel,Fil-Galia,Fil-Gathiel,Fil-Gawien,Filmaclya,Fioniel,Fódë,"
+"Fólindë,Fulindë,Gadrieclya,Gadrieviel,Galadriethien,Galándra,Galaraniel,"
+"Galebrilia,Galebrindra,Galédë,Galedien,Galéwiel,Galil-Gania,Galilmadia,"
+"Galiothiel,Galithrathien,Galólia,Galolindë,Galorfiwiel,Galothiel,Galowen,"
+"Galundra,Galyniel,Gathien,Gáviel,Gebririth,Gewen,Gil-Gawien,Gilia,Gioniel,"
+"Gioviel,Giowen,Githrania,Githrawiel,Glália,Glebrithien,Gléndra,Glilmadien,"
+"Glilmawiel,Glithiel,Gloclya,Glodith,Glorfilith,Gloviel,Glowiel,Goclya,Godien,"
+"Gólia,Golindë,Guviel,Harawiel,Haviel,Háwien,Héclya,Hedia,Helith,Hewen,Hil-"
+"Gania,Hiodë,Hiwien,Hodia,Hódia,Horfinia,Horfiwien,Hóthiel,Huclya,Hunia,"
+"Huthien,Hyclya,Hythiel,Hythien,Isadrieng,Isáwen,Isebridien,Isebrinia,Isendra,"
+"Iséng,Iseviel,Isil-Garith,Isilindë,Isithradë,Isithradien,Isithrarith,"
+"Isithrawiel,Isóthien,Legádë,Legadien,Legadrieclya,Legadriedë,Legadrieniel,"
+"Legaraclya,Legebrilia,Legelith,Legeng,Legéniel,Legethiel,Legidia,Legil-"
+"Galindë,Legilmadith,Legilmawiel,Legithralindë,Legithrandra,Legithrania,"
+"Legolith,Legondra,Legorfidë,Lómániel,Lómebriclya,Lómebriniel,Lómedia,"
+"Lómeniel,Lómiclya,Lómilindë,Lómilmathiel,Lómilmawiel,Lómithradë,Lómithrarith,"
+"Lómódë,Lómolith,Lómóndra,Lómorfing,Lómorith,Lómudia,Lómulindë,Lómuniel,"
+"Lómuthiel,Lómynia,Lómythien,Mádia,Madrieclya,Maraclya,Mebriwiel,Meclya,"
+"Medien,Mil-Gathiel,Mil-Gathien,Milindë,Milith,Miowen,Miowiel,Mithradë,"
+"Mithralindë,Módë,Módia,Moniel,Morfilindë,Munia,Myndra,Mywiel,Narania,"
+"Naraniel,Náviel,Nawen,Newen,Nil-Gang,Nilmadia,Niodien,Niolia,Niothien,"
+"Nithraniel,Nithrarith,Nowen,Nydith,Pádia,Padriedith,Paralindë,Parandra,Pawen,"
+"Pebridien,Pil-Gadia,Pil-Gadien,Pilindë,Pindra,Pong,Porfindra,Porfiwien,"
+"Póviel,Pulia,Puthien,Reniel,Réviel,Ril-Gawien,Rindra,Riothien,Róng,Rorfiviel,"
+"Sadrienia,Sadrierith,Sálindë,Sáng,Saradith,Sarandra,Sédith,Sendra,Sethien,"
+"Silmaclya,Silmathiel,Sioclya,Siorith,Sithrang,Sithrawen,Soniel,Sothiel,"
+"Sothien,Syniel,Tadrierith,Tang,Taradien,Tarathiel,Tathiel,Terith,Thradia,"
+"Thrália,Thraraviel,Threbriniel,Thredien,Thrérith,Thridith,Thrinia,"
+"Thrithradia,Thrithrandra,Thrithraniel,Throlith,Throng,Throthiel,Thrulith,"
+"Thruthien,Thryng,Til-Gandra,Tilmaclya,Tilmaviel,Tináclya,Tinadriethien,"
+"Tinálindë,Tinaraniel,Tinarathien,Tinawiel,Tinebrithiel,Tinerith,Tinil-Gania,"
+"Tinil-Gawiel,Tiniolith,Tinithrathiel,Tinóng,Tinorfilith,Tinorfithien,Tinudia,"
+"Tiorith,Tithrathien,Tówiel,Tuniel,Unadrieng,Unáthien,Unebridë,Unénia,Unil-"
+"Gadia,Unilmadia,Unindra,Uniodë,Uniolia,Uniong,Unionia,Unóndra,Unorfiwen,"
+"Unulindë,Unuviel,Unynia,Uraclya,Uradriedia,Uránia,Urárith,Urebriclya,Ureclya,"
+"Urilmadia,Urilmawiel,Uriolia,Urithralindë,Uruthien,Uryrith,Vadrierith,"
+"Vadrieviel,Vadriewen,Varawiel,Vebrithien,Vil-Gandra,Violindë,Viowiel,"
+"Vithrang,Vithraniel,Viwiel,Vódia,Vóng,Vorficlya,Vorfing,Vorfirith,Vorfiwiel,"
+"Vówien"
+msgstr ""
+
+#: data/core/macros/names.cfg:33
+msgid "Graa,Greaa,Gree,Kaaa,Kassshh,Kessshh,Korro,Kraa,Kuu,Kzaaa,Kzuuu"
+msgstr ""
+
+#: data/core/macros/names.cfg:34
+msgid "Kaasa,Kayya,Keyya,Kiira,Korra"
+msgstr ""
+
+#: data/core/macros/names.cfg:38
+msgid ""
+"Addraecyn,Addraenvan,Addraer,Addraercyn,Addraryn,Addreddry,Addredry,"
+"Addregwyn,Addrenyc,Addreoddry,Addreoddyn,Addreonyc,Addreorcyn,Addreran,"
+"Addribryn,Addriddyn,Addrocyn,Addroryn,Addrunvan,Addrurcyn,Addryllyn,"
+"Addrynvan,Aethacyn,Aethadry,Aethaec,Aethaeran,Aethaeryn,Aethagwyn,Aethanry,"
+"Aetharcyn,Aethec,Aethellyn,Aethenvan,Aetheoc,Aetheollyn,Aetheonyc,Aetheorcyn,"
+"Aethercyn,Aetherraent,Aethibryn,Aethiddry,Aethircyn,Aethobryn,Aethoddyn,"
+"Aethonnyn,Aethuc,Aethudry,Aethugwyn,Aethun,Aethunry,Aethydry,Aethynyc,Blac,"
+"Bladoc,Blaec,Blaedry,Blanry,Blebryn,Bledoc,Blemyr,Blennyn,Blenvan,Bleollyn,"
+"Blercyn,Blidd,Bliddry,Blillyn,Blinvan,Blollyn,Blubryn,Blucyn,Bludry,Blullyn,"
+"Bluran,Blybryn,Blydd,Blygwyn,Blymyr,Blyr,Bucyn,Cac,Cadry,Caebryn,Caedry,"
+"Caeran,Caercyn,Car,Carac,Caraddry,Caradoc,Caraedry,Caraennyn,Cararyn,Caredd,"
+"Careddry,Caregwyn,Caren,Careobryn,Careogwyn,Careonvan,Careorraent,Careoryn,"
+"Carercyn,Caric,Cariddry,Carocyn,Caroddyn,Caror,Caroran,Carraent,Carudoc,"
+"Carullyn,Carygwyn,Caryn,Cebryn,Cemyr,Cennyn,Ceoc,Ceoddry,Ceoddyn,Ceomyr,"
+"Ceonnyn,Ceonry,Ceoryn,Cicyn,Cin,Cinry,Coc,Convan,Corcyn,Cubryn,Cunry,Curyn,"
+"Cynyc,Cyryn,Dac,Dadd,Dadoc,Daeddry,Daedoc,Daellyn,Demyr,Denvan,Deodd,Deollyn,"
+"Deonyc,Derraent,Dibryn,Dinnyn,Dircyn,Dycyn,Dyddyn,Gaddry,Gaebryn,Gaedry,"
+"Gaercyn,Gagwyn,Gan,Gannyn,Gar,Gecyn,Geddyn,Gegwyn,Geodry,Ginvan,Glacyn,"
+"Gladoc,Glaercyn,Glarraent,Gleddry,Gleoddyn,Gleran,Gliddyn,Glillyn,Glinry,"
+"Glircyn,Gloddry,Gloddyn,Glonry,Glonvan,Glumyr,Glun,Glunry,Glunvan,Glyc,Glydd,"
+"Glydoc,Glynry,Glynvan,Glyran,Goc,Gor,Gubryn,Gudd,Gullyn,Gumyr,Gur,Gwadoc,"
+"Gwaec,Gwaeddyn,Gwan,Gweddyn,Gwegwyn,Gwellyn,Gwennyn,Gwenyc,Gweocyn,Gweodd,"
+"Gweodoc,Gweodry,Gweogwyn,Gweoran,Gwidoc,Gwilam,Gwodd,Gwoddyn,Gwollyn,Gwor,"
+"Gwucyn,Gwudoc,Gwumyr,Gwuran,Gwybryn,Gwycyn,Gwyddry,Gwydoc,Gwymyr,Gwynnyn,"
+"Gydoc,Gyllyn,Gymyr,Haldar,Labryn,Ladoc,Laellyn,Lan,Lannyn,Laran,Lec,Lemyr,"
+"Lenvan,Leogwyn,Lercyn,Ligwyn,Lin,Liryn,Lonnyn,Lorraent,Luddry,Ludoc,Lunnyn,"
+"Lunvan,Lurraent,Mac,Maddyn,Maennyn,Manry,Manyc,Marcyn,Mec,Menvan,Meollyn,"
+"Meon,Meonnyn,Meorraent,Middry,Midry,Mimyr,Modd,Moddry,Monry,Moran,Morcyn,"
+"Mubryn,Mudoc,Mugwyn,Murcyn,Mydoc,Mygwyn,Myn,Myrraent,Owac,Owadd,Owaddyn,"
+"Owaecyn,Owaedry,Owain,Owarcyn,Owaryn,Owecyn,Owedry,Oweomyr,Oweor,Oweorcyn,"
+"Oweran,Owercyn,Owidry,Owinvan,Owinyc,Owodd,Owoddry,Owogwyn,Owollyn,Oworan,"
+"Oworcyn,Oworraent,Owuddry,Owuddyn,Owugwyn,Owur,Owyran,Rabryn,Radd,Ranvan,Rar,"
+"Reoddyn,Reodry,Rhaecyn,Rhaedoc,Rhaemyr,Rhaerraent,Rhanry,Rharcyn,Rhenry,"
+"Rhenvan,Rhenyc,Rheodd,Rheoddyn,Rheollyn,Rheor,Rheoran,Rheorraent,Rheran,"
+"Rherraent,Rhobryn,Rhodry,Rhollyn,Rhonvan,Rhubryn,Rhugwyn,Rhunyc,Rhur,Rhygwyn,"
+"Rhyllyn,Rhynyc,Rhyrcyn,Rhyrraent,Rocyn,Roddyn,Romyr,Ron,Ronry,Rubryn,Ruddry,"
+"Rumyr,Run,Rurcyn,Rybryn,Rycyn,Ryddry,Rygwyn,Rynnyn,Rynry,Saec,Saellyn,Saemyr,"
+"Saenvan,Saercyn,Sanyc,Saran,Sarraent,Secyn,Seddyn,Sedry,Sellyn,Sennyn,"
+"Seoddry,Seorcyn,Sercyn,Siddry,Simyr,Siryn,Sodd,Sodry,Soran,Suc,Sudd,Surcyn,"
+"Sydd,Syran,Syryn,Tabryn,Taec,Taedd,Taedoc,Taemyr,Taenvan,Taercyn,Tanry,"
+"Tarcyn,Teddyn,Tegwyn,Ten,Tennyn,Tenvan,Teobryn,Teoddyn,Teor,Teorcyn,Terraent,"
+"Tinry,Tinvan,Tiryn,Todd,Tudd,Tuddry,Tudoc,Tunvan,Turraent,Tyddyn,Vaddyn,"
+"Vaeddyn,Vaedry,Vaennyn,Varcyn,Ven,Vennyn,Veocyn,Veoddyn,Veodry,Veogwyn,"
+"Veomyr,Vinvan,Vinyc,Virraent,Vobryn,Vogwyn,Vonry,Vuddyn,Vugwyn,Vyc,Vygwyn,"
+"Vyrcyn,Yracyn,Yraec,Yran,Yrannyn,Yranvan,Yraryn,Yredd,Yreddyn,Yregwyn,Yreryn,"
+"Yrinvan,Yrirraent,Yroddry,Yrullyn,Yrumyr,Yrunnyn,Yrunvan,Yryllyn,Yrymyr,"
+"Yrynyc,Yryrcyn"
+msgstr ""
+
+#: data/core/macros/names.cfg:39
+msgid ""
+"Alabrylla,Alaebrylla,Alaeniver,Alalla,Alalonna,Alaryan,Aleacla,Aleaniver,"
+"Aleara,Alearka,Alena,Alengwen,Alilonna,Alingwen,Alolla,Alolonna,Alora,"
+"Alubrylla,Aluniver,Aluryan,Alussa,Alwcla,Alwllyra,Alwlyan,Alwna,Alybrylla,"
+"Alynoic,Alyra,Alyryan,Braedda,Brassa,Bravyan,Breabrylla,Breall,Brealla,"
+"Brealonna,Breana,Brell,Brellyra,Brera,Brerka,Breryan,Bricla,Brirka,Brobrylla,"
+"Brollyra,Brona,Bronoic,Brora,Brorka,Brungwen,Bruryan,Brwra,Brycla,Brynoic,"
+"Caella,Caena,Caengwen,Caevyan,Call,Calla,Cassa,Cealonna,Cera,Ceryan,Cibrylla,"
+"Cicla,Cinoic,Cira,Cissa,Clacla,Claella,Claelyan,Claenoic,Clalla,Clallyra,"
+"Clara,Clarka,Clavyan,Cleacla,Cleall,Clealyan,Cleana,Cleanoic,Clenoic,"
+"Clibrylla,Clill,Clillyra,Clilyan,Clinoic,Clissa,Clobrylla,Clollyra,Clona,"
+"Clongwen,Clungwen,Clurka,Cluvyan,Clwdda,Clwlla,Clwvyan,Clydda,Clylla,Cora,"
+"Coryan,Cucla,Cudda,Curyan,Cwdda,Cwlonna,Cwngwen,Cwvyan,Cydda,Cylla,Cyllyra,"
+"Cylyan,Cyniver,Cyvyan,Daedda,Daelyan,Daengwen,Daenoic,Dalla,Dallyra,Dangwen,"
+"Dara,Dassa,Deanoic,Deassa,Della,Devyan,Dicla,Diniver,Dissa,Dollyra,Dullyra,"
+"Dulonna,Dwbrylla,Dwdda,Dwna,Dwnoic,Dwra,Dybrylla,Dydda,Dyssa,Elacla,Elaedda,"
+"Elaell,Elaelonna,Elaessa,Elaevyan,Elallyra,Elalonna,Elara,Elavyan,Elealla,"
+"Eleanoic,Elearka,Elenoic,Elerka,Elivyan,Elulonna,Elurka,Elwllyra,Elwlonna,"
+"Elwngwen,Elwra,Elycla,Elyllyra,Elyngwen,Elyniver,Elyrka,Gwaera,Gwaessa,"
+"Gwangwen,Gweacla,Gwedda,Gwerka,Gwicla,Gwirka,Gwobrylla,Gwoll,Gwona,Gwongwen,"
+"Gwonoic,Gworyan,Gwullyra,Gwussa,Gwwcla,Gwwna,Gwwvyan,Gwycla,Gwydda,Heldra,"
+"Jacla,Jaena,Jaerka,Jaevyan,Jalyan,Jana,Jarka,Jassa,Jeabrylla,Jealla,Jeanoic,"
+"Jeniver,Jiryan,Jissa,Joll,Jolla,Jona,Jongwen,Jonoic,Jora,Jorka,Jovyan,Judda,"
+"Jull,Julonna,Jura,Jwll,Jwlyan,Jycla,Jyniver,Jynoic,Jyrka,Jyvyan,Laeniver,"
+"Laenoic,Laeryan,Langwen,Larka,Lassa,Lealonna,Lealyan,Ledda,Lelonna,Lelyan,"
+"Lengwen,Lerka,Lessa,Lidda,Lill,Lina,Lirka,Liryan,Livyan,Locla,Lodda,Lollyra,"
+"Lolonna,Lulla,Lulyan,Lungwen,Lunoic,Luryan,Lwcla,Lwlla,Lwnoic,Lwryan,Lycla,"
+"Lylla,Lylyan,Lyna,Lynoic,Maecla,Maeniver,Mavyan,Meacla,Mealyan,Meana,"
+"Meangwen,Meanoic,Medda,Melonna,Mengwen,Meniver,Meradda,Meraecla,Meraelyan,"
+"Merall,Merallyra,Meralonna,Merana,Meranoic,Merealonna,Mereangwen,Mereaniver,"
+"Merebrylla,Merella,Merengwen,Meressa,Merilyan,Merina,Merinoic,Merissa,"
+"Merivyan,Merolla,Merolyan,Merona,Meroniver,Merubrylla,Merudda,Merurka,"
+"Merwlla,Merwnoic,Merwryan,Merydda,Merylyan,Messa,Milonna,Molyan,Moniver,"
+"Mossa,Mudda,Mullyra,Mulyan,Muryan,Mwbrylla,Mwlyan,Mwngwen,Mwnoic,Mycla,Myll,"
+"Mylla,Myra,Myvyan,Nabrylla,Naebrylla,Naecla,Naell,Nalyan,Nangwen,Nealla,"
+"Neallyra,Nealonna,Neavyan,Nera,Nessa,Ninoic,Niryan,Nivyan,Nobrylla,Nolla,"
+"Nonoic,Norka,Noryan,Nucla,Nulla,Nulyan,Nungwen,Nuvyan,Nwllyra,Nwryan,Nwvyan,"
+"Nybrylla,Nyll,Nylyan,Nyryan,Nyssa,Nyvyan,Raebrylla,Raera,Raerka,Ralonna,Rara,"
+"Rarka,Rassa,Reacla,Realla,Reana,Reangwen,Rella,Relyan,Rengwen,Rerka,Revyan,"
+"Rilonna,Rilyan,Rirka,Rora,Rucla,Ruryan,Rwdda,Rwlla,Rwllyra,Rwlonna,Rwngwen,"
+"Rybrylla,Ryna,Ryngwen,Saell,Saellyra,Saeniver,Saerka,Saessa,Sallyra,Sanoic,"
+"Sara,Sassa,Searka,Sena,Senoic,Sera,Silonna,Sira,Siryan,Sona,Sorka,Subrylla,"
+"Sull,Sulonna,Sulyan,Sura,Sussa,Swlla,Swlyan,Swngwen,Swnoic,Swvyan,Syllyra,"
+"Sylyan,Syssa,Ysacla,Ysaenoic,Ysaerka,Ysanoic,Yseacla,Ysealonna,Ysealyan,"
+"Ysedda,Ysell,Yselonna,Ysilyan,Ysinoic,Ysodda,Ysongwen,Ysonoic,Ysura,Yswniver,"
+"Ysycla,Ysylla,Ysylyan,Ysyrka,Ysyssa"
+msgstr ""
+
+#: data/core/macros/names.cfg:43
+msgid ""
+"Amprixta,Anexir,Anitraz,Arix,Axiz,Bzz’Kza,Chamil,Cleezi,Clezz,Fazzis,"
+"Fizztrax,Flixta,Flizzil,Frikes,Frizzle,Hasz,Heffez,Hertrazzir,Hesz,Hezzir,"
+"Hezzis,Hix,Inexis,Irix,Jezzix,Jizz,Kaliez,Kepzs,Kernix,Kersezz,Kertrasz,Kerx,"
+"Kerxenix,Kezz,Klexaz,Klezyx,Krarax,Krenarex,Krex,Krinex,Krisess,Laizix,Lazki,"
+"Lixeez,Merax,Mexiss,Moxanzz,Naxisz,Nix,Pekzs,Plaxis,Plesix,Presch,Sailik,"
+"Salanix,Salik,Sandix,Saprazz,Satras,Skalix,Skandix,Skazix,Skeely,Skeezix,"
+"Sklizle,Skrez,Slizilx,Sprizz,Ssexur,Ssizer,Ssorix,Sszasz,Sterizz,Talerez,"
+"Tarex,Tarnix,Tezzaz,Tirasch,Tirax,Tirix,Trezz,Venezz,Vriss,Waks,Xaffrasz,"
+"Xartrez,Xasz,Xaztex,Xerxix,Xirasz,Xirr,Xirtras,Xirtrez,Xirz,Zandler,Zedrix,"
+"Zilrix,Zizzasz,Zslap,Zzalkz,Zzupde"
+msgstr ""
+
+#: data/core/macros/names.cfg:47
+msgid ""
+"Absu,Abzu,Aigaion,Alastyn,Apalala,Apam,Apsu,Aremata,Atlahua,Atlaua,Barinthus,"
+"Dhakhan,Dylan,Elcmar,Ember,Enki,Faro,Habaek,Ikatere,Jamm,Jin,Kinilau,Kulullu,"
+"Labuna,Laut,Lir,Llyr,Ludd,Makara,Maui,Melicertes,Mimir,Natat,Nechtan,Neptune,"
+"Nereus,Nethuns,Njord,Nuada,Nudd,Nudimmud,Nun,Oceanus,Okeanos,Phorcys,Pontus,"
+"Popoa,Poseidon,Proteus,Raja,Rau,Rorua,Ryujin,Scylla,Sinilau,Sisiutl,Tagaloa,"
+"Tanaoa,Tangaloa,Tangaroa,Thaumas,Tikitiki,Tini,Tinilau,Tinirau,Toniwha,"
+"Triton,Vizi,Vodnik,Vourukasa"
+msgstr ""
+
+#: data/core/macros/names.cfg:48
+msgid ""
+"Aglaopheme,Amphitrite,Aphrodite,Ariel,Atargatis,Calypso,Delphine,Derceto,"
+"Diktynna,Electra,Galatea,Himeropa,Jengu,Leucosia,Ligia,Lori Lamaris,Mama "
+"Wata,Marina,Miranda,Miriam,Molpe,Parthenope,Pelagia,Pisinoe,Rân,Sedna,Stella "
+"Maris,Thelxiepia,Tirgata,Vatea,Ved-Ava,Veen emo,Vete-ema"
+msgstr ""
+
+#: data/core/macros/names.cfg:52
+msgid ""
+"Abraxas,Aleiss,Amail,Axmail,Blanal,Bleii,Blo,Bress,Briss,Gaxmol,Griam,Griss,"
+"Grissileii,Hailoss,Hainoss,Harxos,Huzel,Inaloss,Ineii,Issal,Klezel,Kras,"
+"Krezkps,Kzap,Lamaiss,Lameii,Lexpek,Liness,Lobor,Maissol,Malinos,Milbor,"
+"Mileii,Nildloss,Oxpeii,Poniaz,Psell,Pson,Pzakp,Reii,Sassal,Saxil,Saxrireii,"
+"Sekol,Silas,Skell,Skepz,Slell,Snol,Soill,Sorkol,Srell,Trixoz,Vilail,Vissal,"
+"Vlanis,Xabrak,Xamalel,Xinas,Xnamos,Xopkon,Zalsp,Zlek,Zpsek,Zsekp"
+msgstr ""
+
+#: data/core/macros/names.cfg:53
+msgid ""
+"Aliasse,Amailis,Axmailia,Blai,Blanalai,Bli,Bliana,Brassas,Brissal,Gaxmail,"
+"Griama,Grissa,Grissilai,Haila,Haina,Harxias,Huzi,Inai,Inalai,Issalai,Klez,"
+"Kras,Krezkps,Kzap,Lamai,Lamaissa,Lexpek,Liabra,Lilin,Linassa,Maissa,Malina,"
+"Mila,Milbra,Nildlasi,Oxpel,Poniazal,Psal,Psen,Pzakp,Riaa,Sall,Sassalia,"
+"Saxiala,Saxririaa,Sek,Skal,Skepz,Sla,Snelia,Srak,Sral,Szak,Trixzed,Vilaila,"
+"Vissalai,Vlanissa,Xabrak,Xamalia,Xina,Xinasia,Xnamas,Xopkne,Zalsp,Zlek,Zpsek,"
+"Zsekp"
+msgstr ""
+
+#: data/core/macros/names.cfg:57
+msgid ""
+"Akoark,Akort,Akzalk,Arkarm,Barkuk,Blokkar,Borkuk,Bukkak,Bulruk,Corkkar,"
+"Delkkak,Garkuk,Gnukk,Goruk,Grak,Gurk,Gurm,Kalknix,Karak,Karbuk,Kargnak,"
+"Karterak,Kayrak,Kelkrar,Kerta,Kilkrar,Kingrok,Kirk,Klud,Kokkan,Kolk,Komak,"
+"Korgnak,Kork,Koruck,Kramak,Krog,Krukrak,Krumuk,Kuknuk,Kurkur,Kurmak,Makron,"
+"Markaak,Markuk,Merknik,Nargak,Olk,Orkut,Reknak,Takolak,Trabuk,Trakkon,Urkar,"
+"Urkark"
+msgstr ""
+
+#: data/core/macros/names.cfg:61
+msgid ""
+"Badush,Bagar,Bagdish,Barag,Barbag,Bart,Bashnak,Bidish,Bidush,Bik,Bilg,Bilo,"
+"Binak,Bink,Biol,Birt,Bogar,Bogdish,Bogdush,Bogor,Bok,Bolg,Bong,Borg,Bork,"
+"Bort,Boshnak,Budush,Bugdish,Buk,Bunak,Bung,Bunk,Burag,Burg,Burk,Buurk,"
+"Eradash,Eradish,Eragdish,Eragdush,Eragor,Eranak,Erang,Erarag,Erarg,Erart,"
+"Erigdush,Erik,Erinak,Eriol,Erirag,Erirbag,Erirg,Erirt,Erishnak,Eriurk,"
+"Erogdish,Erogdush,Erok,Erong,Eronk,Erorbag,Erudish,Erudush,Erugar,Erugdush,"
+"Erulo,Erunk,Eruol,Erurag,Eruurk,Gadash,Gagar,Gagdush,Gagor,Galo,Ganak,Gank,"
+"Gaol,Garag,Gashnak,Gigor,Ginak,Ging,Gink,Girt,Gogdish,Gogdush,Gong,Gork,Gort,"
+"Goshnak,Gradash,Gragar,Gragor,Grak,Gralg,Gralo,Granak,Graol,Grarbag,Gridash,"
+"Gridish,Gridush,Grigar,Grigor,Grilg,Grilo,Grink,Grirag,Grirg,Grirk,Grishnak,"
+"Grodish,Grogar,Grogdish,Grok,Grolg,Grong,Gronk,Grorag,Grorg,Grork,Grort,"
+"Groshnak,Grudash,Grugar,Grugdish,Grugdush,Gruk,Grulo,Grunk,Gruol,Grurg,Grurk,"
+"Grurt,Gruurk,Gugdish,Gugdush,Gulg,Gulo,Gunak,Gurbag,Gurt,Gushnak,Hadash,"
+"Hadish,Hadush,Hagar,Hagdush,Hagor,Hak,Halg,Hank,Hashnak,Hidash,Hidish,Hidush,"
+"Higdush,Hilg,Hinak,Hing,Hink,Hiol,Hirag,Hirg,Hodush,Hogar,Hogor,Hong,Hool,"
+"Horbag,Hork,Hort,Hoshnak,Hudash,Hudish,Hugor,Huk,Hulg,Hulo,Hunk,Huol,Hurag,"
+"Hurbag,Hurk,Hushnak,Huurk,Pagdish,Pagor,Palg,Palo,Paol,Parag,Pashnak,Pidush,"
+"Pigdish,Pigdush,Pilg,Pinak,Pink,Pirbag,Podash,Podish,Podush,Pogdish,Polg,"
+"Porbag,Porg,Pork,Port,Poshnak,Pradish,Pragdush,Pragor,Pralg,Pralo,Prang,"
+"Praol,Prarag,Prarbag,Prarg,Prark,Prart,Prashnak,Praurk,Pridish,Prigar,"
+"Prigdish,Prigor,Prilg,Prilo,Prinak,Priol,Prirbag,Prirg,Prirt,Priurk,Prodash,"
+"Prodish,Prodush,Prolg,Prolo,Pronak,Prong,Pronk,Prool,Prourk,Prudish,Prugar,"
+"Prugdish,Pruk,Prunak,Prunk,Prurg,Prurk,Pruurk,Puk,Pulg,Pulo,Punak,Pung,Punk,"
+"Purag,Purbag,Purg,Puurk,Radash,Ragar,Ragdish,Rak,Rang,Rank,Raol,Rarag,Rarbag,"
+"Rark,Rashnak,Raurk,Rigor,Rik,Rilg,Rinak,Rink,Rirg,Rirk,Rodish,Rodush,Rogdish,"
+"Rok,Rolo,Ronak,Rudash,Rugar,Rugdish,Ruk,Rung,Ruol,Rurag,Rushnak,Vadash,"
+"Vadish,Vadush,Vak,Valo,Vank,Varag,Varbag,Vigar,Vigdish,Vigor,Vilg,Vilo,Vink,"
+"Virag,Virt,Vishnak,Vogdish,Vogor,Vonak,Vong,Vorg,Vork,Voshnak,Vourk,Vradash,"
+"Vragar,Vragdush,Vragor,Vralo,Vrang,Vrarbag,Vrarg,Vrart,Vraurk,Vridash,"
+"Vridish,Vrigor,Vrik,Vrinak,Vring,Vrirt,Vrishnak,Vriurk,Vrodash,Vrodish,"
+"Vrogar,Vrogor,Vrolo,Vrong,Vrorg,Vrork,Vrudish,Vrugdush,Vrulg,Vrung,Vruol,"
+"Vrurg,Vrurt,Vruurk,Vudish,Vuk,Vulg,Vulo,Vunak,Vurag,Vurbag,Vurg,Vushnak"
+msgstr ""
+
+#: data/core/macros/names.cfg:65
+msgid ""
+"Äg,Agh,Bog Äh,Borb,Brag,Brag Goh,Brok,Dak,Drog,Frok,Ga,Gah,Gark,Gnarf,Grar,"
+"Grokk,Grumph,Gulk,Hak,Hask,Hoth,Hug Bah,Hu Kah,Kak,Krak,Krug,Kub,Kuh,Lok,Luk,"
+"Nak,Nuk Kar,Pag,Reck,Rok,Ruk,Sark,Shak,Shuf,Stuh,Targ,Thog,Thruf,Thur,Tohg,"
+"Torg,Trok,Tsok,Tuh,Tuk Ruh,Ugg,Üh,Urg,Urgh,Urk,Vak,Zog,Zuug"
+msgstr ""
+
+#: data/core/macros/names.cfg:69
+msgid ""
+"Bludebalmen,Boladrumbadrum,Bolwuldelman,Bombempomgontor,Bomtanbomkenton,"
+"Bomtanbomtonum,Bregalad,Bremdebubde,Brenbasnudnem,Brendumadoak,"
+"Brommantendronnor,Brumbendublun,Brumennarunom,Brummdlebroak,Bumbadadabum,"
+"Buomdumdenlol,Carnimirië,Dabumdabumtam,Dammantongonnur,Danmonlulbam,"
+"Debundbemun,Delmduelmdelom,Diblembumnde,Dolmannumbil,Drongnoblemdu,"
+"Dulmandarook,Dulwulmendom,Dumdumdumatum,Elmaroomadrum,Grelmadrumbumadum,"
+"Gulladroamadoak,Gumabeladrelm,Laffalialomdium,Landunwonbam,Lassemista,"
+"Lefnublemdde,Libleddnumm,Lolmandindel,Monlamwimdan,Muldondindal,"
+"Mundionalafla,Mundumblemdum,Munnamdulbon,Nanmildaldum,Nunmaldildun,Orofarnië,"
+"Pambedrumne,Pomtamkomtrobum,Rithramcamhan,Tantondernintan,Temtundembenn,"
+"Temtunnongetem,Tondenkontenkon,Troombadoom,Tumtentantarun,Tumtonnongatum,"
+"Tumtumgamtomtom,Wonrunmaldin,Wudadoonopl"
+msgstr ""
+
+#: data/core/macros/names.cfg:73
+msgid ""
+"Bal,Cam,Corn,Del,Earl,El,Fox,Fren,Gel,Hel,Hex,Hol,Hox,Il,Kin,Nam,Nes,New,Ol,"
+"Old,Olf,Oul,Ox,Rock,Rook,Sal,Sam,Sed,Sel,Sen,Sil,Tal,Water,Wet,York"
+msgstr ""
+"בַאל,קַאם,קורְן,דֵל,אֵרְל,אֵל,פוקס,פְרֵן,גֵל,הֵל,הול,הוקס,איל,קין,נַאם,נֵס,נֵוו,אול,אולְד,"
+"אֹוול,אוקס,רוק,רֻק,סַאל,סַאם,סֵד,סֵל,סֵן,סיל,טַל,וַאטֵר,וֵט,יורְק"
+
+# END NAME SECTION
+#. [objective]: condition=lose
+#: data/core/macros/objective-utils.cfg:7
+msgid "Turns run out"
+msgstr "נגמר הזמן"
+
+#: data/core/macros/objective-utils.cfg:14 data/lua/wml/objectives.lua:101
+msgid "Early finish bonus."
+msgstr "בונוס סיום מוקדם."
+
+#: data/core/macros/objective-utils.cfg:17 data/lua/wml/objectives.lua:103
+msgid "No early finish bonus."
+msgstr "אין בונוס סיום מוקדם."
+
+#: data/core/macros/objective-utils.cfg:21
+msgid "<small>(early finish bonus)</small>"
+msgstr "<small>(בונוס סיום מוקדם)</small>"
+
+#: data/core/macros/objective-utils.cfg:25
+msgid "(early finish bonus)"
+msgstr "(בונוס סיום מוקדם)"
+
+#: data/core/macros/objective-utils.cfg:29 data/lua/wml/objectives.lua:111
+msgid "No gold carried over to the next scenario."
+msgstr "לא הועבר זהב להתקלות הבאה."
+
+#: data/core/macros/objective-utils.cfg:33
+msgid ""
+"\n"
+"100% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"100% מהזהב הועבר להתקלות הבאה."
+
+#: data/core/macros/objective-utils.cfg:37
+msgid ""
+"\n"
+"40% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"40% מהזהב מועבר להתקלות הבאה."
+
+#: data/core/macros/objective-utils.cfg:41
+msgid ""
+"\n"
+"20% of finishing gold carried over to the next scenario."
+msgstr ""
+"\n"
+"20% מהזהב מועבר להתקלות הבאה."
+
+#: data/core/macros/objective-utils.cfg:48
+msgid "Alternative objective:"
+msgstr "מטרות נוספות:"
+
+#: data/core/macros/objective-utils.cfg:52
+msgid "Bonus objective:"
+msgstr "מטרות בונוס:"
+
+#. [message]: speaker=narrator
+#: data/core/macros/scenario-utils.cfg:62
+msgid ""
+"The computer player might not be able to play side $side_number properly in "
+"this scenario. Side $side_number is intended to be played by a human player."
+msgstr ""
+"שחקן המחשב אולי לא יצליח לשחק את צד $side_number בהתקלות זו. צד זה נועד "
+"למשחק ע\"י שחקן אנושי."
+
+#. [color_range]: id=red
+#. [color_range]: id=1
+#: data/core/team-colors.cfg:14 data/core/team-colors.cfg:83
+msgid "Red"
+msgstr "אדום"
+
+#. [color_range]: id=lightred
+#: data/core/team-colors.cfg:20
+msgid "Light Red"
+msgstr "אדום בהיר"
+
+#. [color_range]: id=darkred
+#: data/core/team-colors.cfg:26
+msgid "Dark Red"
+msgstr "אדום כהה"
+
+#. [color_range]: id=blue
+#. [color_range]: id=2
+#: data/core/team-colors.cfg:32 data/core/team-colors.cfg:89
+msgid "Blue"
+msgstr "כחול"
+
+#. [color_range]: id=green
+#. [color_range]: id=3
+#: data/core/team-colors.cfg:38 data/core/team-colors.cfg:95
+msgid "Green"
+msgstr "ירוק"
+
+#. [color_range]: id=purple
+#. [color_range]: id=4
+#: data/core/team-colors.cfg:44 data/core/team-colors.cfg:101
+msgid "Purple"
+msgstr "סגול"
+
+#. [color_range]: id=black
+#. [color_range]: id=5
+#: data/core/team-colors.cfg:50 data/core/team-colors.cfg:113
+msgid "Black"
+msgstr "שחור"
+
+#. [color_range]: id=brown
+#. [color_range]: id=6
+#: data/core/team-colors.cfg:56 data/core/team-colors.cfg:125
+msgid "Brown"
+msgstr "חום"
+
+#. [color_range]: id=orange
+#. [color_range]: id=7
+#: data/core/team-colors.cfg:62 data/core/team-colors.cfg:107
+msgid "Orange"
+msgstr "כתום"
+
+#. [color_range]: id=white
+#. [color_range]: id=8
+#: data/core/team-colors.cfg:68 data/core/team-colors.cfg:119
+msgid "White"
+msgstr "לבן"
+
+#. [color_range]: id=teal
+#. [color_range]: id=9
+#: data/core/team-colors.cfg:74 data/core/team-colors.cfg:131
+msgid "Teal"
+msgstr "טורקיז כהה"
+
+#. [language]
+#: data/english.cfg:3
+msgid "Easy"
+msgstr "קל"
+
+#. [language]
+#: data/english.cfg:4
+msgid "Medium"
+msgstr "בינוני"
+
+#. [language]
+#: data/english.cfg:5
+msgid "Hard"
+msgstr "קשה"
+
+#. [language]
+#: data/english.cfg:6
+msgid "Nightmare"
+msgstr "סיוט"
+
+#. [language]
+#: data/english.cfg:10
+msgid ""
+"Liminal units fight better during twilight while fighting normally during "
+"day and night.\n"
+"\n"
+"Twilight: +25% Damage"
+msgstr ""
+"יחידות ספיות נלחמות טוב יותר בדמדומים מאשר ביום או בלילה.\n"
+"\n"
+"דמדומים: +25% נזק"
+
+#. [language]
+#: data/english.cfg:15
+msgid ""
+"Lawful units fight better during the day, and worse at night.\n"
+"\n"
+"Day: +25% Damage\n"
+"Night: −25% Damage"
+msgstr ""
+"יחידות סדר נלחמות טוב יותר במשך היום, וגרוע יותר במשך הלילה.\n"
+"\n"
+"יום: +25% לנזק\n"
+"לילה: −25% לנזק"
+
+#. [language]
+#: data/english.cfg:16
+msgid ""
+"Neutral units are unaffected by day and night, fighting equally well under "
+"both conditions."
+msgstr ""
+"יחידות נטרליות לא מושפעות על ידי יום ולילה, ונלחמות ביכולת שווה תחת שני "
+"המצבים."
+
+#. [language]
+#: data/english.cfg:20
+msgid ""
+"Chaotic units fight better at night, and worse during the day.\n"
+"\n"
+"Day: −25% Damage\n"
+"Night: +25% Damage"
+msgstr ""
+"יחידות תוהו נלחמות טוב יותר במשך הלילה, וגרוע יותר במשך היום.\n"
+"\n"
+"יום: −25% לנזק\n"
+"לילה: +25% לנזק"
+
+#. [language]
+#: data/english.cfg:23
+msgid "$name|’s Bridge,$name|’s Crossing"
+msgstr "גשר $name,מעבר $name"
+
+#. [language]
+#: data/english.cfg:24
+msgid "$name|’s Highway,$name|’s Pass,Path of $name"
+msgstr "דרך $name,מעבר $name,המעבר של $name"
+
+#. [language]
+#: data/english.cfg:25
+msgid "$name River,River $name"
+msgstr "$name נהר,הנהר ה $name"
+
+#. [language]
+#: data/english.cfg:26
+msgid "$name Forest,$name|’s Forest"
+msgstr "יער $name, היער של $name"
+
+#. [language]
+#: data/english.cfg:27
+msgid "$name Lake"
+msgstr "אגם $name"
+
+#. [language]
+#: data/english.cfg:28
+msgid "$name|’s Peak,Mount $name"
+msgstr "רמת $name|,הר $name"
+
+#. [language]
+#: data/english.cfg:29
+msgid "$name|’s Swamp,$name|marsh,$name|fen"
+msgstr "ביצת $name"
+
+#. [language]
+#: data/english.cfg:30
+msgid "$name|bury,$name|ham,$name|ton,$name|bury"
+msgstr "כפר $name,מושב $name,עיירת $name"
+
+#. [language]
+#: data/english.cfg:31
+msgid "$name|harbor,$name|port,$lake|port,$lake|harbor"
+msgstr "נמל $name,מעגן $name"
+
+#. [language]
+#: data/english.cfg:32
+msgid ""
+"$name|ham,$name|ford,$name|cross,$river|ford,$river|cross,$name on river"
+msgstr "כפר $name,מעברת $name,דרך $name,מעברת $river,דרך $river"
+
+#. [language]
+#: data/english.cfg:33
+msgid ""
+"$river|bridge,$river|bridge,$river|bridge,$name|ham,$name|bridge,$bridge|ham,"
+"$bridge|ton"
+msgstr "גשר $river,גשר $river,גשר $river,כפר $name,גשר $name"
+
+#. [language]
+#: data/english.cfg:34
+msgid "$name|ham,$name|ton,$name|field"
+msgstr "כפר $name,מושב $name,שדה $name"
+
+#. [language]
+#: data/english.cfg:35
+msgid ""
+"$name|ham,$name|ton,$name|wood,$name Forest,$forest|wood,$forest|ham,$forest|"
+"ton"
+msgstr "כפר $name,מושב $name,חורשת $name,יער $name"
+
+#. [language]
+#: data/english.cfg:36
+msgid "$name|ham,$name|bury,$name|ton,$name|hill,$name|crest"
+msgstr "כפר $name,מושב $name,עיירת $name,גבעת $name,פסגת $name"
+
+#. [language]
+#: data/english.cfg:37
+msgid "$mountain|mont,$mountain|cliff,$mountain|bury,$mountain|ham"
+msgstr "כפר $mountain,מושב $mountain,צוק $mountain,הר $mountain"
+
+#. [language]
+#: data/english.cfg:38
+msgid ""
+"$name|ham,$name|bury,$name|ton,$name|mont,$name|mont,$name|cliff,$name|cliff"
+msgstr "כפר $name,מושב $name,עיירת $name,הר $name,הר $name,צוק $name,צוק $name"
+
+#. [language]
+#: data/english.cfg:39
+msgid ""
+"$road|’s Rest,$road|’s Waypoint,$road|bury,$road|ham,$name|bury,$name|ham"
+msgstr "פרשת $road|"
+
+#. [language]
+#: data/english.cfg:40
+msgid "$name|bury,$name|ham,$name|ton,$swamp|bury,$swamp|ham,$swamp|ton,"
+msgstr "כפר $name,מושב $name,עיירת $name"
+
+#. [language]
+#: data/english.cfg:43
+msgid "melee"
+msgstr "קפא\"פ"
+
+#. [language]
+#: data/english.cfg:44
+msgid "ranged"
+msgstr "טווח רחוק"
+
+#. [language]
+#: data/english.cfg:47
+msgid "blade"
+msgstr "חותך"
+
+#. [language]
+#: data/english.cfg:48
+msgid "pierce"
+msgstr "חודר"
+
+#. [language]
+#: data/english.cfg:49
+msgid "impact"
+msgstr "מוחץ"
+
+#. [language]
+#: data/english.cfg:50
+msgid "fire"
+msgstr "אש"
+
+#. [language]
+#: data/english.cfg:51
+msgid "cold"
+msgstr "קור"
+
+#. [language]
+#: data/english.cfg:52
+msgid "arcane"
+msgstr "כוח"
+
+#. [server]
+#: data/game_config.cfg:4
+msgid "Official Wesnoth Server"
+msgstr "שרת ווסנות' הרשמי"
+
+#. [server]
+#: data/game_config.cfg:8 data/game_config.cfg:12
+msgid "Alternate Wesnoth Server"
+msgstr "שרת ווסנות' אחר"
+
+#. [fonts]
+#: data/hardwired/fonts.cfg:7
+msgid "DejaVuSans.ttf,Andagii.ttf,wqy-zenhei.ttc"
+msgstr "DejaVuSans.ttf,Andagii.ttf,wqy-zenhei.ttc"
+
+#. [fonts]
+#: data/hardwired/fonts.cfg:8
+msgid "DejaVu Sans,Andagii,WenQuanYi Zen Hei"
+msgstr "DejaVu Sans,Andagii,WenQuanYi Zen Hei"
+
+#. [tip]
+#: data/hardwired/tips.cfg:4
+msgid ""
+"Don’t neglect to earn your leader experience! You need to keep him safe, but "
+"if you coddle him too much he may be too weak to survive future battles."
+msgstr ""
+"אל תשכח לאמן את מנהיגך! אתה צריך לשמור עליו בטוח, אבל עם תשכח לאמנו אתה תהיה "
+"בצרה עם יהיה חור קטנטן בהגנה עליו..."
+
+#. [tip]
+#: data/hardwired/tips.cfg:5 data/hardwired/tips.cfg:137
+msgid "<i>― Great Mage Delfador, 516YW</i>"
+msgstr "<i>― דלפדור הקוסם הדגול, 516 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:8
+msgid ""
+"In the <b>Actions</b> menu, you can select <b>Show Enemy Moves</b> to "
+"highlight all the hexes your adversary can move to (assuming your units stay "
+"where they are). Use this to make sure the enemy can’t reach your weak or "
+"injured units on his next turn."
+msgstr ""
+"בתפריט <b>פעולות</b> אתה יכול לבחור את <b>הצג מהלכי אויב</b> כדי לראות את  "
+"כל המשבצות שכלי אויב שבחרת יכול לזוז (כל עוד כליך ישארו במקומם). דבר זה  "
+"שימושי לבדוק עם האויב יכול להגיע לכלי פגיע ולחסום אותו עם זה המצב."
+
+#. [tip]
+#: data/hardwired/tips.cfg:9 data/hardwired/tips.cfg:21
+#: data/hardwired/tips.cfg:25 data/hardwired/tips.cfg:33
+#: data/hardwired/tips.cfg:37 data/hardwired/tips.cfg:53
+#: data/hardwired/tips.cfg:57 data/hardwired/tips.cfg:61
+#: data/hardwired/tips.cfg:65 data/hardwired/tips.cfg:69
+#: data/hardwired/tips.cfg:81 data/hardwired/tips.cfg:85
+#: data/hardwired/tips.cfg:89 data/hardwired/tips.cfg:101
+#: data/hardwired/tips.cfg:109 data/hardwired/tips.cfg:113
+#: data/hardwired/tips.cfg:121 data/hardwired/tips.cfg:145
+#: data/hardwired/tips.cfg:149 data/hardwired/tips.cfg:153
+#: data/hardwired/tips.cfg:161 data/hardwired/tips.cfg:169
+#: data/hardwired/tips.cfg:177 data/hardwired/tips.cfg:181
+#: data/hardwired/tips.cfg:189 data/hardwired/tips.cfg:193
+#: data/hardwired/tips.cfg:197 data/hardwired/tips.cfg:205
+#: data/hardwired/tips.cfg:225 data/hardwired/tips.cfg:234
+#: data/hardwired/tips.cfg:238
+msgid "<i>― The Wesnoth Tactical Guide</i>"
+msgstr "<i>― מדריך טקטיקות ווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:12
+msgid ""
+"Units with the <i>Intelligent</i> trait need fewer experience points to "
+"level up. Early in a campaign, try to give killing blows to these units so "
+"you can get some high-level troops sooner."
+msgstr ""
+"יחידות עם כשרון ה-<i>חכמה</i> צריכים פחות ניסיון כדי לעלות רמה. מוקדם "
+"במערכה, נסה לתת יותר ניסיון ליחידות אלו כדי להשיג לוחמים גבוהי-דרגה מוקדם "
+"יותר."
+
+#. [tip]
+#: data/hardwired/tips.cfg:13
+msgid "<i>― King Konrad, 536YW</i>"
+msgstr "<i>― המלך קונרד, 536 לווסנות'</i>'"
+
+#. [tip]
+#: data/hardwired/tips.cfg:16
+msgid ""
+"The encircling tactic is very powerful, particularly against fast opponents. "
+"By placing two units on opposite sides of an enemy, their zones of control "
+"will restrict it to one hex of movement in any direction. Unfortunately, you "
+"must completely surround skirmishers to immobilize them."
+msgstr ""
+"טקטיקת האיגוף היא חזקה מאוד, בייחוד נגד יריבים זריזים. עם 2 יחידות מאגפות "
+"יחידת אויב, אזורי השליטה שלהם מגבילים יחידה זו למשבצת תנועה בכל תור. לרוע "
+"המזל, כדי לחסום יחידות <i>מסתננות</i>, צריך להקיפם מכל ששת הכיוונים."
+
+#. [tip]
+#: data/hardwired/tips.cfg:17 data/hardwired/tips.cfg:129
+msgid "<i>― Memoirs of Gweddry, 627YW</i>"
+msgstr "<i>― הביוגרפיה של גוודי, 627 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:20
+msgid ""
+"You can access the <b>Recruit</b> and <b>Recall</b> commands by right-"
+"clicking on a castle tile. That will let you choose the precise hex you put "
+"a unit in. Placing units wisely can sometimes let you reach a village a turn "
+"earlier."
+msgstr ""
+"אתה יכול לגשת לפקודות ה-<b>גיוס</b> וה-<b>החזרה</b> על-ידי לחיצה ימנית על "
+"משבצת טירה. דבר זה יתן לך לבחור את המשבצת המדויקת להצבת היחידה, ואולי לאפשר "
+"הגעה לכפר תור מוקדם יותר."
+
+#. [tip]
+#: data/hardwired/tips.cfg:24
+msgid ""
+"There are some helpful summary screens in the main menu: for instance, the "
+"<b>Status Table</b> will let you know how your enemies are doing, and how "
+"you are doing in comparison."
+msgstr ""
+"יש כמה מסכי סיכום בתפריט הראשי: לדוגמא, <b>טבלת המצב</b> תאפשר לך לראות את "
+"יחס הכוחות."
+
+#. [tip]
+#: data/hardwired/tips.cfg:28
+msgid ""
+"Units with the <i>Quick</i> trait get an extra movement point per turn. This "
+"can be very important when moving through difficult terrain such as water or "
+"caves. It can make the difference between being able to move one hex or two."
+msgstr ""
+"יחידות עם כשרון ה-<i>מהירות</i> מקבלות נקודת תנועה נוספת לתור. דבר זה יכול "
+"להפוך חשוב מאוד בשטחים קשים כגון הרים וגבעות. לדוגמא, רוב יחידות בני-האדם "
+"והאלפים (מהירות 5, 3 נקודות מהירות/משבצת הרים) יכולות לעבור רק משבצת הר אחת "
+"תור, אבל יחידות מהירות (מהירות 6) יכולות לעבור 2, כפול משאר היחידות!"
+
+#. [tip]
+#: data/hardwired/tips.cfg:29 data/hardwired/tips.cfg:105
+#: data/hardwired/tips.cfg:209 data/hardwired/tips.cfg:221
+msgid "<i>― High Lord Kalenz, 470YW</i>"
+msgstr "<i>― לורד קלנז, 470 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:32
+msgid ""
+"After you have played a few scenarios, read the <b>Gameplay</b> section in "
+"the <b>Help</b> screen carefully. Details become important as scenarios get "
+"harder!"
+msgstr ""
+"אחרי שעברת כמה התקלויות, קרא את חלק ה-<b>משחק</b> ב-<b>עזרה</b> בזהירות. "
+"הפרטים הקטנים הופכים ליותר יותר חשובים ככל שרמת הקושי עולה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:36
+msgid ""
+"It is usually better to start the next scenario in a campaign with lower-"
+"level units that are about to level up than with those same units at a "
+"higher level."
+msgstr ""
+"בדרך-כלל עדיף להתחיל התקלות עם כלים שכמעט עלו רמה מאשר אלה שהרגע עלו רמה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:40
+msgid ""
+"On www.wesnoth.org you can find strategy guides, technical support, the "
+"history of Wesnoth, and much more."
+msgstr ""
+"ב www.wesnoth.org תוכל למצוא עוד טיפים, תמיכה טכנית, את ההיסטוריה של "
+"ווסנות', ועוד (הערה: האתר באנגלית)."
+
+#. [tip]
+#: data/hardwired/tips.cfg:41
+msgid "<i>― The Wesnoth Community</i>"
+msgstr "<i>― מפתחי המשחק</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:44
+msgid ""
+"<i>Lawful</i> units fight better by day, and <i>chaotic</i> units fight "
+"better at night. <i>Neutral</i> units are unaffected by the time of day. The "
+"rare <i>Liminal</i> unit type fights best during the twilight hours."
+msgstr ""
+"יחידות <i>סדר</i> נלחמות טוב יותר במשך היום, ויחידות <i>תוהו</i> נלחמות טוב "
+"יותר במשך הלילה. יחידות נטראליות לא מושפעות על ידי יום ולילה. ישנם גם יחידות "
+"<i>ספיות<i> נדירות שמעדיפות את הדמדומים."
+
+#. [tip]
+#: data/hardwired/tips.cfg:45
+msgid ""
+"<i>― Royal Compendium of Battle Terminology: Volume II (reprinted 221YW)</i>"
+msgstr ""
+"<i>― האנציקלופדיה המלכותית של מונחי קרב - כרך שני+, (הוצאה שניה, 212 "
+"לווסנות')</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:48
+msgid ""
+"An otherwise sound plan can fail if you attack at the wrong time of day."
+msgstr "אפילו תוכנית טובה עלולה להיכשל עם היא מבוצעת בזמן הלא נכון."
+
+#. [tip]
+#: data/hardwired/tips.cfg:49 data/hardwired/tips.cfg:73
+#: data/hardwired/tips.cfg:125 data/hardwired/tips.cfg:133
+#: data/hardwired/tips.cfg:213
+msgid "<i>― Haldric II, 42YW, Handbook of Tactical Analysis: Volume I</i>"
+msgstr "<i>― הלדריק השני, 42 לווסנות', מדריך הניתוח הטקטי: כרך ראשון</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:52
+msgid ""
+"If you are playing with <b>Shroud</b> or <b>Fog of War</b> active, you won’t "
+"know what you’re facing. In this case, long-range scouting units are worth "
+"their cost. Try to choose scouts that can easily move across the surrounding "
+"terrain, because units can only see as far as they can move in one turn."
+msgstr ""
+"כשאתה משחק עם <b>הסתרה</b> או <b>ערפל קרב</b>, אינך יודע הרבה על אויבך. "
+"במקרה זה, סיירים לטווח רחוק שווים את מחירם. נסה לבחור את אלו המתאימים לשטח, "
+"מכיוון שיחידות רואות למרחק שהם יכולות להגיע בתור בתור הבא (בהתעלמות מיחידות "
+"אויב), ולא יותר."
+
+#. [tip]
+#: data/hardwired/tips.cfg:56
+msgid ""
+"There are six types of attack: <i>pierce</i>, <i>blade</i>, <i>impact</i>, "
+"<i>fire</i>, <i>cold</i> and <i>arcane</i>. Different units have weaknesses "
+"against different types of attacks. Right-click on a unit and select <b>Unit "
+"Description</b> to see which attacks it is resistant to, and which will "
+"affect it the most."
+msgstr ""
+"ישנם 6 סוגי התקפות: <i>חדירה</i>, <i>חיתוך</i>, <i>מחץ</i>, <i>אש</i>, "
+"<i>קור</i> ו-<i>כוח</i>. ליחידות שונות יש חולשה נגד סוגי התקפה שונים. לחיצה "
+"ימנית על יחידה, ואז בחירה ב-<b>תאור יחידה</b> , תאפשר לך לראות לאילו התקפות "
+"היא רגישה ואיזה התקפות פוגעים בה בעוצמה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:60
+msgid ""
+"The terrain occupied by your units is the main factor determining the chance "
+"that they will be hit. The defensive rating for the currently selected unit "
+"in the currently selected terrain is displayed in the top right corner of "
+"the screen."
+msgstr ""
+"סוג הקרקע עליו נמצאות יחידותך קובע את הסיכוי שיש ליריבים שלך לפגוע בה בזמן "
+"קרב. רמת ההגנה של היחידה שמסומנת כעת בסוג השטח שמסומן כעת מוצגת בפינה הימנית "
+"עליונה של המסך."
+
+#. [tip]
+#: data/hardwired/tips.cfg:64
+msgid ""
+"Poisoned units will lose eight hitpoints every turn until they are one point "
+"from dying. They will then remain at death’s door until the poison is "
+"removed. Healers can prevent a poisoned unit from deteriorating, but the "
+"poison will not be removed unless the unit regenerates, or begins a turn in "
+"a village or next to a unit with the <i>Cures</i> ability."
+msgstr ""
+"יחידות מורעלות יאבדו 8 נק\"פ בכל תור עד שתשאר להם נקודת פגיעה אחת בלבד. הם "
+"ישארו בסף המוות עד שהרעל יוסר (אלא עם יחידת אויב תגאול אותם מסבלם קודם לכן). "
+"רוב המרפאים יכולים רק לעצור את איבוד הנק\"פ, אבל רק יחידות עם יכולת ה-"
+"<i>מרפא</i> מסוגלות לרפא הרעלה. יחידות מתחדשות מסוגלות לצאת מהרעלה במקום "
+"להתרפא, וכפרים בדרך-כלל מכילים מרפאים לטפל בהרעלה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:68
+msgid ""
+"You can reuse units from a previous scenario by selecting <b>Recall</b> from "
+"the <b>Actions</b> menu. By recalling the same units over and over, you can "
+"build up a powerful and experienced army."
+msgstr ""
+"אתה יכול להשתמש ביחידות מהתקלויות קודמות על-ידי בחירה ב-<b>החזרה</b> בתפריט "
+"ה-<b>פעולות</b>. על-ידי החזרת אותם היחידות שוב ושוב, יש לך את האפשרות לבנות "
+"צבא חזק ומנוסה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:72
+msgid ""
+"Units of level one and higher have a <i>Zone of Control</i> in the six hexes "
+"around them. If a unit moves into an enemy’s zone of control, it may not "
+"move any further that turn. This means that units can have two empty hexes "
+"between them and still create a barrier to the enemy. Beware, though: "
+"skirmishers can pass through these gaps."
+msgstr ""
+"ליחידות מדרגה 1 ומעלה יש <i>אזור שליטה</i> בשש המשבצות הסמוכות להן. יחידה "
+"שנכנסת לאיזור שליטה של יחידה עוינת חייבת לעצור את תנועתה במשבצת זו. דבר זה "
+"אומר שיחידות יכולות להיות מופרדות ע\"י 2 משבצות ריקות ועדיין להוות מחסום "
+"לאויב. הזהר, כי ישנם יחידות <i>מסתננות</i> המסוגלות לעבור דרך איזורי שליטה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:76
+msgid ""
+"The chance to hit a unit usually depends on how well that unit can defend "
+"itself in the terrain in which it is standing. However, magical attacks "
+"always have a 70% chance to hit, and units with the <i>Marksman</i> ability "
+"are guaranteed at least a 60% chance of a hit when they attack on their own "
+"turn."
+msgstr ""
+"הסיכוי לפגוע ביחידה בדרך כלל תליו בכמה טוב יכולה היחידה להגן על עצמה בסוג "
+"השטח עליו היא עומדת, אולם להתקפות קסומות תמיד יש 70% לפגוע, ולהתקפות עם "
+"יכולת ה<i>צליפה</i> יש לפחות 60% לפגוע, אבל רק כשהצלף תוקף."
+
+#. [tip]
+#: data/hardwired/tips.cfg:77
+msgid "<i>― Haldric II, 43YW, Handbook of Tactical Analysis: Volume II</i>"
+msgstr "<i>― הלדריק השני, 43 לווסנות', מדריך הניתוח הטקטי: כרך שני</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:80
+msgid ""
+"Units stationed in villages will either heal eight hitpoints at the "
+"beginning of their turn, or will recover from poisoning."
+msgstr ""
+"יחידות המוצבות בכפרים יתרפאו ב-8 נקודות פגיעה או יבריאו מהרעלה בתחילת תורן."
+
+#. [tip]
+#: data/hardwired/tips.cfg:84
+msgid ""
+"Don’t move an injured unit if you don’t have to — let it rest. If a unit "
+"does not move or attack, it will recover two hitpoints at the beginning of "
+"its next turn."
+msgstr ""
+"אל תזיז יחידה פצועה עם המצב אינו דורש זאת — תן לה לנוח. עם יחידה לא נעה או "
+"תוקפת, היא תחזיר לעצמה 2 נקודות פגיעה בתחילת תורה הבא."
+
+#. [tip]
+#: data/hardwired/tips.cfg:88
+msgid ""
+"On maps where <i>Shroud</i> or <i>Fog of War</i> has been enabled, all "
+"units’ sightlines are limited by their maximum movement. If you have some "
+"valuable but slow units, keep at least one fast unit with them so that you "
+"are not caught out by a surprise attack."
+msgstr ""
+"במפות עם <b>הסתרה</b> או <b>ערפל קרב</b>, יחידות יכולות לראות למרחק שהן "
+"יכולות לנוע בתור אחד בהתעלמות מיחידות אויב. לכן, כשיש לך יחידות איטיות אבל "
+"חשובות, אל תשכח לקחת יחידות מהירה איתם כדי להמנע מהצקפות פתע."
+
+#. [tip]
+#: data/hardwired/tips.cfg:92
+msgid ""
+"Foot units tend to defend better in villages and castles than in other "
+"terrain types, while most mounted units do not gain any defensive advantages "
+"from villages or castles."
+msgstr ""
+"רוב יחידות הרגלים מגינות טוב יותר בתוך כפרים וטירות מרוב סוגי השטח האחרים, "
+"בעוד שלרוב היחידות הרוכבות לא מקבלות יתרון הגנתי מכפרים או טירות."
+
+#. [tip]
+#: data/hardwired/tips.cfg:93 data/hardwired/tips.cfg:173
+msgid "<i>― Sir Kaylan, 498YW</i>"
+msgstr "<i>― סיר קיילין, 498 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:96
+msgid ""
+"Horse-based units are generally resistant to attacks with bladed or impact "
+"weapons, but are vulnerable to attacks with piercing weapons, including bows "
+"and spears."
+msgstr ""
+"יחידות שמבוססות על סוסים, עמידות באופן כללי נגד התקפות עם כלי-נשק חותכים או "
+"מוחצים, אבל פגיעות להתקפות עם נשקים חודרים, כגון קשתות וחניתות."
+
+#. [tip]
+#: data/hardwired/tips.cfg:97
+msgid "<i>― Sir Kaylan, 502YW</i>"
+msgstr "<i>― סיר קיילין, 502 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:100
+msgid ""
+"Inflicting the killing blow on an enemy unit is the best way to gain "
+"experience. Units killing an enemy will gain eight experience points for "
+"every level of the unit they kill, or four experience points for a zero-"
+"level opponent."
+msgstr ""
+"הנחתת מכת המוות על יחידת אויב היא הדרך הטובה ביותר לקבלת ניסיון. יחידות "
+"שהורגות אוייב יקבלו 8 נקודות ניסיון לכל רמה של היחידה שהן הרגו."
+
+#. [tip]
+#: data/hardwired/tips.cfg:104
+msgid ""
+"Elvish units move and fight well in forest. Dwarvish units move and fight "
+"well in hills, mountains and caves."
+msgstr ""
+"יחידות אלפיות נעות ונלחמות בצורה מאד טובה ביער. יחידות גמדים נעות ונלחמות "
+"בצורה מצוינת בהרים, גבעות ומערות."
+
+#. [tip]
+#: data/hardwired/tips.cfg:108
+msgid ""
+"Patience is often key. Rather than attacking in bad conditions or with few "
+"troops, wait for better conditions and then attack."
+msgstr ""
+"סבלנות היא לעיתים קרובות המפתח. במקום להתקיף בתנאים רעים, או עם יחידות "
+"מועטות, חכה לתנאים טובים יותר ואז התקף."
+
+#. [tip]
+#: data/hardwired/tips.cfg:112
+msgid ""
+"If you are attacked from several directions, it may be a good idea to send "
+"expendable units in some directions to delay enemy units."
+msgstr ""
+"אם אתה מותקף ממספר כיוונים, זה יכול להיות טוב לשלוב יחידות עליהם ניתן לוותר "
+"כדי לעקב את יחדות האוייב."
+
+#. [tip]
+#: data/hardwired/tips.cfg:116
+msgid ""
+"Do not be afraid to retreat and regroup; it is often the key to victory."
+msgstr "אל תפחד לסגת ולהתארגן מחדש, לעיתים קרובות זהו המפתח לניצחון."
+
+#. [tip]
+#: data/hardwired/tips.cfg:117
+msgid "<i>― Meneldur, 123YW</i>"
+msgstr "<i>― מלנדור, 123 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:120
+msgid ""
+"In most campaigns you will receive a gold bonus for finishing early, "
+"depending on the number of villages on the map and the number of turns "
+"remaining. You will usually earn more gold this way than through capturing "
+"villages and waiting for the turns to run out."
+msgstr ""
+"ברוב המערכות תקבל זהב כבונוס על סיום מוקדם, בתלות במספר הכפרים במפה, ובמספר "
+"התורים שנותרו. אתה תמיד תקבל יותר זהב בדרך זו מאשר על ידי כבישת כפרים והמתנה "
+"עד סיום התורים."
+
+#. [tip]
+#: data/hardwired/tips.cfg:124
+msgid ""
+"<i>Leaders</i> can recruit or recall units from any keep inside a castle, "
+"not just the keep they start on. Sometimes your allies may be willing to "
+"make room for you on their keep so you can recruit from there, and you can "
+"even capture an enemy’s keep and use that."
+msgstr ""
+"<i>מנהיגים</i> יכולים לגייס או להחזיר יחידות מכל מצודה שבכל טירה, לא רק "
+"המצודה ממנה הם התחילו. אתה יכול לכבוש מצודה מידי האויב ולגייס ממנה. בנוסף, "
+"חלק מבעלי בריתך יהיו מוכנים לפנות לך מקום במצודתם כדי שתוכל לגייס מטירתם."
+
+#. [tip]
+#: data/hardwired/tips.cfg:128
+msgid ""
+"Skeletons are resistant to piercing, bladed and cold-based attacks but are "
+"vulnerable to impact, fire, and arcane attacks."
+msgstr "שלדים עמידים כנגד התקפות חדירה ולהב, אבל פגיעים להתקפות מחץ, אש וכוח."
+
+#. [tip]
+#: data/hardwired/tips.cfg:132
+msgid ""
+"Units with the <i>Leadership</i> ability help lower-level adjacent units on "
+"the same side fight better. You can move these units slowly along your "
+"battle lines and give bonuses to large numbers of lower-level troops."
+msgstr ""
+"יחידות עם יכולת ה<i>מנהיגות</i> מעלות את כוחם של יחידות נמוכות-דרגה "
+"ידידותיות וסמוכות. אתה יכול להעביר יחידות כאלו באיטיות מאחורי קווך כדי לחזק "
+"מספר גבוה של יחידות."
+
+#. [tip]
+#: data/hardwired/tips.cfg:136
+msgid ""
+"Try to avoid moving next to unoccupied villages. An enemy unit may move into "
+"the village and attack you, while enjoying the defense and healing of the "
+"village."
+msgstr ""
+"המנע באופן כללי מלנוע ליד כפרים ריקים. יחידת אויב יכולה לנוע אל תוך הכפר "
+"ולהתקיף אותך, בעוד היא נהנת מההגנה והריפוי של הכפר."
+
+#. [tip]
+#: data/hardwired/tips.cfg:140
+msgid "Use lines of troops to screen your injured units while they recover."
+msgstr ""
+"השתמש בקווים של יחידות להגנה על יחידות פגועות כדי לתת להן זמן להתרפאות."
+
+#. [tip]
+#: data/hardwired/tips.cfg:141
+msgid "<i>― Princess Li’sar, 515YW</i>"
+msgstr "<i>― הנסיכה ליזאר, 515 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:144
+msgid "Read the <b>Hotkeys</b> list in the <b>Preferences</b> menu."
+msgstr "קרא את רשימת <b>מקשי הקיצור</b> בתפריט <b>העדפות</b>."
+
+#. [tip]
+#: data/hardwired/tips.cfg:148
+msgid ""
+"If you move a unit, but don’t attack or discover any additional information, "
+"you can undo your move by pressing <b>u</b>."
+msgstr ""
+"אם אתה מזיז יחידה, אבל לא מתקיף או מגלה מידע נוסף, אתה יכול לבטל את המהלך על "
+"ידי לחיצה על <b>u</b>."
+
+#. [tip]
+#: data/hardwired/tips.cfg:152
+msgid ""
+"You can see how far enemy units can move by moving the mouse cursor over "
+"them."
+msgstr ""
+"אתה יכול להראות לאיזה מרחק יכולות יחידות האוייב לנוע על ידי הנחת הסמן "
+"למעליהן."
+
+#. [tip]
+#: data/hardwired/tips.cfg:156
+msgid ""
+"Use healers to support your attacks — they will win you battles without "
+"needing to attack anything themselves."
+msgstr ""
+"השתמש במרפאים כדי לתמוך בהתקפות שלך, הם ינצחו עבורך קרבות בלי שהם יצטרכו "
+"להתקוף שום דבר בעצמם."
+
+#. [tip]
+#: data/hardwired/tips.cfg:157 data/hardwired/tips.cfg:201
+msgid "<i>― The Scroll of Chantal, 516YW</i>"
+msgstr "<i>― מגילות צ'נטל, 516 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:160
+msgid ""
+"The <i>Slow</i> attack makes enemy units move slower and halves the damage "
+"they do on all attacks until they end a turn."
+msgstr ""
+"התקפות עם יכולת <i>האטה</i> גורמות לנפגעיהם לנוע לאט יותר ולגרום למחצית הנזק "
+"בהתקפותיהם עד לסוף תורם."
+
+#. [tip]
+#: data/hardwired/tips.cfg:164
+msgid "<i>Arcane</i> attacks are very powerful against undead."
+msgstr "התקפות <i>כוח</i> חזקות במיוחד כנגד אל-מתים וקצת פחות נגד דרקודמים."
+
+#. [tip]
+#: data/hardwired/tips.cfg:165
+msgid "<i>― Great Sage Dacyn, 626YW</i>"
+msgstr "<i>― הקוסם הגדול דאקין, 626 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:168
+msgid ""
+"Units are healed when they advance a level. Used wisely, this can turn a "
+"fight."
+msgstr ""
+"יחידות נרפאות כאשר הן מתקדמות דרגה, בשימוש חכם, הדבר יכול לשנות את תוצאת "
+"הקרב."
+
+#. [tip]
+#: data/hardwired/tips.cfg:172
+msgid ""
+"Charging units are best used against enemies they can kill with a single "
+"blow."
+msgstr "יחידות מסתערות יעילות במיוחד כנגד אויבים שהן יכולות לחסל במכה אחת."
+
+#. [tip]
+#: data/hardwired/tips.cfg:176
+msgid ""
+"Instead of leveling up, high-level units gain an <i>After Maximum Level "
+"Advancement</i> (AMLA) bonus, which usually increases the unit’s maximum "
+"hitpoints by three and fully heals it. This is much less than the normal "
+"benefits of advancing a level, so it is generally wiser to advance your "
+"lower-level units instead."
+msgstr ""
+"במקון לעלות דרגה, יחידות בדרגתן המרבית מקבלות <i>קידום לאחר דרגה מרבית</i> "
+"(קלד\"מ), שבדרך כלל מעלה את נקודות הפגיעה המרביות ב-3 ומרפא את היחידה. הרבה "
+"מתחת לבונוסי עליית הדרגה הרגילים, כך שלעיתים קרובות יעיל יותר לנסות לקדם "
+"יחידות בדרגה נמוכה יותר."
+
+#. [tip]
+#: data/hardwired/tips.cfg:180
+msgid ""
+"Nearly every button and icon in the Wesnoth game has a tooltip. Hover the "
+"mouse pointer over any button or icon to get a description or explanation of "
+"what it does."
+msgstr ""
+"כמעט לכל כפתור או אייקון במשחק יש חלונית. הנח את העכבר מעל כפתור או אייקון "
+"בשביל לראות מה הוא עושה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:184
+msgid ""
+"To advance low-level units quickly, team them with a veteran and use the "
+"veteran to damage a joint target heavily enough for the junior partner to "
+"get in the killing blow."
+msgstr ""
+"כדי לקדם יחידות נמוכות-רמה מהר, צרף אותם לאחת גבוהת-רמה והשתמש בה להחליש "
+"יחידות אויב כך שהיחידות החלשות יהרגו אותם בהתקפה אחת."
+
+#. [tip]
+#: data/hardwired/tips.cfg:185
+msgid "<i>― Queen Li’sar, 528YW</i>"
+msgstr "<i>― המלכה ליזאר, 528 לווסנות'</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:188
+msgid ""
+"If an enemy benefits more from a rare terrain type than you do, occupying "
+"that terrain will deprive them of its benefits."
+msgstr ""
+"עם האויב משיג יותר מסוג שטח נדיר ממך, תפוס שטח זה כדי למנוע ממנו לעשות זאת."
+
+#. [tip]
+#: data/hardwired/tips.cfg:192
+msgid ""
+"Few units have good defenses in water; a line of attackers along the edge of "
+"a river can inflict heavy casualties. Elves can use the edge of a forest in "
+"a similar manner, and dwarves can do the same with mountains."
+msgstr ""
+"מעטות היחידות המסוגלות לבתגונן במים; קו התקפה לאורך נהר מסוגל לגרות לאבדות "
+"כבדות. אלפים יכולים להשתמש בפינת יער לאותה מטרה, וגמדים יכולים להשתמש בהרים "
+"ומערות לאותה מטרה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:196
+msgid ""
+"In many campaign scenarios, you may issue simple instructions for your "
+"computer-controlled allies using the right-click context menu."
+msgstr ""
+"בהרבה התקלויות במערכות, הינך יכול לתת פקודות פשוטות לידידך נשלטי-המחשב על-"
+"ידי לחיצה ימנית על מנהיגם."
+
+#. [tip]
+#: data/hardwired/tips.cfg:200
+msgid ""
+"The <i>Slow</i> ability is extremely powerful because it has such wide-"
+"ranging effects. Enemy undead get half the normal benefit from their "
+"<i>Drain</i> ability, the damage bonus from <i>Charge</i> or <i>Backstab</i> "
+"is cancelled, and the <i>Berserk</i> ability is weakened. Fast foes struggle "
+"to escape; slow enemies are almost immobilized, and your own units suffer "
+"less retaliation damage, so it’s quicker to heal them."
+msgstr ""
+"יכולת ה-<i>האטה</i> הינה כזו חזקה בגלל אפקטיה הנרחבים - אל-מתים עם יכולת "
+"<i>שאיבה</i> מקבלים רק מחצית מרווחם הרגיל, העלאת הנזק מ-<i>הסתערות</i> או "
+"<i>איגוף</i> מתבטלת, ויכולת <i>שגעון הקרב</i> נחלשת. אויבים זריזים מתקשים "
+"לברוח; האיטיים יותר כמעט נתקעים במקומם, ויחידותיף סופגים פחות נזק - כך שקל "
+"יותר לרפאם."
+
+#. [tip]
+#: data/hardwired/tips.cfg:204
+msgid ""
+"Try to operate units with a small number of powerful attacks—such as Dark "
+"Adepts, Horsemen, Orcish Grunts or Dwarvish Thunderers—in pairs or threes. "
+"This gives you another try whenever your first devastating attack misses — "
+"as inevitably happens from time to time."
+msgstr ""
+"נסה להפעיל יחידות עם מספר קטן של התקפות חזקות — כגון אשפי אופל, רוכבי סוסים, "
+"או נושאי-ברק גמדיים — בזוגות או בשלשות. כך, יהיה לך נסיון התקפה נוסף עם "
+"התקפתך הראשונה מפספסת — דבר בלתי נמנע לפעמים."
+
+#. [tip]
+#: data/hardwired/tips.cfg:208
+msgid ""
+"Units with three or more attacks—especially magical attacks—are ideal for "
+"finishing off enemies with only a few hitpoints remaining. Be sure to use "
+"leadership—or a strong or dextrous unit—whenever the extra point or two of "
+"damage makes a one-hit kill possible."
+msgstr ""
+"יחידות עם שלוש או יותר התקפות, ובמיוחד התקפות קסומות, מושלמות לחיסול אויבים "
+"פצועים. זכור להשתמש במנהיגות — או ביחידה חזקה או זריזה, כאשר הנקודה-שניים "
+"מהווה את ההפרש בין הריגה במכה לאחת ב-2."
+
+#. [tip]
+#: data/hardwired/tips.cfg:212
+msgid ""
+"Think twice before dismissing any unit from your recall list, no matter how "
+"little experience it has. Sometimes it’s worth paying a premium to know "
+"exactly what traits a new arrival will have."
+msgstr ""
+"חשוב פעמיים לפני שתזרוק יחידה מחשימת ההחזרה שלך, לא חשוב כמה מעט נסיון יש "
+"לה. לפעמים שווה לבשבש מעט יותר מטבעות בשביל לדעת בדיוק איזה כשרונות יש "
+"ליחידה."
+
+#. [tip]
+#: data/hardwired/tips.cfg:216
+msgid ""
+"When a tough unit is heavily injured, send it to heal in a village several "
+"turns’ movement away from the fighting. Then it can recover in peace (at 10 "
+"hitpoints per turn) without tying up front-line villages."
+msgstr ""
+"כשיחידה קשוחה נפצעת קשות, שלך אותה להתרפאות בכפר מספר תורי תנועה מהקרב. כך "
+"היא תוכל להתרפאות בשלווה (בכ-10 נק\"פ בתור) בלי לחסום כפרי חזית."
+
+#. [tip]
+#: data/hardwired/tips.cfg:217 data/hardwired/tips.cfg:229
+msgid "<i>― Lord Hamel of Knalga</i>"
+msgstr "<i>― לורד חמל מקנלגה</i>"
+
+#. [tip]
+#: data/hardwired/tips.cfg:220
+msgid ""
+"Combining multiple special abilities can be deadly. While it may take some "
+"work to combine, for example, <i>Leadership</i>, <i>Illuminates</i> and "
+"<i>Charge</i> against a slowed opponent, the results can be impressive."
+msgstr ""
+"שילוב של מספר יכולות מויחדות יכול להוית קטלני. לדוגמא, שימוש ב-<i>הסתערות</"
+"i>, <i>הארה</i> ו-<i>מנהיגות</i> נגד יחידה מואטת יכול להיות קטלני."
+
+#. [tip]
+#: data/hardwired/tips.cfg:224
+msgid ""
+"While finishing early gives a gold bonus, and reduces the opportunities for "
+"enemies to kill your valuable troops, it also means you lose chances to earn "
+"your units extra experience. When deciding whether or not to finish a "
+"scenario early, weigh these factors against one another."
+msgstr ""
+"למרות שסיום מוקדם מביא בונוס משאבים ומקטין את הזדמנויות אויבך לחיסול "
+"כוחותיך, הוא גם גורם לך לאבד הזדמנויות לאימון חיילך. כשאתה בוחר האם לגמור "
+"התקלות מוקדם או לא, שאל תשכח לשקול את כל הגורמים."
+
+#. [tip]
+#: data/hardwired/tips.cfg:228
+msgid ""
+"If your forces have weak defenses everywhere on the map, occupy the areas "
+"where your enemies can only attack you by sharing the same disadvantages. "
+"Avoid places where your defenses are poor and your enemy’s are merely "
+"average. Plan for heavy losses, and take firm control of any hex where the "
+"land does favor you."
+msgstr ""
+"עם לכוחותיך יש הגנות גרועות במפה, תפוס את המקומות שבהם אויבך יכולים לתקוף "
+"אותך רק על-ידי לקיחת אותם החולשות. הזהר ממקומות שבהם הגנתך גרועה אך הגנת "
+"אויבך הינה רק ממוצעת. תכנן לאבדות קשות, וקח שליטה על כל משבצת שכן לטובתך."
+
+#. [tip]
+#: data/hardwired/tips.cfg:233
+msgid ""
+"You cannot undo a move that uncovers hexes hidden by fog or shroud. Turn on "
+"the <b>Delay Shroud Updates</b> option when you need to move units while "
+"retaining the ability to undo, or use the new Whiteboard planning tool."
+msgstr ""
+"אתה לא יכול לבטל מהלך שחושף ערפל קרב או שטח מוסתר. השתמש במנגנון <b>דחה "
+"עדכוני הסתרה</b> כשאתה צריך להזיז יחידות ואולי לבטל את מהלכיהם. יכול להיות "
+"שכלי הכנון החדש גם יכול לעזור לך."
+
+#. [tip]
+#: data/hardwired/tips.cfg:237
+msgid ""
+"<i>Feral</i> units, such as Bats and wild animals, will avoid villages. Even "
+"if they occupy a village hex, they do not gain any defensive benefits from "
+"the village, although they will still be healed."
+msgstr ""
+"יחידות <i>פראיות</i>, כאון עטלפים וחיות פרא, ימנעו מכפרים. גם כשהם נמצאות "
+"במשבצת כפר, הם לא יכבלו שום הגנה ממנו, למרות שהם עדיין יתרפאו."
+
+#: data/lua/wml-tags.lua:707 src/actions.cpp:1275
+msgid "female^poisoned"
+msgstr "מורעלת"
+
+#: data/lua/wml-tags.lua:709 src/actions.cpp:1285
+msgid "female^petrified"
+msgstr "מאובנת"
+
+#: data/lua/wml-tags.lua:709 src/actions.cpp:1285
+msgid "petrified"
+msgstr "מאובן"
+
+#: data/lua/wml-tags.lua:710
+msgid "female^unhealable"
+msgstr "לא ברת-מרפא"
+
+#: data/lua/wml-tags.lua:710
+msgid "unhealable"
+msgstr "לא בר-מרפא"
+
+#: data/lua/wml/objectives.lua:50 src/multiplayer_connect.cpp:1609
+msgid "Victory:"
+msgstr "ניצחון:"
+
+#: data/lua/wml/objectives.lua:51
+msgid "Defeat:"
+msgstr "תבוסה:"
+
+#: data/lua/wml/objectives.lua:52
+msgid "Gold carryover:"
+msgstr "זהב שהועבר:"
+
+#: data/lua/wml/objectives.lua:53
+msgid "Notes:"
+msgstr "הערות:"
+
+#: data/lua/wml/objectives.lua:69
+msgid "(%d turns left)"
+msgstr "(נותרו %d תורים)"
+
+#: data/lua/wml/objectives.lua:71
+msgid "(this turn left)"
+msgstr "(נותר התור הזה)"
+
+#: data/lua/wml/objectives.lua:113
+msgid "%d%% of gold carried over to the next scenario."
+msgstr "%d%% מהזהב הועבר להתקלות הבאה."
+
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
+#. [lua]: id=the_list, id=the_label, id=the_icon, id=ok, id=cancel, id=flip, id=the_image
+#: data/scenario-test.cfg:316 src/dialogs.cpp:636
+#: src/multiplayer_create.cpp:90
+msgid "OK"
+msgstr "אשר"
+
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
+#. [lua]: id=the_list, id=the_label, id=the_icon, id=ok, id=cancel, id=flip, id=the_image
+#: data/scenario-test.cfg:317 src/dialogs.cpp:637 src/dialogs.cpp:1079
+#: src/dialogs.cpp:1190 src/multiplayer_connect.cpp:987
+#: src/multiplayer_create.cpp:89 src/multiplayer_wait.cpp:178
+msgid "Cancel"
+msgstr "בטל"
+
+#. [language]
+#: data/scenario-test.cfg:2971
+msgid "very long"
+msgstr "ארוך מאוד"
+
+#. [language]
+#: data/scenario-test.cfg:2972
+msgid "electrical"
+msgstr "חשמלי"
+
+#. [menu]: id=menu-main
+#: data/themes/default.cfg:120 data/themes/dfool.cfg:139
+#: data/themes/experimental.cfg:101
+msgid "Menu"
+msgstr "תפריט"
+
+#. [menu]: id=actions-menu
+#: data/themes/default.cfg:131 data/themes/dfool.cfg:150
+#: data/themes/experimental.cfg:112
+msgid "Actions"
+msgstr "פעולות"
+
+#. [menu]: id=button-endturn
+#. [change]: id=button-endturn
+#: data/themes/default.cfg:153 data/themes/default.cfg:774
+#: data/themes/dfool.cfg:165
+msgid "End Turn"
+msgstr "סיים תור"
+
+#. [menu]: id=button-endturn
+#. [change]: id=button-endturn
+#. [menu]: id=button-endturn2
+#: data/themes/default.cfg:154 data/themes/default.cfg:775
+#: data/themes/default.cfg:1033 data/themes/dfool.cfg:166
+msgid "End Scenario"
+msgstr "סיים התקלות"
+
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
+#. [label]: id=label-hp
+#: data/themes/default.cfg:212 data/themes/dfool.cfg:237
+#: data/themes/experimental.cfg:187 src/menu_events.cpp:208 src/unit.cpp:2375
+#: src/unit.cpp:2542
+msgid "HP"
+msgstr "נק\"פ"
+
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
+#. [label]: id=label-xp
+#: data/themes/default.cfg:221 data/themes/dfool.cfg:247
+#: data/themes/experimental.cfg:196 src/menu_events.cpp:210
+#: src/menu_events.cpp:858
+msgid "XP"
+msgstr "נק\"ן"
+
+#. [label]: id=gold-icon
+#: data/themes/default.cfg:231 data/themes/dfool.cfg:266
+#: data/themes/experimental.cfg:205
+msgid "gold"
+msgstr "זהב"
+
+#. [label]: id=villages-icon
+#: data/themes/default.cfg:240 data/themes/dfool.cfg:275
+#: data/themes/experimental.cfg:214
+msgid "villages"
+msgstr "כפרים"
+
+#. [label]: id=units-icon
+#: data/themes/default.cfg:249 data/themes/dfool.cfg:284
+#: data/themes/experimental.cfg:223
+msgid "units"
+msgstr "יחידות"
+
+#. [label]: id=upkeep-icon
+#: data/themes/default.cfg:258 data/themes/dfool.cfg:293
+#: data/themes/experimental.cfg:232
+msgid "upkeep"
+msgstr "אחזקה"
+
+#. [label]: id=income-icon
+#: data/themes/default.cfg:267 data/themes/dfool.cfg:302
+#: data/themes/experimental.cfg:241
+msgid "income"
+msgstr "הכנסה"
+
+#. [unit_level]: id=unit-level
+#: data/themes/default.cfg:429 data/themes/dfool.cfg:472
+#: data/themes/experimental.cfg:375
+msgid "statuspanel^level"
+msgstr "רמה"
+
+#. [unit_moves]: id=unit-moves
+#: data/themes/default.cfg:459 data/themes/experimental.cfg:405
+msgid "statuspanel^moves"
+msgstr "מהלכים"
+
+#. [unit_defense]: id=unit-defense
+#: data/themes/default.cfg:468 data/themes/experimental.cfg:414
+msgid "statuspanel^terrain def."
+msgstr "הגנה בשטח"
+
+#. [change]: id=actions-menu
+#: data/themes/default.cfg:1004
+msgid "Act."
+msgstr "פעל."
+
+#. [remove]: id=button-endturn
+#. [menu]: id=button-endturn2
+#: data/themes/default.cfg:1024 data/themes/default.cfg:1032
+msgid "short end-turn^E."
+msgstr "ס."
+
+#. [label]: id=label-mp
+#: data/themes/dfool.cfg:257
+msgid "MP"
+msgstr "נקודות תנועה"
+
+#. [label]: id=replay-label
+#: data/themes/macros.cfg:59
+msgid "Replay"
+msgstr "הקלטת משחק"
+
+#. [menu]: id=button-playreplay, type=image
+#: data/themes/macros.cfg:74
+msgid "Play"
+msgstr "הצג"
+
+#. [menu]: id=button-playreplay, type=image
+#: data/themes/macros.cfg:75
+msgid "continuous replay"
+msgstr "הסרט"
+
+#. [menu]: id=button-stopreplay, type=image
+#: data/themes/macros.cfg:92
+msgid "Stop"
+msgstr "עצור"
+
+#. [menu]: id=button-stopreplay, type=image
+#: data/themes/macros.cfg:93
+msgid "pause at end of turn"
+msgstr "עצור בסוף התור"
+
+#. [menu]: id=button-resetreplay, type=image
+#: data/themes/macros.cfg:110
+msgid "Reset"
+msgstr "התחל מחדש"
+
+#. [menu]: id=button-resetreplay, type=image
+#: data/themes/macros.cfg:111
+msgid "reset to beginning"
+msgstr "חזור להתחלה"
+
+#. [menu]: id=button-nextturn, type=image
+#: data/themes/macros.cfg:128
+msgid "Next Turn"
+msgstr "התור הבא"
+
+#. [menu]: id=button-nextturn, type=image
+#: data/themes/macros.cfg:129
+msgid "play turn"
+msgstr "שחק תור"
+
+#. [menu]: id=button-nextside, type=image
+#: data/themes/macros.cfg:146
+msgid "Next Side"
+msgstr "הצד הבא"
+
+#. [menu]: id=button-nextside, type=image
+#: data/themes/macros.cfg:147
+msgid "play side turn"
+msgstr "שחק צד"
+
+#. [menu]: id=show-what
+#: data/themes/macros.cfg:163
+msgid "Point of view"
+msgstr "נקודת מבט"
+
+#. [menu]: id=skip-animation, type=checkbox
+#: data/themes/macros.cfg:179
+msgid "Skip animation"
+msgstr "דלג על האנימציה"
+
+#: src/about.cpp:196 src/menu_events.cpp:317 src/menu_events.cpp:344
+#: src/statistics_dialog.cpp:114
+msgid "Close"
+msgstr "סגור"
+
+#: src/actions.cpp:369
+msgid "You don’t have a leader to recruit with."
+msgstr "אין לך מנהיג כדי לגייס איתו."
+
+#: src/actions.cpp:376
+msgid "You must have your leader on a keep to recruit or recall units."
+msgstr "המנהיג שלך חייב להיות על מצודה כדי לגייס או להחזיר יחידות."
+
+#: src/actions.cpp:395
+msgid "There are no vacant castle tiles in which to recruit a unit."
+msgstr "אין משבצת טירה פנויה שניתן לגייס אליו את היחידה."
+
+#: src/actions.cpp:535 src/actions.cpp:594 src/actions.cpp:1511
+msgid "An invalid attacker weapon got selected."
+msgstr "נבחר נשק תוקף לא חוקי."
+
+#: src/actions.cpp:540
+msgid "An invalid defender weapon got selected."
+msgstr "נבחר נשק מגן לא חוקי."
+
+#: src/actions.cpp:2500
+msgid "Ambushed!"
+msgstr "נכנסנו למארב!"
+
+#: src/actions.cpp:2507
+msgid "Failed teleport! Exit not empty"
+msgstr "טלפורטציה נכשלה! היציאה חסומה!"
+
+#: src/actions.cpp:2552
+msgid "Friendly unit sighted"
+msgid_plural "$friends friendly units sighted"
+msgstr[0] "יחידה ידידותית נראתה."
+msgstr[1] "נראו $friends יחידות ידידותיות"
+
+#: src/actions.cpp:2555
+msgid "Enemy unit sighted!"
+msgid_plural "$enemies enemy units sighted!"
+msgstr[0] "יחידת אויב נראתה!"
+msgstr[1] "נראו $enemies יחידות אויב!"
+
+#: src/actions.cpp:2560
+msgid "Part of 'Units sighted! (...)' sentence^1 friendly"
+msgid_plural "$friends friendly"
+msgstr[0] "אחת ידידותית"
+msgstr[1] "$friends ידידותיות"
+
+#: src/actions.cpp:2561
+msgid "Part of 'Units sighted! (...)' sentence^1 enemy"
+msgid_plural "$enemies enemy"
+msgstr[0] "אחת עוינת"
+msgstr[1] "$enemies עוינות"
+
+#: src/actions.cpp:2562
+msgid "Units sighted! ($friendphrase, $enemyphrase)"
+msgstr "נראו יחידות! ($friendpharse, $enemypharse)"
+
+#: src/actions.cpp:2571
+msgid "(press $hotkey to keep moving)"
+msgstr "(להמשיך לחץ על $hotkey)"
+
+#: src/addon/manager.cpp:414
+msgid "B"
+msgstr "B"
+
+#: src/addon/manager.cpp:417 src/dialogs.cpp:1112
+msgid "KB"
+msgstr "kiB"
+
+#: src/addon/manager.cpp:420
+msgid "MB"
+msgstr "MiB"
+
+#: src/addon/manager.cpp:423
+msgid "GB"
+msgstr "GiB"
+
+#: src/addon/manager.cpp:456
+msgid "addon_type^Campaign"
+msgstr "מערכה"
+
+#: src/addon/manager.cpp:458
+msgid "addon_type^Scenario"
+msgstr "התקלות"
+
+#: src/addon/manager.cpp:460
+msgid "addon_type^MP era"
+msgstr "עידן לרב-משתתפים"
+
+#: src/addon/manager.cpp:462
+msgid "addon_type^MP faction"
+msgstr "צבא לרב-משתתפים"
+
+#: src/addon/manager.cpp:464
+msgid "addon_type^MP map-pack"
+msgstr "חבילת מפות לרב-משתתפים"
+
+#: src/addon/manager.cpp:466
+msgid "addon_type^MP scenario"
+msgstr "התקלות לרב-משתתפים"
+
+#: src/addon/manager.cpp:468
+msgid "addon_type^MP campaign"
+msgstr "מערכה לרב-משתתפים"
+
+#: src/addon/manager.cpp:470
+msgid "addon_type^Resources"
+msgstr "ספרייה"
+
+#: src/addon/manager.cpp:472
+msgid "addon_type^Other"
+msgstr "אחר"
+
+#: src/addon/manager.cpp:474
+msgid "addon_type^(unknown)"
+msgstr "(לא ידוע)"
+
+#: src/addon/manager.cpp:486 src/addon/manager.cpp:559 src/multiplayer.cpp:220
+#: src/multiplayer.cpp:280 src/multiplayer_ui.cpp:82
+msgid "Connection timed out"
+msgstr "תם זמן ההמתנה לחיבור"
+
+#: src/addon/manager.cpp:489
+msgid "The server responded with an error: \"$error|\""
+msgstr "השרת הגיב בהודעת שגיאה: \"$error|\""
+
+#: src/addon/manager.cpp:498
+msgid "Terms"
+msgstr "תנאים"
+
+#: src/addon/manager.cpp:532
+msgid "Sending add-on"
+msgstr "שולח חבילה"
+
+#: src/addon/manager.cpp:536 src/addon/manager.cpp:561
+msgid "The server responded with an error: \""
+msgstr "השרת הגיב בהודעת שגיאה: \"$error|\""
+
+#: src/addon/manager.cpp:539 src/addon/manager.cpp:564
+#: src/multiplayer_wait.cpp:413
+msgid "Response"
+msgstr "תגובה"
+
+#: src/addon/manager.cpp:584
+msgid "Downloading add-on: $addon_title|..."
+msgstr "מוריד את $addon_title|..."
+
+#: src/addon/manager.cpp:599
+msgid ""
+"The add-on has an invalid file or directory name and cannot be installed."
+msgstr "חבילה זו כוללת שם קובץ או תיקייה לא-חוקי ואינה ברת להתקנה."
+
+#: src/addon/manager.cpp:648
+msgid "The add-on '$addon_title|' has been successfully installed."
+msgstr "החבילה '$addon_title|' הותקנה בהצלחה."
+
+#: src/addon/manager.cpp:649
+msgid "Add-on Installed"
+msgstr "החבילה הותקה"
+
+#: src/addon/manager.cpp:749 src/addon/manager.cpp:935
+#: src/addon/manager.cpp:1147 src/dialogs.cpp:597 src/menu_events.cpp:205
+#: src/menu_events.cpp:856
+msgid "Name"
+msgstr "שם"
+
+#: src/addon/manager.cpp:749 src/addon/manager.cpp:1147
+msgid "Version"
+msgstr "גרסא"
+
+#: src/addon/manager.cpp:750 src/addon/manager.cpp:936
+#: src/addon/manager.cpp:1148
+msgid "Author"
+msgstr "מחבר"
+
+#: src/addon/manager.cpp:750 src/addon/manager.cpp:936
+#: src/addon/manager.cpp:1148
+msgid "Size"
+msgstr "גודל"
+
+#: src/addon/manager.cpp:750 src/addon/manager.cpp:1148
+#: src/menu_events.cpp:204 src/menu_events.cpp:855 src/menu_events.cpp:1505
+msgid "Type"
+msgstr "סוג"
+
+#: src/addon/manager.cpp:799
+msgid "Install dependencies"
+msgstr "התקן תלויות"
+
+#: src/addon/manager.cpp:800
+msgid ""
+"The selected add-on has the following dependency. Do you want to install it?"
+msgid_plural ""
+"The selected add-on has the following dependencies. Do you want to install "
+"them?"
+msgstr[0] "החבילה שנכחרה תלויה בחבילה זו. האם אתה רוצה להתקינה?"
+msgstr[1] "החבילה שנבחרה תלויה בחבילות אלו. האם אתה רוצה להתקינם?"
+
+#: src/addon/manager.cpp:829
+msgid "Installation of a dependency failed"
+msgstr "התקנת תלות נכשלה"
+
+#: src/addon/manager.cpp:831
+msgid ""
+"While the add-on has been installed, a dependency is missing. Try to update "
+"the installed add-ons."
+msgstr "למרות שהחבילה הותקנה, חסרה תלות. נסה לעדכן את החבילות המותקנות."
+
+#: src/addon/manager.cpp:845
+msgid "Installation failed"
+msgstr "ההתקנה נכשלה"
+
+#: src/addon/manager.cpp:847 src/addon/manager.cpp:1075
+msgid "The following add-on could not be downloaded or updated successfully:"
+msgid_plural ""
+"The following add-ons could not be downloaded or updated successfully:"
+msgstr[0] "חבילה זו לא הורדה/עודכנה בהצלחה:"
+msgstr[1] "חבילות אלו לא הורדו/עודכנו בהצלחה:"
+
+#: src/addon/manager.cpp:908
+msgid "Outdated add-ons"
+msgstr "חבילות מיושנות"
+
+#: src/addon/manager.cpp:910
+msgid ""
+"An outdated local add-on has publishing information attached. It will not be "
+"offered for updating."
+msgid_plural ""
+"Some outdated local add-ons have publishing information attached. They will "
+"not be offered for updating."
+msgstr[0] ""
+"לחבילה מקומית מיושנת מצורף מידע פרסום. עקב כך לא יוצעו עדכונים עבורה."
+msgstr[1] ""
+"לחבילות מקומיות מיושנות מצורף מידע פרסום. עקב כך לא יוצעו עדכונים עבורם."
+
+#: src/addon/manager.cpp:922
+msgid "No add-ons to update"
+msgstr "אין חבילות ברות-עדכון."
+
+#: src/addon/manager.cpp:923
+msgid "Could not find any updated add-ons on this server."
+msgstr "אף גרסא מעודכנת לא נמצאה על השרת."
+
+#: src/addon/manager.cpp:935
+msgid "New version"
+msgstr "גרסא חדשה"
+
+#: src/addon/manager.cpp:935
+msgid "Old version"
+msgstr "גרסא ישנה"
+
+#: src/addon/manager.cpp:987
+msgid "Update add-ons"
+msgstr "עדכן חבילות"
+
+#: src/addon/manager.cpp:988
+msgid "Select an add-on to update:"
+msgstr "נא לבחור חבילה לעדכון:"
+
+#: src/addon/manager.cpp:1002
+msgid "Update all"
+msgstr "עדכן הכל"
+
+#: src/addon/manager.cpp:1040 src/addon/manager.cpp:1057
+#: src/addon/manager.cpp:1322
+msgid "Installation of some dependency failed"
+msgstr "התקנת תלות נכשלה"
+
+#: src/addon/manager.cpp:1042 src/addon/manager.cpp:1059
+#: src/addon/manager.cpp:1324
+msgid ""
+"While the add-on has been installed, some dependency is missing. Try to "
+"update the installed add-ons."
+msgstr "בזמן שהחבילה הותקנה, לא נמצאה תלות. נסזה לעדכן את החבילות המותקנות."
+
+#: src/addon/manager.cpp:1073
+msgid "Update failed"
+msgstr "העדכון נכשל"
+
+#: src/addon/manager.cpp:1083
+msgid "Update succeeded"
+msgstr "העדכון הושלם בהצלחה"
+
+#: src/addon/manager.cpp:1084
+msgid "Add-on updated successfully."
+msgstr "עדכון החבילות הושלם בהצלחה."
+
+#: src/addon/manager.cpp:1085
+msgid "All add-ons updated successfully."
+msgstr "כל החבילות עודכנו בהצלחה."
+
+#: src/addon/manager.cpp:1108
+msgid "Connecting to add-ons server..."
+msgstr "מתחבר לשרת התוספים..."
+
+#: src/addon/manager.cpp:1111 src/network.cpp:398 src/network.cpp:406
+msgid "Could not connect to host."
+msgstr "כישלון בחיבור לשרת."
+
+#: src/addon/manager.cpp:1119
+msgid "Requesting list of add-ons"
+msgstr "מבקש רשימת חבילות"
+
+#: src/addon/manager.cpp:1131
+msgid "An error occurred while communicating with the server."
+msgstr "שגיאה בתקשורת עם השרת."
+
+#: src/addon/manager.cpp:1148
+msgid "Downloads"
+msgstr "הורדות"
+
+#: src/addon/manager.cpp:1245
+msgid "Publish add-on: "
+msgstr "פרסם חבילה: "
+
+#: src/addon/manager.cpp:1251
+msgid "Delete add-on: "
+msgstr "מחק חבילה: "
+
+#: src/addon/manager.cpp:1257
+msgid "There are no add-ons available for download from this server."
+msgstr "אין חבילות זמינות להורדה משרת זה."
+
+#: src/addon/manager.cpp:1270
+msgid "Get add-ons"
+msgstr "הורד חבילות"
+
+#: src/addon/manager.cpp:1271
+msgid "Choose the add-on to download."
+msgstr "בחר חבילה להורדה."
+
+#: src/addon/manager.cpp:1272
+msgid "Download"
+msgstr "הורד"
+
+#: src/addon/manager.cpp:1273
+msgid "Done"
+msgstr "הושלם"
+
+#: src/addon/manager.cpp:1285 src/dialogs.cpp:622 src/menu_events.cpp:930
+#: src/menu_events.cpp:1541
+msgid "Filter: "
+msgstr "סינון: "
+
+#: src/addon/manager.cpp:1290
+msgid "Description"
+msgstr "תאור"
+
+#: src/addon/manager.cpp:1334
+msgid "Network communication error."
+msgstr "תקלה בתקשורת רשת."
+
+#: src/addon/manager.cpp:1337
+msgid "Remote host disconnected."
+msgstr "המארח המרוחק התנתק."
+
+#: src/addon/manager.cpp:1340
+msgid ""
+"A problem occurred when trying to create the files necessary to install this "
+"add-on."
+msgstr "הייתה בעיה ביצירת הקבצים הדרושים להתקנת חבילה זו."
+
+#: src/addon/manager.cpp:1358
+msgid "You have no add-ons installed."
+msgstr "אין ברשותך חבילות מותקנות"
+
+#: src/addon/manager.cpp:1370
+msgid "Choose the add-on to remove."
+msgstr "בחר חבילה למחיקה."
+
+#: src/addon/manager.cpp:1370
+msgid "Uninstall add-ons"
+msgstr "מחק חבילה"
+
+#: src/addon/manager.cpp:1372
+msgid "Remove"
+msgstr "הסר"
+
+#: src/addon/manager.cpp:1379
+msgid "Are you sure you want to remove the add-on '$addon|'?"
+msgstr "אתה בטוח שברצונך למחוק את החבילה  '$addon|'?"
+
+#: src/addon/manager.cpp:1385 src/multiplayer.cpp:232
+msgid "Confirm"
+msgstr "אשר"
+
+#: src/addon/manager.cpp:1398
+msgid "Add-on '$addon|' deleted."
+msgstr "החבילה '$addon|' נמחקה"
+
+#: src/addon/manager.cpp:1403
+msgid "Add-on deleted"
+msgstr "החבילה נמחקה"
+
+#: src/addon/manager.cpp:1411
+msgid "Add-on could not be deleted properly:"
+msgstr "לא ניתן היה למחוק את החבילה"
+
+#: src/attack_prediction_display.cpp:107 src/attack_prediction_display.cpp:237
+msgid "Attacker"
+msgstr "תוקף"
+
+#: src/attack_prediction_display.cpp:108 src/attack_prediction_display.cpp:236
+msgid "Defender"
+msgstr "מגן"
+
+#: src/attack_prediction_display.cpp:126
+msgid "Expected Battle Result (HP)"
+msgstr "תוצאת סיום קרב מצופה (נק\"פ)"
+
+#: src/attack_prediction_display.cpp:215
+msgid "Time of day"
+msgstr "זמן ביום"
+
+#: src/attack_prediction_display.cpp:225
+msgid "Leadership"
+msgstr "מנהיגות"
+
+#: src/attack_prediction_display.cpp:238
+msgid " resistance vs "
+msgstr " עמידות נגד "
+
+#: src/attack_prediction_display.cpp:239
+msgid " vulnerability vs "
+msgstr " פגיעות ל "
+
+#: src/attack_prediction_display.cpp:249
+msgid "Slowed"
+msgstr "מואט"
+
+#: src/attack_prediction_display.cpp:254
+msgid "Total damage"
+msgstr "נזק סופי"
+
+#: src/attack_prediction_display.cpp:261 src/mouse_events.cpp:836
+msgid "No usable weapon"
+msgstr "אין נשק שמיש"
+
+#: src/attack_prediction_display.cpp:266
+msgid "Chance of being unscathed"
+msgstr "סיכוי לא להפגע"
+
+#: src/attack_prediction_display.cpp:545 src/mouse_events.cpp:905
+msgid "Damage Calculations"
+msgstr "חישובי נזק"
+
+#: src/dialogs.cpp:121
+msgid "Advance Unit"
+msgstr "קדם יחידה"
+
+#: src/dialogs.cpp:122
+msgid "What should our victorious unit become?"
+msgstr "למה כדאי שיחידתנו המנצחת תהפוך?"
+
+#: src/dialogs.cpp:252
+msgid "No objectives available"
+msgstr "אין מטרות זמינות"
+
+#: src/dialogs.cpp:281
+msgid "Do you really want to delete this game?"
+msgstr "האם אתה בטוח שברצונך למחוק משחק זה?"
+
+#: src/dialogs.cpp:283
+msgid "Don’t ask me again!"
+msgstr "אל תשאל שוב!"
+
+#: src/dialogs.cpp:455 src/savegame.cpp:135
+msgid "%a %b %d %H:%M %Y"
+msgstr "%A %d/%m/%G %H:%M"
+
+#: src/dialogs.cpp:470
+msgid "#(Invalid)"
+msgstr "#(לא חוקי)"
+
+#: src/dialogs.cpp:488
+msgid "Campaign: $campaign_name"
+msgstr "מערכה: $campaign_name"
+
+#: src/dialogs.cpp:495
+msgid "Multiplayer"
+msgstr "רב משתתפים"
+
+#: src/dialogs.cpp:497
+msgid "Tutorial"
+msgstr "הדרכה"
+
+#: src/dialogs.cpp:505 src/savegame.cpp:952
+msgid "replay"
+msgstr "הקלטת משחק"
+
+#: src/dialogs.cpp:507 src/savegame.cpp:1024
+msgid "Turn"
+msgstr "תור"
+
+#: src/dialogs.cpp:509
+msgid "Scenario Start"
+msgstr "תחילת התקלות"
+
+#: src/dialogs.cpp:512
+msgid "Difficulty: "
+msgstr "רמת קושי: "
+
+#: src/dialogs.cpp:514
+msgid "Version: "
+msgstr "גרסא: "
+
+#: src/dialogs.cpp:538 src/dialogs.cpp:554 src/savegame.cpp:164
+#: src/savegame.cpp:180
+msgid "%b %d %y"
+msgstr "%d/%m/%G"
+
+#: src/dialogs.cpp:544 src/savegame.cpp:170
+msgid "%H:%M"
+msgstr "%H:%M"
+
+#: src/dialogs.cpp:547 src/savegame.cpp:173
+msgid "%A, %H:%M"
+msgstr "%A, %H:%M"
+
+#: src/dialogs.cpp:550 src/savegame.cpp:176
+msgid "%b %d"
+msgstr "%b/%d"
+
+#: src/dialogs.cpp:578
+msgid "No Saved Games"
+msgstr "אין משחקים שמורים"
+
+#: src/dialogs.cpp:579
+msgid ""
+"There are no saved games to load.\n"
+"\n"
+"(Games are saved automatically when you complete a scenario)"
+msgstr ""
+"אין משחקים שמורים לטעון.\n"
+"\n"
+"(משחקים נשמרים אוטומטית כאשר אתה מסיים התקלות)"
+
+#: src/dialogs.cpp:597
+msgid "Date"
+msgstr "תאריך"
+
+#: src/dialogs.cpp:614 src/multiplayer_create.cpp:109
+msgid "Load Game"
+msgstr "טען משחק"
+
+#: src/dialogs.cpp:615
+msgid "Choose the game to load"
+msgstr "בחר משחק לטעינה"
+
+#: src/dialogs.cpp:629
+msgid "Show replay"
+msgstr "הצג הקלטה"
+
+#: src/dialogs.cpp:633
+msgid "Cancel orders"
+msgstr "בטל פקודות"
+
+#: src/dialogs.cpp:640
+msgid "Delete Save"
+msgstr "מחק משחק שמור"
+
+#: src/dialogs.cpp:696
+msgid "Profile"
+msgstr "פרופיל"
+
+#: src/dialogs.cpp:809
+msgid "level"
+msgstr "רמה"
+
+#: src/dialogs.cpp:822
+msgid "HP: "
+msgstr "נק\"פ: "
+
+#: src/dialogs.cpp:825
+msgid "XP: "
+msgstr "נק\"נ: "
+
+#: src/dialogs.cpp:829
+msgid "Moves: "
+msgstr "מהלכים: "
+
+#: src/game.cpp:673 src/game.cpp:1469
+msgid "The Battle for Wesnoth"
+msgstr "הקרב על ווסנות'"
+
+#: src/game.cpp:992 src/game.cpp:1010
+msgid "The file you have tried to load is corrupt"
+msgstr "הקובץ, אותו ניסית לטעון, פגום"
+
+#: src/game.cpp:995 src/game.cpp:1013 src/savegame.cpp:535
+msgid "The file you have tried to load is corrupt: '"
+msgstr "הקובץ, אותו ניסית לטעון, פגום: '"
+
+#: src/game.cpp:1003
+msgid "File I/O Error while reading the game"
+msgstr "שגיאת קלט בטעינת המשחק"
+
+#: src/game.cpp:1005
+msgid "File I/O Error while reading the game: '"
+msgstr "שגיאת קלט בטעינת המשחק: '"
+
+#: src/game.cpp:1103
+msgid "No campaigns are available.\n"
+msgstr "אין מערכות זמינות.\n"
+
+#: src/game.cpp:1354
+msgid "Do you really want to start the server?"
+msgstr "האם אתה בטוח שברצונך להפעיל את השרת?"
+
+#: src/game.cpp:1355
+msgid ""
+"The server will run in a background process until all users have "
+"disconnected."
+msgstr "השרת ירוץ ברקע עד שהמשתמש האחרון יצא."
+
+#: src/game.cpp:1359
+msgid "Don’t show again"
+msgstr "אל תציג שוב!"
+
+#: src/game.cpp:1430
+msgid "Error while starting server: "
+msgstr "שגיאה בזמן התחלת שרת: "
+
+#: src/game.cpp:1432 src/playcampaign.cpp:108 src/playcampaign.cpp:375
+msgid "The game could not be loaded: "
+msgstr "לא ניתן לטעון את המשחק: "
+
+#: src/game.cpp:1434 src/playcampaign.cpp:110 src/playcampaign.cpp:378
+msgid "Error while playing the game: "
+msgstr "שגיאה בזמן המשחק: "
+
+#: src/game.cpp:1452 src/playcampaign.cpp:112 src/playcampaign.cpp:381
+msgid "The game map could not be loaded: "
+msgstr "נכשלה טעינת מפת המשחק: "
+
+#: src/game.cpp:1582
+msgid "The following add-on had errors and could not be loaded:"
+msgid_plural "The following add-ons had errors and could not be loaded:"
+msgstr[0] "בחבילה להלן היו שגיאות שמנעו את טעינתה"
+msgstr[1] "בחבילות הבאות היו שגיאות שמנעו את טעינתם:"
+
+#: src/game.cpp:1589
+msgid "ERROR DETAILS:"
+msgstr "פרטי השגיאה:"
+
+#: src/game.cpp:1615
+msgid "Error loading game configuration files: '"
+msgstr "שגיאה בטעינת קבצי תצורה: '"
+
+#: src/game.cpp:1616
+msgid "' (The game will now exit)"
+msgstr "' (המשחק יסתיים עתה)"
+
+#: src/game_config.cpp:312
+msgid "Invalid color range: "
+msgstr "צבע לא חוקי: "
+
+#: src/game_events.cpp:177
+msgid "Error: "
+msgstr "שגיאה: "
+
+#: src/game_events.cpp:180
+msgid "Warning: "
+msgstr "אזהרה: "
+
+#: src/game_events.cpp:183
+msgid "Debug: "
+msgstr "דיבוג: "
+
+#: src/game_events.cpp:186
+msgid "Info: "
+msgstr "מידע: "
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:205 src/multiplayer_lobby.cpp:435
+msgid "Unknown era: $era_id"
+msgstr "עידן לא ידוע: $era_id"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:210 src/multiplayer_lobby.cpp:439
+msgid "Unknown era"
+msgstr "עידן לא ידוע"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:266 src/multiplayer_lobby.cpp:501
+msgid "Remote scenario"
+msgstr "התקלות מרוחקת"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:274 src/multiplayer_lobby.cpp:508
+msgid "Unknown scenario: $scenario_id"
+msgstr "התקלות לא ידועה: $scenario_id"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:279 src/multiplayer_lobby.cpp:512
+msgid "Unknown scenario"
+msgstr "התקלות לא ידועה"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:285 src/multiplayer_lobby.cpp:517
+msgid "Reloaded game"
+msgstr "טען מחדש משחק לשחקן אחד"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:296 src/multiplayer_lobby.cpp:533
+msgid "Turn "
+msgstr "תור "
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:300 src/multiplayer_lobby.cpp:537
+msgid "Vacant Slot:"
+msgid_plural "Vacant Slots:"
+msgstr[0] "מקום פנוי:"
+msgstr[1] "מקומות פנוי:"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:306 src/multiplayer_lobby.cpp:548
+msgid "Fog"
+msgstr "ערפל"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:309
+#: src/gui/dialogs/lobby/lobby_data.cpp:312 src/multiplayer_create.cpp:87
+#: src/multiplayer_lobby.cpp:552 src/multiplayer_lobby.cpp:558
+msgid "Shroud"
+msgstr "הסתרה"
+
+#: src/gui/dialogs/lobby/lobby_data.cpp:314 src/multiplayer_lobby.cpp:562
+msgid "none"
+msgstr "אין"
+
+#: src/gui/dialogs/lobby_player_info.cpp:98
+msgid "In game:"
+msgstr "במשחק:"
+
+#: src/gui/dialogs/lobby_player_info.cpp:100
+msgid "(observing)"
+msgstr "(צופה)"
+
+#: src/gui/dialogs/lobby_player_info.cpp:102
+msgid "(playing)"
+msgstr "(משחק)"
+
+#: src/gui/dialogs/lobby_player_info.cpp:105
+msgid "In lobby"
+msgstr "בלובי"
+
+#: src/gui/dialogs/lobby_player_info.cpp:129
+msgid "On friends list"
+msgstr "ברשימת החברים"
+
+#: src/gui/dialogs/lobby_player_info.cpp:134
+msgid "On ignores list"
+msgstr "ברשימת ההתעלמות"
+
+#: src/gui/dialogs/lobby_player_info.cpp:139
+msgid "Neither a friend nor ignored"
+msgstr "לא חבר ולא ברשימת ההתעלמות"
+
+#: src/gui/dialogs/lobby_player_info.cpp:144
+msgid "You"
+msgstr "אתה"
+
+#: src/gui/dialogs/lobby_player_info.cpp:147 src/multiplayer_create.cpp:555
+msgid "Error"
+msgstr "שגיאה"
+
+#: src/intro.cpp:44
+msgid "The End"
+msgstr "הסוף"
+
+#: src/language.cpp:102
+msgid "System default language"
+msgstr "שפת ברירת המחדל של המערכת"
+
+#: src/leader_list.cpp:138 src/menu_events.cpp:1531
+#: src/multiplayer_connect.cpp:230 src/multiplayer_connect.cpp:274
+msgid "gender^Random"
+msgstr "אקראי"
+
+#: src/leader_list.cpp:148 src/multiplayer_connect.cpp:226
+#: src/multiplayer_connect.cpp:270
+msgid "Female ♀"
+msgstr "נקבה ♀"
+
+#: src/leader_list.cpp:152 src/multiplayer_connect.cpp:228
+#: src/multiplayer_connect.cpp:272
+msgid "Male ♂"
+msgstr "זכר ♂"
+
+#: src/leader_list.cpp:163 src/leader_list.cpp:188
+msgid "Random"
+msgstr "אקראי"
+
+#: src/leader_list.cpp:236 src/leader_list.cpp:242
+msgid "?"
+msgstr "?"
+
+#: src/loadscreen.cpp:222
+msgid "Initializing user interface"
+msgstr "מאתחל ממשק משתמש"
+
+#: src/loadscreen.cpp:223
+msgid "Loading game configuration"
+msgstr "טוען קבצי תצורה"
+
+#: src/loadscreen.cpp:224 src/loadscreen.cpp:231
+msgid "Verifying cache"
+msgstr "מוודא מטמון"
+
+#: src/loadscreen.cpp:225 src/loadscreen.cpp:232
+msgid "Reading files and creating cache"
+msgstr "קורא קבצים ומייצר מטמון"
+
+#: src/loadscreen.cpp:226 src/loadscreen.cpp:233
+msgid "Reading unit files"
+msgstr "קורא תכונות יחידות"
+
+#: src/loadscreen.cpp:227
+msgid "Re-initialize fonts for the current language"
+msgstr "אתחל גופנים מחדש לשפה החדשה"
+
+#: src/loadscreen.cpp:228
+msgid "Searching for installed add-ons"
+msgstr "מחפש חבילות מותקנות"
+
+#: src/loadscreen.cpp:229
+msgid "Loading title screen"
+msgstr "טוען מסך ראשי"
+
+#: src/loadscreen.cpp:230
+msgid "Loading data files"
+msgstr "טוען קבצי מידע"
+
+#: src/loadscreen.cpp:234
+msgid "Loading level"
+msgstr "טוען שלב"
+
+#: src/loadscreen.cpp:235
+msgid "Initializing teams"
+msgstr "מאתחל צוותים"
+
+#: src/loadscreen.cpp:236
+msgid "Loading units"
+msgstr "טוען יחידות"
+
+#: src/loadscreen.cpp:237 src/loadscreen.cpp:239
+msgid "Initializing display"
+msgstr "מאתחל תצוגה"
+
+#: src/loadscreen.cpp:238
+msgid "Building terrain rules"
+msgstr "מייצר חוקי שטח"
+
+#: src/loadscreen.cpp:240
+msgid "Starting game"
+msgstr "פותח במשחק"
+
+#: src/map.cpp:194
+msgid "A map without a header is not supported"
+msgstr "אין תמיכה במפות ללא כותרת."
+
+#: src/mapgen.cpp:743
+msgid "Random maps with an odd width aren't supported."
+msgstr "איו תמיכה במפות אקראיות עם רוחב אי-זוגי."
+
+#: src/mapgen.cpp:1007
+msgid ""
+"No valid castle location found. Too many or too few mountain hexes? (please "
+"check the 'max hill size' parameter)"
+msgstr ""
+"לא נמצא מקון חוקי לטירה. יותר או פחות מדי הרים? (בדוק את פרמטר 'גודל גבעה "
+"מקסימלי')"
+
+#: src/menu_events.cpp:96 src/menu_events.cpp:99 src/menu_events.cpp:103
+msgid "Do you really want to dismiss him?"
+msgstr "האם אתה בטוח שברצונך לשחרר אותו?"
+
+#: src/menu_events.cpp:96
+msgid "My lord, this unit is loyal and requires no upkeep! "
+msgstr "אדוני הלורד, היחידה הזאת נאמנה ואינה דורשת כסף תחזוקה! "
+
+#: src/menu_events.cpp:97 src/menu_events.cpp:100 src/menu_events.cpp:104
+msgid "Do you really want to dismiss her?"
+msgstr "האם אתה בטוח שברצונך לשחרר אותה?"
+
+#: src/menu_events.cpp:99
+msgid "My lord, this unit is an experienced one, having advanced levels! "
+msgstr "אדוני הלורד, היחידה הזאת היא יחידה מנוסה, שעלתה בדרגות! "
+
+#: src/menu_events.cpp:103
+msgid "My lord, this unit is close to advancing a level! "
+msgstr "אדוני הלורד, היחידה הזאת קרובה לעליית דרגה! "
+
+#: src/menu_events.cpp:195
+msgid "Statistics"
+msgstr "סטטיסטיקה"
+
+#: src/menu_events.cpp:206
+msgid "Moves"
+msgstr "מהירות"
+
+#: src/menu_events.cpp:207
+msgid "Status"
+msgstr "מצב"
+
+#: src/menu_events.cpp:209 src/menu_events.cpp:857
+msgid "Level^Lvl."
+msgstr "דרגה"
+
+#: src/menu_events.cpp:211
+msgid "unit list^Traits"
+msgstr "כשרונות"
+
+#: src/menu_events.cpp:309
+msgid "Unit List"
+msgstr "רשימת יחידות"
+
+#: src/menu_events.cpp:315 src/menu_events.cpp:337
+msgid "Scroll To"
+msgstr "גלגל ל-"
+
+#: src/menu_events.cpp:369
+msgid "Leader"
+msgstr "מנהיג"
+
+#: src/menu_events.cpp:370 src/multiplayer_connect.cpp:972
+msgid "Team"
+msgstr "צוות"
+
+#: src/menu_events.cpp:371 src/multiplayer_connect.cpp:983
+msgid "Gold"
+msgstr "זהב"
+
+#: src/menu_events.cpp:372
+msgid "Villages"
+msgstr "כפרים"
+
+#: src/menu_events.cpp:373
+msgid "status^Units"
+msgstr "יחידות"
+
+#: src/menu_events.cpp:374
+msgid "Upkeep"
+msgstr "מחיר אחזקה"
+
+#: src/menu_events.cpp:375 src/multiplayer_connect.cpp:984
+#: src/multiplayer_wait.cpp:531
+msgid "Income"
+msgstr "הכנסה"
+
+#: src/menu_events.cpp:480
+msgid "Current Status"
+msgstr "מצב נוכחי"
+
+#: src/menu_events.cpp:481
+msgid "More >"
+msgstr "עוד >"
+
+#: src/menu_events.cpp:499
+msgid "scenario settings^Leader"
+msgstr "מנהיג"
+
+#: src/menu_events.cpp:501
+msgid "scenario settings^Side"
+msgstr "צד"
+
+#: src/menu_events.cpp:502
+msgid ""
+"scenario settings^Start\n"
+"Gold"
+msgstr "זהב התחלתי"
+
+#: src/menu_events.cpp:503
+msgid ""
+"scenario settings^Base\n"
+"Income"
+msgstr "הכנסת בסיס"
+
+#: src/menu_events.cpp:504
+msgid ""
+"scenario settings^Gold Per\n"
+"Village"
+msgstr "זהב לכפר"
+
+#: src/menu_events.cpp:505
+msgid "scenario settings^Fog"
+msgstr "ערפל קרב"
+
+#: src/menu_events.cpp:506
+msgid "scenario settings^Shroud"
+msgstr "הסתרה"
+
+#: src/menu_events.cpp:553 src/menu_events.cpp:554
+msgid "no"
+msgstr "לא"
+
+#: src/menu_events.cpp:553 src/menu_events.cpp:554
+msgid "yes"
+msgstr "כן"
+
+#: src/menu_events.cpp:570
+msgid "Scenario Settings"
+msgstr "הגדרות התקלות"
+
+#: src/menu_events.cpp:573
+msgid " < Back"
+msgstr "< חזרה"
+
+#: src/menu_events.cpp:592
+msgid "Save the Map As"
+msgstr "שמור מפה בשם"
+
+#: src/menu_events.cpp:596
+msgid "The map already exists. Do you want to overwrite it?"
+msgstr "המפה כבר קיימת. האם ברצונך לדרוס אותה?"
+
+#: src/menu_events.cpp:608
+msgid "Map saved."
+msgstr "המפה נשמרה."
+
+#: src/menu_events.cpp:612
+msgid "Could not save the map: $msg"
+msgstr "לא ניתן לשמור את המפה: $msg"
+
+#: src/menu_events.cpp:627
+msgid "Chat Log"
+msgstr "יומן שיחות"
+
+#: src/menu_events.cpp:637
+msgid "Message:"
+msgstr "הודעה:"
+
+#: src/menu_events.cpp:638
+msgid "Send to allies only"
+msgstr "שלח לבעלי ברית בלבד"
+
+#: src/menu_events.cpp:638
+msgid "Send to observers only"
+msgstr "שלח לצופים בלבד"
+
+#: src/menu_events.cpp:703
+msgid "unit^Gold"
+msgid_plural "Gold"
+msgstr[0] "זהב"
+msgstr[1] "זהב"
+
+#: src/menu_events.cpp:710
+msgid "You have no units available to recruit."
+msgstr "אין לך יחידות זמינות לגיוס."
+
+#: src/menu_events.cpp:722
+msgid "Recruit"
+msgstr "גייס"
+
+#: src/menu_events.cpp:723 src/menu_events.cpp:925
+msgid "Select unit:"
+msgstr "בחר יחידה:"
+
+#: src/menu_events.cpp:770
+msgid "You don’t have enough gold to recruit that unit"
+msgstr "אין לך מספיק זהב לגייס יחידה זו"
+
+#: src/menu_events.cpp:822
+msgid "You are separated from your soldiers and may not recall them"
+msgstr "הופרדת מחיילך, ולכן אינך יכול להחזירם"
+
+#: src/menu_events.cpp:846
+msgid ""
+"There are no troops available to recall\n"
+"(You must have veteran survivors from a previous scenario)"
+msgstr ""
+"אין יחידות זמינות להחזרה\n"
+"(חייבות להיות לך יחידות מנוסות ששרדו התקלות קודמת)"
+
+#: src/menu_events.cpp:860
+msgid "Traits"
+msgstr "כשרונות"
+
+#: src/menu_events.cpp:924
+msgid "Recall"
+msgstr "החזר"
+
+#: src/menu_events.cpp:934
+msgid "Dismiss Unit"
+msgstr "שחרר יחידה"
+
+#: src/menu_events.cpp:971
+msgid "You must have at least 1 gold piece to recall a unit"
+msgid_plural "You must have at least $cost gold pieces to recall a unit"
+msgstr[0] "אתה חייב לפחות $cost זהב כדי להחזיר יחידה"
+msgstr[1] "אתה חייב לפחות $cost זהב כדי להחזיר יחידה"
+
+#: src/menu_events.cpp:1368
+msgid ""
+"You have not started your turn yet. Do you really want to end your turn?"
+msgstr "עדיין לא התחלת את תורך. האם באמת ברצונך לסיימו?"
+
+#: src/menu_events.cpp:1376
+msgid ""
+"Some units have planned actions left. Do you really want to end your turn?"
+msgstr "לחלק מהיחידות נותרו פעולות מתוכננות. האם באמת ברצונך לסיים את תורך?"
+
+#: src/menu_events.cpp:1384 src/menu_events.cpp:1389
+msgid "Some units have movement left. Do you really want to end your turn?"
+msgstr "לחלק מהיחידות נותרו מהלכים. האם באמת ברצונך לסיים את תורך?"
+
+#: src/menu_events.cpp:1424
+msgid "Rename Unit"
+msgstr "שנה שם יחידה"
+
+#: src/menu_events.cpp:1504
+msgid "Race"
+msgstr "גזע"
+
+#: src/menu_events.cpp:1528
+msgid "Create Unit (Debug!)"
+msgstr "צור כלי (דיבוג!)"
+
+#: src/menu_events.cpp:1531 src/multiplayer_wait.cpp:130
+msgid "Gender: "
+msgstr "מיו: "
+
+#: src/menu_events.cpp:1826
+msgid "Search"
+msgstr "חיפוש"
+
+#: src/menu_events.cpp:2003
+msgid "This command is currently unavailable."
+msgstr "פקודה זו אינה זמינה כעת."
+
+#: src/menu_events.cpp:2009
+msgid ""
+"Unknown command '$command', try $help_command for a list of available "
+"commands."
+msgstr ""
+"הפקודה '$command' אינה ידועה. נסה את $help_command לרשימת הפקודות האפשריות."
+
+#: src/menu_events.cpp:2027
+msgid ""
+"Available commands list and command-specific help. Use \"help all\" to "
+"include currently unavailable commands."
+msgstr ""
+"רשימת הפקודות הזמינות ועזרה על פקודות. השתמש ב\"help all\" כדי לראות גם "
+"פקודות שאינם זמינות כעת."
+
+#: src/menu_events.cpp:2029
+msgid "do not translate the 'all'^[all|<command>]"
+msgstr "[all|<פקודה>]"
+
+#: src/menu_events.cpp:2073
+msgid "Error:"
+msgstr "שגיאה:"
+
+#: src/menu_events.cpp:2079
+msgid "Missing argument $arg_id"
+msgstr "חסר פרמטר $arg_id"
+
+#: src/menu_events.cpp:2127
+msgid ""
+"Available commands $flags_description:\n"
+"$list_of_commands"
+msgstr ""
+"פקודות ידועות $flags_description:\n"
+"$list_of_commands"
+
+#: src/menu_events.cpp:2127 src/menu_events.cpp:2128 src/menu_events.cpp:2151
+msgid "help"
+msgstr "עזרה"
+
+#: src/menu_events.cpp:2128
+msgid "Type $help_command <command> for more info."
+msgstr "לחץ על $help_command <פקודה> ליותר מידע."
+
+#: src/menu_events.cpp:2139
+msgid " No help available."
+msgstr " אין עזרה על דבר זה."
+
+#: src/menu_events.cpp:2144
+msgid "Usage:"
+msgstr "שימוש:"
+
+#: src/menu_events.cpp:2149
+msgid "aliases:"
+msgstr "שמות אחרים:"
+
+#: src/menu_events.cpp:2270
+msgid "(A) - admin command"
+msgstr "(A) - פקודת מנהל"
+
+#: src/menu_events.cpp:2277 src/menu_events.cpp:2480
+msgid "(admin only)"
+msgstr "(למהלים בלבד)"
+
+#: src/menu_events.cpp:2297
+msgid ""
+"Send a query to the server. Without arguments the server should tell you the "
+"available commands."
+msgstr "שלח בקשה לשרת. בלי פרמטרים השרת יחזיר את הפקודות המותרות."
+
+#: src/menu_events.cpp:2301
+msgid ""
+"Ban and kick a player or observer. If he is not in the game but on the "
+"server he will only be banned."
+msgstr "העף ומנע שחקן או צופה מלשחק. עם הוא לא משחק הוא רק ימנע מלשחק."
+
+#: src/menu_events.cpp:2302 src/menu_events.cpp:2305 src/menu_events.cpp:2307
+#: src/menu_events.cpp:2309 src/menu_events.cpp:2311 src/menu_events.cpp:2336
+#: src/menu_events.cpp:2338 src/menu_events.cpp:2340 src/menu_events.cpp:2354
+msgid "<nick>"
+msgstr "<שם משתמש>"
+
+#: src/menu_events.cpp:2304
+msgid "Unban a user. He does not have to be in the game but on the server."
+msgstr "שחרר משתמש. הוא לא חייב להיות במשחק אבל צריך להיות בשרצ."
+
+#: src/menu_events.cpp:2307
+msgid "Kick a player or observer."
+msgstr "העף שחקן או צופה."
+
+#: src/menu_events.cpp:2309
+msgid "Mute an observer. Without an argument displays the mute status."
+msgstr "השתק צופה. ללא פרמטרים מציק את מצב ההשתקה."
+
+#: src/menu_events.cpp:2311
+msgid "Unmute an observer. Without an argument unmutes everyone."
+msgstr "שחרר צופה מהשתקה. ללא פרמטר משחרר את כולם מהשתק."
+
+#: src/menu_events.cpp:2313
+msgid "Mute/Unmute all observers. (toggles)"
+msgstr "השתק/שחרר את כל הצופים. (מחליף)"
+
+#: src/menu_events.cpp:2323
+msgid "Send a message to the server admins currently online"
+msgstr "שלח הודעה למנהלי השרת המחוברים כעת"
+
+#: src/menu_events.cpp:2325
+msgid "<message>"
+msgstr "<הודעה>"
+
+#: src/menu_events.cpp:2325
+msgid "Send an emotion or personal action in chat."
+msgstr "שלח סמיילי או פעולה אישית בצ'אט."
+
+#: src/menu_events.cpp:2328
+msgid ""
+"Sends a private message. You can’t send messages to players that don’t "
+"control a side in a running game you are in."
+msgstr ""
+"שלח הודעה פרטית. אי אפשר לשלוח הודעות פרטיות לשחקנים שלא שולטים בצד במשחק. "
+
+#: src/menu_events.cpp:2330
+msgid "<nick> <message>"
+msgstr "<שם משתמש> <הודעה>"
+
+#: src/menu_events.cpp:2334
+msgid "<level> <domain>"
+msgstr "<רמה> <איזור>"
+
+#: src/menu_events.cpp:2334
+msgid "Change the log level of a log domain."
+msgstr "שנה את רמת ההקלטה של מערכת ההקלטה."
+
+#: src/menu_events.cpp:2336
+msgid "Add a nick to your ignores list."
+msgstr "הוסף שם לרשימת ההתעלמויות."
+
+#: src/menu_events.cpp:2338
+msgid "Add a nick to your friends list."
+msgstr "הוסף שם לרשימת החברים."
+
+#: src/menu_events.cpp:2340
+msgid "Remove a nick from your ignores or friends list."
+msgstr "הוצא שם מרשימת ההתעלמויות או החברים."
+
+#: src/menu_events.cpp:2342
+msgid "Show your ignores and friends list."
+msgstr "הראה את רשימות החברים וההתעלמויות."
+
+#: src/menu_events.cpp:2345
+msgid "Display version information."
+msgstr "הצג את מידע הגרסא."
+
+#: src/menu_events.cpp:2347
+msgid "<password> <email (optional)>"
+msgstr "<סיסמא> <דוא\"ל (לא הכרחי)>"
+
+#: src/menu_events.cpp:2347
+msgid "Register your nick"
+msgstr "רשום את שם המשתמש שלך"
+
+#: src/menu_events.cpp:2349
+msgid "Drop your nick."
+msgstr "זרוק את שם המשתמש שלך"
+
+#: src/menu_events.cpp:2351
+msgid "Update details for your nick. For possible details see '/details'."
+msgstr "עדכן מידע על שם המשתמש. לפרטים ראה '\\details'."
+
+#: src/menu_events.cpp:2352
+msgid "<detail> <value>"
+msgstr "<פרט> <ערך>"
+
+#: src/menu_events.cpp:2354
+msgid "Request information about a nick."
+msgstr "בקש מידע על שם משתמש."
+
+#: src/menu_events.cpp:2356
+msgid "Request a list of details you can set for your registered nick."
+msgstr "בקש רשימת פרטים על קביעת שם משתמש"
+
+#: src/menu_events.cpp:2358 src/menu_events.cpp:2361 src/menu_events.cpp:2363
+msgid "<room>"
+msgstr "<חדר>"
+
+#: src/menu_events.cpp:2358
+msgid "Join a room."
+msgstr "הצטרף לחדר."
+
+#: src/menu_events.cpp:2361
+msgid "Part a room."
+msgstr "צא מחדר."
+
+#: src/menu_events.cpp:2363
+msgid "List room members."
+msgstr "הצג חברי חדר."
+
+#: src/menu_events.cpp:2365
+msgid "List available rooms."
+msgstr "הצג חדרים זמינים."
+
+#: src/menu_events.cpp:2367
+msgid "<room> <msg>"
+msgstr "<חדר> <הודעה>"
+
+#: src/menu_events.cpp:2367
+msgid "Room message."
+msgstr "הודעת חדר."
+
+#: src/menu_events.cpp:2369
+msgid "<room> <type> [value]"
+msgstr "<חדר> <סוג> [ערך]"
+
+#: src/menu_events.cpp:2369
+msgid "Room query."
+msgstr "בקשת חדר."
+
+#: src/menu_events.cpp:2472
+msgid "(D) - debug only, (N) - network only, (A) - admin only"
+msgstr "(D) - דיבוג בלבד, (N) - רשת בלבד, (A) - מנהל בלבד"
+
+#: src/menu_events.cpp:2478
+msgid "(debug command)"
+msgstr "(פקודת דיבוג)"
+
+#: src/menu_events.cpp:2479
+msgid "(network only)"
+msgstr "(רשת בלבד)"
+
+#: src/menu_events.cpp:2504
+msgid "Refresh gui."
+msgstr "עדכן ממשק משתמש."
+
+#: src/menu_events.cpp:2506
+msgid "Switch a side to/from AI control."
+msgstr "העבר צד מ/אל שליטת מחשב."
+
+#: src/menu_events.cpp:2506
+msgid "do not translate the on/off^[<side> [on/off]]"
+msgstr "[<צד> [on/off]]"
+
+#: src/menu_events.cpp:2509
+msgid "<side> <nick>"
+msgstr "<צד> <שם משתמש>"
+
+#: src/menu_events.cpp:2509
+msgid "Assign control of a side to a different player or observer."
+msgstr "העבר צד לצופה או לשחקן אחר."
+
+#: src/menu_events.cpp:2511
+msgid "Clear chat history."
+msgstr ".נקה הסטורית צ'אט"
+
+#: src/menu_events.cpp:2513
+msgid "Visualize the screen refresh procedure."
+msgstr ".הצג את פרוסדורת עדכון המסך"
+
+#: src/menu_events.cpp:2515
+msgid "Debug foreground terrain."
+msgstr "דבג שטח קדמי."
+
+#: src/menu_events.cpp:2517
+msgid "Debug layers from terrain under the mouse."
+msgstr "דבג שכבות שטח מתחת לעכבר."
+
+#: src/menu_events.cpp:2518
+msgid "Show fps."
+msgstr "הצג פריימים לשניה."
+
+#: src/menu_events.cpp:2520
+msgid "Save game."
+msgstr "שמור משחק."
+
+#: src/menu_events.cpp:2522
+msgid "Quit game."
+msgstr "צא מהמשחק."
+
+#: src/menu_events.cpp:2526
+msgid "Save and quit."
+msgstr "שמור וצא."
+
+#: src/menu_events.cpp:2529
+msgid "Ignore replay errors."
+msgstr "התעלם משגיאות הקלטה."
+
+#: src/menu_events.cpp:2531
+msgid "Disable autosaves."
+msgstr "בטל שמירות אוטומטיות."
+
+#: src/menu_events.cpp:2533
+msgid "<id>"
+msgstr "<שם>"
+
+#: src/menu_events.cpp:2533
+msgid "Advance to the next scenario, or scenario identified by 'id'"
+msgstr "התקדם להתקלות הבאה, או להתקלות המצוינת ע\"י 'שם'"
+
+#: src/menu_events.cpp:2536
+msgid "Choose next scenario"
+msgstr "בחר את ההתקלות הבאה"
+
+#: src/menu_events.cpp:2539
+msgid ""
+"Change turn number (and time of day), or increase by one if no number is "
+"specified."
+msgstr "שנה מספר בתור (וזמן ביום), אן הגדלו באחד עם לא נתן מספר."
+
+#: src/menu_events.cpp:2539
+msgid "[turn]"
+msgstr "[תור]"
+
+#: src/menu_events.cpp:2541
+msgid ""
+"Change turn limit, or turn the turn limit off if no number is specified or "
+"it’s −1."
+msgstr "שנה את מקסימום התורות, או כבה אותו אם המספר -1."
+
+#: src/menu_events.cpp:2541
+msgid "[limit]"
+msgstr "[מקסימום]"
+
+#: src/menu_events.cpp:2543
+msgid "Turn debug mode on."
+msgstr "הכנס למצב דיבוג"
+
+#: src/menu_events.cpp:2545
+msgid "Turn debug mode off."
+msgstr "צא ממצב דיבוג"
+
+#: src/menu_events.cpp:2547 src/menu_events.cpp:2551
+msgid "<command>[;<command>...]"
+msgstr "<פקודה>[;<פקודה>...]"
+
+#: src/menu_events.cpp:2547
+msgid "Execute a Lua statement."
+msgstr "בצא פקודת Lua."
+
+#: src/menu_events.cpp:2549
+msgid "Grant higher privileges to Lua scripts."
+msgstr "תן יותר זכויות לסקריפטי Lua. (מסוכן)"
+
+#: src/menu_events.cpp:2551
+msgid "Set the command used by the custom command hotkey"
+msgstr "בחר את הפקודה של מקש הפקודה המותאמת-אישית"
+
+#: src/menu_events.cpp:2553
+msgid "Launch the gamestate inspector"
+msgstr "הפעל את מציג מצב-המשחק"
+
+#: src/menu_events.cpp:2555
+msgid "Manage persistence data"
+msgstr "נהל מידע התמדה"
+
+#: src/menu_events.cpp:2557
+msgid "<name>[=<command>]"
+msgstr "<שם>[=<פקודה>]"
+
+#: src/menu_events.cpp:2557
+msgid "Set or show alias to a command"
+msgstr "קבע או הצג שם נוסף לפקודה"
+
+#: src/menu_events.cpp:2559
+msgid "<var>=<value>"
+msgstr "<משתנה>=<ערך>"
+
+#: src/menu_events.cpp:2559
+msgid "Set a scenario variable."
+msgstr "קבע משתנה התקלות."
+
+#: src/menu_events.cpp:2561
+msgid "<var>"
+msgstr "<משתנה>"
+
+#: src/menu_events.cpp:2561
+msgid "Show a scenario variable."
+msgstr "הצג משתנה התקלות."
+
+#: src/menu_events.cpp:2563
+msgid "Modify a unit variable. (Only top level keys are supported.)"
+msgstr "שנה משתנה יחידה. (רק משתני רמה-עליונה.)"
+
+#: src/menu_events.cpp:2570
+msgid "Discover all units in help."
+msgstr "הצג את כל היחידות בעזרה."
+
+#: src/menu_events.cpp:2572
+msgid "'Undiscover' all units in help."
+msgstr "'הסתר' את כל היחידות בעזרה."
+
+#: src/menu_events.cpp:2574
+msgid "Create a unit."
+msgstr "צור יחידה."
+
+#: src/menu_events.cpp:2576
+msgid "Toggle fog for the current player."
+msgstr "הפעל/כבה ערפל לשחקן הנוכחי."
+
+#: src/menu_events.cpp:2578
+msgid "Toggle shroud for the current player."
+msgstr "הפעל/כבה הסתרה לשחקן הנוכחי."
+
+#: src/menu_events.cpp:2580
+msgid "Give gold to the current player."
+msgstr "תן זהב לשחקן הנוכחי."
+
+#: src/menu_events.cpp:2582
+msgid "Fire a game event."
+msgstr "הפעל ארוע."
+
+#: src/menu_events.cpp:2585
+msgid "Toggle overlaying of x,y coordinates on hexes."
+msgstr "הפעל/כבה סימון קורדינאטות x,y על משבצות."
+
+#: src/menu_events.cpp:2588
+msgid "Toggle overlaying of terrain codes on hexes."
+msgstr "הפעל/כבה הנחת קודי שטח על משבצות."
+
+#: src/menu_events.cpp:2591
+msgid "Toggle planning mode."
+msgstr "הפעל/כבה מצב תכנון."
+
+#: src/menu_events.cpp:2634
+msgid "Unknown debug level: '$level'."
+msgstr "רמת דיבוג לא ידועה: '$level'."
+
+#: src/menu_events.cpp:2636 src/menu_events.cpp:2645
+msgid "error"
+msgstr "שגיאה"
+
+#: src/menu_events.cpp:2643
+msgid "Unknown debug domain: '$domain'."
+msgstr "איזור דיבוג לא-ידוע: '$domain'."
+
+#: src/menu_events.cpp:2652
+msgid "Switched domain: '$domain' to level: '$level'."
+msgstr "האיזור '$domain' הועבר לרמת דיבוג '$level'."
+
+#: src/menu_events.cpp:2723
+msgid "whisper to $receiver"
+msgstr "לחש ל $receiver"
+
+#: src/menu_events.cpp:2730
+msgid "whisper: $sender"
+msgstr "לחישה: $sender"
+
+#: src/menu_events.cpp:2826 src/menu_events.cpp:2845
+#: src/multiplayer_connect.cpp:671
+msgid "(empty)"
+msgstr "(ריק)"
+
+#: src/menu_events.cpp:2826 src/menu_events.cpp:2832 src/menu_events.cpp:2882
+msgid "ignores list"
+msgstr "רשימת התעלמויות"
+
+#: src/menu_events.cpp:2832
+msgid "Added to ignore list: $nick"
+msgstr "$nick הוסף/ה לרשימת ההתעלמויות"
+
+#: src/menu_events.cpp:2835 src/menu_events.cpp:2854
+msgid "Invalid username: $nick"
+msgstr "שם משתמש לא חוקי: $nick"
+
+#: src/menu_events.cpp:2845 src/menu_events.cpp:2852 src/menu_events.cpp:2878
+msgid "friends list"
+msgstr "רשימת חברים"
+
+#: src/menu_events.cpp:2852
+msgid "Added to friends list: $nick"
+msgstr "$nick הוסף/ה לרשימת החברים"
+
+#: src/menu_events.cpp:2868
+msgid "Removed from list: $nick"
+msgstr "$nick הורד מהרשימה"
+
+#: src/menu_events.cpp:2868 src/menu_events.cpp:2886
+msgid "friends and ignores list"
+msgstr "רשימות חברים והתעלמויות"
+
+#: src/menu_events.cpp:2886
+msgid "There are no players on your friends or ignore list."
+msgstr "אין שחקנים ברשימות החברים/התעלמויות שלך."
+
+#: src/menu_events.cpp:2891
+msgid "version"
+msgstr "גרסא"
+
+#: src/menu_events.cpp:2907
+msgid "registering with password *** and no email address"
+msgstr "נרשם עם סיסמא ******** וללא כתובת דוא\"ל"
+
+#: src/menu_events.cpp:2911
+msgid "registering with password *** and email address $email"
+msgstr "נרשם עם סיסמא ******** ודוא\"ל $email"
+
+#: src/menu_events.cpp:2914 src/menu_events.cpp:2925 src/menu_events.cpp:2943
+#: src/menu_events.cpp:2957
+msgid "nick registration"
+msgstr "רשימת כינוי"
+
+#: src/menu_events.cpp:2925
+msgid "dropping your username"
+msgstr "זריקת שם משתמשך"
+
+#: src/menu_events.cpp:2943
+msgid "setting $var to $value"
+msgstr "משנה את $var ל-$value"
+
+#: src/menu_events.cpp:2957
+msgid "requesting information for user $nick"
+msgstr "מחפש מידע על השם $nick"
+
+#: src/menu_events.cpp:3070
+msgid "Couldn't find label or unit containing the string '$search'."
+msgstr "לא ניתן למצוא תגית או יחידה שמכילים את הטקסט '$search'."
+
+#: src/menu_events.cpp:3104
+msgid "Can't droid invalid side: '$side'."
+msgstr "לא יכול לרבט צד לא חוקי '$side'."
+
+#: src/menu_events.cpp:3109
+msgid "Can't droid networked side: '$side'."
+msgstr "לא יכול לרבט צד מרושט '$side'."
+
+#: src/menu_events.cpp:3146
+msgid "Can't change control of invalid side: '$side'."
+msgstr "לא יכול לשנות שולט של צד לא חוקי '$side'."
+
+#: src/menu_events.cpp:3152
+msgid "Can't change control of out-of-bounds side: '$side'."
+msgstr "לא יכול לשנות שליטה של צד מחוץ-לגבולות '$side'."
+
+#: src/menu_events.cpp:3246
+msgid "Layers"
+msgstr "שכבות"
+
+#: src/menu_events.cpp:3319
+msgid "Choose Scenario (Debug!)"
+msgstr "בחר התקלות (דיבוג!)"
+
+#: src/menu_events.cpp:3364
+msgid "Debug mode activated!"
+msgstr "מצב דיבוג הופעל!"
+
+#: src/menu_events.cpp:3367
+msgid "Debug mode not available in network games"
+msgstr "אי אפשר להכנס למצב דבוג במשחקי רשת (רמאי)!!!"
+
+#: src/menu_events.cpp:3372
+msgid "Debug mode deactivated!"
+msgstr "מצב דיבוג כובה!"
+
+#: src/menu_events.cpp:3383
+msgid "Unsafe Lua scripts."
+msgstr "סקריפטי Lua מסוכנים ווירוסים."
+
+#: src/menu_events.cpp:3384
+msgid ""
+"You are about to open a security breach in Wesnoth. Are you sure you want to "
+"continue? If you have downloaded add-ons, do not click 'ok'! They would "
+"instantly take over your computer. You have been warned."
+msgstr ""
+"אתה עומד לפתוח פרצת אבטחה בווסנות'. אתה בטוח שאתה רוצה? אם הורדת חבילות, אל "
+"תלחץ על OK (בשום פנים ואופן!!1!!!)!1!!11! זה יאפשר לחבילות להשתלט על מחשבך "
+"באופן מיידי! ראה הוזהרת מפגר!"
+
+#: src/menu_events.cpp:3387
+msgid "Unsafe mode enabled!"
+msgstr "מצב מסוכן הופעל!"
+
+#: src/menu_events.cpp:3430
+msgid "Variable not found"
+msgstr "לא נמצא משתנה"
+
+#: src/menu_events.cpp:3474
+msgid ""
+"Invalid alignment: '$alignment', needs to be one of lawful, neutral, chaotic "
+"or liminal."
+msgstr ""
+"נטייה לא ידועה: '$alignment', צריך להיות אחד מסדר, ניטרלי, תוהו, או ספי"
+
+#: src/menu_events.cpp:3524
+msgid "Do you wish to clear all of your discovered units from help?"
+msgstr "אתה בטוח שהינך רוצה לנקות את כל היחידות שגיליתה מהעזרה?"
+
+#: src/menu_events.cpp:3535
+msgid "Invalid unit type"
+msgstr "סוג יחידה לא חוקי"
+
+#: src/menu_events.cpp:3548
+msgid "Invalid location"
+msgstr "מקום לא חוקי"
+
+#: src/menu_events.cpp:3583
+msgid "Planning mode activated!"
+msgstr "מצב תכנון הופעל!"
+
+#: src/menu_events.cpp:3586
+msgid "Planning mode deactivated!"
+msgstr "מצב תכנון כובה!"
+
+#: src/menu_events.cpp:3594
+msgid "ai"
+msgstr "מחשב"
+
+#: src/menu_events.cpp:3604 src/menu_events.cpp:3619
+msgid "prompt^Command:"
+msgstr "פקודה:"
+
+#: src/mouse_events.cpp:635
+msgid ""
+"You cannot move your leader away from the keep with some planned recruits "
+"left."
+msgstr "אינך יכול להזיז את מנהיגך ממצודתו כשיש גיוסים מתוכננים."
+
+#: src/mouse_events.cpp:835 src/mouse_events.cpp:915
+msgid "Attack Enemy"
+msgstr "תקוף אויב"
+
+#: src/mouse_events.cpp:916
+msgid "Choose weapon:"
+msgstr "בחר נשק:"
+
+#: src/multiplayer.cpp:142 src/multiplayer.cpp:179
+msgid "Connecting to Server..."
+msgstr "מתחבר לשרת..."
+
+#: src/multiplayer.cpp:152
+msgid "Reading from Server..."
+msgstr "קורא מהשרת..."
+
+#: src/multiplayer.cpp:162
+msgid ""
+"The server requires version '$version1' while you are using version "
+"'$version2'"
+msgstr "שרת זה דורש גרסה '$version1' בעוד שלך יש גרסה '$version2'"
+
+#: src/multiplayer.cpp:173
+msgid "Server-side redirect loop"
+msgstr "לולאת כיוון מחדש בצד השרת"
+
+#: src/multiplayer.cpp:262
+msgid "Bad data received from server"
+msgstr "התקבל מהשרת מידע פגום"
+
+#: src/multiplayer.cpp:303
+msgid "You must login first."
+msgstr "אתה חייב קודם להתחבר."
+
+#: src/multiplayer.cpp:305
+msgid "The nick '$nick' is already taken."
+msgstr "הכינוי '$nick' כבר תפוס."
+
+#: src/multiplayer.cpp:307
+msgid ""
+"The nick '$nick' contains invalid characters. Only alpha-numeric characters, "
+"underscores and hyphens are allowed."
+msgstr ""
+"הכינוי '$nick' מכיל תויים לא-חוקיים. התווים המותרים הם אותיות (באנגלית), "
+"קווים תחתיים, ומקפים."
+
+#: src/multiplayer.cpp:311
+msgid "The nick '$nick' is too long. Nicks must be 20 characters or less."
+msgstr "הכינוי '$nick' ארוך מדי. כינויים חייבים להיות קצרים יותר מ-21 תווים."
+
+#: src/multiplayer.cpp:314
+msgid "The nick '$nick' is reserved and cannot be used by players."
+msgstr "הכינוי '$nick' שמור ואסור לשחקנים להשתמש בו."
+
+#: src/multiplayer.cpp:316
+msgid "The nick '$nick' is not registered on this server."
+msgstr "הכינוי '$nick' אינו רשום על שרת זה."
+
+#: src/multiplayer.cpp:317
+msgid " This server disallows unregistered nicks."
+msgstr " שרת זה אוסר על כינויים לא רשומים."
+
+#: src/multiplayer.cpp:319 src/multiplayer.cpp:321
+msgid "The nick '$nick' is registered on this server."
+msgstr "הכינוי '$nick' רשום על שרת זה."
+
+#: src/multiplayer.cpp:322
+msgid ""
+"WARNING: There is already a client using this nick, logging in will cause "
+"that client to be kicked!"
+msgstr "הזהר: יש כבר מעשהו עם כינוי זה, התחברות תעיפו מהשרת!"
+
+#: src/multiplayer.cpp:325
+msgid ""
+"Error in the login procedure (the server had no seed for your connection)."
+msgstr "שגיאה בתהליך ההתחברות (לשרת לא היה זרע להתחברותך)."
+
+#: src/multiplayer.cpp:328
+msgid "The password you provided was incorrect."
+msgstr "הסיסמא שנתת היתה שגויה."
+
+#: src/multiplayer_connect.cpp:102 src/multiplayer_connect.cpp:455
+#: src/multiplayer_connect.cpp:603
+msgid "Normal"
+msgstr "רגיל"
+
+#: src/multiplayer_connect.cpp:451 src/multiplayer_connect.cpp:599
+#: src/multiplayer_wait.cpp:523 src/multiplayer_wait.cpp:531
+msgid "("
+msgstr ")"
+
+#: src/multiplayer_connect.cpp:451 src/multiplayer_connect.cpp:599
+#: src/multiplayer_wait.cpp:523 src/multiplayer_wait.cpp:534
+msgid ")"
+msgstr "("
+
+#: src/multiplayer_connect.cpp:453 src/multiplayer_connect.cpp:601
+#: src/multiplayer_wait.cpp:533
+msgid "+"
+msgstr "+"
+
+#: src/multiplayer_connect.cpp:631
+msgid "(Vacant slot)"
+msgstr "(מקום פנוי)"
+
+#: src/multiplayer_connect.cpp:639
+msgid "Anonymous local player"
+msgstr "שחקן אנונימי מקומי"
+
+#: src/multiplayer_connect.cpp:652 src/multiplayer_connect.cpp:1434
+msgid "Computer Player"
+msgstr "שחקן מחשב"
+
+#: src/multiplayer_connect.cpp:655
+msgid "$playername $side"
+msgstr "$playername $side"
+
+#: src/multiplayer_connect.cpp:659
+msgid "(Empty slot)"
+msgstr "(מקום ריק)"
+
+#: src/multiplayer_connect.cpp:666
+msgid "(Reserved for $playername)"
+msgstr "(שמור ל-$playername)"
+
+#: src/multiplayer_connect.cpp:767
+msgid "Reserved"
+msgstr "שמור"
+
+#: src/multiplayer_connect.cpp:768
+msgid "--give--"
+msgstr "--תן--"
+
+#: src/multiplayer_connect.cpp:896
+msgid "Only random sides in the current era."
+msgstr "אין צדדים לא אקראיים בעידן הנוכחי."
+
+#: src/multiplayer_connect.cpp:920
+msgid "Unable to find a leader type for faction $faction"
+msgstr "לא ניתן למצוא סוג מנהיג לסיעה $faction"
+
+#: src/multiplayer_connect.cpp:957
+msgid "Game Lobby: "
+msgstr "לובי המשחק: "
+
+#: src/multiplayer_connect.cpp:979
+msgid "Player/Type"
+msgstr "שחקן/סוג"
+
+#: src/multiplayer_connect.cpp:980
+msgid "Faction"
+msgstr "סיעה"
+
+#: src/multiplayer_connect.cpp:981
+msgid "Team/Gender"
+msgstr "צוות/מין"
+
+#: src/multiplayer_connect.cpp:982
+msgid "Color"
+msgstr "צבע"
+
+#: src/multiplayer_connect.cpp:986
+msgid "I’m Ready"
+msgstr "אני מוכן"
+
+#: src/multiplayer_connect.cpp:988
+msgid "Add named local player"
+msgstr "הוסף שחקן מקומי"
+
+#: src/multiplayer_connect.cpp:997
+msgid "The scenario is invalid because it has no id."
+msgstr "ההתקלות אינה חוקית כי אין לה שם."
+
+#: src/multiplayer_connect.cpp:1001
+msgid "The scenario is invalid because it has no sides."
+msgstr "ההתקלות אינה חוקית כי אין בה צדדים."
+
+#: src/multiplayer_connect.cpp:1068
+msgid "Enter a name for the new player"
+msgstr "הוסף שם לשחקן החדש"
+
+#: src/multiplayer_connect.cpp:1069 src/reports.cpp:135 src/savegame.cpp:694
+msgid "Name: "
+msgstr "שם: "
+
+#: src/multiplayer_connect.cpp:1431
+msgid "Network Player"
+msgstr "שחקן רשת"
+
+#: src/multiplayer_connect.cpp:1433
+msgid "Local Player"
+msgstr "שחקן מקומי"
+
+#: src/multiplayer_connect.cpp:1435
+msgid "Empty"
+msgstr "ריק"
+
+#: src/multiplayer_connect.cpp:1586
+msgid "Cannot find era $era"
+msgstr "לא ניתן למצוא עידן $era"
+
+#: src/multiplayer_connect.cpp:1611
+msgid "Defeat enemy leader(s)"
+msgstr "הבס את מנהיג(י) האויב"
+
+#: src/multiplayer_connect.cpp:1710
+msgid "Waiting for players to join..."
+msgstr "ממתין להצטרפות שחקנים..."
+
+#: src/multiplayer_connect.cpp:1711
+msgid "Waiting for players to choose factions..."
+msgstr "ממתין עד שהשחקנים יבחרו סיעות..."
+
+#: src/multiplayer_create.cpp:53 src/multiplayer_lobby.cpp:731
+msgid "Create Game"
+msgstr "צור משחק"
+
+#: src/multiplayer_create.cpp:66
+msgid "Time limit"
+msgstr "הגבלת זמן"
+
+#: src/multiplayer_create.cpp:79
+msgid "Name of game:"
+msgstr "שם משחק:"
+
+#: src/multiplayer_create.cpp:82
+msgid "Era:"
+msgstr "עידן:"
+
+#: src/multiplayer_create.cpp:83
+msgid "Map to play:"
+msgstr "מפת משחק:"
+
+#: src/multiplayer_create.cpp:84 src/multiplayer_lobby.cpp:276
+msgid "Use map settings"
+msgstr "השתמש בהגדרות המפה"
+
+#: src/multiplayer_create.cpp:85
+msgid "Random start time"
+msgstr "זמן התחלה אקראי"
+
+#: src/multiplayer_create.cpp:86
+msgid "Fog Of War"
+msgstr "ערפל קרב"
+
+#: src/multiplayer_create.cpp:88
+msgid "Observers"
+msgstr "צופים"
+
+#: src/multiplayer_create.cpp:91
+msgid "Regenerate"
+msgstr "צור מחדש"
+
+#: src/multiplayer_create.cpp:92
+msgid "Settings..."
+msgstr "אפשרויות..."
+
+#: src/multiplayer_create.cpp:93
+msgid "Set Password..."
+msgstr "קבע סיסמא..."
+
+#: src/multiplayer_create.cpp:110
+msgid "Load Game..."
+msgstr "טען משחק..."
+
+#: src/multiplayer_create.cpp:146
+msgid "The maximum number of turns the game can last"
+msgstr "מספר מהלכים מירבי למשחק"
+
+#: src/multiplayer_create.cpp:149
+msgid "Enables user time limit"
+msgstr "אפשר הגבלת זמן משתמש"
+
+#: src/multiplayer_create.cpp:155
+msgid "Longest time allowed for first turn (seconds)"
+msgstr "זמן מקסימלי לתור הראשון (ש')"
+
+#: src/multiplayer_create.cpp:161
+msgid "Longest time possible for any turn (seconds)"
+msgstr "זמן מקסימלי לכל תור אחר (ש')"
+
+#: src/multiplayer_create.cpp:167
+msgid "Time for general tasks each turn (seconds)"
+msgstr "זמן לפעולות רגילות בכל תור (ש')"
+
+#: src/multiplayer_create.cpp:173
+msgid "Time for each attack, recruit, and capture"
+msgstr "זמן לכל התקפה, גיוס ולקיחה"
+
+#: src/multiplayer_create.cpp:178
+msgid "The amount of income each village yields per turn"
+msgstr "סך הכנסה שכל כפר מספק בכל תור"
+
+#: src/multiplayer_create.cpp:184
+msgid "The amount of experience a unit needs to advance"
+msgstr "כמות הניסיון שיחידה צריכה כדי להתקדם"
+
+#: src/multiplayer_create.cpp:187
+msgid "Use scenario specific settings"
+msgstr "השתמש בהגדרות ההתקלות"
+
+#: src/multiplayer_create.cpp:190
+msgid "Randomize time of day in begin"
+msgstr "בחר זמן אקראי בהתחלה"
+
+#: src/multiplayer_create.cpp:193
+msgid "Enemy units cannot be seen unless they are in range of your units"
+msgstr "יחידות האויב אינן נראות עד שהן בטווח יחידותיך"
+
+#: src/multiplayer_create.cpp:196
+msgid "The map is unknown until your units explore it"
+msgstr "המפה אינה נראית עד שיחידותיך יסיירו אותה"
+
+#: src/multiplayer_create.cpp:199
+msgid "Allow users who are not playing to watch the game"
+msgstr "מאפשר למשתמשים שאינם משחקים להתבונן במשחק"
+
+#: src/multiplayer_create.cpp:203
+msgid "Share View"
+msgstr "שתף תצוגה"
+
+#: src/multiplayer_create.cpp:204
+msgid "Share Maps"
+msgstr "שתף מפות"
+
+#: src/multiplayer_create.cpp:205
+msgid "Share None"
+msgstr "אל תשתף כלום"
+
+#: src/multiplayer_create.cpp:215
+msgid "No eras found."
+msgstr "לא נמצאו עידנים."
+
+#: src/multiplayer_create.cpp:216
+msgid "No eras found"
+msgstr "לא נמצאו עידנים"
+
+#: src/multiplayer_create.cpp:229
+msgid "$login|’s game"
+msgstr "המשחק של $login"
+
+#: src/multiplayer_create.cpp:290
+msgid "Invalid era selected"
+msgstr "נבחר עידן לא חוקי"
+
+#: src/multiplayer_create.cpp:336
+msgid "The map is invalid."
+msgstr "המפה אינה חוקית."
+
+#: src/multiplayer_create.cpp:338
+msgid "You must enter a name."
+msgstr "חובה להקליד שם."
+
+#: src/multiplayer_create.cpp:356
+msgid "Turns: "
+msgstr "תורים: "
+
+#: src/multiplayer_create.cpp:358
+msgid "Unlimited Turns"
+msgstr "מספר בלתי מוגבל של תורים"
+
+#: src/multiplayer_create.cpp:386
+msgid "Init. Limit: "
+msgstr "גבול התחלתי:"
+
+#: src/multiplayer_create.cpp:391
+msgid "Turn Bonus: "
+msgstr "בונוס תור: "
+
+#: src/multiplayer_create.cpp:395
+msgid "Reservoir: "
+msgstr "אחסון: "
+
+#: src/multiplayer_create.cpp:400
+msgid "Action Bonus: "
+msgstr "תוסף פעולה: "
+
+#: src/multiplayer_create.cpp:407
+msgid "Village Gold: "
+msgstr "זהב לכפר: "
+
+#: src/multiplayer_create.cpp:415
+msgid "Exp. Mod.: "
+msgstr "מתאם נסיון: "
+
+#: src/multiplayer_create.cpp:417 src/reports.cpp:329
+msgid "Experience Modifier: "
+msgstr "מתאם נסיון: "
+
+#: src/multiplayer_create.cpp:552
+msgid "Players: "
+msgstr "שחקנים: "
+
+#: src/multiplayer_create.cpp:553
+msgid "Size: "
+msgstr "גודל: "
+
+#: src/multiplayer_lobby.cpp:124
+msgid "--no games open--"
+msgstr "--אין משחקים פתוחים--"
+
+#: src/multiplayer_lobby.cpp:158
+msgid " (Unknown Era)"
+msgstr " (עידן לא ידוע)"
+
+#: src/multiplayer_lobby.cpp:540 src/multiplayer_lobby.cpp:902
+msgid "Password Required"
+msgstr "דרושה סיסמא"
+
+#: src/multiplayer_lobby.cpp:724 src/multiplayer_wait.cpp:177
+msgid "Game Lobby"
+msgstr "לובי המשחק"
+
+#: src/multiplayer_lobby.cpp:729
+msgid "Observe Game"
+msgstr "התבונן במשחק"
+
+#: src/multiplayer_lobby.cpp:730
+msgid "Join Game"
+msgstr "הצטרף למשחק"
+
+#: src/multiplayer_lobby.cpp:732
+msgid "Quick Replays"
+msgstr "הקלטות מהירות"
+
+#: src/multiplayer_lobby.cpp:734
+msgid "Preferences"
+msgstr "העדפות"
+
+#: src/multiplayer_lobby.cpp:736
+msgid "Quit"
+msgstr "צא"
+
+#: src/multiplayer_lobby.cpp:738
+msgid "Apply Filter"
+msgstr "הפעל מסנן"
+
+#: src/multiplayer_lobby.cpp:739
+msgid "Invert"
+msgstr "הפוך"
+
+#: src/multiplayer_lobby.cpp:740
+msgid "Vacant Slots"
+msgstr "מקומות פנוים"
+
+#: src/multiplayer_lobby.cpp:741
+msgid "Friends in Game"
+msgstr "חברים במשחק"
+
+#: src/multiplayer_lobby.cpp:742
+msgid "Search:"
+msgstr "חפש:"
+
+#: src/multiplayer_lobby.cpp:751
+msgid "Skip quickly to the active turn when observing"
+msgstr "קפוץ במהירות לתור הפעיל בתור צופה"
+
+#: src/multiplayer_lobby.cpp:755
+msgid ""
+"Enable the games filter. If unchecked all games are shown, regardless of any "
+"filter."
+msgstr "הפעל מסנן משחקים. אם כבוי כל המשחקים יוצגו, ללא קשר למסנן."
+
+#: src/multiplayer_lobby.cpp:758
+msgid ""
+"Show all games that do *not* match your filter. Useful for hiding games you "
+"are not interested in."
+msgstr ""
+"הצג את כל המשחקים ש-*לא* ממלאים את המסנן. טוב להסתרת משחקים שאינף מעוניין "
+"בהם."
+
+#: src/multiplayer_lobby.cpp:762
+msgid "Only show games that have at least one vacant slot"
+msgstr "הצג רק משחקים עם לפחות מקום פנוי אחד"
+
+#: src/multiplayer_lobby.cpp:766
+msgid ""
+"Only show games that are played or observed by at least one of your friends"
+msgstr "הצג רק משחקים המשוחקים/נצפיק על-ידי אחד מחבריך"
+
+#: src/multiplayer_lobby.cpp:770
+msgid "Only show games whose title or description contain the entered text"
+msgstr "הצג רק משחקים שכותרתם או תיאורם מכילים טקסט זה"
+
+#: src/multiplayer_lobby.cpp:903
+msgid "Joining this game requires a password."
+msgstr "התחברות למשחק זה דורשת סיסמא."
+
+#: src/multiplayer_lobby.cpp:904
+msgid "Password: "
+msgstr "סיסמא: "
+
+#: src/multiplayer_ui.cpp:197
+msgid "Invalid Color"
+msgstr "צבע לא חוקי"
+
+#: src/multiplayer_ui.cpp:432
+msgid "Selected user: "
+msgstr "משתמש מסומן: "
+
+#: src/multiplayer_wait.cpp:128
+msgid "Leader: "
+msgstr "מנהיג: "
+
+#: src/multiplayer_wait.cpp:132
+msgid "Recruits: "
+msgstr "מגוייסים: "
+
+#: src/multiplayer_wait.cpp:179
+msgid "Waiting for game to start..."
+msgstr "ממתין לתחילת המשחק..."
+
+#: src/multiplayer_wait.cpp:202
+msgid "Getting game data..."
+msgstr "מקבל נתוני משחק..."
+
+#: src/multiplayer_wait.cpp:264
+msgid "No era information found."
+msgstr "לא נמצא מידע עידנים."
+
+#: src/multiplayer_wait.cpp:268
+msgid "No multiplayer sides found"
+msgstr "לא נמצאו צדדים למשחק רב-משתתפים"
+
+#: src/multiplayer_wait.cpp:317
+msgid "Choose your faction:"
+msgstr "בחר סיעה:"
+
+#: src/multiplayer_wait.cpp:317
+msgid "Starting position: "
+msgstr "מיקום התחלתי: "
+
+#: src/multiplayer_wait.cpp:527
+msgid "multiplayer_starting_gold^Gold"
+msgid_plural "multiplayer_starting_gold^Gold"
+msgstr[0] "זהב"
+msgstr[1] "זהב"
+
+#: src/network.cpp:109
+msgid "invalid network handle"
+msgstr "מטפל רשת (network handle) לא חוקי"
+
+#: src/network.cpp:142 src/network_manager_ana.cpp:780
+#: src/network_manager_ana.cpp:787
+msgid "Client disconnected"
+msgstr "לקוח התנתק"
+
+#: src/network.cpp:557
+msgid "Could not add socket to socket set"
+msgstr "הוספת נקודת חיבור (socket) לנקודות הקיימות נכשלה"
+
+#: src/network.cpp:569
+msgid "Could not send initial handshake"
+msgstr "שליחת לחיצת יד ראשונית נכשלה"
+
+#: src/network_manager_ana.cpp:650 src/network_manager_ana.cpp:667
+#: src/network_manager_ana.cpp:689
+msgid "Could not connect to host"
+msgstr "כישלון בחיבור לשרת."
+
+#: src/pathfind/pathfind.cpp:487
+msgid "Terrain with a movement cost less than 1 encountered."
+msgstr ".אותר שטח עם מחיר תנועה של פחות מ-1"
+
+#: src/play_controller.cpp:236
+msgid "time left for current turn"
+msgstr "זמן נותר לתור זה"
+
+#: src/play_controller.cpp:238 src/replay_controller.cpp:129
+msgid "current local time"
+msgstr "זמן מקומי"
+
+#: src/play_controller.cpp:1057 src/savegame.cpp:296 src/savegame.cpp:308
+#: src/savegame.cpp:978 src/savegame.cpp:980
+msgid "Auto-Save"
+msgstr "שמירה אוטומטית"
+
+#: src/play_controller.cpp:1064
+msgid "Back to turn "
+msgstr "חזור לתור "
+
+#: src/play_controller.cpp:1312
+msgid ""
+"The game is out of sync. It might not make much sense to continue. Do you "
+"want to save your game?"
+msgstr "המשחק יצא מסנכרון. אולי לא הגיוני להמשיך. רוצה לשמור משחק?"
+
+#: src/play_controller.cpp:1313 src/replay_controller.cpp:221
+msgid "Error details:"
+msgstr "פרטי שגיאה:"
+
+#: src/playcampaign.cpp:137 src/playcampaign.cpp:177
+msgid "Defeat"
+msgstr "תבוסה"
+
+#: src/playcampaign.cpp:138 src/playcampaign.cpp:178
+msgid "You have been defeated!"
+msgstr "הובסת!"
+
+#: src/playcampaign.cpp:385
+msgid "Error while reading the WML: "
+msgstr "שגיאה בקריאת קוד: "
+
+#: src/playcampaign.cpp:420 src/playsingle_controller.cpp:430
+msgid "Game Over"
+msgstr "המשחק נגמר"
+
+#: src/playcampaign.cpp:421
+msgid "This scenario has ended. Do you want to continue the campaign?"
+msgstr "ההתקלות נגמרה. האם הינך רוצה להמשיך במערכה?"
+
+#: src/playcampaign.cpp:448
+msgid "Downloading next scenario..."
+msgstr "מוריד את ההתקלות הבא..."
+
+#: src/playcampaign.cpp:594
+msgid "Do you want to save your game?"
+msgstr "האם אתה רוצה לשמור את משחקך?"
+
+#: src/playcampaign.cpp:613
+msgid "Unknown scenario: '$scenario|'"
+msgstr "התקלות לא ידועה: '$scenario|'"
+
+#: src/playmp_controller.cpp:91
+msgid "$name has taken control"
+msgstr "$name לקח שליטה"
+
+#: src/playmp_controller.cpp:93
+msgid "Turn changed"
+msgstr "תור השתנה"
+
+#: src/playmp_controller.cpp:224
+msgid "Undoing moves not yet transmitted to the server."
+msgstr "ביטול מהלכים שלא הגיעו לשרת."
+
+#: src/playmp_controller.cpp:397
+msgid "Waiting for next scenario..."
+msgstr "ממתין להתקלות הבאה..."
+
+#: src/playmp_controller.cpp:526
+msgid ""
+"The game is out of sync, and cannot continue. There are a number of reasons "
+"this could happen: this can occur if you or another player have modified "
+"their game settings. This may mean one of the players is attempting to "
+"cheat. It could also be due to a bug in the game, but this is less likely.\n"
+"\n"
+"Do you want to save an error log of your game?"
+msgstr ""
+"המשחק יצא מסנכרון ואינו יכול להמשיך. יש מספר סיבות סדבר כזה יכול לקרות: "
+"המשחק יכול לצאת מסנכרון עם שחקן שינה את הגדרות המשחק, ניסה לרמות, או שאולי "
+"יש באג במשחק (למרות שזה פחות הגיוני, אלא עם אתה משחק בחבילה).\n"
+"\n"
+"האם אתה רוצה לשמור דו\"ח שגיאה?"
+
+#: src/playsingle_controller.cpp:251
+msgid "Remaining gold: "
+msgstr "זהב נותר: "
+
+#: src/playsingle_controller.cpp:255
+msgid "Early finish bonus: "
+msgstr "בונוס סיום מוקדם: "
+
+#: src/playsingle_controller.cpp:257
+msgid "per turn"
+msgstr "לכל תור"
+
+#: src/playsingle_controller.cpp:258
+msgid "Turns finished early: "
+msgstr "תורים שנגמרו מוקדם: "
+
+#: src/playsingle_controller.cpp:260
+msgid "Bonus: "
+msgstr "בונוס: "
+
+#: src/playsingle_controller.cpp:263
+msgid "Gold: "
+msgstr "זהב: "
+
+#: src/playsingle_controller.cpp:267
+msgid "Carry over percentage: "
+msgstr "אחוז לשלב הבא: "
+
+#: src/playsingle_controller.cpp:270
+msgid "Bonus Gold: "
+msgstr "זהב בונוס: "
+
+#: src/playsingle_controller.cpp:272
+msgid "Retained Gold: "
+msgstr "זהב שנשמר: "
+
+#: src/playsingle_controller.cpp:285
+msgid ""
+"You will start the next scenario with $gold on top of the defined minimum "
+"starting gold."
+msgid_plural ""
+"You will start the next scenario with $gold on top of the defined minimum "
+"starting gold."
+msgstr[0] "אתה תתחיל את ההתקלות הבאה עם $gold מעבר לזהב המינימום שלה."
+msgstr[1] "אתה תתחיל את ההתקלות הבאה עם $gold מעבר לזהב המינימום שלה."
+
+#: src/playsingle_controller.cpp:293
+msgid ""
+"You will start the next scenario with the defined minimum starting gold."
+msgid_plural ""
+"You will start the next scenario with the defined minimum starting gold."
+msgstr[0] "אתה תתחיל את ההתקלות הבאה עם זהב המינימום שלה."
+msgstr[1] "אתה תתחיל את ההתקלות הבאה עם זהב המינימום שלה."
+
+#: src/playsingle_controller.cpp:301
+msgid ""
+"You will start the next scenario with $gold or its defined minimum starting "
+"gold, whichever is higher."
+msgid_plural ""
+"You will start the next scenario with $gold or its defined minimum starting "
+"gold, whichever is higher."
+msgstr[0] ""
+"אתה תתלחיל את ההתקלות הבאה עם $gold או זהב המינימום שלה (הגבוה בינהם)."
+msgstr[1] ""
+"אתה תתלחיל את ההתקלות הבאה עם $gold או זהב המינימום שלה (הגבוה בינהם)."
+
+#: src/playsingle_controller.cpp:431
+msgid "The game is over."
+msgstr "המשחק הסתיים."
+
+#: src/playsingle_controller.cpp:511
+msgid ""
+"A network disconnection has occurred, and the game cannot continue. Do you "
+"want to save the game?"
+msgstr "התרחש ניתוק מהרשת, והמשחק אינו יכול להמשך. האם ברצונך לשמור את המשחק?"
+
+#: src/playsingle_controller.cpp:667
+msgid "It is now $name|’s turn"
+msgstr "עכשיו הגיע תורו של $name|"
+
+#: src/playsingle_controller.cpp:896
+msgid "Scenario Report"
+msgstr "דו\"ח התקלות"
+
+#: src/playsingle_controller.cpp:899
+msgid "Victory"
+msgstr "נצחון"
+
+#: src/playsingle_controller.cpp:900
+msgid "You have emerged victorious!"
+msgstr "יצאת מנצח!"
+
+#: src/playturn.cpp:217
+msgid "Replace with AI"
+msgstr "החלף בשחקן ממוחשב"
+
+#: src/playturn.cpp:218
+msgid "Replace with local player"
+msgstr "החלף בשחקן מקומי"
+
+#: src/playturn.cpp:219
+msgid "Abort game"
+msgstr "נטוש את המשחק"
+
+#: src/playturn.cpp:225 src/playturn.cpp:239
+msgid "Replace with $player"
+msgstr "החלף ב $player"
+
+#: src/playturn.cpp:245
+msgid "$player has left the game. What do you want to do?"
+msgstr "$player נטש את המשחק. מה ברצונך לעשות ?"
+
+#: src/replay_controller.cpp:220
+msgid ""
+"The replay is corrupt/out of sync. It might not make much sense to continue. "
+"Do you want to save the game?"
+msgstr ""
+"ההקלטה פגומה או לא בסינכרון. זה יכול להיות לא הגיוני להמשיך. האם הינך רוצה "
+"לשמור את המשחק?"
+
+#: src/reports.cpp:145
+msgid "Type: "
+msgstr "סוג: "
+
+#: src/reports.cpp:156
+msgid "Race: "
+msgstr "גזע: "
+
+#: src/reports.cpp:180
+msgid "Level: "
+msgstr "רמה: "
+
+#: src/reports.cpp:183
+msgid "No advancement"
+msgstr "אין התקדמות"
+
+#: src/reports.cpp:185
+msgid "Advances to:"
+msgstr ":מתקדם אל"
+
+#: src/reports.cpp:215
+msgid "Trait: "
+msgstr "כשרון: "
+
+#: src/reports.cpp:229
+msgid "invisible: "
+msgstr "בלתי נראה: "
+
+#: src/reports.cpp:230
+msgid "This unit is invisible. It cannot be seen or attacked by enemy units."
+msgstr ""
+"זוהי יחידה בלתי נראית. היא אינה יכולה להיראות או להיתקף על ידי יחידות אויב."
+
+#: src/reports.cpp:233
+msgid "slowed: "
+msgstr "מואט: "
+
+#: src/reports.cpp:234
+msgid ""
+"This unit has been slowed. It will only deal half its normal damage when "
+"attacking and its movement cost is doubled."
+msgstr "יחידה זו הואטה, היא תגרום רק חצי מהנזק הרגיל בקרב ותזוז בחצי מהמהירות."
+
+#: src/reports.cpp:237
+msgid "poisoned: "
+msgstr "מורעל: "
+
+#: src/reports.cpp:238
+msgid ""
+"This unit is poisoned. It will lose 8 HP every turn until it can seek a cure "
+"to the poison in a village or from a friendly unit with the ‘cures’ "
+"ability.\n"
+"\n"
+"Units cannot be killed by poison alone. The poison will not reduce it below "
+"1 HP."
+msgstr ""
+"היחידה הזו מורעלת. היא תאבד 8 נק\"פ בכל תור עד שהיא תוכל לחפש תרופה לרעל "
+"בכפר או אצל יחידה ידידותית עם יכולת ריפוי.\n"
+"\n"
+"יחידות לא יכולות למות רק מרעל. הרעל לא יוריד את הנק\"פ מתחת ל 1."
+
+#: src/reports.cpp:241
+msgid "petrified: "
+msgstr "מאובנת: "
+
+#: src/reports.cpp:242
+msgid "This unit has been petrified. It may not move or attack."
+msgstr "היחידה הזו הפכה לאבן. והיא אינה יכולה לזוז או לתקוף."
+
+#: src/reports.cpp:256
+msgid "Alignment: "
+msgstr "נטייה: "
+
+#: src/reports.cpp:275
+msgid "Ability: "
+msgstr "יכולות: "
+
+#: src/reports.cpp:310
+msgid "Resistances: "
+msgstr "עמידויות: "
+
+#: src/reports.cpp:312
+msgid "(Att / Def)"
+msgstr "(התקפה/הגנה)"
+
+#: src/reports.cpp:355
+msgid "Terrain: "
+msgstr "סוג שטח: "
+
+#: src/reports.cpp:373
+msgid "maximum^max."
+msgstr "מקס."
+
+#: src/reports.cpp:373
+msgid "minimum^min."
+msgstr "מינ."
+
+#: src/reports.cpp:378
+msgid "Defense: "
+msgstr "הגנה: "
+
+#: src/reports.cpp:447
+msgid "Weapon: "
+msgstr "נשק: "
+
+#: src/reports.cpp:448
+msgid "Damage: "
+msgstr "נזק: "
+
+#: src/reports.cpp:452
+msgid "Base damage: "
+msgstr "נזק בסיס: "
+
+#: src/reports.cpp:454
+msgid "Time of day: "
+msgstr "זמן ביום: "
+
+#: src/reports.cpp:458
+msgid "Leadership: "
+msgstr "מנהיגות: "
+
+#: src/reports.cpp:462
+msgid "Slowed: "
+msgstr "מואט: "
+
+#: src/reports.cpp:466
+msgid "Attacks: "
+msgstr "התקפות: "
+
+#: src/reports.cpp:468
+msgid "Base attacks: "
+msgstr "התקפות בסיס: "
+
+#: src/reports.cpp:470
+msgid "Swarm: "
+msgstr "נחיל: "
+
+#: src/reports.cpp:482
+msgid "Weapon range: "
+msgstr "טווח נשק: "
+
+#: src/reports.cpp:483
+msgid "Damage type: "
+msgstr "סוג נזק: "
+
+#: src/reports.cpp:484
+msgid "Damage versus: "
+msgstr "נזק נגד: "
+
+#: src/reports.cpp:528
+msgid "Accuracy:"
+msgstr ":דיוק"
+
+#: src/reports.cpp:533
+msgid "Parry:"
+msgstr "חסימה:"
+
+#: src/reports.cpp:550
+msgid "Weapon special: "
+msgstr "יכולות מיוחדות: "
+
+#: src/reports.cpp:591
+msgid "Lawful units: "
+msgstr "יחידות סדר: "
+
+#: src/reports.cpp:592
+msgid "Neutral units: "
+msgstr "יחידות נטרליות: "
+
+#: src/reports.cpp:593
+msgid "Chaotic units: "
+msgstr "יחידות תוהו: "
+
+#: src/reports.cpp:595
+msgid "Liminal units: "
+msgstr "יחידות ספיות: "
+
+#: src/reports.cpp:793
+msgid "Observers:"
+msgstr "צופים:"
+
+#: src/savegame.cpp:207 src/savegame.cpp:209
+msgid " replay"
+msgstr " - הקלטה"
+
+#: src/savegame.cpp:447 src/savegame.cpp:451
+msgid "Warning: The file you have tried to load is corrupt. Loading anyway.\n"
+msgstr "אזהרה: הקובץ, אותו ניסית לטעון, פגום. טוען בכל זאת.\n"
+
+#: src/savegame.cpp:490
+msgid "This save is from a version too old to be loaded."
+msgstr "משחק שמור זה שייך לגרסה ישנה מדי ואי אפשר לטעון אותו."
+
+#: src/savegame.cpp:494
+msgid ""
+"This save is from a different version of the game. Do you want to try to "
+"load it?"
+msgstr "משחק שמור זה שייך לגרסה שונה של המשחק. האם ברצונך לטעון אותו?"
+
+#: src/savegame.cpp:541
+msgid "This is not a multiplayer save"
+msgstr "זה לא שמירה של משחק רב משתתפים"
+
+#: src/savegame.cpp:607
+msgid "The game could not be saved: "
+msgstr "שמירת המשחק נכשלה: "
+
+#: src/savegame.cpp:694
+msgid "Save already exists. Do you want to overwrite it?"
+msgstr "המשחק השמור כבר קיים. האם לדרוס אותו?"
+
+#: src/savegame.cpp:695
+msgid "Overwrite?"
+msgstr "דרוס?"
+
+#: src/savegame.cpp:705
+msgid "Save names should not end on '.gz'. Please choose a different name."
+msgstr "אסור שהשם יגמר ב-'.gz'. יש לבחור שם אחר."
+
+#: src/savegame.cpp:771
+msgid "Saved"
+msgstr "נשמר"
+
+#: src/savegame.cpp:771
+msgid "The game has been saved"
+msgstr "המשחק נשמר"
+
+#: src/savegame.cpp:805 src/savegame.cpp:830
+msgid "Could not write to file"
+msgstr "כתיבה לקובץ נכשלה"
+
+#: src/savegame.cpp:943
+msgid "Save Replay"
+msgstr "שמור הקלטה"
+
+#: src/savegame.cpp:961
+msgid "Could not auto save the game. Please save the game manually."
+msgstr "שמירת משחק אוטומטית נכשלה. יש לבצע שמירה ידנית."
+
+#: src/savegame.cpp:1012
+msgid "Save Game"
+msgstr "שמור משחק"
+
+#: src/serialization/parser.cpp:124
+msgid "Unexpected characters at line start"
+msgstr "תווים לא צפויים בתחילת שורה"
+
+#: src/serialization/parser.cpp:142
+msgid "Missing closing tag for tag $tag at $pos"
+msgstr "חסר תג סוגר לתג $tag ב $pos"
+
+#: src/serialization/parser.cpp:156
+msgid "Unterminated [element] tag"
+msgstr "תג [element] ללא סוגר"
+
+#: src/serialization/parser.cpp:165 src/serialization/parser.cpp:201
+msgid "Invalid tag name"
+msgstr "שם תג לא חוקי"
+
+#: src/serialization/parser.cpp:168
+msgid "Unterminated [+element] tag"
+msgstr "תג [+element] ללא סוגר"
+
+#: src/serialization/parser.cpp:182
+msgid "Invalid closing tag name"
+msgstr "שם תג סוגר לא חוקי"
+
+#: src/serialization/parser.cpp:185
+msgid "Unterminated closing tag"
+msgstr "תג סוגר ללא סוגר"
+
+#: src/serialization/parser.cpp:187
+msgid "Unexpected closing tag"
+msgstr "תג סוגר לא צפוי"
+
+#: src/serialization/parser.cpp:195
+msgid "Found invalid closing tag $tag2 for tag $tag1 (opened at $pos)"
+msgstr "נמצא תג סוגר לא חוקי $tag2 לתג $tag (נפתח ב $pos)"
+
+#: src/serialization/parser.cpp:220 src/serialization/parser.cpp:232
+msgid "Empty variable name"
+msgstr "שם משתנה ריק"
+
+#: src/serialization/parser.cpp:226
+msgid "Unexpected characters after variable name (expected , or =)"
+msgstr "תווים לא צפויים אחרי שם משתנה (מצפה ל , או =)"
+
+#: src/serialization/parser.cpp:260 src/serialization/parser.cpp:288
+msgid "Unterminated quoted string"
+msgstr "מחרוזת עם ציטוט ללא סוגר"
+
+#: src/serialization/parser.cpp:335
+msgid "$error, value '$value', previous '$previous_value' at $pos"
+msgstr "$error, מידע '$value', קודם '$previous_value' ב $pos"
+
+#: src/serialization/parser.cpp:339
+msgid "$error, value '$value' at $pos"
+msgstr "$error, מידע '$value' ב $pos"
+
+#: src/statistics_dialog.cpp:70 src/statistics_dialog.cpp:126
+msgid "Recruits"
+msgstr "גיוסים"
+
+#: src/statistics_dialog.cpp:74 src/statistics_dialog.cpp:137
+msgid "Recalls"
+msgstr "החזרות"
+
+#: src/statistics_dialog.cpp:78 src/statistics_dialog.cpp:147
+msgid "Advancements"
+msgstr "התקדמויות"
+
+#: src/statistics_dialog.cpp:82 src/statistics_dialog.cpp:155
+msgid "Losses"
+msgstr "אבידות"
+
+#: src/statistics_dialog.cpp:87 src/statistics_dialog.cpp:166
+msgid "Kills"
+msgstr "הריגות"
+
+#: src/statistics_dialog.cpp:107
+msgid "Details"
+msgstr "פרטים"
+
+#: src/statistics_dialog.cpp:175
+msgid "Damage"
+msgstr "נזק"
+
+#: src/statistics_dialog.cpp:176
+msgid "Overall"
+msgstr "בכל התורים"
+
+#: src/statistics_dialog.cpp:178
+msgid "This Turn"
+msgstr "בתור הזה"
+
+#: src/statistics_dialog.cpp:182
+msgid "Inflicted"
+msgstr "נזק נגרם"
+
+#: src/statistics_dialog.cpp:187
+msgid "Taken"
+msgstr "נלקחו"
+
+#: src/storyscreen/controller.cpp:135
+msgid "Skip"
+msgstr "דלג"
+
+#: src/terrain.cpp:157
+msgid "Village"
+msgstr "כפר"
+
+#: src/terrain.cpp:162
+msgid "Allied village"
+msgstr "כפר בעלי ברית"
+
+#: src/terrain.cpp:167
+msgid "Enemy village"
+msgstr "כפר אויב"
+
+#: src/terrain.cpp:172
+msgid "Owned village"
+msgstr "כפר כבוש"
+
+#: src/theme.cpp:314
+msgid "border_size should be between 0.0 and 0.5."
+msgstr "border_size אמור להיות בין 0.0 ל 0.5."
+
+#: src/tod_manager.cpp:143
+msgid "No time of day has been defined."
+msgstr "שום קטגורית זמן לא הוגדרה. "
+
+#: src/unit.cpp:691
+msgid "Unknown unit type '$type|' while generating traits"
+msgstr "נמצא כלי לא ידוע '$type|' בזמן יצירת כשרונות"
+
+#: src/unit.cpp:2334 src/unit.cpp:2531 src/unit.cpp:2602
+msgid " and "
+msgstr " ו "
+
+#: src/unit.cpp:2345
+msgid "$attack_list|: $effect_description"
+msgstr "$attack_list|: $effect_description"
+
+#: src/unit.cpp:2406
+msgid "moves"
+msgstr "מהירות"
+
+#: src/unit.cpp:2421 src/unit.cpp:2555
+msgid "XP to advance"
+msgstr "נק\"נ לרמה הבאה"
+
+#: src/unit.cpp:2548
+msgid " move"
+msgstr " תנועה"
+
+#: src/unit.cpp:2563
+msgid "$effect_description per level"
+msgstr "$effect_description/דרגה"
+
+#: src/unit_types.cpp:190 src/unit_types.cpp:260
+msgid "damage"
+msgid_plural "damage"
+msgstr[0] "נזק"
+msgstr[1] "נזק"
+
+#: src/unit_types.cpp:201 src/unit_types.cpp:268
+msgid "strike"
+msgid_plural "strikes"
+msgstr[0] "נסיון פגיעה"
+msgstr[1] "נסיונות פגיעה"
+
+#: src/unit_types.cpp:213
+#, no-c-format
+msgid "% accuracy"
+msgstr "% דיוק"
+
+#: src/unit_types.cpp:224
+#, no-c-format
+msgid "% parry"
+msgstr "% חסימה"
+
+#: src/unit_types.cpp:912
+msgid "No description available."
+msgstr "לא קיים תיאור כעת."
+
+#: src/unit_types.cpp:968
+msgid "chaotic"
+msgstr "תוהו"
+
+#: src/unit_types.cpp:968
+msgid "lawful"
+msgstr "סדר"
+
+#: src/unit_types.cpp:968
+msgid "liminal"
+msgstr "ספי"
+
+#: src/unit_types.cpp:968
+msgid "neutral"
+msgstr "ניטרלי"
+
+#: src/unit_types.cpp:969
+msgid "female^chaotic"
+msgstr "תוהו"
+
+#: src/unit_types.cpp:969
+msgid "female^lawful"
+msgstr "סדר"
+
+#: src/unit_types.cpp:969
+msgid "female^liminal"
+msgstr "ספית"
+
+#: src/unit_types.cpp:969
+msgid "female^neutral"
+msgstr "ניטרלי"

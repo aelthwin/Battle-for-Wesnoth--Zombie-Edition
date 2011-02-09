@@ -1,0 +1,68 @@
+#!/bin/sh
+# This script is meant to provide some means to copy over strings from one
+# textdomain to another. It copies the relevant messages from SRCDOMAIN to
+# DSTDOMAIN for LANG. If no specific languages are specified, all langs in the
+# LINGUAS file for the DSTDOMAIN are used.
+#
+# Known limitations:
+# * The tool as to be run from the root checkout dir after the string is
+#   available in the new textdomain.
+# * Support for merging strings with plurals is likely to not exist.
+#
+# Required programs (should all come with the gettext package):
+# * msgattrib
+# * msgcat
+# * msgfmt
+# * msgmerge
+set -e
+
+# where we find the distribution po hierarchy
+BASEDIR=po
+
+# copy relevant messages from SRCDOMAIN to DSTDOMAIN, for LANG
+
+if [ $# -lt 2 ]
+then
+    echo "Usage: $0 src-domain dst-domain [lang ...]"
+    exit 1
+fi
+
+SRCDOMAIN=$1
+DSTDOMAIN=$2
+shift
+shift
+
+if [ $# = 0 ]
+then
+    set -- `cat $BASEDIR/$SRCDOMAIN/LINGUAS`
+fi
+
+echo "Running utils/po2po"
+echo "Source domain:      "$SRCDOMAIN
+echo "Destination domain: "$DSTDOMAIN
+echo "Languages:          "$@
+echo ""
+
+tmp=`mktemp`
+for LANG in "$@"
+do
+    echo "Current language: "$LANG
+    # merge the 2 files
+    msgcat --use-first -F $BASEDIR/$DSTDOMAIN/$LANG.po $BASEDIR/$SRCDOMAIN/$LANG.po >$tmp
+    mv $BASEDIR/$DSTDOMAIN/$LANG.po $BASEDIR/$DSTDOMAIN/$LANG.po.bak
+    mv $tmp $BASEDIR/$DSTDOMAIN/$LANG.po
+
+    # sync with DST pot
+    msgmerge --backup=none -U $BASEDIR/$DSTDOMAIN/$LANG.po $BASEDIR/$DSTDOMAIN/$DSTDOMAIN.pot
+
+    # clear those obsolete strings added by SRC, but keep ours if any
+    msgattrib --no-obsolete $BASEDIR/$DSTDOMAIN/$LANG.po >$tmp
+    msgcat --use-first -F $tmp $BASEDIR/$DSTDOMAIN/$LANG.po.bak > $BASEDIR/$DSTDOMAIN/$LANG.po
+
+    msgmerge --backup=none -U $BASEDIR/$DSTDOMAIN/$LANG.po $BASEDIR/$DSTDOMAIN/$DSTDOMAIN.pot
+
+    msgfmt --output-file=/dev/null --statistics $BASEDIR/$DSTDOMAIN/$LANG.po
+
+done
+rm $tmp
+

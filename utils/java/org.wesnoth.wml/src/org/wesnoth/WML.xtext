@@ -1,0 +1,99 @@
+/**
+ * @author Timotei Dolean
+ */
+ //grammar org.wesnoth.WML with org.eclipse.xtext.common.Terminals
+grammar org.wesnoth.WML hidden(EOL, WS, SL_COMMENT)
+generate wml "http://www.wesnoth.org/WML"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+WMLRoot:
+	( Tags += WMLTag
+	| MacroCalls += WMLMacroCall
+	| MacroDefines += WMLMacroDefine
+	| Textdomains += WMLTextdomain
+	| IfDefs += WMLPreprocIF
+	)*
+	;
+
+WMLTag:
+	'[' (plus?='+')? name=ID ']'
+		( Tags += WMLTag
+		| Keys += WMLKey
+		| MacroCalls += WMLMacroCall
+		| MacroDefines += WMLMacroDefine
+		| Textdomains += WMLTextdomain
+		| IfDefs += WMLPreprocIF
+		)*
+	'[/' endName = ID ']'
+	;
+
+WMLKey hidden(WS):
+	name = ID '=' value += WMLKeyValue* (EOL? '+' EOL? value+=WMLKeyValue+)* eol=(EOL|SL_COMMENT);
+
+WMLKeyValue:
+	WMLValue | WMLMacroCall | WMLLuaCode | WMLArrayCall;
+	
+WMLMacroCall:
+	'{' (point?='./')? (relative?='~')? name=ID
+		( params += (WMLValue | MacroTokens)
+		| extraMacros += WMLMacroCall
+		)*
+	'}';
+
+WMLLuaCode:
+	value = LUA_CODE;
+WMLArrayCall:
+	'[' value += WMLValue+ ']' ;
+WMLMacroDefine:
+	name = DEFINE
+		( Tags += WMLTag
+		| Keys += WMLKey
+		| MacroCalls += WMLMacroCall
+		| MacroDefines += WMLMacroDefine
+		| Textdomains += WMLTextdomain
+		| Values += WMLValue
+		| IfDefs += WMLPreprocIF
+		)*
+	endName = ENDDEF;
+
+WMLPreprocIF:
+	name=(IFDEF | IFNDEF | IFHAVE | IFNHAVE)
+		( Tags += WMLTag
+		| Keys += WMLKey
+		| MacroCalls += WMLMacroCall
+		| MacroDefines += WMLMacroDefine
+		| Textdomains += WMLTextdomain
+		| Values += WMLValue
+		| IfDefs += WMLPreprocIF
+		| Elses += ELSE
+		)*
+	endName = ENDIF;
+
+WMLTextdomain:
+	name = TEXTDOMAIN;
+
+WMLValue:
+	value = (ID | STRING |'_'|'~' | '.' | './' |'$'|'/' |'(' | ')'| ANY_OTHER);
+// we use this as a hack for any characters in the macro call
+// so we won't trigger things like: key=value or [tag]
+MacroTokens:
+	val=('='|'['|']'|'+'|'[/');
+
+terminal LUA_CODE   : '<<' -> '>>';
+// Preprocessor terminals
+terminal IFHAVE	 : '#ifhave' !('\n'|'\r')* ('\r'? '\n')?;
+terminal IFNHAVE	 : '#ifnhave' !('\n'|'\r')* ('\r'? '\n')?;
+terminal IFDEF		 : '#ifdef' !('\n'|'\r')* ('\r'? '\n')?;
+terminal IFNDEF	 : '#ifndef' !('\n'|'\r')* ('\r'? '\n')?;
+terminal ELSE		 : '#else' !('\n'|'\r')* ('\r'? '\n')?;
+terminal ENDIF      : '#endif' !('\n'|'\r')* ('\r'? '\n')?;
+terminal DEFINE     : '#define' !('\n'|'\r')* ('\r'? '\n')?;
+terminal ENDDEF     : '#enddef' !('\n'|'\r')* ('\r'? '\n')?;
+terminal TEXTDOMAIN : '#textdomain' !('\n'|'\r')* ('\r'? '\n')?;
+// end preprocessor terminals
+terminal STRING     : '"' ( '\\' ('b'|'t'|'n'|'f'|'r'|'"'|"'"|'\\') | !('\\'|'"') )* '"';
+terminal ID         : ('a'..'z'|'A'..'Z'|'0'..'9'|'_'|'-'|',')+;
+terminal EOL		 : ('\r'|'\n');
+terminal WS         : (' '|'\t')+;
+terminal ANY_OTHER  : .;
+terminal SL_COMMENT : '#' !('\n'|'\r')* ('\r'? '\n')?;
