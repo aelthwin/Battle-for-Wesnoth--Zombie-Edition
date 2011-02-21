@@ -1,0 +1,19 @@
+
+
+# ignore eclipse project files
+.*project
+
+
+# ignore scons & build files
+.scons-option-cache
+config.h
+build/
+translations/
+
+
+# ignore compiled files
+*.pyc
+src/revision.hpp
+wesnoth
+wesnothd
+
