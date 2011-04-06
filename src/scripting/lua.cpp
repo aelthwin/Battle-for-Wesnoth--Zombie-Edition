@@ -3024,6 +3024,7 @@ LuaKernel::LuaKernel(const config &cfg)
 		{ "string", luaopen_string },
 		{ "math",   luaopen_math   },
 		{ "debug",  luaopen_debug  },
+		{ "os",     luaopen_os     },
 		{ NULL, NULL }
 	};
 	for (luaL_Reg const *lib = safe_libs; lib->func; ++lib)
