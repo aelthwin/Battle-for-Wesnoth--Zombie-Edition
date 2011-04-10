@@ -10,6 +10,9 @@ Trevor's notes...
 	if you do a grep for "get_units"... found this while trying to discover
 	where get_units was defined... turns out it's in lua.cpp (see above)
 
+	If you see a C++ implementation of a lua function, and its argument is
+	a WML table... then look here: http://wiki.wesnoth.org/FilterWML
+	An example of this is intf_get_locations.
 
 	Strings
 		concatenate     var1 .. var2
