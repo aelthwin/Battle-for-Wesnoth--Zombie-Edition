@@ -124,43 +124,55 @@ function this.do_moves ()
 	-- Uncomment the next line to verify that we can call functions on probs table obj.
 	--this.probs.echo ('probs echo')
 
-	ai_units = wesnoth.get_units ({side=this.ai.side})
+	print ("Start BAYES do_moves")
 
 	-- make sure some class level vars are there
-	-- TLB @TODO optimize to prevent running this all the time
-	this.first_unit = this.first_unit or ai_units[1]
-	this.first_unit_x = this.first_unit_x or this.first_unit.x
-	this.first_unit_y = this.first_unit_y or this.first_unit.y
+	this.units = wesnoth.get_units ({side=this.ai.side})
+	this.leader_id = this.leader_id or this.units[1].id
+
+	
+	-- print out some state information...
+	print ("Zombie gold:  " .. wesnoth.sides[this.side].gold)
+	print ("Recruit cost: " .. wesnoth.unit_types[this.units[1].type].cost)
+	print ("Leader id:    " .. this.leader_id)
+	print ("Move rate:    " .. this.units[1].max_moves)
 
 
 	for i, unit in ipairs (ai_units) do
-		if unit == this.first_unit then
-			-- try recruiting first...
-			-- TLB @TODO
-			
-			-- otherwise move
-			this.moveUnit (unit)
-		else
-			this.moveUnit (unit)
-		end
+		--[[
+		General outline:
+		Can recruit?
+			recruit
+
+		In PURSUIT mode?
+			wesnoth.find_path to target
+			move as far as possible
+		else in WANDER mode?
+			wesnoth.get_units in radius
+			local best_unit = nil
+			local best_prob = 0.0
+			for i, unit in pairs (units) do
+				this.probs.getProbability_PlayerRunning
+				this.probs.getProbability_CanEngage
+				this.probs.getProbability_CanConvert
+				combine probs
+				if unit == nil or combined_probs > best_prob then
+					best_unit = unit
+				end
+			end
+			if best_prob > chase_threshold then
+				toggle into PURSUIT mode
+			else
+				this.move_randomly (unit)
+		]]--
 	end
-	-- example code from scenario-lua-ai.cfg
-	-- list of units on our side that can recruit?
-	-- units = wesnoth.get_units({canrecruit = true, side = this.ai.side})
-	-- move (partial move)
-	-- ai.move(units[1],13, 22)
-	-- full move. note that the my_leader still can be used altrough x and y are now different.
-	-- ai.move_full(units[1], 11, 23)
-	-- attack with auto weapon/aggression
-	-- ai.attack(2, 12, 3, 12)
-	-- attack with weapon selected
-	-- ai.attack(3, 11, 3, 12, 1)
-	-- attack with different aggression
-	-- ai.attack(3, 13, 3, 12, -1, 0.9)
+
+	print ("End BAYES do_moves")
+	return
 end
 
-function this.moveUnit (unit)
-	this.echo ("BAYES: moveUnit for BAYES not implemented")
+function this.move_randomly (unit)
+	this.echo ("BAYES: move_randomly for BAYES not implemented")
 end
 
 return this

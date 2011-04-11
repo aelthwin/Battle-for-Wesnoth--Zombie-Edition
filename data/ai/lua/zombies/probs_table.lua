@@ -173,5 +173,14 @@ end
 
 
 
+--[[
+
+Store the current probability tables back to the filesystem
+
+]]--
+this.store = function ()
+	wesnoth.message ('store is undefined!')
+end
+
 
 return this
