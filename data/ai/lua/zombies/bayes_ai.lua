@@ -14,6 +14,11 @@ Trevor's notes...
 	a WML table... then look here: http://wiki.wesnoth.org/FilterWML
 	An example of this is intf_get_locations.
 
+	I use the [] notation a lot... because I'm comfortable with arrays, but in
+	Lua, this notation makes no sense.  "Arrays" in the conventional sense are
+	just tables, and most of the Lua websites I have found are very adamant
+	about tables not being called arrays.
+
 	Strings
 		concatenate     var1 .. var2
 
@@ -30,6 +35,48 @@ Trevor's notes...
 	Debugging
 		print           (var1, var2, ...)   -- prints to console
 		wesnoth.msg     (msg)               -- Message in Wesnoth
+
+	Wesnoth object:
+		Comes from:     built-in (lua.cpp)
+		Properties:     unit_types[]   -- array of UnitType objects
+		                sides[]        -- array of Side objects
+		Functions:      << defined in src/scripting/lua.cpp as a callbacks array >>
+		                << some useful functions: >>
+		                get_units
+				find_path      -- find a path... args and return on line 1804 of lua.cpp
+
+	AI object:
+		Comes from:     built-in (core.cpp)
+		Properties:     side
+		Functions:      move (unit, x, y) returns table -> {ok = bool, gamestate_changed = bool, status = int}
+
+	Unit objects:
+		Come from:      wesnoth.get_units, wesnoth.get_unit
+		Properties:     <<defined in lua.cpp, impl_unit_get function >>
+		                << some interesting properties: >>
+		                x              -- x position
+		                y              -- y position
+		                type           -- type number
+		                hitpoints      --
+		                max_hitpoints  --
+		                experience     --
+		                max_experience --
+				max_moves      -- 
+				id             -- an identifier for the unit
+
+	UnitType objects:
+		Come from:      wesnoth.unit_types[]
+		Properties:     << defined in lua.cpp, impl_unit_type_get function >>
+		                << some interesting properties: >>
+		                cost           -- $ gold to recruit
+		                max_moves      -- ! Do not use, not accurate !
+		                __cfg          -- variables from the race config file under the [unit_type] tag ??
+
+	Side objects:
+		Come from:      wesnoth.sides[]
+		Properties:     << defined in lua.cpp, impl_side_get function >>
+		                << some interesting properties: >>
+		                gold           -- $ gold this side has
 
 ]]--
 
