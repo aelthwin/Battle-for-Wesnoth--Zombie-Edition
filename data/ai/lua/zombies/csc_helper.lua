@@ -81,119 +81,27 @@ Trevor's notes...
 ]]--
 
 
-
-
---[[ Probability table object, does all the hard bayes stuff  :) ]]--
-this.probs = wesnoth.require('ai/lua/zombies/probs_table.lua')
-this.helper = wesnoth.require('ai/lua/zombies/csc_helper.lua')
-
-
---[[ Variables set by init ... with some default values  :) ]]--
-this.side      = 0
-this.ai        = nil
-
-
 --[[
 
-Initialize the AI engine.  This will only be run once!
+Move a unit to a random location within its reach
+
+params should contain:
+unit:            The unit to move (unit object from wesnoth.get_units)
+ai:              The AI performing the move
 
 ]]--
-function this.init (ai)
-	this.ai = ai
-	this.probs.init ()
-end
+function this.move_randomly (params)
+	local moves = wesnoth.find_reach (params.unit)
 
-
---[[
-
-Simple test function to make sure that we can call this object
-
-]]--
-function this.echo (msg)
-	wesnoth.message (msg)
-end
-
-
---[[
-
-Perform moves for each AI unit
-
-]]--
-function this.do_moves ()
-	-- Uncomment the next line to verify that the do_moves function was called
-	-- wesnoth.message ('doing moves!')
-
-	-- Uncomment the next 3 lines to verify that the engine is only instantiated once
-	--this.count = this.count or 1
-	--this.echo ('bayes echoing!' .. this.count)
-	--this.count = this.count + 1
-
-	-- Uncomment the next line to verify that we can call functions on probs table obj.
-	--this.probs.echo ('probs echo')
-
-	print ("Start BAYES do_moves")
-
-	-- make sure some class level vars are there
-	this.units = wesnoth.get_units ({side=this.ai.side})
-	this.leader_id = this.leader_id or this.units[1].id
-
-	
-	-- print out some state information...
-	print ("Zombie gold:  " .. wesnoth.sides[this.side].gold)
-	print ("Recruit cost: " .. wesnoth.unit_types[this.units[1].type].cost)
-	print ("Leader id:    " .. this.leader_id)
-	print ("Move rate:    " .. this.units[1].max_moves)
-
-
-	for i, unit in ipairs (ai_units) do
-		--[[
-		General outline:
-		Can recruit?
-			recruit
-
-		In PURSUIT mode?
-			Can ATTACK?
-				move to attack unit (if required)
-				attack
-			Else
-				wesnoth.find_path to target
-				move as far as possible
-		Else in WANDER mode?
-			wesnoth.get_units in radius
-			local best_unit = nil
-			local best_prob = 0.0
-			for i, unit in pairs (units) do
-				this.probs.getProbability_PlayerRunning
-				this.probs.getProbability_CanEngage
-				this.probs.getProbability_CanConvert
-				combine probs
-				if unit == nil or combined_probs > best_prob then
-					best_unit = unit
-				end
-			end
-			if best_prob > chase_threshold then
-				toggle into PURSUIT mode
-			else
-				this.helper.move_randomly (unit)
-		]]--
+	-- pick a move at random
+	local move_pick = math.random (1, table.getn (moves))
+	local x, y = unpack (moves[move_pick])
+	print ("HELPER: Picked random move: " .. move_pick .. " (" .. x .. ", " .. y .. ") of " .. table.getn (moves) .. " possible moves")
+	-- get an error on moves to our own tile... so only move if
+	-- one of the coords is different than unit position
+	if x ~= params.unit.x or y~= params.unit.y then
+		params.ai.move (params.unit, x, y)
 	end
-
-	this.do_results ()
-
-	print ("End BAYES do_moves")
-	return
-end
-
-
---[[
-
-Figure out what results, if any, need to be written back to the probs table
-
-]]--
-function this.do_results ()
-	-- figure results
-	-- then store
-	this.probs.store ()
 end
 
 return this

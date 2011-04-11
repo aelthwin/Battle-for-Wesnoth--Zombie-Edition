@@ -85,6 +85,7 @@ Trevor's notes...
 
 --[[ Probability table object, does all the hard bayes stuff  :) ]]--
 this.probs = wesnoth.require('ai/lua/zombies/probs_table.lua')
+this.helper = wesnoth.require('ai/lua/zombies/csc_helper.lua')
 
 
 
@@ -102,7 +103,6 @@ Initialize the AI engine.  This will only be run once!
 function this.init (ai)
 	this.ai = ai
 	this.side = this.ai.side -- for convenience
-	math.randomseed (os.time())
 end
 
 
@@ -258,7 +258,10 @@ function this.do_moves ()
 		end
 
 		-- Fall back on random movement
-		this.move_randomly (unit)
+		this.helper.move_randomly ({
+			unit = unit,
+			ai   = this.ai
+		})
 	end
 	-- example code from scenario-lua-ai.cfg
 	-- list of units on our side that can recruit?
@@ -276,20 +279,6 @@ function this.do_moves ()
 
 	print ("End WANDER do_moves")
 	return
-end
-
-function this.move_randomly (unit)
-	local moves = wesnoth.find_reach (unit)
-
-	-- pick a move at random
-	local move_pick = math.random (1, table.getn (moves))
-	x, y = unpack (moves[move_pick])
-	print ("WANDER: Picked random move: " .. move_pick .. " (" .. x .. ", " .. y .. ") of " .. table.getn (moves) .. " possible moves")
-	-- get an error on moves to our own tile... so only move if
-	-- one of the coords is different than unit position
-	if x ~= unit.x or y~= unit.y then
-		this.ai.move (unit, x, y)
-	end
 end
 
 return this
