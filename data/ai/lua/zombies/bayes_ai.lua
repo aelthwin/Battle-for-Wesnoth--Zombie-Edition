@@ -10,6 +10,8 @@ Trevor's notes...
 	if you do a grep for "get_units"... found this while trying to discover
 	where get_units was defined... turns out it's in lua.cpp (see above)
 
+	Another useful resource is scenario-lua-ai.cfg
+
 	If you see a C++ implementation of a lua function, and its argument is
 	a WML table... then look here: http://wiki.wesnoth.org/FilterWML
 	An example of this is intf_get_locations.
@@ -35,6 +37,7 @@ Trevor's notes...
 	Debugging
 		print           (var1, var2, ...)   -- prints to console
 		wesnoth.msg     (msg)               -- Message in Wesnoth
+		string.format   (format, arg1, arg2, ... argN)  like printf in C
 
 	Wesnoth object:
 		Comes from:     built-in (lua.cpp)

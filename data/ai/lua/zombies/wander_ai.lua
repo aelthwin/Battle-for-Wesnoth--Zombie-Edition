@@ -10,6 +10,8 @@ Trevor's notes...
 	if you do a grep for "get_units"... found this while trying to discover
 	where get_units was defined... turns out it's in lua.cpp (see above)
 
+	Another useful resource is scenario-lua-ai.cfg
+
 	If you see a C++ implementation of a lua function, and its argument is
 	a WML table... then look here: http://wiki.wesnoth.org/FilterWML
 	An example of this is intf_get_locations.
@@ -35,6 +37,7 @@ Trevor's notes...
 	Debugging
 		print           (var1, var2, ...)   -- prints to console
 		wesnoth.msg     (msg)               -- Message in Wesnoth
+		string.format   (format, arg1, arg2, ... argN)  like printf in C
 
 	Wesnoth object:
 		Comes from:     built-in (lua.cpp)
@@ -86,6 +89,10 @@ Trevor's notes...
 --[[ Probability table object, does all the hard bayes stuff  :) ]]--
 this.probs = wesnoth.require('ai/lua/zombies/probs_table.lua')
 this.helper = wesnoth.require('ai/lua/zombies/csc_helper.lua')
+
+
+--[[ Configuration variables ]]--
+this.attack_radius = 5 -- happens to be the move range of a Zombie
 
 
 
@@ -149,45 +156,33 @@ function this.do_moves ()
 
 	-- Do moves for each unit
 	for i, unit in ipairs (this.units) do
+
+		print ("Unit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") doing moves")
+
+		-- Action pipeline...
+		local continue = true
+
 		-- try recruiting first...
-		-- TLB @TODO add gold check
-		if unit.canrecruit then
-			print ("Recruit capable unit at: " .. unit.x .. ", " .. unit.y);
+		if continue and this.helper.can_recruit ({unit = unit}) then
+			print ("Recruit capable unit at: " .. unit.x .. ", " .. unit.y)
+			print ("And we have enough gold!")
 			-- can only recruit from a Keep location...
-			local keep_locs = wesnoth.get_locations ({
-				terrain    = "K*"
-			});
-			print ("Keep locations:\n")
-			local best_path = nil
-			local best_cost = nil
-			local best_idx = nil
-			for i, loc in ipairs (keep_locs) do
-				local x, y = unpack (loc)
-				local path, cost = wesnoth.find_path (unit.x, unit.y, x, y, {ignore_units = true})
-				local change_str = ''
-				if best_cost == nil or cost < best_cost then
-					best_cost = cost
-					best_path = path
-					best_idx = i
-					change_str = '  --  best CSF!'
-				end
-				print ("\t(" .. x .. ", " .. y .. ") costs " .. cost .. change_str)
-			end
+			local k_path, k_cost, k_keep = this.helper.get_closest_keep ({unit = unit})
 
 			-- only do anything if we actually got a best choice for keep
-			if best_idx ~= nil then
-				local x, y = unpack (keep_locs[best_idx])
-				print ("Chose to move to keep " .. best_idx .. " (" .. x .. ", " .. y .. ")")
+			if k_keep ~= nil then
+				local x, y = unpack (k_keep)
+				print ("Chose to move to keep  (" .. x .. ", " .. y .. ")")
 
-				-- best_path is a table of single moves (not necessarily unit cost)
+				-- k_path is a table of single moves (not necessarily unit cost)
 				-- first move in the table is ALWAYS our current position
 				-- don't execute that move
-				table.remove (best_path, 1)
+				table.remove (k_path, 1)
 				local ok = true  -- set to false first failure... maxed out move ability in other words
-				for i, move in pairs (best_path) do
+				for i, move in pairs (k_path) do
 					if ok then
 						local x, y = unpack (move)
-						print ("\tbest_path: moving to (" .. x .. ", " .. y .. ")")
+						print ("\tk_path: moving to (" .. x .. ", " .. y .. ")")
 						local move_result = this.ai.move (unit, x, y)
 						ok = move_result.ok
 					end
@@ -199,41 +194,8 @@ function this.do_moves ()
 					-- can recruit onto any Castle location, but should choose
 					-- one that's close to provide believability
 					print ("Got to the keep!")
-					print ("Castle locations within 10 tiles of the current location..")
-					-- it's strange, but I don't seem to be able to combine
-					-- the terrain filter with the x,y,radius filter.
-					-- so we'll get two sets and compute intersection
-					local castle_locs = wesnoth.get_locations ({
-						terrain = "C*"
-					})
-					local close_locs = wesnoth.get_locations ({
-						x       = unit.x,
-						y       = unit.y,
-						radius  = 10
-					})
-					
-					-- combine castle and keep locations
-					local r_locs = {}
-					for x, l in pairs (keep_locs) do
-						table.insert (r_locs, l)
-					end
-					for x, l in pairs (castle_locs) do
-						table.insert (r_locs, l)
-					end
-					
-					-- compute intersection of recruitable locs and close locs
-					local cr_locs = {}
-					for x, l in pairs (r_locs) do
-						for y, m in pairs (close_locs) do
-							local lx, ly = unpack (l)
-							local mx, my = unpack (m)
-							if lx == mx and ly == my then table.insert (cr_locs, l) end
-						end
-					end
-					print ("close recruitable locations:")
-					for x, l in pairs (cr_locs) do
-						print ("\t(" .. x .. ", " .. y .. ")")
-					end
+					print ("Recruitable locations within 10 tiles of the current location..")
+					local cr_locs = this.helper.get_close_recruit_locs ({unit = unit, radius = 10})
 
 					-- don't have to be clever about this next part
 					-- just try to recruit everywhere that it's possible
@@ -241,27 +203,32 @@ function this.do_moves ()
 					-- there is an error... we can fix that later
 					for x, l in pairs (cr_locs) do
 						local lx, ly = unpack (l)
+						print ("\trecruiting at: (" .. lx .. ", " .. ly .. ")")
 						this.ai.recruit ("Zombie", lx, ly)
 					end
 
 				end
 
-
-
-
-				-- recruited!  done...
-				print ("End WANDER do_moves (after recruit)")
-				--return
+				-- recruited!  done...  fall through in case there's anything else we can do
 			end
-			
-			-- didn't do anything ... fall through to next stage
-		end
+		end -- RECRUITING PHASE
 
-		-- Fall back on random movement
-		this.helper.move_randomly ({
-			unit = unit,
-			ai   = this.ai
-		})
+		if continue then
+			local enemy_units = this.helper.enemy_units_in_range ({unit = unit, radius = this.attack_radius})
+			for i, e_unit in pairs (enemy_units) do
+				print ("WANDER: attacking enemy unit, " .. e_unit.x .. ", " .. e_unit.y)
+				this.helper.move_and_attack ({unit = unit, enemy = e_unit, ai = this.ai})
+				continue = false -- no continue if we've tried to attack at least one enemy
+			end 
+		end
+		
+		if continue then
+			-- Fall back on random movement
+			this.helper.move_randomly ({
+				unit = unit,
+				ai   = this.ai
+			})
+		end
 	end
 	-- example code from scenario-lua-ai.cfg
 	-- list of units on our side that can recruit?
