@@ -103,6 +103,7 @@ Initialize the AI engine.  This will only be run once!
 ]]--
 function this.init (ai)
 	this.ai = ai
+	this.side = this.ai.side -- for convenience
 	this.probs.init ()
 end
 
@@ -148,7 +149,7 @@ function this.do_moves ()
 	print ("Move rate:    " .. this.units[1].max_moves)
 
 
-	for i, unit in ipairs (ai_units) do
+	for i, unit in ipairs (this.units) do
 		--[[
 		General outline:
 		Can recruit?
@@ -196,6 +197,7 @@ Figure out what results, if any, need to be written back to the probs table
 function this.do_results ()
 	-- figure results
 	-- then store
+	this.probs.update ()
 	this.probs.store ()
 end
 

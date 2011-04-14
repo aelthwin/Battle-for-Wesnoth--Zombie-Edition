@@ -1,0 +1,17 @@
+return {
+-- Table: {1}
+{
+   {2},
+   {3},
+},
+-- Table: {2}
+{
+   ["speed"]=4,
+   ["distance"]=15,
+},
+-- Table: {3}
+{
+   ["speed"]=7,
+   ["distance"]=10,
+},
+}

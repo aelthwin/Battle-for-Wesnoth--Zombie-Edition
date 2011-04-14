@@ -1,0 +1,23 @@
+return {
+-- Table: {1}
+{
+   {2},
+   {3},
+},
+-- Table: {2}
+{
+   ["zombies"]=1,
+   ["fellows"]=2,
+   ["speed"]=4,
+   ["distance"]=9,
+   ["strength"]=2,
+},
+-- Table: {3}
+{
+   ["zombies"]=0,
+   ["fellows"]=3,
+   ["speed"]=5,
+   ["distance"]=8,
+   ["strength"]=3,
+},
+}

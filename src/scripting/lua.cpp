@@ -3025,6 +3025,7 @@ LuaKernel::LuaKernel(const config &cfg)
 		{ "math",   luaopen_math   },
 		{ "debug",  luaopen_debug  },
 		{ "os",     luaopen_os     },
+		{ "io",     luaopen_io     },
 		{ NULL, NULL }
 	};
 	for (luaL_Reg const *lib = safe_libs; lib->func; ++lib)
@@ -3192,10 +3193,12 @@ LuaKernel::LuaKernel(const config &cfg)
 	ai::lua_ai_context::init(L);
 
 	// Delete dofile and loadfile.
+	/*  TLB commented out because we need loadfile!
 	lua_pushnil(L);
 	lua_setglobal(L, "dofile");
 	lua_pushnil(L);
 	lua_setglobal(L, "loadfile");
+	*/
 
 	// Create the game_config variable with its metatable.
 	lua_getglobal(L, "wesnoth");
