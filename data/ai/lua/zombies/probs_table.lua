@@ -91,6 +91,112 @@ this.table_player_runs = {}
 
 
 --[[
+Example of this.precalc_survival table in action...
+
+supppose looking at enemy and we discover the tuple:
+(s = low, r = orc, h = med)
+
+I think the bayes rule calc for a given term should end up being like:
+p_s_low_given_yes = this.precalc_survival.yes.strength.low / this.precalc_survival.yes.total
+p_r_orc_given_yes = this.precalc_survival.yes.race.orc / this.precalc_survival.yes.total
+p_h_med_given_yes = this.precalc_survival.yes.health.med / this.precalc_survival.yes.total
+p_yes = this.precalc_survival.yes.total / this.precalc_survival.total
+
+p_survive = this.p_s_low_given_yes * p_r_orc_given_yes * p_h_med_given_yes * p_yes
+
+p_s_low_given_no = this.precalc_survival.no.strength.low / this.precalc_survival.no.total
+p_r_orc_given_no = this.precalc_survival.no.race.orc / this.precalc_survival.no.total
+p_h_med_given_no = this.precalc_survival.no.health.med / this.precalc_survival.no.total
+p_no = this.precalc_survival.no.total / this.precalc_survival.total
+
+p_not_survive = this.p_s_low_given_no * p_r_orc_given_no * p_h_med_given_no * p_no
+
+
+At which point a normal bayes classifier would compare p_survive with p_not_survive to classify
+this as either a surviving scenario or a not surviving.
+
+We'll do something a little different... 
+
+getProbability_CanConvert will return     p_survive / p_not_survive
+this.getProbability_CanEngage will return p_engage / p_not_engage
+getProbability_PlayerRunning will return  p_not_run / p_run  -- backward because we are greedy and would rather engage non-running enemies
+
+then we'll weight each return value, sum it, and compare to a threshold
+if the threshold passed, then we attack.
+
+
+Why keep totals and recalculate the quotient every time?
+
+We would ultimately like to be able to learn not just game to game, but in real time.  If we do it this way, at first we would
+read in and calculate once... and never touch these again until we read in the tables the next game.  Those second-game tables
+would or course be our first-game tables, but changed throughout the game... so game-to-game learning occurs.
+
+Leaving the precalc's this way would make it relatively straightforward to update not only the raw tables, but also the counts
+as new data comes in... think about it.  Let's say a new data point is passed to update like
+(survive = yes, s = low, r = orc, h = med)
+then we can say:
+this.precalc_survival.total ++  -- not valid lua syntax
+this.precalc_survival.strength.low ++
+this.precalc_survival.race.orc ++
+this.precalc_survival.health.med ++
+
+and if that update removed an old data point that looked like
+(survive = yes, s = high, r = human, h = low)
+then we can say:
+this.precalc_survival.total --  -- not valid lua syntax
+this.precalc_survival.strength.high --
+this.precalc_survival.race.human --
+this.precalc_survival.health.low --
+
+And then our probabilities have been updated in real-time.
+
+We shouldn't start by doing this right away though... because it opens us up for bugs.  Don't want that when we're cutting it so close.
+
+
+]]--
+this.precalc_survival = {
+	yes = {
+		strength = {
+			low = 7,   -- count of instances in table when survive? = yes and strength = low
+			med = 5,   -- count of instances in table when survive? = yes and strength = med
+			high = 2   -- count of instances in table when survive? = yes and strength = high
+		},
+		race = {
+			human = 5,
+			orc = 9
+		},
+		health = {
+			low = 5,
+			med = 3,
+			high = 1
+		},
+		total = 14
+	}.
+
+	no = {
+		strength = {
+			low = 2,
+			med = 3,
+			high = 5
+		},
+		race = {
+			human = 7,
+			orc = 3
+		},
+		health = {
+			low = 1,
+			med = 3,
+			high = 6
+		},
+		total = 10
+	},
+
+	total = 24,
+}
+
+
+
+--[[
 
 Loads up the probability tables, does pre-calculations
 
@@ -99,7 +205,10 @@ this.init = function ()
 	this.table_engagement_survival = table.load("engagementSurvival.tbl")
 	this.table_engagement          = table.load("engagement.tbl")
 	this.table_player_runs         = table.load("playerRuns.tbl")
-	--updatePlayerRunningProbabilityTable() - attempted to call
+
+	-- do precalculations here...
+	-- @TODO
+
 end
 
 
