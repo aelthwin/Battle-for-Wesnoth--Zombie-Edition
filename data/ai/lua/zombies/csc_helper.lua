@@ -151,6 +151,25 @@ end
 
 --[[
 
+Get a table of enemy units within some distance of a given unit
+
+Params:  unit_id -- the unit.id from a wesnoth Unit object
+
+Returns: the unit, if found, or nil
+
+]]--
+function this.unit_for_id (unit_id)
+	local all_units = wesnoth.get_units()
+	for i, unit in pairs (all_units) do
+		if unit.id == unit_id then return unit end
+	end
+
+	return nil
+end
+
+
+--[[
+
 Is this unit able to recruit more of itself... in general, and is there enough gold?
 
 params should contain:

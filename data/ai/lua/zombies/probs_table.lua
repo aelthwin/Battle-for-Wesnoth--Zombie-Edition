@@ -223,6 +223,15 @@ this.echo = function (msg)
 end
 
 
+this.get_all_probs = function (params)
+	return
+		this.getProbability_PlayerRunning (params),
+		this.getProbability_CanEngage     (params),
+		this.getProbability_CanConvert    (params)
+end
+
+
+
 
 --[[
 
@@ -237,6 +246,7 @@ varN:            describe varN
 ]]--
 this.getProbability_PlayerRunning = function (params)
 	wesnoth.message ('getProbability_PlayerRunning is undefined!')
+	return 1.0
 end
 
 
@@ -255,6 +265,7 @@ varN:            describe varN
 ]]--
 this.getProbability_CanEngage = function (params)
 	wesnoth.message ('getProbability_CanEngage is undefined!')
+	return 1.0
 end
 
 
@@ -272,6 +283,7 @@ varN:            describe varN
 ]]--
 this.getProbability_CanConvert = function (params)
 	wesnoth.message ('getProbability_CanConvert is undefined!')
+	return 1.0
 end
 
 

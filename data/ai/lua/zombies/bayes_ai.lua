@@ -94,6 +94,15 @@ this.helper = wesnoth.require('ai/lua/zombies/csc_helper.lua')
 --[[ Variables set by init ... with some default values  :) ]]--
 this.side      = 0
 this.ai        = nil
+this.modes     = {}   -- will map unit id to mode 
+this.targets   = {}   -- will map unit id to target id
+
+
+this.chase_threshold = 0.25 -- total guess for now -- will require tuning
+
+--[[ Modes ]]--
+local PURSUIT  = 1
+local WANDER   = 0
 
 
 --[[
@@ -140,81 +149,97 @@ function this.do_moves ()
 
 	for i, unit in ipairs (this.units) do
 
+		-- Initialization does:
+		-- 1. print status
+		-- 2. make sure unit indexes are present in this.modes and this.targets
+		-- 3. puts a unit back into WANDER if its target is gone
 		print ("Unit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") doing moves")
+		this.init_unit (unit)
+
 
 		-- Action pipeline...
 		local continue = true
 
-	--[[
-	General outline:
-	Can recruit?
-		recruit
-	]]--
-		-- try recruiting first...
+		-- try recruiting?
 		if continue and this.helper.can_recruit ({unit = unit}) then
 			this.helper.do_recruit ({
 				unit = unit,
 				ai   = this.ai
 			})
-			-- recruited!  done...  fall through in case there's anything else we can do
+			-- recruited!
+			-- don't do anything apart from recruiting
+			continue = false
 		end -- RECRUITING PHASE
 
-	--[[
-	In PURSUIT mode?
-		Can ATTACK?
-			move to attack unit (if required)
-			attack
-		Else
-			wesnoth.find_path to target
-			move as far as possible
-	]]--
 
 
-		-- recklessly attack any enemies within smell distance
-		--[[
-		if continue then
-			local enemy_units = this.helper.enemy_units_in_range ({unit = unit, radius = this.attack_radius})
-			for i, e_unit in pairs (enemy_units) do
-				print ("WANDER: attacking enemy unit, " .. e_unit.x .. ", " .. e_unit.y)
-				this.helper.move_and_attack ({unit = unit, enemy = e_unit, ai = this.ai})
-				continue = false -- no continue if we've tried to attack at least one enemy
+		-- try to find a good target for WANDERers?
+		if continue and this.modes[unit.id] == WANDER then
+			local best_unit_id = nil
+			local best_prob    = 0.0
+			local close_units  = this.helper.enemy_units_in_range ({unit = unit, radius = 10})
+
+			-- find best close candidate
+			for i, e_unit in pairs (close_units) do
+				-- get proportional probs
+				local ppr, pce, pcc = this.probs.get_all_probs ({
+					unit   = unit,
+					target = e_unit
+				})
+			
+				-- combine
+				local combined_probs = ppr * pce * pcc
+			
+				-- compare
+				if combined_probs > best_prob then
+					best_prob    = combined_probs
+					best_unit_id = e_unit.id
+				end
+			end
+
+			-- should we pursue best candidate?
+			if best_prob > this.chase_threshold then
+				this.to_pursuit_mode ({
+					unit      = unit,
+					target_id = best_unit_id
+				})
 			end
 		end
-		]]--
 
-	--[[
-	Else in WANDER mode?
-		-- determine if we should move to PURSUIT mode for any smelled units
-		wesnoth.get_units in radius
-		local best_unit = nil
-		local best_prob = 0.0
-		for i, unit in pairs (units) do
-			this.probs.getProbability_PlayerRunning
-			this.probs.getProbability_CanEngage
-			this.probs.getProbability_CanConvert
-			combine probs
-			if unit == nil or combined_probs > best_prob then
-				best_unit = unit
+
+		-- if in pursuit mode, try chase and attack?
+		-- don't need to check for this.targets[unit.id] ~= nil
+		-- because we can guarantee that if we take the branch
+		-- that it's something real, an enemy actually on the map
+		if continue and this.modes[unit.id] == PURSUIT then
+			-- do the attack
+			this.helper.move_and_attack ({
+				unit  = unit,
+				enemy = this.helper.unit_for_id (this.targets[unit.id]),
+				ai    = this.ai
+			})
+
+			-- is the unit converted?
+			local enemy = this.helper.unit_for_id (this.targets[unit.id])
+			if enemy ~= nil and enemy.side == unit.side then
+				this.to_wander_mode ({
+					unit = unit
+				})
+			-- no?  might be pursuing and not caught him yet or attacked but didn't convert
+			-- prevent any random movement
+			else
+				continue = false
 			end
 		end
-		if best_prob > chase_threshold then
-			toggle into PURSUIT mode
-			continue = false
-		else
-			-- fall through to random stage
-	]]--
 
 
-		-- Fall back on random movement		
+		-- Fall back on random movement
 		if continue then
 			this.helper.move_randomly ({
 				unit = unit,
 				ai   = this.ai
 			})
 		end
-
-
-
 
 	end
 
@@ -223,6 +248,30 @@ function this.do_moves ()
 	print ("End BAYES do_moves")
 	return
 end
+
+
+
+function this.init_unit (unit)
+	this.modes[unit.id]   = this.modes[unit.id] or WANDER
+	this.targets[unit.id] = this.targets[unit.id] or nil
+
+	if  this.modes[unit.id] == PURSUIT and this.helper.unit_for_id (this.targets[unit.id]) == nil then
+		this.to_wander_mode (unit)
+	end
+end
+
+
+function this.to_wander_mode (params)
+	this.modes[params.unit.id]   = WANDER
+	this.targets[params.unit.id] = nil
+end
+
+
+function this.to_pursuit_mode (params)
+	this.modes[params.unit.id]   = PURSUIT
+	this.targets[params.unit.id] = params.target_id
+end
+
 
 
 --[[
