@@ -124,22 +124,11 @@ Perform moves for each AI unit
 
 ]]--
 function this.do_moves ()
-	-- Uncomment the next line to verify that the do_moves function was called
-	-- wesnoth.message ('doing moves!')
-
-	-- Uncomment the next 3 lines to verify that the engine is only instantiated once
-	--this.count = this.count or 1
-	--this.echo ('bayes echoing!' .. this.count)
-	--this.count = this.count + 1
-
-	-- Uncomment the next line to verify that we can call functions on probs table obj.
-	--this.probs.echo ('probs echo')
-
 	print ("Start BAYES do_moves")
 
 	-- make sure some class level vars are there
 	this.units = wesnoth.get_units ({side=this.ai.side})
-	this.leader_id = this.leader_id or this.units[1].id
+	this.leader_id = this.leader_id or this.units[1].id -- only set once
 
 	
 	-- print out some state information...
@@ -150,36 +139,83 @@ function this.do_moves ()
 
 
 	for i, unit in ipairs (this.units) do
-		--[[
-		General outline:
-		Can recruit?
-			recruit
 
-		In PURSUIT mode?
-			Can ATTACK?
-				move to attack unit (if required)
-				attack
-			Else
-				wesnoth.find_path to target
-				move as far as possible
-		Else in WANDER mode?
-			wesnoth.get_units in radius
-			local best_unit = nil
-			local best_prob = 0.0
-			for i, unit in pairs (units) do
-				this.probs.getProbability_PlayerRunning
-				this.probs.getProbability_CanEngage
-				this.probs.getProbability_CanConvert
-				combine probs
-				if unit == nil or combined_probs > best_prob then
-					best_unit = unit
-				end
+		print ("Unit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") doing moves")
+
+		-- Action pipeline...
+		local continue = true
+
+	--[[
+	General outline:
+	Can recruit?
+		recruit
+	]]--
+		-- try recruiting first...
+		if continue and this.helper.can_recruit ({unit = unit}) then
+			this.helper.do_recruit ({
+				unit = unit,
+				ai   = this.ai
+			})
+			-- recruited!  done...  fall through in case there's anything else we can do
+		end -- RECRUITING PHASE
+
+	--[[
+	In PURSUIT mode?
+		Can ATTACK?
+			move to attack unit (if required)
+			attack
+		Else
+			wesnoth.find_path to target
+			move as far as possible
+	]]--
+
+
+		-- recklessly attack any enemies within smell distance
+		--[[
+		if continue then
+			local enemy_units = this.helper.enemy_units_in_range ({unit = unit, radius = this.attack_radius})
+			for i, e_unit in pairs (enemy_units) do
+				print ("WANDER: attacking enemy unit, " .. e_unit.x .. ", " .. e_unit.y)
+				this.helper.move_and_attack ({unit = unit, enemy = e_unit, ai = this.ai})
+				continue = false -- no continue if we've tried to attack at least one enemy
 			end
-			if best_prob > chase_threshold then
-				toggle into PURSUIT mode
-			else
-				this.helper.move_randomly (unit)
+		end
 		]]--
+
+	--[[
+	Else in WANDER mode?
+		-- determine if we should move to PURSUIT mode for any smelled units
+		wesnoth.get_units in radius
+		local best_unit = nil
+		local best_prob = 0.0
+		for i, unit in pairs (units) do
+			this.probs.getProbability_PlayerRunning
+			this.probs.getProbability_CanEngage
+			this.probs.getProbability_CanConvert
+			combine probs
+			if unit == nil or combined_probs > best_prob then
+				best_unit = unit
+			end
+		end
+		if best_prob > chase_threshold then
+			toggle into PURSUIT mode
+			continue = false
+		else
+			-- fall through to random stage
+	]]--
+
+
+		-- Fall back on random movement		
+		if continue then
+			this.helper.move_randomly ({
+				unit = unit,
+				ai   = this.ai
+			})
+		end
+
+
+
+
 	end
 
 	this.do_results ()

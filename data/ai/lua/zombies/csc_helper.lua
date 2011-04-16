@@ -242,6 +242,56 @@ function this.get_close_recruit_locs (params)
 	return cr_locs
 end
 
+function this.do_recruit (params)
+	local unit = params.unit
+	local ai   = params.ai
+
+	print ("Recruit capable unit do_recruit'ing at: " .. unit.x .. ", " .. unit.y)
+
+	-- can only recruit from a Keep location...
+	local k_path, k_cost, k_keep = this.get_closest_keep ({unit = unit})
+
+	-- only do anything if we actually got a best choice for keep
+	if k_keep ~= nil then
+		local x, y = unpack (k_keep)
+		print ("Chose to move to keep  (" .. x .. ", " .. y .. ")")
+
+		-- k_path is a table of single moves (not necessarily unit cost)
+		-- first move in the table is ALWAYS our current position
+		-- don't execute that move
+		table.remove (k_path, 1)
+		local ok = true  -- set to false first failure... maxed out move ability in other words
+		for i, move in pairs (k_path) do
+			if ok then
+				local x, y = unpack (move)
+				print ("\tk_path: moving to (" .. x .. ", " .. y .. ")")
+				local move_result = ai.move (unit, x, y)
+				ok = move_result.ok
+			end
+		end
+
+		-- did we make it to the location?
+		if unit.x == x and unit.y == y then
+			-- can recruit onto any Castle location, but should choose
+			-- one that's close to provide believability
+			print ("Got to the keep!")
+			print ("Recruitable locations within 10 tiles of the current location..")
+			local cr_locs = this.get_close_recruit_locs ({unit = unit, radius = 10})
+
+			-- don't have to be clever about this next part
+			-- just try to recruit everywhere that it's possible
+			-- right now, we don't really care so much whether
+			-- there is an error... we can fix that later
+			for x, l in pairs (cr_locs) do
+				local lx, ly = unpack (l)
+				print ("\trecruiting at: (" .. lx .. ", " .. ly .. ")")
+				ai.recruit ("Zombie", lx, ly)
+			end
+		end
+	end
+end
+
+
 
 function this.get_empty_adjacencies (x, y)
 	local adjacencies = wesnoth.get_locations ({

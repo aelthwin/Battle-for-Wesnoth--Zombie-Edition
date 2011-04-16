@@ -171,7 +171,7 @@ this.precalc_survival = {
 			high = 1
 		},
 		total = 14
-	}.
+	},
 
 	no = {
 		strength = {

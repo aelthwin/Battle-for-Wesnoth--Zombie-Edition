@@ -164,66 +164,25 @@ function this.do_moves ()
 
 		-- try recruiting first...
 		if continue and this.helper.can_recruit ({unit = unit}) then
-			print ("Recruit capable unit at: " .. unit.x .. ", " .. unit.y)
-			print ("And we have enough gold!")
-			-- can only recruit from a Keep location...
-			local k_path, k_cost, k_keep = this.helper.get_closest_keep ({unit = unit})
-
-			-- only do anything if we actually got a best choice for keep
-			if k_keep ~= nil then
-				local x, y = unpack (k_keep)
-				print ("Chose to move to keep  (" .. x .. ", " .. y .. ")")
-
-				-- k_path is a table of single moves (not necessarily unit cost)
-				-- first move in the table is ALWAYS our current position
-				-- don't execute that move
-				table.remove (k_path, 1)
-				local ok = true  -- set to false first failure... maxed out move ability in other words
-				for i, move in pairs (k_path) do
-					if ok then
-						local x, y = unpack (move)
-						print ("\tk_path: moving to (" .. x .. ", " .. y .. ")")
-						local move_result = this.ai.move (unit, x, y)
-						ok = move_result.ok
-					end
-				end
-
-
-				-- did we make it to the location?
-				if unit.x == x and unit.y == y then
-					-- can recruit onto any Castle location, but should choose
-					-- one that's close to provide believability
-					print ("Got to the keep!")
-					print ("Recruitable locations within 10 tiles of the current location..")
-					local cr_locs = this.helper.get_close_recruit_locs ({unit = unit, radius = 10})
-
-					-- don't have to be clever about this next part
-					-- just try to recruit everywhere that it's possible
-					-- right now, we don't really care so much whether
-					-- there is an error... we can fix that later
-					for x, l in pairs (cr_locs) do
-						local lx, ly = unpack (l)
-						print ("\trecruiting at: (" .. lx .. ", " .. ly .. ")")
-						this.ai.recruit ("Zombie", lx, ly)
-					end
-
-				end
-
-				-- recruited!  done...  fall through in case there's anything else we can do
-			end
+			this.helper.do_recruit ({
+				unit = unit,
+				ai   = this.ai
+			})
+			-- recruited!  done...  fall through in case there's anything else we can do
 		end -- RECRUITING PHASE
 
+		-- recklessly attack any enemies within smell distance
 		if continue then
 			local enemy_units = this.helper.enemy_units_in_range ({unit = unit, radius = this.attack_radius})
 			for i, e_unit in pairs (enemy_units) do
 				print ("WANDER: attacking enemy unit, " .. e_unit.x .. ", " .. e_unit.y)
 				this.helper.move_and_attack ({unit = unit, enemy = e_unit, ai = this.ai})
 				continue = false -- no continue if we've tried to attack at least one enemy
-			end 
+			end
 		end
-		
+
+		-- Fall back on random movement		
 		if continue then
-			-- Fall back on random movement
 			this.helper.move_randomly ({
 				unit = unit,
 				ai   = this.ai
