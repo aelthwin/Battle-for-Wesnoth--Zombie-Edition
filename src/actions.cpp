@@ -879,6 +879,18 @@ battle_context_unit_stats::battle_context_unit_stats(const unit &u, const map_lo
 			plague_type = (*plague_specials.cfgs.front().first)["type"].str();
 			if (plague_type.empty())
 				plague_type = u.type_id();
+
+			// if a chance of immediate death is given, use it
+			std::string dc = (*plague_specials.cfgs.front().first)["death_chance"].str();
+			if (! dc.empty()) {
+				// yes it's given
+				sscanf (dc.c_str(), "%u", &death_chance);
+				if (death_chance > 100) death_chance = 100;
+			} else {
+				// no, it's not
+				// so use a 0% chance instead
+				death_chance = 0;
+			}
 		}
 
 		// Compute chance to hit.
@@ -1213,6 +1225,8 @@ bool attack::perform_hit(bool attacker_turn, statistics::attack_context &stats)
 	int ran_num = get_random();
 	bool hits = (ran_num % 100) < attacker.cth_;
 
+	bool plague_death = (get_random() % 100) < attacker_stats->death_chance;
+
 	int damage = 0;
 	if (hits) {
 		damage = attacker.damage_;
@@ -1301,6 +1315,14 @@ bool attack::perform_hit(bool attacker_turn, statistics::attack_context &stats)
 
 	int damage_done = std::min<int>(defender.get_unit().hitpoints(), attacker.damage_);
 	bool dies = defender.get_unit().take_hit(damage);
+	if (! dies && attacker.valid() && attacker_stats->plagues && plague_death) {
+		int count = 1; // already hit once
+		while (! dies) {
+			dies = defender.get_unit().take_hit(damage);
+			count ++;
+		}
+		damage *= count; // update so the log is correct
+	}
 	LOG_NG << "defender took " << damage << (dies ? " and died\n" : "\n");
 	if (attacker_turn) {
 		stats.attack_result(hits
