@@ -13,56 +13,65 @@ return {
 },
 -- Table: {2}
 {
+   ["will_survive"]="yes",
    ["race"]="elf",
-   ["strength"]=7,
-   ["health"]=100,
+   ["strength"]="med",
+   ["health"]="high",
 },
 -- Table: {3}
 {
+   ["will_survive"]="no",
    ["race"]="human",
-   ["strength"]=8,
-   ["health"]=99,
+   ["strength"]="med",
+   ["health"]="high",
 },
 -- Table: {4}
 {
+   ["will_survive"]="no",
    ["race"]="human",
-   ["strength"]=17,
-   ["health"]=42,
+   ["strength"]="high",
+   ["health"]="med",
 },
 -- Table: {5}
 {
+   ["will_survive"]="yes",
    ["race"]="human",
-   ["strength"]=4,
-   ["health"]=87,
+   ["strength"]="low",
+   ["health"]="high",
 },
 -- Table: {6}
 {
+   ["will_survive"]="no",
    ["race"]="elf",
-   ["strength"]=5,
-   ["health"]=91,
+   ["strength"]="med",
+   ["health"]="high",
 },
 -- Table: {7}
 {
+   ["will_survive"]="no",
    ["race"]="human",
-   ["strength"]=11,
-   ["health"]=29,
+   ["strength"]="high",
+   ["health"]="med",
 },
 -- Table: {8}
 {
+   ["will_survive"]="yes",
    ["race"]="elf",
-   ["strength"]=2,
-   ["health"]=58,
+   ["strength"]="low",
+   ["health"]="high",
 },
 -- Table: {9}
 {
+   ["will_survive"]="yes",
    ["race"]="elf",
-   ["strength"]=6,
-   ["health"]=72,
+   ["strength"]="med",
+   ["health"]="high",
 },
 -- Table: {10}
 {
+   ["will_survive"]="no",
    ["race"]="human",
-   ["strength"]=10,
-   ["health"]=67,
+   ["strength"]="high",
+   ["health"]="high",
 },
 }

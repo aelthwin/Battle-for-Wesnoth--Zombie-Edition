@@ -243,126 +243,6 @@ this.precalc_survival.health.low --
 And then our probabilities have been updated in real-time.
 
 We shouldn't start by doing this right away though... because it opens us up for bugs.  Don't want that when we're cutting it so close.
-
-this.precalc_survival = {
-	yes = {
-		strength = {
-			low = 0,   -- count of instances in table when survive? = yes and strength = low
-			med = 0,   -- count of instances in table when survive? = yes and strength = med
-			high = 0   -- count of instances in table when survive? = yes and strength = high
-		},
-		race = {
-			human = 0,
-			orc = 0
-		},
-		health = {
-			low = 0,
-			med = 0,
-			high = 0
-		},
-		total = 14
-	},
-
-	no = {
-		strength = {
-			low = 0,
-			med = 0,
-			high = 0
-		},
-		race = {
-			human = 0,
-			orc = 0
-		},
-		health = {
-			low = 0,
-			med = 0,
-			high = 0
-		},
-		total = 10
-	},
-
-	total = 24,
-}
-
-this.precalc_engage = {
-	yes = {
-		strength = {
-			low = 0,   -- count of instances in table when engage? = yes and strength = low
-			med = 0,   -- count of instances in table when engage? = yes and strength = med
-			high = 0   -- count of instances in table when engage? = yes and strength = high
-		},
-		race = {
-			human = 0,
-			orc = 0
-		},
-		health = {
-			low = 2,
-			med = 5,
-			high = 7
-		},
-		total = 14
-	},
-
-	no = {
-		strength = {
-			low = 2,
-			med = 3,
-			high = 5
-		},
-		race = {
-			human = 3,
-			orc = 7
-		},
-		health = {
-			low = 6,
-			med = 3,
-			high = 1
-		},
-		total = 10
-	},
-
-	total = 24,
-}
-
-this.precalc_playerRuns = {
-	yes = {
-		strength = {
-			low = 2,   -- count of instances in table when playerRuns? = yes and strength = low
-			med = 5,   -- count of instances in table when playerRuns? = yes and strength = med
-			high = 7   -- count of instances in table when playerRuns? = yes and strength = high
-		},
-		race = {
-			human = 8,
-			orc = 6
-		},
-		health = {
-			low = 2,
-			med = 5,
-			high = 7
-		},
-		total = 14
-	},
-
-	no = {
-		strength = {
-			low = 5,
-			med = 3,
-			high = 2
-		},
-		race = {
-			human = 7,
-			orc = 3
-		},
-		health = {
-			low = 6,
-			med = 3,
-			high = 1
-		},
-		total = 10
-	},
-
-	total = 24,
-}
 ]]--
 
 this.precalc_playerRuns = {}
@@ -387,11 +267,13 @@ this.init = function ()
 	this.init_precalc ("survival",   "will_survive")
 
 	-- do precalculations
-	--this.do_precalc ("playerRuns", "will_run",     this.table_player_runs)
+	this.do_precalc ("playerRuns", "will_run",     this.table_player_runs)
 	this.do_precalc ("engage",     "can_engage",   this.table_engagement)
-	--this.do_precalc ("survival",   "will_survive", this.table_engagement_survival)
+	this.do_precalc ("survival",   "will_survive", this.table_engagement_survival)
 
 	this.debug (table.tostring (this.precalc_engage))
+	this.debug (table.tostring (this.precalc_engage))
+	this.debug (table.tostring (this.precalc_survival))
 	
 end
 
