@@ -194,6 +194,85 @@ this.precalc_survival = {
 	total = 24,
 }
 
+this.precalc_engage = {
+	yes = {
+		strength = {
+			low = 2,   -- count of instances in table when engage? = yes and strength = low
+			med = 5,   -- count of instances in table when engage? = yes and strength = med
+			high = 7   -- count of instances in table when engage? = yes and strength = high
+		},
+		race = {
+			human = 9,
+			orc = 5
+		},
+		health = {
+			low = 2,
+			med = 5,
+			high = 7
+		},
+		total = 14
+	},
+
+	no = {
+		strength = {
+			low = 2,
+			med = 3,
+			high = 5
+		},
+		race = {
+			human = 3,
+			orc = 7
+		},
+		health = {
+			low = 6,
+			med = 3,
+			high = 1
+		},
+		total = 10
+	},
+
+	total = 24,
+}
+
+this.precalc_playerRuns = {
+	yes = {
+		strength = {
+			low = 2,   -- count of instances in table when playerRuns? = yes and strength = low
+			med = 5,   -- count of instances in table when playerRuns? = yes and strength = med
+			high = 7   -- count of instances in table when playerRuns? = yes and strength = high
+		},
+		race = {
+			human = 8,
+			orc = 6
+		},
+		health = {
+			low = 2,
+			med = 5,
+			high = 7
+		},
+		total = 14
+	},
+
+	no = {
+		strength = {
+			low = 5,
+			med = 3,
+			high = 2
+		},
+		race = {
+			human = 7,
+			orc = 3
+		},
+		health = {
+			low = 6,
+			med = 3,
+			high = 1
+		},
+		total = 10
+	},
+
+	total = 24,
+}
 
 
 --[[
