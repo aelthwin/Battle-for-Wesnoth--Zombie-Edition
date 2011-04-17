@@ -292,7 +292,7 @@ end
 
 Update the probability tables with a new datapoint
 
-params should contain:
+params is a datapoint, and should contain:
 var1:            describe var1
 var2:            describe var2
 ...
@@ -301,9 +301,9 @@ varN:            describe varN
 ]]--
 this.update = function (params)
 	wesnoth.message ('update is still kinda fake!')
-	this.updatePlayerRunningProbabilityTable ();
-	this.updateEngagementProbabilityTable ();
-	this.updateEngagementSurvivalProbabilityTable ();
+	this.updatePlayerRunningProbabilityTable (params);
+	this.updateEngagementProbabilityTable (params);
+	this.updateEngagementSurvivalProbabilityTable (params);
 end
 
 
@@ -348,9 +348,6 @@ this.updatePlayerRunningProbabilityTable = function (params)
 	t[6] = params.r
 
 	table.insert(this.table_player_runs, t)
-
-	this.store()
-	
 end
 
 --requires
@@ -370,8 +367,6 @@ this.updateEngagementProbabilityTable = function ()
 	t[3] = params.r
 
 	table.insert(this.table_engagement, t)
-
-	this.store()
 end
 
 --requires
@@ -391,8 +386,6 @@ this.updateEngagementSurvivalProbabilityTable = function ()
 	t[3] = params.h
 
 	table.insert(this.table_engagement_survival, t)
-
-	this.store()
 end
 
 

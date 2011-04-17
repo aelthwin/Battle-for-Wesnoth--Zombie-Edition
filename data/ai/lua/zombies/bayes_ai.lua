@@ -281,8 +281,12 @@ Figure out what results, if any, need to be written back to the probs table
 ]]--
 function this.do_results ()
 	-- figure results
+	local results = {}
+
 	-- then store
-	this.probs.update ()
+	for i, result in pairs (results) do
+		this.probs.update (result)
+	end
 	this.probs.store ()
 end
 
