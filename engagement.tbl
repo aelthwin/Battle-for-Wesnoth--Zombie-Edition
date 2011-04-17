@@ -13,56 +13,65 @@ return {
 },
 -- Table: {2}
 {
-   ["speed"]=4,
-   ["distance"]=15,
+   ["can_engage"]="no",
+   ["distance"]="high",
    ["race"]="elf",
+   ["speed"]="med",
 },
 -- Table: {3}
 {
-   ["speed"]=7,
-   ["distance"]=10,
+   ["can_engage"]="no",
+   ["distance"]="high",
    ["race"]="human",
+   ["speed"]="high",
 },
 -- Table: {4}
 {
-   ["speed"]=9,
-   ["distance"]=2,
+   ["can_engage"]="yes",
+   ["distance"]="low",
    ["race"]="elf",
+   ["speed"]="high",
 },
 -- Table: {5}
 {
-   ["speed"]=2,
-   ["distance"]=11,
+   ["can_engage"]="yes",
+   ["distance"]="high",
    ["race"]="elf",
+   ["speed"]="low",
 },
 -- Table: {6}
 {
-   ["speed"]=9,
-   ["distance"]=2,
+   ["can_engage"]="yes",
+   ["distance"]="low",
    ["race"]="elf",
+   ["speed"]="high",
 },
 -- Table: {7}
 {
-   ["speed"]=1,
-   ["distance"]=27,
+   ["can_engage"]="yes",
+   ["distance"]="high",
    ["race"]="human",
+   ["speed"]="low",
 },
 -- Table: {8}
 {
-   ["speed"]=8,
-   ["distance"]=17,
+   ["can_engage"]="no",
+   ["distance"]="high",
    ["race"]="human",
+   ["speed"]="high",
 },
 -- Table: {9}
 {
-   ["speed"]=14,
-   ["distance"]=22,
+   ["can_engage"]="no",
+   ["distance"]="high",
    ["race"]="human",
+   ["speed"]="high",
 },
 -- Table: {10}
 {
-   ["speed"]=3,
-   ["distance"]=8,
+   ["can_engage"]="yes",
+   ["distance"]="med",
    ["race"]="elf",
+   ["speed"]="low",
 },
 }

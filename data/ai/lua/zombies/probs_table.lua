@@ -89,7 +89,99 @@ this.table_engagement = {}
 this.table_player_runs = {}
 
 
-
+this.schema = {
+	questions = {
+		will_run = {
+			answers    = {"yes", "no"},
+			attributes = {
+				"zombies",
+				"speed",
+				"distance",
+				"strength",
+				"fellows",
+				"race"
+			}
+		},
+		can_engage = {
+			answers    = {"yes", "no"},
+			attributes = {
+				"distance",
+				"speed",
+				"race"
+			}
+		},
+		will_survive = {
+			answers    = {"yes", "no"},
+			attributes = {
+				"strength",
+				"race",
+				"health"
+			}
+		}
+	},
+	attributes = {
+		strength = {
+			values  = {"low", "med", "high"},
+			to_attr = function (value)
+				if     value < 5  then return "low"
+				elseif value < 10 then return "med"
+				else                   return "high"
+				end
+			end
+		},
+		race = {
+			values  = {}, --[[ must be preloaded using wesnoth.get_units ]]
+			to_attr = function (value)
+				return value
+			end
+		},
+		health = {
+			values  = {"low", "med", "high"},
+			to_attr = function (value) -- value should be in hit points
+				if     value < 25 then return "low"
+				elseif value < 50 then return "med"
+				else                   return "high"
+				end
+			end
+		},
+		distance = {
+			values = {"low", "med", "high"},
+			to_attr = function (value) -- value in # of moves
+				if     value < 6  then return "low"
+				elseif value < 10 then return "med"
+				else                   return "high"
+				end
+			end
+		},
+		speed = {
+			values = {"low", "med", "high"},
+			to_attr = function (value) -- value in # of moves per turn
+				if     value < 3  then return "low"
+				elseif value < 6  then return "med"
+				else                   return "high"
+				end
+			end
+		},
+		zombies = {
+			values = {"low", "med", "high"},
+			to_attr = function (value) -- # of zombies for whom unit is in pursuit range
+				if     value < 2  then return "low"
+				elseif value < 4  then return "med"
+				else                   return "high"
+				end
+			end
+		},
+		fellows = {
+			values = {"low", "med", "high"},
+			to_attr = function (value) -- # of fellow units within zombie pursuit range
+				if     value < 2  then return "low"
+				elseif value < 4  then return "med"
+				else                   return "high"
+				end
+			end
+		},
+	}
+}
 --[[
 Example of this.precalc_survival table in action...
 
@@ -152,41 +244,39 @@ And then our probabilities have been updated in real-time.
 
 We shouldn't start by doing this right away though... because it opens us up for bugs.  Don't want that when we're cutting it so close.
 
-
-]]--
 this.precalc_survival = {
 	yes = {
 		strength = {
-			low = 7,   -- count of instances in table when survive? = yes and strength = low
-			med = 5,   -- count of instances in table when survive? = yes and strength = med
-			high = 2   -- count of instances in table when survive? = yes and strength = high
+			low = 0,   -- count of instances in table when survive? = yes and strength = low
+			med = 0,   -- count of instances in table when survive? = yes and strength = med
+			high = 0   -- count of instances in table when survive? = yes and strength = high
 		},
 		race = {
-			human = 5,
-			orc = 9
+			human = 0,
+			orc = 0
 		},
 		health = {
-			low = 5,
-			med = 3,
-			high = 1
+			low = 0,
+			med = 0,
+			high = 0
 		},
 		total = 14
 	},
 
 	no = {
 		strength = {
-			low = 2,
-			med = 3,
-			high = 5
+			low = 0,
+			med = 0,
+			high = 0
 		},
 		race = {
-			human = 7,
-			orc = 3
+			human = 0,
+			orc = 0
 		},
 		health = {
-			low = 1,
-			med = 3,
-			high = 6
+			low = 0,
+			med = 0,
+			high = 0
 		},
 		total = 10
 	},
@@ -197,13 +287,13 @@ this.precalc_survival = {
 this.precalc_engage = {
 	yes = {
 		strength = {
-			low = 2,   -- count of instances in table when engage? = yes and strength = low
-			med = 5,   -- count of instances in table when engage? = yes and strength = med
-			high = 7   -- count of instances in table when engage? = yes and strength = high
+			low = 0,   -- count of instances in table when engage? = yes and strength = low
+			med = 0,   -- count of instances in table when engage? = yes and strength = med
+			high = 0   -- count of instances in table when engage? = yes and strength = high
 		},
 		race = {
-			human = 9,
-			orc = 5
+			human = 0,
+			orc = 0
 		},
 		health = {
 			low = 2,
@@ -273,7 +363,11 @@ this.precalc_playerRuns = {
 
 	total = 24,
 }
+]]--
 
+this.precalc_playerRuns = {}
+this.precalc_engage     = {}
+this.precalc_survival   = {}
 
 --[[
 
@@ -285,11 +379,75 @@ this.init = function ()
 	this.table_engagement          = table.load("engagement.tbl")
 	this.table_player_runs         = table.load("playerRuns.tbl")
 
-	-- do precalculations here...
-	-- @TODO
+	this.debug (table.tostring (this.table_engagement))
 
+	-- init precalcs
+	this.init_precalc ("playerRuns", "will_run")
+	this.init_precalc ("engage",     "can_engage")
+	this.init_precalc ("survival",   "will_survive")
+
+	-- do precalculations
+	--this.do_precalc ("playerRuns", "will_run",     this.table_player_runs)
+	this.do_precalc ("engage",     "can_engage",   this.table_engagement)
+	--this.do_precalc ("survival",   "will_survive", this.table_engagement_survival)
+
+	this.debug (table.tostring (this.precalc_engage))
+	
 end
 
+
+this.debug = function (str)
+	if true then print (str) end
+end
+
+
+this.init_precalc = function (table, question)
+	table = "precalc_" .. table
+	this[table] = {}
+	this.debug (table .. " initializing")
+	for i, answer in pairs (this.schema.questions[question].answers) do
+		this.debug ("\tAdd answer " .. answer)
+		this[table][answer] = {}
+		for j, attr in pairs (this.schema.questions[question].attributes) do
+			this.debug ("\t\tAdd attribute " .. attr)
+			this[table][answer][attr] = {}
+			for k, av in pairs (this.schema.attributes[attr].values) do
+				this.debug ("\t\t\tAdd value " .. av)
+				this[table][answer][attr][av] = 0
+			end
+		end
+		this.debug ("\t\tAdd total")
+		this[table][answer]["total"] = 0
+	end
+	this.debug ("\tAdd total")
+	this[table]["total"] = 0
+end
+
+
+this.do_precalc = function (table, question, records)
+	table = "precalc_" .. table
+	this.debug (table .. " pre-calculating")
+	for i, record in pairs (records) do
+		this.debug ("\tAdd record " .. i)
+		if record[question] ~= nil and this[table][record[question]] ~= nil then
+			this.debug ("\t\tAttributes:")
+			local answer = record[question] -- value in the "question" index of the record
+			for j, attr in pairs (this.schema.questions[question].attributes) do
+				local value = record[attr]
+				local bumped = false
+				if this[table][answer][attr] ~= nil and this[table][answer][attr][value] ~= nil then
+					this[table][answer][attr][value] = this[table][answer][attr][value] + 1
+					bumped = true
+				end
+				local b_str = "X"
+				if bumped then b_str = "+" end
+				this.debug (string.format ("\t\t\t%s = %s (%s)", attr, value, b_str))
+			end
+			this[table][answer].total = this[table][answer].total + 1
+		end
+		this[table].total = this[table].total + 1
+	end
+end
 
 
 --[[
@@ -324,7 +482,7 @@ varN:            describe varN
 
 ]]--
 this.getProbability_PlayerRunning = function (params)
-	wesnoth.message ('getProbability_PlayerRunning is undefined!')
+	--wesnoth.message ('getProbability_PlayerRunning is undefined!')
 	return 1.0
 end
 
@@ -343,7 +501,7 @@ varN:            describe varN
 
 ]]--
 this.getProbability_CanEngage = function (params)
-	wesnoth.message ('getProbability_CanEngage is undefined!')
+	--wesnoth.message ('getProbability_CanEngage is undefined!')
 	return 1.0
 end
 
@@ -361,7 +519,7 @@ varN:            describe varN
 
 ]]--
 this.getProbability_CanConvert = function (params)
-	wesnoth.message ('getProbability_CanConvert is undefined!')
+	--wesnoth.message ('getProbability_CanConvert is undefined!')
 	return 1.0
 end
 
@@ -379,7 +537,6 @@ varN:            describe varN
 
 ]]--
 this.update = function (params)
-	wesnoth.message ('update is still kinda fake!')
 	this.updatePlayerRunningProbabilityTable (params);
 	this.updateEngagementProbabilityTable (params);
 	this.updateEngagementSurvivalProbabilityTable (params);
@@ -409,21 +566,15 @@ end
 --	f number of fellow player units within pursuit radius
 --	r race of player unit
 this.updatePlayerRunningProbabilityTable = function (params)
-	print ("Stubbed out probability table in updatePlayerRunningProbabilityTable")
-	--this.table_player_runs = {
-	--	{zombies = 1, speed = 4, distance = 9, strength = 2, fellows = 2, race = human},
-	--	{zombies = 0, speed = 5, distance = 8, strength = 3, fellows = 3, race = elf},
-	--}
-
-	local t = {}
-	t["zombies"] = params.z
-	t["speed"] = params.sp
-	t["distance"] = params.d
-	t["strength"] = params.str
-	t["fellows"] = params.f
-	t["race"] = params.r
-
-	table.insert(this.table_player_runs, t)
+	table.insert(this.table_player_runs, {
+		will_run = params.will_run,
+		zombies  = params.z,
+		speed    = params.sp,
+		distance = params.d,
+		strength = params.str,
+		fellows  = params.f,
+		race     = params.r
+	})
 end
 
 --requires
@@ -431,18 +582,12 @@ end
 --	sp speed of player unit
 --	r race of player unit
 this.updateEngagementProbabilityTable = function ()
-	print ("Stubbed out probability table in updateEngagementProbabilityTable")
-	--this.table_engagement = {
-	--	{distance = 15, speed = 4, race = human},
-	--	{distance = 10, speed = 7, race = elf}
-	--}
-
-	local t = {}
-	t["distance"] = params.d
-	t["speed"] = params.sp
-	t["race"] = params.r
-
-	table.insert(this.table_engagement, t)
+	table.insert(this.table_engagement, {
+		can_engage = params.can_engage,
+		distance   = params.d,
+		speed      = params.sp,
+		race       = params.r
+	})
 end
 
 --requires
@@ -450,18 +595,12 @@ end
 --	r race of player unit
 --	h health of player unit
 this.updateEngagementSurvivalProbabilityTable = function ()
-	print ("Stubbed out probability table in updateEngagementSurvivalProbabilityTable")
-	--this.table_engagement_survival = {
-	--	{strength = 7, race = human, health = 100},
-	--	{strength = 8, race = human, health = 99}
-	--}
-
-	local t = {}
-	t["strength"] = params.str
-	t["race"] = params.r
-	t["health"] = params.h
-
-	table.insert(this.table_engagement_survival, t)
+	table.insert(this.table_engagement_survival, {
+		will_survive = params.will_survive,
+		strength     = params.str,
+		race         = params.r,
+		health       = params.h
+	})
 end
 
 
@@ -607,5 +746,43 @@ function table.load( sfile )
 end
 -- This is the end of the code from http://lua-users.org/wiki/SaveTableToFile
 
+
+-- START code from http://lua-users.org/wiki/TableUtils
+function table.val_to_str ( v )
+  if "string" == type( v ) then
+    v = string.gsub( v, "\n", "\\n" )
+    if string.match( string.gsub(v,"[^'\"]",""), '^"+$' ) then
+      return "'" .. v .. "'"
+    end
+    return '"' .. string.gsub(v,'"', '\\"' ) .. '"'
+  else
+    return "table" == type( v ) and table.tostring( v ) or
+      tostring( v )
+  end
+end
+
+function table.key_to_str ( k )
+  if "string" == type( k ) and string.match( k, "^[_%a][_%a%d]*$" ) then
+    return k
+  else
+    return "[" .. table.val_to_str( k ) .. "]"
+  end
+end
+
+function table.tostring( tbl )
+  local result, done = {}, {}
+  for k, v in ipairs( tbl ) do
+    table.insert( result, table.val_to_str( v ) )
+    done[ k ] = true
+  end
+  for k, v in pairs( tbl ) do
+    if not done[ k ] then
+      table.insert( result,
+        table.key_to_str( k ) .. "=" .. table.val_to_str( v ) )
+    end
+  end
+  return "{" .. table.concat( result, "," ) .. "}"
+end
+-- END code from http://lua-users.org/wiki/TableUtils
 
 return this

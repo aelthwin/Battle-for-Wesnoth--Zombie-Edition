@@ -5,7 +5,7 @@ return {
    {3},
    {4},
    {5},
-   {6}, 
+   {6},
    {7},
    {8},
    {9},
@@ -13,56 +13,56 @@ return {
 },
 -- Table: {2}
 {
+   ["race"]="elf",
    ["strength"]=7,
    ["health"]=100,
-   ["race"]="elf",
 },
 -- Table: {3}
 {
+   ["race"]="human",
    ["strength"]=8,
    ["health"]=99,
-   ["race"]="human",
 },
 -- Table: {4}
 {
+   ["race"]="human",
    ["strength"]=17,
    ["health"]=42,
-   ["race"]="human",
 },
 -- Table: {5}
 {
+   ["race"]="human",
    ["strength"]=4,
    ["health"]=87,
-   ["race"]="human",
 },
 -- Table: {6}
 {
+   ["race"]="elf",
    ["strength"]=5,
    ["health"]=91,
-   ["race"]="elf",
 },
 -- Table: {7}
 {
+   ["race"]="human",
    ["strength"]=11,
    ["health"]=29,
-   ["race"]="human",
 },
 -- Table: {8}
 {
+   ["race"]="elf",
    ["strength"]=2,
    ["health"]=58,
-   ["race"]="elf",
 },
 -- Table: {9}
 {
+   ["race"]="elf",
    ["strength"]=6,
    ["health"]=72,
-   ["race"]="elf",
 },
 -- Table: {10}
 {
+   ["race"]="human",
    ["strength"]=10,
    ["health"]=67,
-   ["race"]="human",
 },
 }
