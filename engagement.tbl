@@ -3,15 +3,66 @@ return {
 {
    {2},
    {3},
+   {4},
+   {5},
+   {6},
+   {7},
+   {8},
+   {9},
+   {10},
 },
 -- Table: {2}
 {
    ["speed"]=4,
    ["distance"]=15,
+   ["race"]="elf",
 },
 -- Table: {3}
 {
    ["speed"]=7,
    ["distance"]=10,
+   ["race"]="human",
+},
+-- Table: {4}
+{
+   ["speed"]=9,
+   ["distance"]=2,
+   ["race"]="elf",
+},
+-- Table: {5}
+{
+   ["speed"]=2,
+   ["distance"]=11,
+   ["race"]="elf",
+},
+-- Table: {6}
+{
+   ["speed"]=9,
+   ["distance"]=2,
+   ["race"]="elf",
+},
+-- Table: {7}
+{
+   ["speed"]=1,
+   ["distance"]=27,
+   ["race"]="human",
+},
+-- Table: {8}
+{
+   ["speed"]=8,
+   ["distance"]=17,
+   ["race"]="human",
+},
+-- Table: {9}
+{
+   ["speed"]=14,
+   ["distance"]=22,
+   ["race"]="human",
+},
+-- Table: {10}
+{
+   ["speed"]=3,
+   ["distance"]=8,
+   ["race"]="elf",
 },
 }

@@ -340,12 +340,12 @@ this.updatePlayerRunningProbabilityTable = function (params)
 	--}
 
 	local t = {}
-	t[1] = params.z
-	t[2] = params.sp
-	t[3] = params.d
-	t[4] = params.str
-	t[5] = params.f
-	t[6] = params.r
+	t["zombies"] = params.z
+	t["speed"] = params.sp
+	t["distance"] = params.d
+	t["strength"] = params.str
+	t["fellows"] = params.f
+	t["race"] = params.r
 
 	table.insert(this.table_player_runs, t)
 end
@@ -362,9 +362,9 @@ this.updateEngagementProbabilityTable = function ()
 	--}
 
 	local t = {}
-	t[1] = params.d
-	t[2] = params.sp
-	t[3] = params.r
+	t["distance"] = params.d
+	t["speed"] = params.sp
+	t["race"] = params.r
 
 	table.insert(this.table_engagement, t)
 end
@@ -381,9 +381,9 @@ this.updateEngagementSurvivalProbabilityTable = function ()
 	--}
 
 	local t = {}
-	t[1] = params.str
-	t[2] = params.r
-	t[3] = params.h
+	t["strength"] = params.str
+	t["race"] = params.r
+	t["health"] = params.h
 
 	table.insert(this.table_engagement_survival, t)
 end

@@ -3,6 +3,13 @@ return {
 {
    {2},
    {3},
+   {4},
+   {5},
+   {6},
+   {7},
+   {8},
+   {9},
+   {10},
 },
 -- Table: {2}
 {
@@ -11,6 +18,7 @@ return {
    ["speed"]=4,
    ["distance"]=9,
    ["strength"]=2,
+   ["race"]="human",
 },
 -- Table: {3}
 {
@@ -19,5 +27,69 @@ return {
    ["speed"]=5,
    ["distance"]=8,
    ["strength"]=3,
+   ["race"]="elf",
+},
+-- Table: {4}
+{
+   ["zombies"]=2,
+   ["fellows"]=7,
+   ["speed"]=3,
+   ["distance"]=4,
+   ["strength"]=9,
+   ["race"]="elf",
+},
+-- Table: {5}
+{
+   ["zombies"]=1,
+   ["fellows"]=2,
+   ["speed"]=3,
+   ["distance"]=7,
+   ["strength"]=4,
+   ["race"]="human",
+},
+-- Table: {6}
+{
+   ["zombies"]=10,
+   ["fellows"]=2,
+   ["speed"]=7,
+   ["distance"]=20,
+   ["strength"]=1,
+   ["race"]="human",
+},
+-- Table: {7}
+{
+   ["zombies"]=4,
+   ["fellows"]=8,
+   ["speed"]=9,
+   ["distance"]=15,
+   ["strength"]=5,
+   ["race"]="human",
+},
+-- Table: {8}
+{
+   ["zombies"]=0,
+   ["fellows"]=2,
+   ["speed"]=7,
+   ["distance"]=10,
+   ["strength"]=8,
+   ["race"]="human",
+},
+-- Table: {9}
+{
+   ["zombies"]=2,
+   ["fellows"]=4,
+   ["speed"]=3,
+   ["distance"]=12,
+   ["strength"]=4,
+   ["race"]="elf",
+},
+-- Table: {10}
+{
+   ["zombies"]=5,
+   ["fellows"]=0,
+   ["speed"]=1,
+   ["distance"]=2,
+   ["strength"]=7,
+   ["race"]="human",
 },
 }
