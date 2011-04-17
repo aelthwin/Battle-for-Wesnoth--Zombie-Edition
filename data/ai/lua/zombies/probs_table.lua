@@ -165,6 +165,7 @@ this.schema = {
 		zombies = {
 			values = {"low", "med", "high"},
 			to_attr = function (value) -- # of zombies for whom unit is in pursuit range
+				if value == nil then value = 0 end
 				if     value < 2  then return "low"
 				elseif value < 4  then return "med"
 				else                   return "high"
@@ -245,7 +246,7 @@ And then our probabilities have been updated in real-time.
 We shouldn't start by doing this right away though... because it opens us up for bugs.  Don't want that when we're cutting it so close.
 ]]--
 
-this.precalc_playerRuns = {}
+this.precalc_p_runs     = {}
 this.precalc_engage     = {}
 this.precalc_survival   = {}
 
@@ -274,12 +275,12 @@ this.init = function ()
 	this.debug (table.tostring (this.schema))
 
 	-- init precalcs
-	this.init_precalc ("playerRuns", "will_run")
+	this.init_precalc ("p_runs",     "will_run")
 	this.init_precalc ("engage",     "can_engage")
 	this.init_precalc ("survival",   "will_survive")
 
 	-- do precalculations
-	this.do_precalc ("playerRuns", "will_run",     this.table_player_runs)
+	this.do_precalc ("p_runs",     "will_run",     this.table_player_runs)
 	this.do_precalc ("engage",     "can_engage",   this.table_engagement)
 	this.do_precalc ("survival",   "will_survive", this.table_engagement_survival)
 
@@ -355,10 +356,28 @@ end
 
 
 this.get_all_probs = function (params)
+	-- discretize values in params
+	params.z   = this.schema.attributes.zombies.to_attr  (params.z)
+	params.sp  = this.schema.attributes.speed.to_attr    (params.sp)
+	params.d   = this.schema.attributes.distance.to_attr (params.d)
+	params.str = this.schema.attributes.strength.to_attr (params.str)
+	params.f   = this.schema.attributes.fellows.to_attr  (params.f)
+	params.r   = this.schema.attributes.race.to_attr     (params.r)
+	params.h   = this.schema.attributes.health.to_attr   (params.h)
+
 	return
 		this.getProbability_PlayerRunning (params),
 		this.getProbability_CanEngage     (params),
 		this.getProbability_CanConvert    (params)
+end
+
+
+this.get_ind_prob = function (table, answer, attr, value)
+	table = "precalc_"..table
+	if attr ~= nil and value ~= nil then
+		return this[table][answer][attr][value] / this[table][answer].total
+	end
+	return this[table][answer] / this[table].total
 end
 
 
@@ -369,15 +388,24 @@ end
 What is the probability that the player unit will run away from the AI unit
 
 params should contain:
-var1:            describe var1
-var2:            describe var2
-...
-varN:            describe varN
+z:   # of zombies who have the unit in pursuit radius
+sp:  max_moves of the unit per turn
+d:   distance unit is from zombie
+str: max attack strength of the unit
+f:   number of fellow units in the zombies pursuit radius
+r:   unit race
 
 ]]--
 this.getProbability_PlayerRunning = function (params)
-	--wesnoth.message ('getProbability_PlayerRunning is undefined!')
-	return 1.0
+	local answer = "no"
+	return
+		this.get_ind_prob ("p_runs", answer, "zombies",  params.z) *
+		this.get_ind_prob ("p_runs", answer, "speed",    params.sp) *
+		this.get_ind_prob ("p_runs", answer, "distance", params.d) *
+		this.get_ind_prob ("p_runs", answer, "strength", params.str) *
+		this.get_ind_prob ("p_runs", answer, "fellows",  params.f) *
+		this.get_ind_prob ("p_runs", answer, "race",     params.r) *
+		this.get_ind_prob ("p_runs", answer)
 end
 
 
@@ -388,15 +416,18 @@ What is the probability that AI unit can engage the player unit
 over (possibly) more than one turn?
 
 params should contain:
-var1:            describe var1
-var2:            describe var2
-...
-varN:            describe varN
+sp:  max_moves of the unit per turn
+d:   distance unit is from zombie
+r:   unit race
 
 ]]--
 this.getProbability_CanEngage = function (params)
-	--wesnoth.message ('getProbability_CanEngage is undefined!')
-	return 1.0
+	local answer = "yes"
+	return
+		this.get_ind_prob ("engage", answer, "speed",    params.sp) *
+		this.get_ind_prob ("engage", answer, "distance", params.d) *
+		this.get_ind_prob ("engage", answer, "race",     params.r) *
+		this.get_ind_prob ("engage", answer)
 end
 
 
@@ -406,15 +437,18 @@ end
 What is the probability of a successful conversion event
 
 params should contain:
-var1:            describe var1
-var2:            describe var2
-...
-varN:            describe varN
+str: unit max attack
+r:   unit race
+h:   unit health
 
 ]]--
 this.getProbability_CanConvert = function (params)
-	--wesnoth.message ('getProbability_CanConvert is undefined!')
-	return 1.0
+	local answer = "yes"
+	return
+		this.get_ind_prob ("survival", answer, "strength", params.str) *
+		this.get_ind_prob ("survival", answer, "race",     params.r) *
+		this.get_ind_prob ("survival", answer, "health",   params.h) *
+		this.get_ind_prob ("survival", answer)
 end
 
 
