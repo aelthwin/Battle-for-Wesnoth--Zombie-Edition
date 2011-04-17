@@ -165,6 +165,7 @@ function this.do_moves ()
 		local continue = true
 
 		-- try recruiting?
+		print ("BAYES: recruiting stage ---")
 		if continue and this.helper.can_recruit ({unit = unit}) then
 			local recruited = this.helper.do_recruit ({
 				unit = unit,
@@ -178,35 +179,64 @@ function this.do_moves ()
 
 
 		-- try to find a good target for WANDERers?
+		print ("BAYES: candidate finding stage ---")
 		if continue and this.modes[unit.id] == WANDER then
 			local best_unit_id = nil
 			local best_prob    = 0.0
 			local close_units  = this.helper.enemy_units_in_range ({unit = unit, radius = 10})
 
-			-- find best close candidate
+			-- filter out non-candidates
+			print ("BAYES: filtering out non-candidates")
+			local temp_close_units = {}
 			for i, e_unit in pairs (close_units) do
-				-- get proportional probs
-				local ppr, pce, pcc = this.probs.get_all_probs ({
-					unit   = unit,
-					target = e_unit
-				})
-			
-				-- combine
-				local combined_probs = ppr * pce * pcc
-			
-				-- compare
-				if combined_probs > best_prob then
-					best_prob    = combined_probs
-					best_unit_id = e_unit.id
+				if
+				not e_unit.petrified -- can't smell petrifieds... they smell like rocks |-(
+				then
+					table.insert (temp_close_units, e_unit)
 				end
 			end
+			close_units = temp_close_units
 
-			-- should we pursue best candidate?
-			if best_prob > this.chase_threshold then
-				this.to_pursuit_mode ({
-					unit      = unit,
-					target_id = best_unit_id
-				})
+			-- find best close candidate, if there are any at all that is
+			print ("BAYES: finding best of " .. table.getn(close_units) .. " candidates")
+			if table.getn(close_units) then
+				for i, e_unit in pairs (close_units) do
+
+					-- calculate params for probs
+					local zombies, distances = this.helper.enemies_that_can_attack ({unit = e_unit, distance = 10})
+
+					-- get proportional probs
+					-- in this circumstance, player unit == e_unit
+					local ppr, pce, pcc = this.probs.get_all_probs ({
+						unit     = unit,
+						target   = e_unit,
+						-- probabilities inputs
+						zombies  = table.getn (zombies),
+						speed    = e_unit.max_moves,
+						distance = this.helper.distance_from (unit, e_unit),
+						strength = wesnoth.unit_types[e_unit.type].max_attack,
+						fellows  = table.getn (close_units),
+						race     = wesnoth.unit_types[e_unit.type].race,
+						health   = e_unit.hitpoints
+					})
+			
+					-- combine
+					local combined_probs = ppr * pce * pcc
+			
+					-- compare
+					if combined_probs > best_prob then
+						best_prob    = combined_probs
+						best_unit_id = e_unit.id
+					end
+				end
+
+				-- should we pursue best candidate?
+				if best_prob > this.chase_threshold then
+					this.to_pursuit_mode ({
+						unit      = unit,
+						target_id = best_unit_id
+					})
+				end
 			end
 		end
 
@@ -215,9 +245,11 @@ function this.do_moves ()
 		-- don't need to check for this.targets[unit.id] ~= nil
 		-- because we can guarantee that if we take the branch
 		-- that it's something real, an enemy actually on the map
+		print ("BAYES: pursuit stage ---")
 		if continue and this.modes[unit.id] == PURSUIT then
 			-- do the attack
-			this.helper.move_and_attack ({
+			-- this.helper.move_and_attack ({
+			this.helper.move_and_attack2 ({
 				unit  = unit,
 				enemy = this.helper.unit_for_id (this.targets[unit.id]),
 				ai    = this.ai
@@ -238,16 +270,20 @@ function this.do_moves ()
 
 
 		-- Fall back on random movement
+		print ("BAYES: wander stage ---")
 		if continue then
 			this.helper.move_randomly ({
 				unit = unit,
 				ai   = this.ai
 			})
 		end
-
+		
+		print ("\nUnit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") DONE")
 	end
 
+	print ("doing results...")
 	this.do_results ()
+	print ("DONE with results...")
 
 	print ("End BAYES do_moves")
 	print ("------------------------------------------");
@@ -261,7 +297,9 @@ function this.init_unit (unit)
 	this.targets[unit.id] = this.targets[unit.id] or nil
 
 	if  this.modes[unit.id] == PURSUIT and this.helper.unit_for_id (this.targets[unit.id]) == nil then
-		this.to_wander_mode (unit)
+		this.to_wander_mode ({
+			unit = unit
+		})
 	end
 end
 

@@ -761,6 +761,24 @@ const unit *recruit_result::get_leader()
 
 }
 
+
+const std::vector<unit*> recruit_result::get_leaders()
+{
+	//std::cout << "BEGIN getting leaders" << std::endl; std::cout.flush ();
+	std::vector<unit_map::unit_iterator> my_leaders = resources::units->find_leaders(get_side());
+
+	std::vector<unit*> leaders;
+	leaders.reserve (my_leaders.size());
+	unit_map::unit_iterator i_end = resources::units->end();
+	for(unsigned i = 0; i < my_leaders.size() && my_leaders.at(i) != i_end; ++i){
+		//std::cout << "Pushing a leader into my_leaders... " << my_leaders.at(i)->id() << std::endl; std::cout.flush();
+		leaders.push_back(&*my_leaders.at(i));
+	}
+	//std::cout << "DONE getting leaders... size is " << leaders.size() << std::endl; std::cout.flush ();
+	return leaders;
+
+}
+
 bool recruit_result::test_leader_on_keep(const unit &my_leader)
 {
 	if (!resources::game_map->is_keep(my_leader.get_location())) {
@@ -768,6 +786,22 @@ bool recruit_result::test_leader_on_keep(const unit &my_leader)
 		return false;
 	}
 	return true;
+}
+
+bool recruit_result::test_one_leader_on_keep(const std::vector<unit*>leaders)
+{
+	//std::cout << "Testing one leader on keep" << std::endl; std::cout.flush ();
+	bool leader_on_keep = false;
+	for (unsigned i = 0; i < leaders.size(); i++) {
+		//std::cout << "Testing leader " << i << std::endl; std::cout.flush ();
+		unit* my_leader = leaders.at(i);
+		//std::cout << "at             " << i << std::endl; std::cout.flush ();
+		map_location leader_loc = my_leader->get_location();
+		//std::cout << "loc            " << i << " :: " << leader_loc.x << ", " << leader_loc.y << std::endl; std::cout.flush ();
+		leader_on_keep = leader_on_keep || resources::game_map->is_keep(leader_loc);
+	}
+	//std::cout << "DONE Testing one leader on keep" << std::endl; std::cout.flush ();
+	return leader_on_keep;
 }
 
 bool recruit_result::test_suitable_recruit_location(const unit &my_leader)
@@ -786,48 +820,93 @@ bool recruit_result::test_suitable_recruit_location(const unit &my_leader)
 	return true;
 }
 
+bool recruit_result::test_one_suitable_recruit_location(const std::vector<unit*>leaders)
+{
+	//std::cout << "Testing one suitable recruit location" << std::endl; std::cout.flush ();
+	recruit_location_ = where_;
+
+	//if we have not-on-board location, such as null_location, then the caller wants us to recruit on 'any' possible tile.
+	if (!resources::game_map->on_board(recruit_location_)) {
+		//std::cout << "Null location submitted" << std::endl; std::cout.flush ();
+		for (unsigned i = 0; i < leaders.size(); i++) {
+			map_location temp = pathfind::find_vacant_tile(*resources::game_map, *resources::units, leaders.at(i)->get_location(), pathfind::VACANT_CASTLE);
+			if (resources::game_map->on_board(temp)) {
+				recruit_location_ = temp;
+				break;
+			}
+		}
+	}
+
+	//std::cout << "Testing one suitable recruit location (1)" << std::endl; std::cout.flush ();
+	bool leader_on_recruitable = false;
+	for (unsigned i = 0; i < leaders.size(); i++) {
+		unit* my_leader = leaders.at(i);
+		leader_on_recruitable = leader_on_recruitable || can_recruit_on(*resources::game_map, my_leader->get_location(), recruit_location_);
+	}
+	//std::cout << "DONE Testing one suitable recruit location" << std::endl; std::cout.flush ();
+	return leader_on_recruitable;
+}
+
 void recruit_result::do_check_before()
 {
 	LOG_AI_ACTIONS << " check_before " << *this << std::endl;
-
+	//std::cout << "check_before recruit" << std::endl; std::cout.flush ();
 	const team& my_team = get_my_team();
 
 	//Unit available for recruiting?
 	const std::string &s_recruit = get_available_for_recruiting(my_team);
 
+	//std::cout << "s_recruit empty?" << std::endl; std::cout.flush ();
 	if (s_recruit.empty()) {
 		return;
 	}
 
 	//Unit type known ?
+	//std::cout << "! s_type ?" << std::endl; std::cout.flush ();
 	const unit_type *s_type = get_unit_type_known(s_recruit);
 	if (!s_type) {
 		return;
 	}
 
 	//Enough gold?
+	//std::cout << "! enough gold?" << std::endl; std::cout.flush ();
 	if (!test_enough_gold(my_team, *s_type)) {
 		return;
 	}
 
 	//Leader present?
-	const unit *my_leader = get_leader();
-
-	if (!my_leader ) {
+	//const unit *my_leader = get_leader();
+	//if (!my_leader ) {
+	//	return;
+	//}
+	std::vector<unit*> leaders = get_leaders();
+	//std::cout << "leaders empty?" << std::endl; std::cout.flush ();
+	if (leaders.empty()) {
+		set_error (E_NO_LEADER);
 		return;
 	}
 
 	//Leader on keep?
-
-	if (!test_leader_on_keep(*my_leader)) {
+	//if (!test_leader_on_keep(*my_leader)) {
+	//	return;
+	//}
+	//std::cout << "one leader on keep?" << std::endl; std::cout.flush ();
+	if (! test_one_leader_on_keep (leaders)) {
+		set_error(E_LEADER_NOT_ON_KEEP);
 		return;
 	}
 
 	//Try to get suitable recruit location. Is suitable location available ?
-	if (!test_suitable_recruit_location(*my_leader)) {
+	//if (!test_suitable_recruit_location(*my_leader)) {
+	//	return;
+	//}
+	//std::cout << "one suitable location?" << std::endl; std::cout.flush ();
+	if (! test_one_suitable_recruit_location (leaders)) {
+		set_error(E_BAD_RECRUIT_LOCATION);
 		return;
 	}
 
+	//std::cout << "DONE check_before recruit" << std::endl; std::cout.flush ();
 }
 
 

@@ -238,10 +238,11 @@ private:
 		const team& my_team,
 		const unit_type &type );
 	const unit *get_leader();
-	bool test_leader_on_keep(
-		const unit &my_leader);
-	bool test_suitable_recruit_location (
-		const unit &my_leader);
+	const std::vector<unit*> get_leaders();
+	bool test_leader_on_keep(const unit &my_leader);
+	bool test_one_leader_on_keep(const std::vector<unit*>leaders);
+	bool test_suitable_recruit_location (const unit &my_leader);
+	bool test_one_suitable_recruit_location(const std::vector<unit*>leaders);
 	const std::string& unit_name_;
 	const map_location& where_;
 	map_location recruit_location_;

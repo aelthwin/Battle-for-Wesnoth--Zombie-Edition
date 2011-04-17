@@ -255,13 +255,17 @@ unit_map::unit_iterator unit_map::find_first_leader(int side)
 std::vector<unit_map::unit_iterator> unit_map::find_leaders(int side) {
 	unit_map::unit_iterator i = begin(), i_end = end();
 	std::vector<unit_map::unit_iterator> leaders;
+	//std::cout << "Starting with leaders of size " << leaders.size() << std::endl; std::cout.flush();
 	for(;i != i_end; ++i){
 		if(static_cast<int>(i->side()) == side && i->can_recruit()){
+			//std::cout << "Pushing back a leader, side = " << static_cast<int>(i->side()) << " and id = " << i->id() << std::endl; std::cout.flush();
 			leaders.push_back(i);
 		}
 	}
+	//std::cout << "Returning leaders of size " << leaders.size() << std::endl; std::cout.flush();
 	return leaders;
 }
+
 std::vector<unit_map::const_unit_iterator> unit_map::find_leaders(int side)const{
 	const std::vector<unit_map::unit_iterator> &leaders = const_cast<unit_map*>(this)->find_leaders(side);
 	std::vector<unit_map::const_unit_iterator> const_leaders;

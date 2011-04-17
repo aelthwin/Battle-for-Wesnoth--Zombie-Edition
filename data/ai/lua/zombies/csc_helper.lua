@@ -96,21 +96,35 @@ ai:              The AI performing the move
 function this.move_randomly (params)
 	local moves = wesnoth.find_reach (params.unit)
 
+	-- remove vacant tiles from moves
+	local temp_moves = {}
+	for i, move in pairs (moves) do
+		local x, y = unpack (move)
+		if this.is_tile_vacant(x,y) then
+			table.insert (temp_moves, move)
+		end
+	end
+	moves = temp_moves
+
 	-- pick a move at random
-	local move_pick = math.random (1, table.getn (moves))
-	local x, y = unpack (moves[move_pick])
-	print ("HELPER: Picked random move: " .. move_pick .. " (" .. x .. ", " .. y .. ") of " .. table.getn (moves) .. " possible moves")
-	-- get an error on moves to our own tile... so only move if
-	-- one of the coords is different than unit position
-	if x ~= params.unit.x or y~= params.unit.y then
-		params.ai.move (params.unit, x, y)
+	if table.getn (moves) > 0 then
+		local move_pick, x, y
+		move_pick = math.random (1, table.getn (moves))
+		x, y = unpack (moves[move_pick])
+
+		print ("HELPER: Picked random move: " .. move_pick .. " (" .. x .. ", " .. y .. ") of " .. table.getn (moves) .. " possible moves")
+		-- get an error on moves to our own tile... so only move if
+		-- one of the coords is different than unit position
+		if x ~= params.unit.x or y~= params.unit.y then
+			params.ai.move (params.unit, x, y)
+		end
 	end
 end
 
 
 --[[
 
-Get a table of enemy units within some distance of a given unit
+Get a table of enemy units that <unit> can attack by moving <radius> moves
 
 params should contain:
 unit:            The unit looking for enemies (unit object from wesnoth.get_units)
@@ -123,14 +137,15 @@ function this.enemy_units_in_range (params)
 	local all_units = wesnoth.get_units()
 	local enemy_units = {}
 	for i, unit in pairs (all_units) do
-		print ("enemy_units_in_range: Checking side of unit, " .. unit.x .. ", " .. unit.y)
+		--print ("enemy_units_in_range: Checking side of unit, " .. unit.x .. ", " .. unit.y)
 		if unit.side ~= params.unit.side then
-			print (string.format ("enemy_units_in_range: Side (%d) not ours (%d)", unit.side, params.unit.side))
+			--print (string.format ("enemy_units_in_range: Side (%d) not ours (%d)", unit.side, params.unit.side))
 			table.insert (enemy_units, unit)
 		else
-			print ("enemy_units_in_range: One of us -- no add")
+			--print ("enemy_units_in_range: One of us -- no add")
 		end
 	end
+	print ("enemy_units_in_range: size of enemy_units is " .. table.getn(enemy_units))
 
 	local close_enemy_units = {}
 	for i, unit in pairs (enemy_units) do
@@ -148,7 +163,54 @@ function this.enemy_units_in_range (params)
 		end
 	end
 
+	print ("enemy_units_in_range: RETURNS")
 	return close_enemy_units
+end
+
+
+--[[
+
+Get a table of enemy units that can attack <unit> by moving <distance> moves
+
+params should contain:
+unit:            The unit looking for enemies (unit object from wesnoth.get_units)
+distance:        The maximum move distance to check within
+
+Returns: list of units, possibly empty
+
+]]--
+function this.enemies_that_can_attack (params)
+	local all_units = wesnoth.get_units()
+	local enemy_units = {}
+	for i, unit in pairs (all_units) do
+		print ("enemies_that_can_attack: Checking side of unit, " .. unit.x .. ", " .. unit.y)
+		if unit.side ~= params.unit.side then
+			print (string.format ("enemies_that_can_attack: Side (%d) not ours (%d)", unit.side, params.unit.side))
+			table.insert (enemy_units, unit)
+		else
+			print ("enemies_that_can_attack: One of us -- no add")
+		end
+	end
+
+	local close_enemy_units = {}
+	local close_enemy_dist  = {}
+	for i, unit in pairs (enemy_units) do
+		print ("enemies_that_can_attack: Checking range of unit, " .. unit.x .. ", " .. unit.y)
+		local attack_points = this.get_empty_adjacencies (params.unit.x, params.unit.y)
+		local path, distance = this.find_closest_location ({unit = unit, list = attack_points})
+		if path ~= nil then
+			print (string.format ("enemies_that_can_attack: path length = %d and distance = %d ", table.getn(path), distance))
+			if distance <= params.distance then
+				print ("enemies_that_can_attack: Adding unit to list, " .. unit.x .. ", " .. unit.y)
+				table.insert (close_enemy_units, unit)
+				table.insert (close_enemy_dist,  distance)
+			end
+		else
+			print ("enemies_that_can_attack: found no enemies")
+		end
+	end
+
+	return close_enemy_units, close_enemy_dist
 end
 
 
@@ -377,8 +439,10 @@ function this.move_and_attack (params)
 
 	-- find the "closest" location
 	local path, cost, loc = this.find_closest_location ({unit = unit, list = empty_adj})
+	print ("\tmove_and_attack: chose to move to location " .. loc[1] .. ", " .. loc[2])
 	
 	if loc~= nil and path ~= nil and table.getn (path) > 0 then
+		
 
 		--print ("\tmove_and_attack: find path from " .. unit.x .. ", " .. unit.y .. "   to   " .. enemy.x .. ", " .. enemy.y)
 		--local path = wesnoth.find_path (unit.x, unit.y, enemy.x, enemy.y)
@@ -391,21 +455,106 @@ function this.move_and_attack (params)
 		print ("\tmove_and_attack: uloc = " .. uloc[1] .. ", " .. uloc[2])
 
 		local ok = true
-		while table.getn (path) > 0 and ok == true do
+		local strikes = 0
+		while path ~= nil and table.getn (path) > 0 and ok == true do
 			local x, y = unpack (path[1])
 			print ("\tmove_and_attack: move = " .. x .. ", " .. y)
-			local result = params.ai.move (unit, x, y)
-			ok = result.ok
-			print (string.format ("\tmove_and_attack: ok = %s", this.to_str (ok)))
-			if ok then table.remove (path, 1) end
+			-- if the move is on an occupied tile, then we recalculate path
+			-- this shouldn't have to be hacked this way, but for whatever reason
+			-- wesnoth.find_path seems to be returning paths that ignore units
+			-- when no ignore_unit value is supplied (default is false, or pay attention to units)
+			if not this.is_tile_vacant (x, y) then
+				if strikes < 3 then
+					print ("\tmove_and_attack: recalculating...")
+					path, cost, loc = this.find_closest_location ({unit = unit, list = empty_adj})
+					strikes = strikes + 1
+				else
+					print ("\tmove_and_attack: three strikes you're out")
+					ok = false
+				end
+			else
+				local result = params.ai.move (unit, x, y)
+				ok = result.ok
+				print (string.format ("\tmove_and_attack: ok = %s", this.to_str (ok)))
+				if ok then table.remove (path, 1) end
+			end
 		end
 
-		if table.getn (path) == 0 then
+		if path ~= nil and table.getn (path) == 0 then
 			params.ai.attack (unit.x, unit.y, enemy.x, enemy.y)
+		else
+			print ("\tmove_and_attack: end with path == nil... must have recalculated")
 		end
 	end
 
 	print ("move_and_attack: beenden")
+end
+
+
+--[[
+
+Moves to an adjacent tile, then attacks
+
+params should contain:
+unit           The unit doing the attacking (unit object from wesnoth.get_units)
+enemy          The enemy unit being attacked
+ai:            The AI performing the move
+
+]]--
+function this.move_and_attack2 (params)
+	local unit  = params.unit
+	local enemy = params.enemy
+
+	print ("move_and_attack2: anfangen")
+
+	-- Find vacant tiles near the enemy
+	local empty_adj = this.get_empty_adjacencies (enemy.x, enemy.y)
+
+	-- find the "closest" location
+	local path, cost, loc = this.find_closest_location ({unit = unit, list = empty_adj})
+	
+	if loc~= nil and path ~= nil and table.getn (path) > 0 then
+		print ("\tmove_and_attack2: chose to move to location " .. loc[1] .. ", " .. loc[2])
+		local dest_x, dest_y = unpack (loc)
+
+		-- do a find_reach... if the dest is in there, just do the move and let
+		-- the game figure the path... avoids some weirdness in the game with find_path
+		local reachables = wesnoth.find_reach (unit)
+		local single_move = false
+		for i, r in pairs (reachables) do
+			local x, y = unpack (r)
+			single_move = single_move or (x == dest_x and y == dest_y)
+		end
+
+		-- was it in our reach?
+		if single_move then
+			params.ai.move (unit, dest_x, dest_y)
+			params.ai.attack (unit.x, unit.y, enemy.x, enemy.y)
+		else
+			-- find best guess from reachables
+			local best_r  = nil
+			local best_rd = 6000 -- something super high to prime the algorithm
+			for i, r in pairs (reachables) do
+				local x, y = unpack (r)
+				-- only consider vacant tiles
+				if this.is_tile_vacant (x, y) then
+					local d = math.abs (x - dest_x) + math.abs (y - dest_y)
+					if d < best_rd then
+						best_r  = r
+						best_rd = d
+					end
+				end
+			end
+			if best_r ~= nil then
+				dest_x, dest_y = unpack (best_r)
+				params.ai.move (unit, dest_x, dest_y)
+			end
+		end
+	else
+		print ("\tmove_and_attack2: could not find suitable location to attack")
+	end
+
+	print ("move_and_attack2: beenden")
 end
 
 
@@ -443,6 +592,14 @@ function this.find_closest_location (params)
 	end
 	return best_path, best_cost, best_loc
 end
+
+
+function this.distance_from (unit, goal)
+	local attack_points = this.get_empty_adjacencies (goal.x, goal.y)
+	local path, distance = this.find_closest_location ({unit = unit, list = attack_points})
+	return distance
+end
+
 
 
 function this.to_str (bool)

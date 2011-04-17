@@ -322,13 +322,10 @@ end
 
 
 
---Kenny coded below
-
-
 --requires 
 --	z zombie units within pursuit radius
 --	sp speed of player unit
--- 	d mean distance from close zombie center of gravity
+-- 	d distance of zombie from player unit
 --	str player strength
 --	f number of fellow player units within pursuit radius
 --	r race of player unit
@@ -351,7 +348,7 @@ this.updatePlayerRunningProbabilityTable = function (params)
 end
 
 --requires
---	d distance from player unit
+--	d distance of zombie from player unit
 --	sp speed of player unit
 --	r race of player unit
 this.updateEngagementProbabilityTable = function ()
