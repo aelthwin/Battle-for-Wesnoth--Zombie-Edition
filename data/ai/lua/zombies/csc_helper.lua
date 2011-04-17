@@ -137,11 +137,14 @@ function this.enemy_units_in_range (params)
 		print ("enemy_units_in_range: Checking range of unit, " .. unit.x .. ", " .. unit.y)
 		local attack_points = this.get_empty_adjacencies (unit.x, unit.y)
 		local path, distance = this.find_closest_location ({unit = params.unit, list = attack_points})
-		--local path, distance = wesnoth.find_path (params.unit.x, params.unit.y, unit.x, unit.y)
-		print (string.format ("enemy_units_in_range: path length = %d and distance = %d ", table.getn(path), distance))
-		if distance <= params.radius then
-			print ("enemy_units_in_range: Adding unit to list, " .. unit.x .. ", " .. unit.y)
-			table.insert (close_enemy_units, unit)
+		if path ~= nil then
+			print (string.format ("enemy_units_in_range: path length = %d and distance = %d ", table.getn(path), distance))
+			if distance <= params.radius then
+				print ("enemy_units_in_range: Adding unit to list, " .. unit.x .. ", " .. unit.y)
+				table.insert (close_enemy_units, unit)
+			end
+		else
+			print ("enemy_units_in_range: found no enemies")
 		end
 	end
 
