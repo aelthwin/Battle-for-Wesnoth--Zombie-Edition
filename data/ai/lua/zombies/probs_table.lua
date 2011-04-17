@@ -300,7 +300,7 @@ varN:            describe varN
 
 ]]--
 this.update = function (params)
-	wesnoth.message ('update is fake!')
+	wesnoth.message ('update is still kinda fake!')
 	this.updatePlayerRunningProbabilityTable ();
 	this.updateEngagementProbabilityTable ();
 	this.updateEngagementSurvivalProbabilityTable ();
@@ -332,12 +332,25 @@ end
 --	str player strength
 --	f number of fellow player units within pursuit radius
 --	r race of player unit
-this.updatePlayerRunningProbabilityTable = function ()
+this.updatePlayerRunningProbabilityTable = function (params)
 	print ("Stubbed out probability table in updatePlayerRunningProbabilityTable")
-	this.table_player_runs = {
-		{zombies = 1, speed = 4, distance = 9, strength = 2, fellows = 2, race = human},
-		{zombies = 0, speed = 5, distance = 8, strength = 3, fellows = 3, race = elf},
-	}
+	--this.table_player_runs = {
+	--	{zombies = 1, speed = 4, distance = 9, strength = 2, fellows = 2, race = human},
+	--	{zombies = 0, speed = 5, distance = 8, strength = 3, fellows = 3, race = elf},
+	--}
+
+	local t = {}
+	t[1] = params.z
+	t[2] = params.sp
+	t[3] = params.d
+	t[4] = params.str
+	t[5] = params.f
+	t[6] = params.r
+
+	table.insert(this.table_player_runs, t)
+
+	this.store()
+	
 end
 
 --requires
@@ -346,10 +359,19 @@ end
 --	r race of player unit
 this.updateEngagementProbabilityTable = function ()
 	print ("Stubbed out probability table in updateEngagementProbabilityTable")
-	this.table_engagement = {
-		{distance = 15, speed = 4, race = human},
-		{distance = 10, speed = 7, race = elf}
-	}
+	--this.table_engagement = {
+	--	{distance = 15, speed = 4, race = human},
+	--	{distance = 10, speed = 7, race = elf}
+	--}
+
+	local t = {}
+	t[1] = params.d
+	t[2] = params.sp
+	t[3] = params.r
+
+	table.insert(this.table_engagement, t)
+
+	this.store()
 end
 
 --requires
@@ -358,10 +380,19 @@ end
 --	h health of player unit
 this.updateEngagementSurvivalProbabilityTable = function ()
 	print ("Stubbed out probability table in updateEngagementSurvivalProbabilityTable")
-	this.table_engagement_survival = {
-		{strength = 7, race = human, health = 100},
-		{strength = 8, race = human, health = 99}
-	}
+	--this.table_engagement_survival = {
+	--	{strength = 7, race = human, health = 100},
+	--	{strength = 8, race = human, health = 99}
+	--}
+
+	local t = {}
+	t[1] = params.str
+	t[2] = params.r
+	t[3] = params.h
+
+	table.insert(this.table_engagement_survival, t)
+
+	this.store()
 end
 
 
