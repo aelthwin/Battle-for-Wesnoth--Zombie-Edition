@@ -126,7 +126,7 @@ public:
 	void set_side(unsigned int new_side) { side_ = new_side; }
 	fixed_t alpha() const { return alpha_; }
 
-	bool can_recruit() const { return canrecruit_; }
+	bool can_recruit() const { return canrecruit_ || has_ability_by_id ("mobrule"); }
 	bool incapacitated() const { return get_state(STATE_PETRIFIED); }
 	int total_movement() const { return max_movement_; }
 	int movement_left() const { return (movement_ == 0 || incapacitated()) ? 0 : movement_; }
