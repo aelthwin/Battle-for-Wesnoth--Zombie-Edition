@@ -205,7 +205,7 @@ function this.get_closest_keep (params)
 		terrain    = "K*"
 	});
 
-	return this.find_closest_location ({unit = unit, list = keep_locs})
+	return this.find_closest_location ({unit = unit, list = keep_locs, vacant = params.vacant, allow_unit = params.allow_unit})
 end
 
 
@@ -249,12 +249,15 @@ function this.get_close_recruit_locs (params)
 	end
 	
 	-- compute intersection of recruitable locs and close locs
+	-- filter out tiles that are not vacant
 	local cr_locs = {}
 	for x, l in pairs (r_locs) do
 		for y, m in pairs (close_locs) do
 			local lx, ly = unpack (l)
 			local mx, my = unpack (m)
-			if lx == mx and ly == my then table.insert (cr_locs, l) end
+			if lx == mx and ly == my and this.is_tile_vacant (lx, ly) then
+				table.insert (cr_locs, l)
+			end
 		end
 	end
 
@@ -268,10 +271,15 @@ function this.do_recruit (params)
 	print ("Recruit capable unit do_recruit'ing at: " .. unit.x .. ", " .. unit.y)
 
 	-- can only recruit from a Keep location...
-	local k_path, k_cost, k_keep = this.get_closest_keep ({unit = unit})
+	local k_path, k_cost, k_keep = this.get_closest_keep ({unit = unit, vacant = true, allow_unit = true})
 
 	-- only do anything if we actually got a best choice for keep
-	if k_keep ~= nil then
+	local ok = true  -- set to false first failure...
+	if k_keep == nil then
+		ok = false
+	end
+
+	if ok then
 		local x, y = unpack (k_keep)
 		print ("Chose to move to keep  (" .. x .. ", " .. y .. ")")
 
@@ -279,13 +287,13 @@ function this.do_recruit (params)
 		-- first move in the table is ALWAYS our current position
 		-- don't execute that move
 		table.remove (k_path, 1)
-		local ok = true  -- set to false first failure... maxed out move ability in other words
+
 		for i, move in pairs (k_path) do
 			if ok then
 				local x, y = unpack (move)
 				print ("\tk_path: moving to (" .. x .. ", " .. y .. ")")
 				local move_result = ai.move (unit, x, y)
-				ok = move_result.ok
+				ok = move_result.ok -- ok becomes false if maxed out move ability
 			end
 		end
 
@@ -297,17 +305,24 @@ function this.do_recruit (params)
 			print ("Recruitable locations within 10 tiles of the current location..")
 			local cr_locs = this.get_close_recruit_locs ({unit = unit, radius = 10})
 
+			if (table.getn (cr_locs) <= 0) then
+				ok = false
+			end
+
 			-- don't have to be clever about this next part
 			-- just try to recruit everywhere that it's possible
 			-- right now, we don't really care so much whether
 			-- there is an error... we can fix that later
-			for x, l in pairs (cr_locs) do
+			if ok then for x, l in pairs (cr_locs) do
 				local lx, ly = unpack (l)
 				print ("\trecruiting at: (" .. lx .. ", " .. ly .. ")")
 				ai.recruit ("Zombie", lx, ly)
-			end
+			end end
 		end
 	end
+
+
+	return ok
 end
 
 
@@ -404,15 +419,24 @@ function this.find_closest_location (params)
 
 	for i, loc in ipairs (list) do
 		local x, y = unpack (loc)
-		local path, cost = wesnoth.find_path (unit.x, unit.y, x, y)
-		local change_str = ''
-		if best_cost == nil or cost < best_cost then
-			best_cost  = cost
-			best_path  = path
-			best_loc   = loc
-			change_str = '  --  best CSF!'
+		-- if being picky and requiring the tile is vacant (vacant = true)
+		-- but allow_unit = true as well, then we can include the unit's own
+		-- location, if it comes up....
+		if params.vacant and params.allow_unit and x == unit.x and y == unit.y then
+			return {}, 0, {x, y}
 		end
-		print ("\t(" .. x .. ", " .. y .. ") costs " .. cost .. change_str)
+		-- this is any old tile subject to all the normal rules
+		if not params.vacant or (params.vacant and this.is_tile_vacant(x,y)) then
+			local path, cost = wesnoth.find_path (unit.x, unit.y, x, y)
+			local change_str = ''
+			if best_cost == nil or cost < best_cost then
+				best_cost  = cost
+				best_path  = path
+				best_loc   = loc
+				change_str = '  --  best CSF!'
+			end
+			print ("\t(" .. x .. ", " .. y .. ") costs " .. cost .. change_str)
+		end
 	end
 	return best_path, best_cost, best_loc
 end

@@ -1314,15 +1314,11 @@ bool attack::perform_hit(bool attacker_turn, statistics::attack_context &stats)
 	}
 
 	int damage_done = std::min<int>(defender.get_unit().hitpoints(), attacker.damage_);
-	bool dies = defender.get_unit().take_hit(damage);
-	if (! dies && attacker.valid() && attacker_stats->plagues && plague_death) {
-		int count = 1; // already hit once
-		while (! dies) {
-			dies = defender.get_unit().take_hit(damage);
-			count ++;
-		}
-		damage *= count; // update so the log is correct
+	/* Determine whether a plague instant death has occurred */
+	if (attacker_stats->plagues && plague_death) {
+		damage = defender.get_unit().hitpoints();
 	}
+	bool dies = defender.get_unit().take_hit(damage);
 	LOG_NG << "defender took " << damage << (dies ? " and died\n" : "\n");
 	if (attacker_turn) {
 		stats.attack_result(hits

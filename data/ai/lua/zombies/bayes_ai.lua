@@ -133,18 +133,22 @@ Perform moves for each AI unit
 
 ]]--
 function this.do_moves ()
-	print ("Start BAYES do_moves")
-
 	-- make sure some class level vars are there
 	this.units = wesnoth.get_units ({side=this.ai.side})
 	this.leader_id = this.leader_id or this.units[1].id -- only set once
 
 	
 	-- print out some state information...
+	print ("")
+	print ("")
+	print ("")
+	print ("")
+	print ("TEAM:         " .. wesnoth.sides[this.side].team_name)
 	print ("Zombie gold:  " .. wesnoth.sides[this.side].gold)
 	print ("Recruit cost: " .. wesnoth.unit_types[this.units[1].type].cost)
-	print ("Leader id:    " .. this.leader_id)
 	print ("Move rate:    " .. this.units[1].max_moves)
+	print ("------------------------------------------");
+	print ("Start BAYES do_moves")
 
 
 	for i, unit in ipairs (this.units) do
@@ -153,7 +157,7 @@ function this.do_moves ()
 		-- 1. print status
 		-- 2. make sure unit indexes are present in this.modes and this.targets
 		-- 3. puts a unit back into WANDER if its target is gone
-		print ("Unit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") doing moves")
+		print ("\nUnit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") doing moves")
 		this.init_unit (unit)
 
 
@@ -162,13 +166,13 @@ function this.do_moves ()
 
 		-- try recruiting?
 		if continue and this.helper.can_recruit ({unit = unit}) then
-			this.helper.do_recruit ({
+			local recruited = this.helper.do_recruit ({
 				unit = unit,
 				ai   = this.ai
 			})
-			-- recruited!
-			-- don't do anything apart from recruiting
-			continue = false
+			-- recruited?
+			-- if so, don't do anything apart from recruiting
+			continue = not recruited
 		end -- RECRUITING PHASE
 
 
@@ -246,6 +250,7 @@ function this.do_moves ()
 	this.do_results ()
 
 	print ("End BAYES do_moves")
+	print ("------------------------------------------");
 	return
 end
 
