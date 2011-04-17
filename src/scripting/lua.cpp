@@ -811,7 +811,7 @@ static int impl_unit_type_get(lua_State *L)
 
 	// Find the corresponding attribute.
 	return_tstring_attrib("name", ut.type_name());
-	return_tstring_attrib("race", ut.race());
+	return_string_attrib("race", ut.race());
 	return_int_attrib("max_hitpoints", ut.hitpoints());
 	return_int_attrib("max_moves", ut.movement());
 	return_int_attrib("max_experience", ut.experience_needed());

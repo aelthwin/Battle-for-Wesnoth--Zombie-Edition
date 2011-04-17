@@ -15,63 +15,63 @@ return {
 {
    ["can_engage"]="no",
    ["distance"]="high",
-   ["speed"]="med",
    ["race"]="elf",
+   ["speed"]="med",
 },
 -- Table: {3}
 {
    ["can_engage"]="no",
    ["distance"]="high",
-   ["speed"]="high",
    ["race"]="human",
+   ["speed"]="high",
 },
 -- Table: {4}
 {
    ["can_engage"]="yes",
    ["distance"]="low",
-   ["speed"]="high",
    ["race"]="elf",
+   ["speed"]="high",
 },
 -- Table: {5}
 {
    ["can_engage"]="yes",
    ["distance"]="high",
-   ["speed"]="low",
    ["race"]="elf",
+   ["speed"]="low",
 },
 -- Table: {6}
 {
    ["can_engage"]="yes",
    ["distance"]="low",
-   ["speed"]="high",
    ["race"]="elf",
+   ["speed"]="high",
 },
 -- Table: {7}
 {
    ["can_engage"]="yes",
    ["distance"]="high",
-   ["speed"]="low",
    ["race"]="human",
+   ["speed"]="low",
 },
 -- Table: {8}
 {
    ["can_engage"]="no",
    ["distance"]="high",
-   ["speed"]="high",
    ["race"]="human",
+   ["speed"]="high",
 },
 -- Table: {9}
 {
    ["can_engage"]="no",
    ["distance"]="high",
-   ["speed"]="high",
    ["race"]="human",
+   ["speed"]="high",
 },
 -- Table: {10}
 {
    ["can_engage"]="yes",
    ["distance"]="med",
-   ["speed"]="low",
    ["race"]="elf",
+   ["speed"]="low",
 },
 }

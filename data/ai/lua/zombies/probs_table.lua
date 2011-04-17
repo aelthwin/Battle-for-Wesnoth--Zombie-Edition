@@ -259,7 +259,19 @@ this.init = function ()
 	this.table_engagement          = table.load("engagement.tbl")
 	this.table_player_runs         = table.load("playerRuns.tbl")
 
-	this.debug (table.tostring (this.table_engagement))
+	-- init race values in schema
+	this.debug ("Unit Types:")
+	local temp = {}
+	for t, ut in pairs (wesnoth.unit_types) do
+		local found = false
+		for _, r in pairs (temp) do
+			if r == ut.race then found = true end
+		end
+		if not found then table.insert (temp, ut.race) end
+	end
+	this.debug (table.tostring (temp))
+	this.schema.attributes.race.values = temp
+	this.debug (table.tostring (this.schema))
 
 	-- init precalcs
 	this.init_precalc ("playerRuns", "will_run")
@@ -274,11 +286,11 @@ this.init = function ()
 	this.debug (table.tostring (this.precalc_engage))
 	this.debug (table.tostring (this.precalc_engage))
 	this.debug (table.tostring (this.precalc_survival))
-	
 end
 
 
 this.debug = function (str)
+	-- change this to turn off DEBUG
 	if true then print (str) end
 end
 

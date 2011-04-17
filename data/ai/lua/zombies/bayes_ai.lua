@@ -146,6 +146,7 @@ function this.do_moves ()
 	print ("TEAM:         " .. wesnoth.sides[this.side].team_name)
 	print ("Zombie gold:  " .. wesnoth.sides[this.side].gold)
 	print ("Recruit cost: " .. wesnoth.unit_types[this.units[1].type].cost)
+	print ("Race:         " .. wesnoth.unit_types[this.units[1].type].race)
 	print ("Move rate:    " .. this.units[1].max_moves)
 	print ("------------------------------------------");
 	print ("Start BAYES do_moves")
@@ -157,7 +158,7 @@ function this.do_moves ()
 		-- 1. print status
 		-- 2. make sure unit indexes are present in this.modes and this.targets
 		-- 3. puts a unit back into WANDER if its target is gone
-		print ("\nUnit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") doing moves")
+		print (string.format ("\nUnit %d, %d (%s) (%s type) doing moves", unit.x, unit.y, unit.id, unit.type))
 		this.init_unit (unit)
 
 
