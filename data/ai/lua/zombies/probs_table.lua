@@ -165,7 +165,6 @@ this.schema = {
 		zombies = {
 			values = {"low", "med", "high"},
 			to_attr = function (value) -- # of zombies for whom unit is in pursuit range
-				if value == nil then value = 0 end
 				if     value < 2  then return "low"
 				elseif value < 4  then return "med"
 				else                   return "high"
@@ -377,7 +376,7 @@ this.get_ind_prob = function (table, answer, attr, value)
 	if attr ~= nil and value ~= nil then
 		return this[table][answer][attr][value] / this[table][answer].total
 	end
-	return this[table][answer] / this[table].total
+	return this[table][answer].total / this[table].total
 end
 
 

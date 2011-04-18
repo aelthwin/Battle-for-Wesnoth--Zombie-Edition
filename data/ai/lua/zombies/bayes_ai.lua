@@ -208,17 +208,32 @@ function this.do_moves ()
 
 					-- get proportional probs
 					-- in this circumstance, player unit == e_unit
+					local params = {
+						unit     = unit,
+						target   = e_unit,
+						-- probabilities inputs
+						z   = table.getn (zombies),
+						sp  = e_unit.max_moves,
+						d   = this.helper.distance_from (unit, e_unit),
+						str = wesnoth.unit_types[e_unit.type].max_attack,
+						f   = table.getn (close_units),
+						r   = wesnoth.unit_types[e_unit.type].race,
+						h   = e_unit.hitpoints
+					}
+					print ("PARAMS TO PROBS")
+					table.foreach (params, print)
+
 					local ppr, pce, pcc = this.probs.get_all_probs ({
 						unit     = unit,
 						target   = e_unit,
 						-- probabilities inputs
-						zombies  = table.getn (zombies),
-						speed    = e_unit.max_moves,
-						distance = this.helper.distance_from (unit, e_unit),
-						strength = wesnoth.unit_types[e_unit.type].max_attack,
-						fellows  = table.getn (close_units),
-						race     = wesnoth.unit_types[e_unit.type].race,
-						health   = e_unit.hitpoints
+						z   = table.getn (zombies),
+						sp  = e_unit.max_moves,
+						d   = this.helper.distance_from (unit, e_unit),
+						str = wesnoth.unit_types[e_unit.type].max_attack,
+						f   = table.getn (close_units),
+						r   = wesnoth.unit_types[e_unit.type].race,
+						h   = e_unit.hitpoints
 					})
 			
 					-- combine
