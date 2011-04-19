@@ -808,6 +808,22 @@ static int impl_unit_type_get(lua_State *L)
 	const unit_type *utp = unit_types.find(lua_tostring(L, -1));
 	if (!utp) return luaL_argerror(L, 1, "unknown unit type");
 	unit_type const &ut = *utp;
+	
+	// --- ZOMBIES ---
+	// Get attack value for max-damage attack
+	int max_attack = 0;
+	int curr_dmg;
+	std::cout << "Number of Attack Types: " ;
+	std::cout << ut.attacks().size() << endl;
+	attack_type *curr_attack;
+	for (int i = 0; i < ut.attacks().size(); i++) {
+		curr_attack = &ut.attacks().at(i);
+		curr_dmg = curr_attack->damage();
+		if (curr_dmg > max_attack) max_attack = curr_dmg;
+		//std::cout << "curr_dmg: " << curr_dmg << std::endl;
+	}
+	//std::cout << "max_attack : " << max_attack << std::endl;
+	// ----------------
 
 	// Find the corresponding attribute.
 	return_tstring_attrib("name", ut.type_name());
@@ -815,7 +831,7 @@ static int impl_unit_type_get(lua_State *L)
 	return_int_attrib("max_hitpoints", ut.hitpoints());
 	return_int_attrib("max_moves", ut.movement());
 	return_int_attrib("max_experience", ut.experience_needed());
-	return_int_attrib("max_attack", 12);  // @TODO TLB
+	return_int_attrib("max_attack", max_attack);
 	return_int_attrib("cost", ut.cost());
 	return_int_attrib("level", ut.level());
 	return_cfgref_attrib("__cfg", ut.get_cfg());
