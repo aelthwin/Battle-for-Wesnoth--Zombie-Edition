@@ -92,11 +92,11 @@ this.helper = wesnoth.require('ai/lua/zombies/csc_helper.lua')
 
 
 --[[ Variables set by init ... with some default values  :) ]]--
-this.side      = 0
-this.ai        = nil
-this.modes     = {}   -- will map unit id to mode 
-this.targets   = {}   -- will map unit id to target id
-
+this.side           = 0
+this.ai             = nil
+this.modes          = {}   -- will map unit id to mode 
+this.targets        = {}   -- will map unit id to target id
+this.pursuit_params = {} -- maps unit id to the params object that pushed the unit into pursuit mode
 
 this.chase_threshold = 0.25 -- total guess for now -- will require tuning
 
@@ -137,6 +137,9 @@ function this.do_moves ()
 	this.units = wesnoth.get_units ({side=this.ai.side})
 	this.leader_id = this.leader_id or this.units[1].id -- only set once
 
+
+	-- TLB todo find out if there are any id's i nthe pursuit tables that no longer exist
+	-- as units in the AI.  If there are, they need to updated as can_survive = "no"
 
 	
 	-- print out some state information...
@@ -228,27 +231,11 @@ function this.do_moves ()
 
 					table.foreach (params, print)
 
-					--KENNY
 					--local ppr, pce, pcc = this.probs.get_all_probs ({
-					local ppr, pce = this.probs.get_all_probs ({
-					--END KENNY
-						unit     = unit,
-						target   = e_unit,
-						-- probabilities inputs
-						z   = table.getn (zombies),
-						sp  = e_unit.max_moves,
-						d   = this.helper.distance_from (unit, e_unit),
-						str = wesnoth.unit_types[e_unit.type].max_attack,
-						f   = table.getn (close_units),
-						r   = wesnoth.unit_types[e_unit.type].race,
-						h   = e_unit.hitpoints
-					})
+					local ppr, pce = this.probs.get_all_probs (params)
 			
 					-- combine
-					--KENNY
-					--local combined_probs = ppr * pce * pcc
 					local combined_probs = ppr * pce
-					--END KENNY
 			
 					-- compare
 					if combined_probs > best_prob then
@@ -341,16 +328,16 @@ function this.do_moves ()
 		
 		print ("\nUnit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") DONE")
 
-		--KENNY check the zombie unit is still on the team
-		local still_exists = "no"
+		--KENNY check the zombie unit is still on the team (and alive)
+		local still_exists = false
 		this.units_at_end = wesnoth.get_units ({side=this.ai.side})
 		for a, units_end in ipairs (this.units) do
 			if units_end.id == unit.id then
-				still_exists = "yes"
+				still_exists = true
 			end
 		end
 
-		if still_exists == "no" then
+		if not still_exists then
 			params.will_survive = "no"
 			this.probs.update(params)
 		end
@@ -361,7 +348,7 @@ function this.do_moves ()
 
 
 	print ("doing results...")
-	this.do_results ()
+	this.probs.store ()
 	print ("DONE with results...")
 
 	print ("End BAYES do_moves")
@@ -408,30 +395,17 @@ end
 function this.to_wander_mode (params)
 	this.modes[params.unit.id]   = WANDER
 	this.targets[params.unit.id] = nil
+	-- don't do an update with the params here, we wouldn't know why we're doing it
+	this.pursuit_params[params.unit.id] = nil
 end
 
 
 function this.to_pursuit_mode (params)
 	this.modes[params.unit.id]   = PURSUIT
 	this.targets[params.unit.id] = params.target_id
+	this.pursuit_params[params.unit.id] = params.pursuit_params
 end
 
 
-
---[[
-
-Figure out what results, if any, need to be written back to the probs table
-
-]]--
-function this.do_results ()
-	-- figure results
-	local results = {}
-
-	-- then store
-	for i, result in pairs (results) do
-		this.probs.update (result)
-	end
-	this.probs.store ()
-end
 
 return this
