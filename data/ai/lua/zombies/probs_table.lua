@@ -86,12 +86,12 @@ Trevor's notes...
 
 this.table_engagement_survival = {}
 this.table_engagement = {}
-this.table_player_runs = {}
+--this.table_player_runs = {}
 
 
 this.schema = {
 	questions = {
-		will_run = {
+		can_engage = {
 			answers    = {"yes", "no"},
 			attributes = {
 				"zombies",
@@ -99,14 +99,6 @@ this.schema = {
 				"distance",
 				"strength",
 				"fellows",
-				"race"
-			}
-		},
-		can_engage = {
-			answers    = {"yes", "no"},
-			attributes = {
-				"distance",
-				"speed",
 				"race"
 			}
 		},
@@ -245,7 +237,7 @@ And then our probabilities have been updated in real-time.
 We shouldn't start by doing this right away though... because it opens us up for bugs.  Don't want that when we're cutting it so close.
 ]]--
 
-this.precalc_p_runs     = {}
+--this.precalc_p_runs     = {}
 this.precalc_engage     = {}
 this.precalc_survival   = {}
 
@@ -257,7 +249,7 @@ Loads up the probability tables, does pre-calculations
 this.init = function ()
 	this.table_engagement_survival = table.load("engagementSurvival.tbl")
 	this.table_engagement          = table.load("engagement.tbl")
-	this.table_player_runs         = table.load("playerRuns.tbl")
+	--this.table_player_runs         = table.load("playerRuns.tbl")
 
 	-- init race values in schema
 	this.debug ("Unit Types:")
@@ -274,12 +266,12 @@ this.init = function ()
 	this.debug (table.tostring (this.schema))
 
 	-- init precalcs
-	this.init_precalc ("p_runs",     "will_run")
+	--this.init_precalc ("p_runs",     "will_run")
 	this.init_precalc ("engage",     "can_engage")
 	this.init_precalc ("survival",   "will_survive")
 
 	-- do precalculations
-	this.do_precalc ("p_runs",     "will_run",     this.table_player_runs)
+	--this.do_precalc ("p_runs",     "will_run",     this.table_player_runs)
 	this.do_precalc ("engage",     "can_engage",   this.table_engagement)
 	this.do_precalc ("survival",   "will_survive", this.table_engagement_survival)
 
@@ -365,7 +357,7 @@ this.get_all_probs = function (params)
 	params.h   = this.schema.attributes.health.to_attr   (params.h)
 
 	return
-		this.getProbability_PlayerRunning (params),
+		--this.getProbability_PlayerRunning (params),
 		this.getProbability_CanEngage     (params),
 		this.getProbability_CanConvert    (params)
 end
@@ -395,7 +387,7 @@ f:   number of fellow units in the zombies pursuit radius
 r:   unit race
 
 ]]--
-this.getProbability_PlayerRunning = function (params)
+this.getProbability_CanEngage = function (params)
 	local answer = "no"
 	return
 		this.get_ind_prob ("p_runs", answer, "zombies",  params.z) *
@@ -420,14 +412,14 @@ d:   distance unit is from zombie
 r:   unit race
 
 ]]--
-this.getProbability_CanEngage = function (params)
-	local answer = "yes"
-	return
-		this.get_ind_prob ("engage", answer, "speed",    params.sp) *
-		this.get_ind_prob ("engage", answer, "distance", params.d) *
-		this.get_ind_prob ("engage", answer, "race",     params.r) *
-		this.get_ind_prob ("engage", answer)
-end
+--this.getProbability_CanEngage = function (params)
+--	local answer = "yes"
+--	return
+--		this.get_ind_prob ("engage", answer, "speed",    params.sp) *
+--		this.get_ind_prob ("engage", answer, "distance", params.d) *
+--		this.get_ind_prob ("engage", answer, "race",     params.r) *
+--		this.get_ind_prob ("engage", answer)
+--end
 
 
 
@@ -464,7 +456,7 @@ varN:            describe varN
 
 ]]--
 this.update = function (params)
-	this.updatePlayerRunningProbabilityTable (params);
+	--this.updatePlayerRunningProbabilityTable (params);
 	this.updateEngagementProbabilityTable (params);
 	this.updateEngagementSurvivalProbabilityTable (params);
 end
@@ -477,7 +469,7 @@ Store the current probability tables back to the filesystem
 
 ]]--
 this.store = function ()
-	table.save(this.table_player_runs, "playerRuns.tbl")
+	--table.save(this.table_player_runs, "playerRuns.tbl")
 	table.save(this.table_engagement, "engagement.tbl")
 	table.save(this.table_engagement_survival, "engagementSurvival.tbl")
 end
@@ -492,9 +484,9 @@ end
 --	str player strength
 --	f number of fellow player units within pursuit radius
 --	r race of player unit
-this.updatePlayerRunningProbabilityTable = function (params)
-	table.insert(this.table_player_runs, {
-		will_run = params.will_run,
+this.updateEngagementProbabilityTable = function (params)
+	table.insert(this.table_engagement, {
+		can_engage = params.can_engage,
 		zombies  = params.z,
 		speed    = params.sp,
 		distance = params.d,
@@ -508,14 +500,14 @@ end
 --	d distance of zombie from player unit
 --	sp speed of player unit
 --	r race of player unit
-this.updateEngagementProbabilityTable = function ()
-	table.insert(this.table_engagement, {
-		can_engage = params.can_engage,
-		distance   = params.d,
-		speed      = params.sp,
-		race       = params.r
-	})
-end
+--this.updateEngagementProbabilityTable = function ()
+--	table.insert(this.table_engagement, {
+--		can_engage = params.can_engage,
+--		distance   = params.d,
+--		speed      = params.sp,
+--		race       = params.r
+--	})
+--end
 
 --requires
 --	str player unit strength
