@@ -94,10 +94,8 @@ this.schema = {
 		can_engage = {
 			answers    = {"yes", "no"},
 			attributes = {
-				"zombies",
 				"speed",
 				"distance",
-				"strength",
 				"fellows",
 				"race"
 			}
@@ -105,6 +103,7 @@ this.schema = {
 		will_survive = {
 			answers    = {"yes", "no"},
 			attributes = {
+				"zombies",
 				"strength",
 				"race",
 				"health"
@@ -365,10 +364,19 @@ end
 
 this.get_ind_prob = function (table, answer, attr, value)
 	table = "precalc_"..table
+	local prob -- probability return value
+	
 	if attr ~= nil and value ~= nil then
-		return this[table][answer][attr][value] / this[table][answer].total
+		prob = this[table][answer][attr][value] / this[table][answer].total
+	else 
+		prob = this[table][answer].total / this[table].total
 	end
-	return this[table][answer].total / this[table].total
+	-- Boost probability above zero
+	if prob <= 0.0 then
+		prob = prob + 0.01
+	end
+	
+	return prob
 end
 
 
@@ -390,13 +398,11 @@ r:   unit race
 this.getProbability_CanEngage = function (params)
 	local answer = "no"
 	return
-		this.get_ind_prob ("p_runs", answer, "zombies",  params.z) *
-		this.get_ind_prob ("p_runs", answer, "speed",    params.sp) *
-		this.get_ind_prob ("p_runs", answer, "distance", params.d) *
-		this.get_ind_prob ("p_runs", answer, "strength", params.str) *
-		this.get_ind_prob ("p_runs", answer, "fellows",  params.f) *
-		this.get_ind_prob ("p_runs", answer, "race",     params.r) *
-		this.get_ind_prob ("p_runs", answer)
+		this.get_ind_prob ("engage", answer, "speed",    params.sp) *
+		this.get_ind_prob ("engage", answer, "distance", params.d) *
+		this.get_ind_prob ("engage", answer, "fellows",  params.f) *
+		this.get_ind_prob ("engage", answer, "race",     params.r) *
+		this.get_ind_prob ("engage", answer)
 end
 
 
@@ -436,6 +442,7 @@ h:   unit health
 this.getProbability_CanConvert = function (params)
 	local answer = "yes"
 	return
+		this.get_ind_prob ("survival", answer, "zombies",  params.z) *
 		this.get_ind_prob ("survival", answer, "strength", params.str) *
 		this.get_ind_prob ("survival", answer, "race",     params.r) *
 		this.get_ind_prob ("survival", answer, "health",   params.h) *
@@ -487,12 +494,10 @@ end
 this.updateEngagementProbabilityTable = function (params)
 	table.insert(this.table_engagement, {
 		can_engage = params.can_engage,
-		zombies  = params.z,
-		speed    = params.sp,
-		distance = params.d,
-		strength = params.str,
-		fellows  = params.f,
-		race     = params.r
+		speed    = params.speed,
+		distance = params.distance,
+		fellows  = params.fellows,
+		race     = params.race
 	})
 end
 
@@ -516,9 +521,10 @@ end
 this.updateEngagementSurvivalProbabilityTable = function ()
 	table.insert(this.table_engagement_survival, {
 		will_survive = params.will_survive,
-		strength     = params.str,
-		race         = params.r,
-		health       = params.h
+		zombies  = params.zombies,
+		strength     = params.strength,
+		race         = params.race,
+		health       = params.health
 	})
 end
 

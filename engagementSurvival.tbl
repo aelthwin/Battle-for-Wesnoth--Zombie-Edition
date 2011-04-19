@@ -13,65 +13,74 @@ return {
 },
 -- Table: {2}
 {
-   ["will_survive"]="yes",
+   ["zombies"]="low",
    ["race"]="elf",
-   ["strength"]="med",
    ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
 },
 -- Table: {3}
 {
-   ["will_survive"]="no",
+   ["zombies"]="low",
    ["race"]="human",
-   ["strength"]="med",
    ["health"]="high",
+   ["will_survive"]="no",
+   ["strength"]="med",
 },
 -- Table: {4}
 {
-   ["will_survive"]="no",
+   ["zombies"]="med",
    ["race"]="human",
-   ["strength"]="high",
    ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="high",
 },
 -- Table: {5}
 {
-   ["will_survive"]="yes",
+   ["zombies"]="low",
    ["race"]="human",
-   ["strength"]="low",
    ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="low",
 },
 -- Table: {6}
 {
-   ["will_survive"]="no",
+   ["zombies"]="high",
    ["race"]="elf",
-   ["strength"]="med",
    ["health"]="high",
+   ["will_survive"]="no",
+   ["strength"]="med",
 },
 -- Table: {7}
 {
-   ["will_survive"]="no",
+   ["zombies"]="high",
    ["race"]="human",
-   ["strength"]="high",
    ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="high",
 },
 -- Table: {8}
 {
-   ["will_survive"]="yes",
+   ["zombies"]="low",
    ["race"]="elf",
-   ["strength"]="low",
    ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="low",
 },
 -- Table: {9}
 {
-   ["will_survive"]="yes",
+   ["zombies"]="med",
    ["race"]="elf",
-   ["strength"]="med",
    ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
 },
 -- Table: {10}
 {
-   ["will_survive"]="no",
+   ["zombies"]="high",
    ["race"]="human",
-   ["strength"]="high",
    ["health"]="high",
+   ["will_survive"]="no",
+   ["strength"]="high",
 },
 }

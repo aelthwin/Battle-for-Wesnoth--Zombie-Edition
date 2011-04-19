@@ -137,6 +137,7 @@ function this.do_moves ()
 	this.units = wesnoth.get_units ({side=this.ai.side})
 	this.leader_id = this.leader_id or this.units[1].id -- only set once
 
+
 	
 	-- print out some state information...
 	print ("")
@@ -176,6 +177,8 @@ function this.do_moves ()
 			-- if so, don't do anything apart from recruiting
 			continue = not recruited
 		end -- RECRUITING PHASE
+
+
 
 
 
@@ -221,9 +224,14 @@ function this.do_moves ()
 						h   = e_unit.hitpoints
 					}
 					print ("PARAMS TO PROBS")
+
+
 					table.foreach (params, print)
 
-					local ppr, pce, pcc = this.probs.get_all_probs ({
+					--KENNY
+					--local ppr, pce, pcc = this.probs.get_all_probs ({
+					local ppr, pce = this.probs.get_all_probs ({
+					--END KENNY
 						unit     = unit,
 						target   = e_unit,
 						-- probabilities inputs
@@ -237,7 +245,10 @@ function this.do_moves ()
 					})
 			
 					-- combine
-					local combined_probs = ppr * pce * pcc
+					--KENNY
+					--local combined_probs = ppr * pce * pcc
+					local combined_probs = ppr * pce
+					--END KENNY
 			
 					-- compare
 					if combined_probs > best_prob then
@@ -263,20 +274,52 @@ function this.do_moves ()
 		-- that it's something real, an enemy actually on the map
 		print ("BAYES: pursuit stage ---")
 		if continue and this.modes[unit.id] == PURSUIT then
-			-- do the attack
-			-- this.helper.move_and_attack ({
-			this.helper.move_and_attack2 ({
-				unit  = unit,
-				enemy = this.helper.unit_for_id (this.targets[unit.id]),
-				ai    = this.ai
-			})
+
+
+			--KENNY if enemy is already nil at this point, I *think* it might be safe to say it was killed before we got back here for a zombie unit
+			--call for an update here for reason 3
+			local enemyAlreadyDefeated = "no"
+			local currentEnemy = this.helper.unit_for_id (this.targets[unit.id])
+			if currentEnemy == nil or currentEnemy.side == unit.side then
+				enemyAlreadyDefeated = "yes"
+				params.can_engage = "no"  
+				this.probs.update(params)
+			end
+			--END KENNY
+
+			--KENNY
+			if enemyAlreadyDefeated == "no" then
+			--END KENNY
+				-- do the attack
+				-- this.helper.move_and_attack ({
+				this.helper.move_and_attack2 ({
+					unit  = unit,
+					enemy = this.helper.unit_for_id (this.targets[unit.id]),
+					ai    = this.ai
+				})
+			--KENNY
+			end
+			--END KENNY
+
+
+			local enemy = this.helper.unit_for_id (this.targets[unit.id])
+
+
 
 			-- is the unit converted?
-			local enemy = this.helper.unit_for_id (this.targets[unit.id])
+			--local enemy = this.helper.unit_for_id (this.targets[unit.id])
 			if enemy ~= nil and enemy.side == unit.side then
 				this.to_wander_mode ({
 					unit = unit
 				})
+
+				--KENNY - Looks like we can check the hitpoints of the enemy unit here
+				if enemyAlreadyDefeated == "no" then
+					params.will_survive = "yes"  
+					this.probs.update(params)
+				end
+				--END KENNY
+
 			-- no?  might be pursuing and not caught him yet or attacked but didn't convert
 			-- prevent any random movement
 			else
@@ -292,10 +335,30 @@ function this.do_moves ()
 				unit = unit,
 				ai   = this.ai
 			})
+
+
 		end
 		
 		print ("\nUnit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") DONE")
+
+		--KENNY check the zombie unit is still on the team
+		local still_exists = "no"
+		this.units_at_end = wesnoth.get_units ({side=this.ai.side})
+		for a, units_end in ipairs (this.units) do
+			if units_end.id == unit.id then
+				still_exists = "yes"
+			end
+		end
+
+		if still_exists == "no" then
+			params.will_survive = "no"
+			this.probs.update(params)
+		end
+		--END KENNY
+
 	end
+
+
 
 	print ("doing results...")
 	this.do_results ()
@@ -312,10 +375,32 @@ function this.init_unit (unit)
 	this.modes[unit.id]   = this.modes[unit.id] or WANDER
 	this.targets[unit.id] = this.targets[unit.id] or nil
 
-	if  this.modes[unit.id] == PURSUIT and this.helper.unit_for_id (this.targets[unit.id]) == nil then
+	if  this.modes[unit.id] == PURSUIT and this.helper.unit_for_id (this.targets[unit.id]).side == this.targets[unit.id] then
 		this.to_wander_mode ({
 			unit = unit
 		})
+	else
+		--KENNY - check to see if zombie should give up pursuit mode
+		local close_units  = this.helper.enemy_units_in_range ({unit = unit, radius = 10})
+
+		-- filter out non-candidates
+		--print ("BAYES: filtering out non-candidates")
+		--enemy = this.helper.unit_for_id (this.targets[unit.id])
+		local found_enemy_in_range = "0"
+		local enemy = this.helper.unit_for_id(this.targets[unit.id])
+
+		for i, e_unit in pairs (close_units) do
+			if enemy ~= nil and e_unit.id == enemy.unit.id then
+				found_enemy_in_range = "1"
+			end
+		end
+
+		if found_enemy_in_range == 1 then
+			this.to_wander_mode ({
+				unit = unit
+			})
+		end			
+		--END KENNY
 	end
 end
 
