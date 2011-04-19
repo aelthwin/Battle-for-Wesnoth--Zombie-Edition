@@ -463,7 +463,20 @@ varN:            describe varN
 
 ]]--
 this.update = function (params)
-	--this.updatePlayerRunningProbabilityTable (params);
+	-- value translations
+	if params.can_engage then
+		params.can_engage = "yes"
+	else
+		params.can_engage = "no"
+	end
+
+	if params.will_survive then
+		params.will_survive = "yes"
+	else
+		params.will_survive = "no"
+	end
+
+	-- send updates
 	this.updateEngagementProbabilityTable (params);
 	this.updateEngagementSurvivalProbabilityTable (params);
 end
@@ -521,7 +534,7 @@ end
 this.updateEngagementSurvivalProbabilityTable = function ()
 	table.insert(this.table_engagement_survival, {
 		will_survive = params.will_survive,
-		zombies  = params.zombies,
+		zombies      = params.zombies,
 		strength     = params.strength,
 		race         = params.race,
 		health       = params.health

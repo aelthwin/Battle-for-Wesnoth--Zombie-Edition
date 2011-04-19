@@ -96,7 +96,9 @@ this.side           = 0
 this.ai             = nil
 this.modes          = {}   -- will map unit id to mode 
 this.targets        = {}   -- will map unit id to target id
-this.pursuit_params = {} -- maps unit id to the params object that pushed the unit into pursuit mode
+this.pursuit_params = {}   -- maps unit id to the params object that pushed the unit into pursuit mode
+this.did_engage     = {}   -- maps unit id to whether or not they have engaged their target at least once
+this.did_survive    = {}   -- maps unit id to whether or not they have survived at least one engagement
 
 this.chase_threshold = 0.25 -- total guess for now -- will require tuning
 
@@ -190,6 +192,7 @@ function this.do_moves ()
 		if continue and this.modes[unit.id] == WANDER then
 			local best_unit_id = nil
 			local best_prob    = 0.0
+			local best_params  = nil
 			local close_units  = this.helper.enemy_units_in_range ({unit = unit, radius = 10})
 
 			-- filter out non-candidates
@@ -227,8 +230,6 @@ function this.do_moves ()
 						h   = e_unit.hitpoints
 					}
 					print ("PARAMS TO PROBS")
-
-
 					table.foreach (params, print)
 
 					--local ppr, pce, pcc = this.probs.get_all_probs ({
@@ -241,6 +242,7 @@ function this.do_moves ()
 					if combined_probs > best_prob then
 						best_prob    = combined_probs
 						best_unit_id = e_unit.id
+						best_params  = params
 					end
 				end
 
@@ -248,7 +250,8 @@ function this.do_moves ()
 				if best_prob > this.chase_threshold then
 					this.to_pursuit_mode ({
 						unit      = unit,
-						target_id = best_unit_id
+						target_id = best_unit_id,
+						pursuit_params = best_params
 					})
 				end
 			end
@@ -262,39 +265,25 @@ function this.do_moves ()
 		print ("BAYES: pursuit stage ---")
 		if continue and this.modes[unit.id] == PURSUIT then
 
+			local params = this.pursuit_params[unit.id]
 
 			--KENNY if enemy is already nil at this point, I *think* it might be safe to say it was killed before we got back here for a zombie unit
 			--call for an update here for reason 3
-			local enemyAlreadyDefeated = "no"
-			local currentEnemy = this.helper.unit_for_id (this.targets[unit.id])
-			if currentEnemy == nil or currentEnemy.side == unit.side then
-				enemyAlreadyDefeated = "yes"
-				params.can_engage = "no"  
-				this.probs.update(params)
-			end
-			--END KENNY
-
-			--KENNY
-			if enemyAlreadyDefeated == "no" then
-			--END KENNY
+			local enemy = this.helper.unit_for_id (this.targets[unit.id])
+			if enemy == nil or enemy.side == unit.side then
+				this.do_update (unit.id)
+			else
 				-- do the attack
-				-- this.helper.move_and_attack ({
 				this.helper.move_and_attack2 ({
 					unit  = unit,
-					enemy = this.helper.unit_for_id (this.targets[unit.id]),
+					enemy = enemy,
 					ai    = this.ai
 				})
-			--KENNY
 			end
-			--END KENNY
-
-
-			local enemy = this.helper.unit_for_id (this.targets[unit.id])
-
-
 
 			-- is the unit converted?
-			--local enemy = this.helper.unit_for_id (this.targets[unit.id])
+			-- re-get the enemy unit to find out
+			enemy = this.helper.unit_for_id (this.targets[unit.id])
 			if enemy ~= nil and enemy.side == unit.side then
 				this.to_wander_mode ({
 					unit = unit
@@ -404,8 +393,15 @@ function this.to_pursuit_mode (params)
 	this.modes[params.unit.id]   = PURSUIT
 	this.targets[params.unit.id] = params.target_id
 	this.pursuit_params[params.unit.id] = params.pursuit_params
+	this.did_engage[params.unit.id] = false
 end
 
+function this.do_update (unit_id)
+	local params = this.pursuit_params[unit_id]
+	params.can_engage   = this.did_engage[unit_id]
+	params.will_survive = this.did_survive[unit_id]
+	this.probs.update(params)
+end
 
 
 return this
