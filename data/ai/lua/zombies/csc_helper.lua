@@ -84,6 +84,12 @@ Trevor's notes...
 ]]--
 
 
+function this.debug (str)
+	if false then print (str) end
+end
+
+
+
 --[[
 
 Move a unit to a random location within its reach
@@ -113,7 +119,7 @@ function this.move_randomly (params)
 		move_pick = math.random (1, table.getn (moves))
 		x, y = unpack (moves[move_pick])
 
-		print ("HELPER: Picked random move: " .. move_pick .. " (" .. x .. ", " .. y .. ") of " .. table.getn (moves) .. " possible moves")
+		this.debug ("HELPER: Picked random move: " .. move_pick .. " (" .. x .. ", " .. y .. ") of " .. table.getn (moves) .. " possible moves")
 		-- get an error on moves to our own tile... so only move if
 		-- one of the coords is different than unit position
 		if x ~= params.unit.x or y~= params.unit.y then
@@ -138,33 +144,33 @@ function this.enemy_units_in_range (params)
 	local all_units = wesnoth.get_units()
 	local enemy_units = {}
 	for i, unit in pairs (all_units) do
-		--print ("enemy_units_in_range: Checking side of unit, " .. unit.x .. ", " .. unit.y)
+		--this.debug ("enemy_units_in_range: Checking side of unit, " .. unit.x .. ", " .. unit.y)
 		if unit.side ~= params.unit.side then
-			--print (string.format ("enemy_units_in_range: Side (%d) not ours (%d)", unit.side, params.unit.side))
+			--this.debug (string.format ("enemy_units_in_range: Side (%d) not ours (%d)", unit.side, params.unit.side))
 			table.insert (enemy_units, unit)
 		else
-			--print ("enemy_units_in_range: One of us -- no add")
+			--this.debug ("enemy_units_in_range: One of us -- no add")
 		end
 	end
-	print ("enemy_units_in_range: size of enemy_units is " .. table.getn(enemy_units))
+	this.debug ("enemy_units_in_range: size of enemy_units is " .. table.getn(enemy_units))
 
 	local close_enemy_units = {}
 	for i, unit in pairs (enemy_units) do
-		print ("enemy_units_in_range: Checking range of unit, " .. unit.x .. ", " .. unit.y)
+		this.debug ("enemy_units_in_range: Checking range of unit, " .. unit.x .. ", " .. unit.y)
 		local attack_points = this.get_empty_adjacencies (unit.x, unit.y)
 		local path, distance = this.find_closest_location ({unit = params.unit, list = attack_points})
 		if path ~= nil then
-			print (string.format ("enemy_units_in_range: path length = %d and distance = %d ", table.getn(path), distance))
+			this.debug (string.format ("enemy_units_in_range: path length = %d and distance = %d ", table.getn(path), distance))
 			if distance <= params.radius then
-				print ("enemy_units_in_range: Adding unit to list, " .. unit.x .. ", " .. unit.y)
+				this.debug ("enemy_units_in_range: Adding unit to list, " .. unit.x .. ", " .. unit.y)
 				table.insert (close_enemy_units, unit)
 			end
 		else
-			print ("enemy_units_in_range: found no enemies")
+			this.debug ("enemy_units_in_range: found no enemies")
 		end
 	end
 
-	print ("enemy_units_in_range: RETURNS")
+	this.debug ("enemy_units_in_range: RETURNS")
 	return close_enemy_units
 end
 
@@ -184,30 +190,30 @@ function this.enemies_that_can_attack (params)
 	local all_units = wesnoth.get_units()
 	local enemy_units = {}
 	for i, unit in pairs (all_units) do
-		print ("enemies_that_can_attack: Checking side of unit, " .. unit.x .. ", " .. unit.y)
+		this.debug ("enemies_that_can_attack: Checking side of unit, " .. unit.x .. ", " .. unit.y)
 		if unit.side ~= params.unit.side then
-			print (string.format ("enemies_that_can_attack: Side (%d) not ours (%d)", unit.side, params.unit.side))
+			this.debug (string.format ("enemies_that_can_attack: Side (%d) not ours (%d)", unit.side, params.unit.side))
 			table.insert (enemy_units, unit)
 		else
-			print ("enemies_that_can_attack: One of us -- no add")
+			this.debug ("enemies_that_can_attack: One of us -- no add")
 		end
 	end
 
 	local close_enemy_units = {}
 	local close_enemy_dist  = {}
 	for i, unit in pairs (enemy_units) do
-		print ("enemies_that_can_attack: Checking range of unit, " .. unit.x .. ", " .. unit.y)
+		this.debug ("enemies_that_can_attack: Checking range of unit, " .. unit.x .. ", " .. unit.y)
 		local attack_points = this.get_empty_adjacencies (params.unit.x, params.unit.y)
 		local path, distance = this.find_closest_location ({unit = unit, list = attack_points})
 		if path ~= nil then
-			print (string.format ("enemies_that_can_attack: path length = %d and distance = %d ", table.getn(path), distance))
+			this.debug (string.format ("enemies_that_can_attack: path length = %d and distance = %d ", table.getn(path), distance))
 			if distance <= params.distance then
-				print ("enemies_that_can_attack: Adding unit to list, " .. unit.x .. ", " .. unit.y)
+				this.debug ("enemies_that_can_attack: Adding unit to list, " .. unit.x .. ", " .. unit.y)
 				table.insert (close_enemy_units, unit)
 				table.insert (close_enemy_dist,  distance)
 			end
 		else
-			print ("enemies_that_can_attack: found no enemies")
+			this.debug ("enemies_that_can_attack: found no enemies")
 		end
 	end
 
@@ -266,7 +272,7 @@ Returns: path, cost, location table {x, y} numeric, not by name
 function this.get_closest_keep (params)
 	local unit = params.unit
 
-	print ("HELPER: Keep locations:")
+	this.debug ("HELPER: Keep locations:")
 	local keep_locs = wesnoth.get_locations ({
 		terrain    = "K*"
 	});
@@ -334,7 +340,7 @@ function this.do_recruit (params)
 	local unit = params.unit
 	local ai   = params.ai
 
-	print ("Recruit capable unit do_recruit'ing at: " .. unit.x .. ", " .. unit.y)
+	this.debug ("Recruit capable unit do_recruit'ing at: " .. unit.x .. ", " .. unit.y)
 
 	-- can only recruit from a Keep location...
 	local k_path, k_cost, k_keep = this.get_closest_keep ({unit = unit, vacant = true, allow_unit = true})
@@ -347,7 +353,7 @@ function this.do_recruit (params)
 
 	if ok then
 		local x, y = unpack (k_keep)
-		print ("Chose to move to keep  (" .. x .. ", " .. y .. ")")
+		this.debug ("Chose to move to keep  (" .. x .. ", " .. y .. ")")
 
 		-- k_path is a table of single moves (not necessarily unit cost)
 		-- first move in the table is ALWAYS our current position
@@ -357,7 +363,7 @@ function this.do_recruit (params)
 		for i, move in pairs (k_path) do
 			if ok then
 				local x, y = unpack (move)
-				print ("\tk_path: moving to (" .. x .. ", " .. y .. ")")
+				this.debug ("\tk_path: moving to (" .. x .. ", " .. y .. ")")
 				local move_result = ai.move (unit, x, y)
 				ok = move_result.ok -- ok becomes false if maxed out move ability
 			end
@@ -367,8 +373,8 @@ function this.do_recruit (params)
 		if unit.x == x and unit.y == y then
 			-- can recruit onto any Castle location, but should choose
 			-- one that's close to provide believability
-			print ("Got to the keep!")
-			print ("Recruitable locations within 10 tiles of the current location..")
+			this.debug ("Got to the keep!")
+			this.debug ("Recruitable locations within 10 tiles of the current location..")
 			local cr_locs = this.get_close_recruit_locs ({unit = unit, radius = 10})
 
 			if (table.getn (cr_locs) <= 0) then
@@ -381,7 +387,7 @@ function this.do_recruit (params)
 			-- there is an error... we can fix that later
 			if ok then for x, l in pairs (cr_locs) do
 				local lx, ly = unpack (l)
-				print ("\trecruiting at: (" .. lx .. ", " .. ly .. ")")
+				this.debug ("\trecruiting at: (" .. lx .. ", " .. ly .. ")")
 				ai.recruit ("Zombie", lx, ly)
 			end end
 		end
@@ -433,50 +439,50 @@ function this.move_and_attack (params)
 	local unit  = params.unit
 	local enemy = params.enemy
 
-	print ("move_and_attack: anfangen")
+	this.debug ("move_and_attack: anfangen")
 
 	-- Find vacant tiles near the enemy
 	local empty_adj = this.get_empty_adjacencies (enemy.x, enemy.y)
 
 	-- find the "closest" location
 	local path, cost, loc = this.find_closest_location ({unit = unit, list = empty_adj})
-	print ("\tmove_and_attack: chose to move to location " .. loc[1] .. ", " .. loc[2])
+	this.debug ("\tmove_and_attack: chose to move to location " .. loc[1] .. ", " .. loc[2])
 	
 	if loc~= nil and path ~= nil and table.getn (path) > 0 then
 		
 
-		--print ("\tmove_and_attack: find path from " .. unit.x .. ", " .. unit.y .. "   to   " .. enemy.x .. ", " .. enemy.y)
+		--this.debug ("\tmove_and_attack: find path from " .. unit.x .. ", " .. unit.y .. "   to   " .. enemy.x .. ", " .. enemy.y)
 		--local path = wesnoth.find_path (unit.x, unit.y, enemy.x, enemy.y)
-		print ("\tmove_and_attack: path length = " .. table.getn (path))
+		this.debug ("\tmove_and_attack: path length = " .. table.getn (path))
 
 		--local eloc = table.remove (path, table.getn (path)) -- remove enemy location
 		local uloc = table.remove (path, 1) -- remove unit location
 
-		--print ("\tmove_and_attack: eloc = " .. eloc[1] .. ", " .. eloc[2])
-		print ("\tmove_and_attack: uloc = " .. uloc[1] .. ", " .. uloc[2])
+		--this.debug ("\tmove_and_attack: eloc = " .. eloc[1] .. ", " .. eloc[2])
+		this.debug ("\tmove_and_attack: uloc = " .. uloc[1] .. ", " .. uloc[2])
 
 		local ok = true
 		local strikes = 0
 		while path ~= nil and table.getn (path) > 0 and ok == true do
 			local x, y = unpack (path[1])
-			print ("\tmove_and_attack: move = " .. x .. ", " .. y)
+			this.debug ("\tmove_and_attack: move = " .. x .. ", " .. y)
 			-- if the move is on an occupied tile, then we recalculate path
 			-- this shouldn't have to be hacked this way, but for whatever reason
 			-- wesnoth.find_path seems to be returning paths that ignore units
 			-- when no ignore_unit value is supplied (default is false, or pay attention to units)
 			if not this.is_tile_vacant (x, y) then
 				if strikes < 3 then
-					print ("\tmove_and_attack: recalculating...")
+					this.debug ("\tmove_and_attack: recalculating...")
 					path, cost, loc = this.find_closest_location ({unit = unit, list = empty_adj})
 					strikes = strikes + 1
 				else
-					print ("\tmove_and_attack: three strikes you're out")
+					this.debug ("\tmove_and_attack: three strikes you're out")
 					ok = false
 				end
 			else
 				local result = params.ai.move (unit, x, y)
 				ok = result.ok
-				print (string.format ("\tmove_and_attack: ok = %s", this.to_str (ok)))
+				this.debug (string.format ("\tmove_and_attack: ok = %s", this.to_str (ok)))
 				if ok then table.remove (path, 1) end
 			end
 		end
@@ -484,11 +490,11 @@ function this.move_and_attack (params)
 		if path ~= nil and table.getn (path) == 0 then
 			params.ai.attack (unit.x, unit.y, enemy.x, enemy.y)
 		else
-			print ("\tmove_and_attack: end with path == nil... must have recalculated")
+			this.debug ("\tmove_and_attack: end with path == nil... must have recalculated")
 		end
 	end
 
-	print ("move_and_attack: beenden")
+	this.debug ("move_and_attack: beenden")
 end
 
 
@@ -507,7 +513,7 @@ function this.move_and_attack2 (params)
 	local enemy = params.enemy
 	local result = false
 
-	print ("move_and_attack2: anfangen")
+	this.debug ("move_and_attack2: anfangen")
 
 	-- Find vacant tiles near the enemy
 	local empty_adj = this.get_empty_adjacencies (enemy.x, enemy.y)
@@ -516,7 +522,7 @@ function this.move_and_attack2 (params)
 	local path, cost, loc = this.find_closest_location ({unit = unit, list = empty_adj})
 	
 	if loc~= nil and path ~= nil and table.getn (path) > 0 then
-		print ("\tmove_and_attack2: chose to move to location " .. loc[1] .. ", " .. loc[2])
+		this.debug ("\tmove_and_attack2: chose to move to location " .. loc[1] .. ", " .. loc[2])
 		local dest_x, dest_y = unpack (loc)
 
 		-- do a find_reach... if the dest is in there, just do the move and let
@@ -554,10 +560,10 @@ function this.move_and_attack2 (params)
 			end
 		end
 	else
-		print ("\tmove_and_attack2: could not find suitable location to attack")
+		this.debug ("\tmove_and_attack2: could not find suitable location to attack")
 	end
 
-	print ("move_and_attack2: beenden")
+	this.debug ("move_and_attack2: beenden")
 	return result
 end
 
@@ -566,7 +572,7 @@ function this.find_closest_location (params)
 	local list         = params.list
 	local unit         = params.unit
 	
-	print (string.format ("find_closest_location: list size: %d unit: (%d, %d)", table.getn (list), unit.x, unit.y))
+	this.debug (string.format ("find_closest_location: list size: %d unit: (%d, %d)", table.getn (list), unit.x, unit.y))
 
 	-- variables to return
 	local best_path = nil  -- returned
@@ -591,7 +597,7 @@ function this.find_closest_location (params)
 				best_loc   = loc
 				change_str = '  --  best CSF!'
 			end
-			print ("\t(" .. x .. ", " .. y .. ") costs " .. cost .. change_str)
+			this.debug ("\t(" .. x .. ", " .. y .. ") costs " .. cost .. change_str)
 		end
 	end
 	return best_path, best_cost, best_loc

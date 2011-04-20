@@ -119,6 +119,14 @@ function this.init (ai)
 end
 
 
+
+
+function this.debug (str)
+	if false then print (str) end
+end
+
+
+
 --[[
 
 Simple test function to make sure that we can call this object
@@ -199,7 +207,7 @@ function this.do_moves ()
 			local close_units  = this.helper.enemy_units_in_range ({unit = unit, radius = 10})
 
 			-- filter out non-candidates
-			print ("BAYES: filtering out non-candidates")
+			this.debug ("BAYES: filtering out non-candidates")
 			local temp_close_units = {}
 			for i, e_unit in pairs (close_units) do
 				if
@@ -232,15 +240,15 @@ function this.do_moves ()
 						r   = wesnoth.unit_types[e_unit.type].race,
 						h   = e_unit.hitpoints
 					}
-					print ("PARAMS TO PROBS")
-					table.foreach (params, print)
+					this.debug ("PARAMS TO PROBS")
+					table.foreach (params, this.debug)
 
 					--local ppr, pce, pcc = this.probs.get_all_probs ({
 					local pce, pcc = this.probs.get_all_probs (params)
 			
 					-- combine
 					local combined_probs = pce * pcc
-					print ("!!!!!  COMBINED RESULT IS: " .. combined_probs .. " from ("..pce..", "..pcc..")")
+					print ("RESULT: " .. combined_probs .. " from ("..pce..", "..pcc..")")
 			
 					-- compare
 					if combined_probs > best_prob then
@@ -249,6 +257,8 @@ function this.do_moves ()
 						best_params  = params
 					end
 				end
+
+				print ("----------------   BEST PROB THIS TURN: " .. best_prob .. " ------------------")
 
 				-- should we pursue best candidate?
 				if best_prob > this.chase_threshold then

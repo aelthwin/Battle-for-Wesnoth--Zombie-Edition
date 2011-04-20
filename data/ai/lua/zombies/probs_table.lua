@@ -282,7 +282,7 @@ end
 
 this.debug = function (str)
 	-- change this to turn off DEBUG
-	if true then print (str) end
+	if false then print (str) end
 end
 
 
