@@ -498,46 +498,33 @@ end
 
 
 --requires 
---	z zombie units within pursuit radius
 --	sp speed of player unit
 -- 	d distance of zombie from player unit
---	str player strength
 --	f number of fellow player units within pursuit radius
 --	r race of player unit
 this.updateEngagementProbabilityTable = function (params)
 	table.insert(this.table_engagement, {
 		can_engage = params.can_engage,
-		speed    = params.speed,
-		distance = params.distance,
-		fellows  = params.fellows,
-		race     = params.race
+		speed    = params.sp,
+		distance = params.d,
+		fellows  = params.f,
+		race     = params.r
 	})
 end
 
---requires
---	d distance of zombie from player unit
---	sp speed of player unit
---	r race of player unit
---this.updateEngagementProbabilityTable = function ()
---	table.insert(this.table_engagement, {
---		can_engage = params.can_engage,
---		distance   = params.d,
---		speed      = params.sp,
---		race       = params.r
---	})
---end
 
 --requires
+--	z zombie units within pursuit radius
 --	str player unit strength
 --	r race of player unit
 --	h health of player unit
-this.updateEngagementSurvivalProbabilityTable = function ()
+this.updateEngagementSurvivalProbabilityTable = function (params)
 	table.insert(this.table_engagement_survival, {
 		will_survive = params.will_survive,
-		zombies      = params.zombies,
-		strength     = params.strength,
-		race         = params.race,
-		health       = params.health
+		zombies      = params.z,
+		strength     = params.str,
+		race         = params.r,
+		health       = params.h
 	})
 end
 
