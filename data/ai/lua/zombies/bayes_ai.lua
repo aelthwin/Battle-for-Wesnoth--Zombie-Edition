@@ -164,6 +164,7 @@ function this.do_moves ()
 		-- 1. print status
 		-- 2. make sure unit indexes are present in this.modes and this.targets
 		-- 3. puts a unit back into WANDER if its target is gone
+		-- 4. sends updates to the probs table under some conditions
 		print (string.format ("\nUnit %d, %d (%s) (%s type) doing moves", unit.x, unit.y, unit.id, unit.type))
 		this.init_unit (unit)
 
@@ -171,9 +172,9 @@ function this.do_moves ()
 		-- Action pipeline...
 		local continue = true
 
-		-- try recruiting?
+		-- try recruiting?  unless we're in pursuit mode
 		print ("BAYES: recruiting stage ---")
-		if continue and this.helper.can_recruit ({unit = unit}) then
+		if continue and this.modes[unit.id] ~= PURSUIT and this.helper.can_recruit ({unit = unit}) then
 			local recruited = this.helper.do_recruit ({
 				unit = unit,
 				ai   = this.ai
@@ -267,37 +268,43 @@ function this.do_moves ()
 
 			local params = this.pursuit_params[unit.id]
 
-			--KENNY if enemy is already nil at this point, I *think* it might be safe to say it was killed before we got back here for a zombie unit
-			--call for an update here for reason 3
-			local enemy = this.helper.unit_for_id (this.targets[unit.id])
-			if enemy == nil or enemy.side == unit.side then
-				this.do_update (unit.id)
-			else
-				-- do the attack
-				this.helper.move_and_attack2 ({
-					unit  = unit,
-					enemy = enemy,
-					ai    = this.ai
-				})
+			-- at this point, we know the enemy exists and is still an enemy
+			-- because those conditions are checked for in init_unit
+			-- so just do the attack and see what happens
+			this.helper.move_and_attack2 ({
+				unit  = unit,
+				enemy = enemy,
+				ai    = this.ai
+			})
+
+			-- since we did the attack, make sure to register a did_engage
+			this.did_engage[unit.id] = true
+
+			-- are we still alive?
+			local us = this.helper.unit_for_id (unit.id)
+			if us ~= nil or us.side ~= unit.side then
+				-- we were killed or converted...
+				-- no change to did_survive
+				this.do_update (unit)
 			end
 
-			-- is the unit converted?
+			-- we are still alive after the attack, register a did_survive
+			this.did_survive[unit.id] = true
+
+			-- is the enemy killed or converted?
 			-- re-get the enemy unit to find out
 			enemy = this.helper.unit_for_id (this.targets[unit.id])
 			if enemy ~= nil and enemy.side == unit.side then
+				-- guess we won  :)
+				-- do an update and go back to wandering
+				this.do_update (unit)
 				this.to_wander_mode ({
 					unit = unit
 				})
 
-				--KENNY - Looks like we can check the hitpoints of the enemy unit here
-				if enemyAlreadyDefeated == "no" then
-					params.will_survive = "yes"  
-					this.probs.update(params)
-				end
-				--END KENNY
-
 			-- no?  might be pursuing and not caught him yet or attacked but didn't convert
 			-- prevent any random movement
+			-- no update here
 			else
 				continue = false
 			end
@@ -316,29 +323,10 @@ function this.do_moves ()
 		end
 		
 		print ("\nUnit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") DONE")
-
-		--KENNY check the zombie unit is still on the team (and alive)
-		local still_exists = false
-		this.units_at_end = wesnoth.get_units ({side=this.ai.side})
-		for a, units_end in ipairs (this.units) do
-			if units_end.id == unit.id then
-				still_exists = true
-			end
-		end
-
-		if not still_exists then
-			params.will_survive = "no"
-			this.probs.update(params)
-		end
-		--END KENNY
-
 	end
 
-
-
-	print ("doing results...")
+	print ("BAYES storing results to probs table after units loop")
 	this.probs.store ()
-	print ("DONE with results...")
 
 	print ("End BAYES do_moves")
 	print ("------------------------------------------");
