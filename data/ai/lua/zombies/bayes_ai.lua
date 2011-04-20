@@ -351,32 +351,36 @@ function this.init_unit (unit)
 	this.modes[unit.id]   = this.modes[unit.id] or WANDER
 	this.targets[unit.id] = this.targets[unit.id] or nil
 
-	if  this.modes[unit.id] == PURSUIT and this.helper.unit_for_id (this.targets[unit.id]).side == this.targets[unit.id] then
+	local enemy = this.helper.unit_for_id (this.targets[unit.id])
+
+	-- target was converted or killed prior to our turn?
+	if this.modes[unit.id] == PURSUIT and (enemy == nil or enemy.side == unit.side) then
+		this.do_update (unit.id)
 		this.to_wander_mode ({
 			unit = unit
 		})
-	else
-		--KENNY - check to see if zombie should give up pursuit mode
+	end
+
+	-- target is out of range?
+	if this.modes[unit.id] == PURSUIT then
+
 		local close_units  = this.helper.enemy_units_in_range ({unit = unit, radius = 10})
+		local found_enemy_in_range = false
 
-		-- filter out non-candidates
-		--print ("BAYES: filtering out non-candidates")
-		--enemy = this.helper.unit_for_id (this.targets[unit.id])
-		local found_enemy_in_range = "0"
-		local enemy = this.helper.unit_for_id(this.targets[unit.id])
-
-		for i, e_unit in pairs (close_units) do
-			if enemy ~= nil and e_unit.id == enemy.unit.id then
-				found_enemy_in_range = "1"
+		-- look through close units for a match to our target
+		for _, e_unit in pairs (close_units) do
+			if e_unit.id == enemy.unit.id then
+				found_enemy_in_range = true
 			end
 		end
 
-		if found_enemy_in_range == 1 then
+		-- did not find a match, therefore target is out of range
+		if not found_enemy_in_range then
+			this.do_update (unit.id)
 			this.to_wander_mode ({
 				unit = unit
 			})
-		end			
-		--END KENNY
+		end
 	end
 end
 
@@ -386,6 +390,8 @@ function this.to_wander_mode (params)
 	this.targets[params.unit.id] = nil
 	-- don't do an update with the params here, we wouldn't know why we're doing it
 	this.pursuit_params[params.unit.id] = nil
+	this.did_engage[params.unit.id] = false
+	this.did_survive[params.unit.id] = false
 end
 
 
@@ -394,6 +400,7 @@ function this.to_pursuit_mode (params)
 	this.targets[params.unit.id] = params.target_id
 	this.pursuit_params[params.unit.id] = params.pursuit_params
 	this.did_engage[params.unit.id] = false
+	this.did_survive[params.unit.id] = false
 end
 
 function this.do_update (unit_id)
