@@ -292,7 +292,7 @@ function this.do_moves ()
 			if us == nil or us.side ~= unit.side then
 				-- we were killed or converted...
 				-- no change to did_survive
-				this.do_update (unit)
+				this.do_update (unit_id)
 			end
 
 			-- we are still alive after the attack, register a did_survive
