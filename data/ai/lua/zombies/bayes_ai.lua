@@ -266,8 +266,9 @@ function this.do_moves ()
 		print ("BAYES: pursuit stage ---")
 		if continue and this.modes[unit.id] == PURSUIT then
 
-			local params = this.pursuit_params[unit.id]
-			local enemy  = this.helper.unit_for_id (this.targets[unit.id])
+			local params  = this.pursuit_params[unit.id]
+			local enemy   = this.helper.unit_for_id (this.targets[unit.id])
+			local unit_id = unit.id
 
 			-- at this point, we know the enemy exists and is still an enemy
 			-- because those conditions are checked for in init_unit
@@ -279,10 +280,10 @@ function this.do_moves ()
 			})
 
 			-- since we did the attack, make sure to register a did_engage
-			this.did_engage[unit.id] = true
+			this.did_engage[unit_id] = true
 
 			-- are we still alive?
-			local us = this.helper.unit_for_id (unit.id)
+			local us = this.helper.unit_for_id (unit_id)
 			if us == nil or us.side ~= unit.side then
 				-- we were killed or converted...
 				-- no change to did_survive
@@ -290,11 +291,11 @@ function this.do_moves ()
 			end
 
 			-- we are still alive after the attack, register a did_survive
-			this.did_survive[unit.id] = true
+			this.did_survive[unit_id] = true
 
 			-- is the enemy killed or converted?
 			-- re-get the enemy unit to find out
-			enemy = this.helper.unit_for_id (this.targets[unit.id])
+			enemy = this.helper.unit_for_id (this.targets[unit_id])
 			if enemy ~= nil and enemy.side == unit.side then
 				-- guess we won  :)
 				-- do an update and go back to wandering
