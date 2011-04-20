@@ -10,6 +10,832 @@ return {
    {8},
    {9},
    {10},
+   {11},
+   {12},
+   {13},
+   {14},
+   {15},
+   {16},
+   {17},
+   {18},
+   {19},
+   {20},
+   {21},
+   {22},
+   {23},
+   {24},
+   {25},
+   {26},
+   {27},
+   {28},
+   {29},
+   {30},
+   {31},
+   {32},
+   {33},
+   {34},
+   {35},
+   {36},
+   {37},
+   {38},
+   {39},
+   {40},
+   {41},
+   {42},
+   {43},
+   {44},
+   {45},
+   {46},
+   {47},
+   {48},
+   {49},
+   {50},
+   {51},
+   {52},
+   {53},
+   {54},
+   {55},
+   {56},
+   {57},
+   {58},
+   {59},
+   {60},
+   {61},
+   {62},
+   {63},
+   {64},
+   {65},
+   {66},
+   {67},
+   {68},
+   {69},
+   {70},
+   {71},
+   {72},
+   {73},
+   {74},
+   {75},
+   {76},
+   {77},
+   {78},
+   {79},
+   {80},
+   {81},
+   {82},
+   {83},
+   {84},
+   {85},
+   {86},
+   {87},
+   {88},
+   {89},
+   {90},
+   {91},
+   {92},
+   {93},
+   {94},
+   {95},
+   {96},
+   {97},
+   {98},
+   {99},
+   {100},
+   {101},
+   {102},
+   {103},
+   {104},
+   {105},
+   {106},
+   {107},
+   {108},
+   {109},
+   {110},
+   {111},
+   {112},
+   {113},
+   {114},
+   {115},
+   {116},
+   {117},
+   {118},
+   {119},
+   {120},
+   {121},
+   {122},
+   {123},
+   {124},
+   {125},
+   {126},
+   {127},
+   {128},
+   {129},
+   {130},
+   {131},
+   {132},
+   {133},
+   {134},
+   {135},
+   {136},
+   {137},
+   {138},
+   {139},
+   {140},
+   {141},
+   {142},
+   {143},
+   {144},
+   {145},
+   {146},
+   {147},
+   {148},
+   {149},
+   {150},
+   {151},
+   {152},
+   {153},
+   {154},
+   {155},
+   {156},
+   {157},
+   {158},
+   {159},
+   {160},
+   {161},
+   {162},
+   {163},
+   {164},
+   {165},
+   {166},
+   {167},
+   {168},
+   {169},
+   {170},
+   {171},
+   {172},
+   {173},
+   {174},
+   {175},
+   {176},
+   {177},
+   {178},
+   {179},
+   {180},
+   {181},
+   {182},
+   {183},
+   {184},
+   {185},
+   {186},
+   {187},
+   {188},
+   {189},
+   {190},
+   {191},
+   {192},
+   {193},
+   {194},
+   {195},
+   {196},
+   {197},
+   {198},
+   {199},
+   {200},
+   {201},
+   {202},
+   {203},
+   {204},
+   {205},
+   {206},
+   {207},
+   {208},
+   {209},
+   {210},
+   {211},
+   {212},
+   {213},
+   {214},
+   {215},
+   {216},
+   {217},
+   {218},
+   {219},
+   {220},
+   {221},
+   {222},
+   {223},
+   {224},
+   {225},
+   {226},
+   {227},
+   {228},
+   {229},
+   {230},
+   {231},
+   {232},
+   {233},
+   {234},
+   {235},
+   {236},
+   {237},
+   {238},
+   {239},
+   {240},
+   {241},
+   {242},
+   {243},
+   {244},
+   {245},
+   {246},
+   {247},
+   {248},
+   {249},
+   {250},
+   {251},
+   {252},
+   {253},
+   {254},
+   {255},
+   {256},
+   {257},
+   {258},
+   {259},
+   {260},
+   {261},
+   {262},
+   {263},
+   {264},
+   {265},
+   {266},
+   {267},
+   {268},
+   {269},
+   {270},
+   {271},
+   {272},
+   {273},
+   {274},
+   {275},
+   {276},
+   {277},
+   {278},
+   {279},
+   {280},
+   {281},
+   {282},
+   {283},
+   {284},
+   {285},
+   {286},
+   {287},
+   {288},
+   {289},
+   {290},
+   {291},
+   {292},
+   {293},
+   {294},
+   {295},
+   {296},
+   {297},
+   {298},
+   {299},
+   {300},
+   {301},
+   {302},
+   {303},
+   {304},
+   {305},
+   {306},
+   {307},
+   {308},
+   {309},
+   {310},
+   {311},
+   {312},
+   {313},
+   {314},
+   {315},
+   {316},
+   {317},
+   {318},
+   {319},
+   {320},
+   {321},
+   {322},
+   {323},
+   {324},
+   {325},
+   {326},
+   {327},
+   {328},
+   {329},
+   {330},
+   {331},
+   {332},
+   {333},
+   {334},
+   {335},
+   {336},
+   {337},
+   {338},
+   {339},
+   {340},
+   {341},
+   {342},
+   {343},
+   {344},
+   {345},
+   {346},
+   {347},
+   {348},
+   {349},
+   {350},
+   {351},
+   {352},
+   {353},
+   {354},
+   {355},
+   {356},
+   {357},
+   {358},
+   {359},
+   {360},
+   {361},
+   {362},
+   {363},
+   {364},
+   {365},
+   {366},
+   {367},
+   {368},
+   {369},
+   {370},
+   {371},
+   {372},
+   {373},
+   {374},
+   {375},
+   {376},
+   {377},
+   {378},
+   {379},
+   {380},
+   {381},
+   {382},
+   {383},
+   {384},
+   {385},
+   {386},
+   {387},
+   {388},
+   {389},
+   {390},
+   {391},
+   {392},
+   {393},
+   {394},
+   {395},
+   {396},
+   {397},
+   {398},
+   {399},
+   {400},
+   {401},
+   {402},
+   {403},
+   {404},
+   {405},
+   {406},
+   {407},
+   {408},
+   {409},
+   {410},
+   {411},
+   {412},
+   {413},
+   {414},
+   {415},
+   {416},
+   {417},
+   {418},
+   {419},
+   {420},
+   {421},
+   {422},
+   {423},
+   {424},
+   {425},
+   {426},
+   {427},
+   {428},
+   {429},
+   {430},
+   {431},
+   {432},
+   {433},
+   {434},
+   {435},
+   {436},
+   {437},
+   {438},
+   {439},
+   {440},
+   {441},
+   {442},
+   {443},
+   {444},
+   {445},
+   {446},
+   {447},
+   {448},
+   {449},
+   {450},
+   {451},
+   {452},
+   {453},
+   {454},
+   {455},
+   {456},
+   {457},
+   {458},
+   {459},
+   {460},
+   {461},
+   {462},
+   {463},
+   {464},
+   {465},
+   {466},
+   {467},
+   {468},
+   {469},
+   {470},
+   {471},
+   {472},
+   {473},
+   {474},
+   {475},
+   {476},
+   {477},
+   {478},
+   {479},
+   {480},
+   {481},
+   {482},
+   {483},
+   {484},
+   {485},
+   {486},
+   {487},
+   {488},
+   {489},
+   {490},
+   {491},
+   {492},
+   {493},
+   {494},
+   {495},
+   {496},
+   {497},
+   {498},
+   {499},
+   {500},
+   {501},
+   {502},
+   {503},
+   {504},
+   {505},
+   {506},
+   {507},
+   {508},
+   {509},
+   {510},
+   {511},
+   {512},
+   {513},
+   {514},
+   {515},
+   {516},
+   {517},
+   {518},
+   {519},
+   {520},
+   {521},
+   {522},
+   {523},
+   {524},
+   {525},
+   {526},
+   {527},
+   {528},
+   {529},
+   {530},
+   {531},
+   {532},
+   {533},
+   {534},
+   {535},
+   {536},
+   {537},
+   {538},
+   {539},
+   {540},
+   {541},
+   {542},
+   {543},
+   {544},
+   {545},
+   {546},
+   {547},
+   {548},
+   {549},
+   {550},
+   {551},
+   {552},
+   {553},
+   {554},
+   {555},
+   {556},
+   {557},
+   {558},
+   {559},
+   {560},
+   {561},
+   {562},
+   {563},
+   {564},
+   {565},
+   {566},
+   {567},
+   {568},
+   {569},
+   {570},
+   {571},
+   {572},
+   {573},
+   {574},
+   {575},
+   {576},
+   {577},
+   {578},
+   {579},
+   {580},
+   {581},
+   {582},
+   {583},
+   {584},
+   {585},
+   {586},
+   {587},
+   {588},
+   {589},
+   {590},
+   {591},
+   {592},
+   {593},
+   {594},
+   {595},
+   {596},
+   {597},
+   {598},
+   {599},
+   {600},
+   {601},
+   {602},
+   {603},
+   {604},
+   {605},
+   {606},
+   {607},
+   {608},
+   {609},
+   {610},
+   {611},
+   {612},
+   {613},
+   {614},
+   {615},
+   {616},
+   {617},
+   {618},
+   {619},
+   {620},
+   {621},
+   {622},
+   {623},
+   {624},
+   {625},
+   {626},
+   {627},
+   {628},
+   {629},
+   {630},
+   {631},
+   {632},
+   {633},
+   {634},
+   {635},
+   {636},
+   {637},
+   {638},
+   {639},
+   {640},
+   {641},
+   {642},
+   {643},
+   {644},
+   {645},
+   {646},
+   {647},
+   {648},
+   {649},
+   {650},
+   {651},
+   {652},
+   {653},
+   {654},
+   {655},
+   {656},
+   {657},
+   {658},
+   {659},
+   {660},
+   {661},
+   {662},
+   {663},
+   {664},
+   {665},
+   {666},
+   {667},
+   {668},
+   {669},
+   {670},
+   {671},
+   {672},
+   {673},
+   {674},
+   {675},
+   {676},
+   {677},
+   {678},
+   {679},
+   {680},
+   {681},
+   {682},
+   {683},
+   {684},
+   {685},
+   {686},
+   {687},
+   {688},
+   {689},
+   {690},
+   {691},
+   {692},
+   {693},
+   {694},
+   {695},
+   {696},
+   {697},
+   {698},
+   {699},
+   {700},
+   {701},
+   {702},
+   {703},
+   {704},
+   {705},
+   {706},
+   {707},
+   {708},
+   {709},
+   {710},
+   {711},
+   {712},
+   {713},
+   {714},
+   {715},
+   {716},
+   {717},
+   {718},
+   {719},
+   {720},
+   {721},
+   {722},
+   {723},
+   {724},
+   {725},
+   {726},
+   {727},
+   {728},
+   {729},
+   {730},
+   {731},
+   {732},
+   {733},
+   {734},
+   {735},
+   {736},
+   {737},
+   {738},
+   {739},
+   {740},
+   {741},
+   {742},
+   {743},
+   {744},
+   {745},
+   {746},
+   {747},
+   {748},
+   {749},
+   {750},
+   {751},
+   {752},
+   {753},
+   {754},
+   {755},
+   {756},
+   {757},
+   {758},
+   {759},
+   {760},
+   {761},
+   {762},
+   {763},
+   {764},
+   {765},
+   {766},
+   {767},
+   {768},
+   {769},
+   {770},
+   {771},
+   {772},
+   {773},
+   {774},
+   {775},
+   {776},
+   {777},
+   {778},
+   {779},
+   {780},
+   {781},
+   {782},
+   {783},
+   {784},
+   {785},
+   {786},
+   {787},
+   {788},
+   {789},
+   {790},
+   {791},
+   {792},
+   {793},
+   {794},
+   {795},
+   {796},
+   {797},
+   {798},
+   {799},
+   {800},
+   {801},
+   {802},
+   {803},
+   {804},
+   {805},
+   {806},
+   {807},
+   {808},
+   {809},
+   {810},
+   {811},
+   {812},
+   {813},
+   {814},
+   {815},
+   {816},
+   {817},
+   {818},
+   {819},
+   {820},
+   {821},
+   {822},
+   {823},
+   {824},
+   {825},
+   {826},
+   {827},
+   {828},
+   {829},
+   {830},
+   {831},
+   {832},
+   {833},
+   {834},
+   {835},
+   {836},
 },
 -- Table: {2}
 {
@@ -21,66 +847,6674 @@ return {
 },
 -- Table: {3}
 {
-   ["fellows"]="med",
-   ["can_engage"]="yes",
-   ["distance"]="med",
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["race"]="drake",
    ["speed"]="med",
-   ["race"]="elf",
 },
 -- Table: {4}
 {
-   ["fellows"]="high",
+   ["fellows"]="low",
    ["can_engage"]="no",
-   ["distance"]="low",
-   ["speed"]="med",
-   ["race"]="elf",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
 },
 -- Table: {5}
 {
-   ["fellows"]="med",
+   ["fellows"]="high",
    ["can_engage"]="no",
-   ["distance"]="med",
-   ["speed"]="low",
-   ["race"]="human",
+   ["distance"]="high",
+   ["race"]="drake",
+   ["speed"]="med",
 },
 -- Table: {6}
 {
    ["fellows"]="med",
    ["can_engage"]="yes",
-   ["distance"]="high",
+   ["distance"]="med",
+   ["race"]="drake",
    ["speed"]="high",
-   ["race"]="human",
 },
 -- Table: {7}
 {
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {8}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {9}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {10}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {11}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {12}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {13}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {14}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {15}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {16}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {17}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {18}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {19}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {20}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {21}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {22}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {23}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {24}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {25}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {26}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {27}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {28}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {29}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {30}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {31}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {32}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {33}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {34}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {35}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {36}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {37}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {38}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {39}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {40}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {41}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {42}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {43}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {44}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {45}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {46}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {47}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {48}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {49}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {50}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {51}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {52}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {53}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {54}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {55}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {56}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {57}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {58}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {59}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {60}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {61}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {62}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {63}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {64}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {65}
+{
    ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {66}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {67}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {68}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {69}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {70}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {71}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {72}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {73}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {74}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {75}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {76}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {77}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {78}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {79}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {80}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {81}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {82}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {83}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {84}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {85}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {86}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {87}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {88}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {89}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {90}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {91}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {92}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {93}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {94}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {95}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {96}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {97}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {98}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {99}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {100}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {101}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {102}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {103}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {104}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {105}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {106}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {107}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {108}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {109}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {110}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {111}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {112}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {113}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {114}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {115}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {116}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {117}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {118}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {119}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {120}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {121}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {122}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {123}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {124}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {125}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {126}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {127}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {128}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {129}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {130}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {131}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {132}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {133}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {134}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {135}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {136}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {137}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {138}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {139}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {140}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {141}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {142}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {143}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {144}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {145}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {146}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {147}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {148}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {149}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {150}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {151}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {152}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {153}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {154}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {155}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {156}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {157}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {158}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {159}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {160}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {161}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {162}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {163}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {164}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {165}
+{
+   ["fellows"]="med",
    ["can_engage"]="no",
    ["distance"]="high",
    ["speed"]="high",
-   ["race"]="human",
+   ["race"]="drake",
 },
--- Table: {8}
+-- Table: {166}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {167}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {168}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {169}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {170}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {171}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {172}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {173}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {174}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {175}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {176}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {177}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {178}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {179}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {180}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {181}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {182}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {183}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {184}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {185}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {186}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {187}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {188}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {189}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {190}
+{
+   ["fellows"]="high",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {191}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {192}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {193}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {194}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {195}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {196}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {197}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {198}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {199}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {200}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {201}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {202}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {203}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {204}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {205}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {206}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {207}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {208}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {209}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {210}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {211}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {212}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {213}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {214}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {215}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {216}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {217}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {218}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {219}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {220}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {221}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {222}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {223}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {224}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {225}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {226}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {227}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {228}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {229}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {230}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {231}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {232}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {233}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {234}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {235}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {236}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {237}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {238}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {239}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {240}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {241}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {242}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="high",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {243}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {244}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {245}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {246}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {247}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {248}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {249}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {250}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {251}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {252}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="high",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {253}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {254}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {255}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {256}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {257}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {258}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {259}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {260}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {261}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {262}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {263}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {264}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {265}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {266}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {267}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {268}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {269}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {270}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {271}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {272}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {273}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {274}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {275}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {276}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {277}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {278}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {279}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {280}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {281}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {282}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {283}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {284}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {285}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {286}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {287}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {288}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {289}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {290}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {291}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {292}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {293}
 {
    ["fellows"]="med",
    ["can_engage"]="yes",
    ["distance"]="high",
    ["speed"]="high",
-   ["race"]="human",
+   ["race"]="drake",
 },
--- Table: {9}
+-- Table: {294}
 {
    ["fellows"]="high",
    ["can_engage"]="yes",
-   ["distance"]="high",
-   ["speed"]="low",
-   ["race"]="elf",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
 },
--- Table: {10}
+-- Table: {295}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {296}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {297}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {298}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {299}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {300}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {301}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {302}
+{
+   ["fellows"]="high",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {303}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {304}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {305}
+{
+   ["fellows"]="high",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {306}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {307}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {308}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {309}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {310}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {311}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {312}
+{
+   ["fellows"]="high",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {313}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {314}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {315}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {316}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {317}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {318}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {319}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {320}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {321}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {322}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {323}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {324}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {325}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {326}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {327}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {328}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {329}
+{
+   ["fellows"]="high",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {330}
+{
+   ["fellows"]="high",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {331}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {332}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {333}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {334}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {335}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {336}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {337}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {338}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {339}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {340}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {341}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {342}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {343}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {344}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {345}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {346}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {347}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {348}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {349}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {350}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="high",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {351}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {352}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {353}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {354}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {355}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {356}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {357}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {358}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {359}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {360}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {361}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {362}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {363}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {364}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {365}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {366}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {367}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {368}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {369}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {370}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {371}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {372}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {373}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {374}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {375}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {376}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {377}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {378}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {379}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {380}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {381}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {382}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {383}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {384}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {385}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {386}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {387}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {388}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {389}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {390}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {391}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {392}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {393}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {394}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {395}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {396}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {397}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {398}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {399}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="high",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {400}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {401}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="high",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {402}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {403}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {404}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {405}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {406}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {407}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {408}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {409}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {410}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {411}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {412}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {413}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {414}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {415}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {416}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {417}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {418}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {419}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {420}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {421}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {422}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {423}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {424}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {425}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {426}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {427}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {428}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {429}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {430}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {431}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {432}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {433}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {434}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {435}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {436}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {437}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {438}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {439}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {440}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {441}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {442}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {443}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {444}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {445}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {446}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {447}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {448}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {449}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {450}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {451}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {452}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {453}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {454}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {455}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {456}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {457}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {458}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {459}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {460}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {461}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {462}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {463}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {464}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {465}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {466}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {467}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {468}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {469}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {470}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {471}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {472}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {473}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {474}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {475}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {476}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {477}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {478}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {479}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {480}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {481}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {482}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {483}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {484}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {485}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {486}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {487}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {488}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {489}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {490}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {491}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {492}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {493}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {494}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {495}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {496}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {497}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {498}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {499}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {500}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {501}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {502}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {503}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {504}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {505}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {506}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {507}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {508}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {509}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {510}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {511}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {512}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {513}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {514}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {515}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {516}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {517}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {518}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {519}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {520}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {521}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {522}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {523}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {524}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {525}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {526}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {527}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {528}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {529}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {530}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {531}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {532}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {533}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {534}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {535}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {536}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {537}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {538}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {539}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {540}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {541}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {542}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {543}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {544}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {545}
+{
+   ["fellows"]="high",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {546}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {547}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {548}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {549}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {550}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {551}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {552}
+{
+   ["fellows"]="high",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {553}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {554}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {555}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {556}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {557}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {558}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {559}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {560}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {561}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {562}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {563}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {564}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {565}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {566}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {567}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {568}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {569}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {570}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {571}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {572}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {573}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {574}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {575}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {576}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {577}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {578}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {579}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {580}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {581}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {582}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {583}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {584}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {585}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {586}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {587}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {588}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {589}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {590}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {591}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {592}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {593}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {594}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {595}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {596}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {597}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {598}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {599}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {600}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {601}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {602}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {603}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {604}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {605}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {606}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {607}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {608}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {609}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {610}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {611}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {612}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {613}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {614}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {615}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {616}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {617}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {618}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {619}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {620}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {621}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {622}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {623}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {624}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {625}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {626}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {627}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {628}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {629}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {630}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {631}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {632}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {633}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {634}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {635}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {636}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {637}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {638}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {639}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {640}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {641}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {642}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {643}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {644}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {645}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {646}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {647}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {648}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {649}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {650}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {651}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {652}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {653}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {654}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {655}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {656}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {657}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {658}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {659}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {660}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {661}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {662}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {663}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {664}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {665}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {666}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {667}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {668}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="high",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {669}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {670}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {671}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {672}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {673}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {674}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {675}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {676}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {677}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {678}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {679}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {680}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {681}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {682}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {683}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {684}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {685}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {686}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {687}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {688}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {689}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {690}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {691}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {692}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {693}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {694}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {695}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {696}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {697}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {698}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {699}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {700}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {701}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {702}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {703}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {704}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {705}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {706}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {707}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {708}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {709}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {710}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {711}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {712}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {713}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {714}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {715}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {716}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {717}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {718}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {719}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {720}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {721}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {722}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {723}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {724}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {725}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {726}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {727}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {728}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {729}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {730}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {731}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {732}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {733}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {734}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {735}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {736}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {737}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {738}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {739}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {740}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {741}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {742}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {743}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {744}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {745}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {746}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {747}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {748}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {749}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {750}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {751}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {752}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {753}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {754}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {755}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {756}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {757}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {758}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {759}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {760}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {761}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {762}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {763}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {764}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {765}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {766}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {767}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {768}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {769}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {770}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="med",
+   ["race"]="drake",
+},
+-- Table: {771}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {772}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {773}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {774}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {775}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {776}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {777}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {778}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {779}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {780}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {781}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {782}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {783}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {784}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {785}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {786}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {787}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {788}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {789}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {790}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {791}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {792}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {793}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {794}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {795}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="lizard",
+},
+-- Table: {796}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["speed"]="high",
+   ["race"]="drake",
+},
+-- Table: {797}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {798}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {799}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {800}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {801}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {802}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {803}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {804}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {805}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {806}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="high",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {807}
 {
    ["fellows"]="low",
    ["can_engage"]="no",
    ["distance"]="low",
-   ["speed"]="low",
-   ["race"]="human",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {808}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {809}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {810}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {811}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {812}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {813}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {814}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {815}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {816}
+{
+   ["fellows"]="high",
+   ["can_engage"]="no",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {817}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {818}
+{
+   ["fellows"]="med",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {819}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="med",
+},
+-- Table: {820}
+{
+   ["fellows"]="med",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {821}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {822}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {823}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {824}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {825}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="high",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {826}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {827}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {828}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {829}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {830}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {831}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {832}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {833}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {834}
+{
+   ["fellows"]="low",
+   ["can_engage"]="yes",
+   ["distance"]="low",
+   ["race"]="drake",
+   ["speed"]="high",
+},
+-- Table: {835}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
+},
+-- Table: {836}
+{
+   ["fellows"]="low",
+   ["can_engage"]="no",
+   ["distance"]="med",
+   ["race"]="lizard",
+   ["speed"]="high",
 },
 }

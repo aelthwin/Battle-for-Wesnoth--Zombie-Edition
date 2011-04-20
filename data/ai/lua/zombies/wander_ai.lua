@@ -159,6 +159,8 @@ function this.do_moves ()
 
 		print ("Unit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") doing moves")
 
+		local unit_id = unit.id
+
 		-- Action pipeline...
 		local continue = true
 
@@ -175,17 +177,20 @@ function this.do_moves ()
 		if continue then
 			local enemy_units = this.helper.enemy_units_in_range ({unit = unit, radius = this.attack_radius})
 			for i, e_unit in pairs (enemy_units) do
-				print ("WANDER: attacking enemy unit, " .. e_unit.x .. ", " .. e_unit.y)
-				this.helper.move_and_attack ({unit = unit, enemy = e_unit, ai = this.ai})
-				continue = false -- no continue if we've tried to attack at least one enemy
+				-- can't smell petrifieds... they smell like rocks |-(
+				if continue and not e_unit.petrified then
+					print ("WANDER: attacking enemy unit, " .. e_unit.x .. ", " .. e_unit.y)
+					this.helper.move_and_attack2 ({unit = unit, enemy = e_unit, ai = this.ai})
+					continue = false -- no continue can only attack one enemy
+				end
 			end
 		end
 
 		-- Fall back on random movement		
 		if continue then
 			this.helper.move_randomly ({
-				unit = unit,
-				ai   = this.ai
+				unit_id = unit_id,
+				ai      = this.ai
 			})
 		end
 	end

@@ -10,6 +10,832 @@ return {
    {8},
    {9},
    {10},
+   {11},
+   {12},
+   {13},
+   {14},
+   {15},
+   {16},
+   {17},
+   {18},
+   {19},
+   {20},
+   {21},
+   {22},
+   {23},
+   {24},
+   {25},
+   {26},
+   {27},
+   {28},
+   {29},
+   {30},
+   {31},
+   {32},
+   {33},
+   {34},
+   {35},
+   {36},
+   {37},
+   {38},
+   {39},
+   {40},
+   {41},
+   {42},
+   {43},
+   {44},
+   {45},
+   {46},
+   {47},
+   {48},
+   {49},
+   {50},
+   {51},
+   {52},
+   {53},
+   {54},
+   {55},
+   {56},
+   {57},
+   {58},
+   {59},
+   {60},
+   {61},
+   {62},
+   {63},
+   {64},
+   {65},
+   {66},
+   {67},
+   {68},
+   {69},
+   {70},
+   {71},
+   {72},
+   {73},
+   {74},
+   {75},
+   {76},
+   {77},
+   {78},
+   {79},
+   {80},
+   {81},
+   {82},
+   {83},
+   {84},
+   {85},
+   {86},
+   {87},
+   {88},
+   {89},
+   {90},
+   {91},
+   {92},
+   {93},
+   {94},
+   {95},
+   {96},
+   {97},
+   {98},
+   {99},
+   {100},
+   {101},
+   {102},
+   {103},
+   {104},
+   {105},
+   {106},
+   {107},
+   {108},
+   {109},
+   {110},
+   {111},
+   {112},
+   {113},
+   {114},
+   {115},
+   {116},
+   {117},
+   {118},
+   {119},
+   {120},
+   {121},
+   {122},
+   {123},
+   {124},
+   {125},
+   {126},
+   {127},
+   {128},
+   {129},
+   {130},
+   {131},
+   {132},
+   {133},
+   {134},
+   {135},
+   {136},
+   {137},
+   {138},
+   {139},
+   {140},
+   {141},
+   {142},
+   {143},
+   {144},
+   {145},
+   {146},
+   {147},
+   {148},
+   {149},
+   {150},
+   {151},
+   {152},
+   {153},
+   {154},
+   {155},
+   {156},
+   {157},
+   {158},
+   {159},
+   {160},
+   {161},
+   {162},
+   {163},
+   {164},
+   {165},
+   {166},
+   {167},
+   {168},
+   {169},
+   {170},
+   {171},
+   {172},
+   {173},
+   {174},
+   {175},
+   {176},
+   {177},
+   {178},
+   {179},
+   {180},
+   {181},
+   {182},
+   {183},
+   {184},
+   {185},
+   {186},
+   {187},
+   {188},
+   {189},
+   {190},
+   {191},
+   {192},
+   {193},
+   {194},
+   {195},
+   {196},
+   {197},
+   {198},
+   {199},
+   {200},
+   {201},
+   {202},
+   {203},
+   {204},
+   {205},
+   {206},
+   {207},
+   {208},
+   {209},
+   {210},
+   {211},
+   {212},
+   {213},
+   {214},
+   {215},
+   {216},
+   {217},
+   {218},
+   {219},
+   {220},
+   {221},
+   {222},
+   {223},
+   {224},
+   {225},
+   {226},
+   {227},
+   {228},
+   {229},
+   {230},
+   {231},
+   {232},
+   {233},
+   {234},
+   {235},
+   {236},
+   {237},
+   {238},
+   {239},
+   {240},
+   {241},
+   {242},
+   {243},
+   {244},
+   {245},
+   {246},
+   {247},
+   {248},
+   {249},
+   {250},
+   {251},
+   {252},
+   {253},
+   {254},
+   {255},
+   {256},
+   {257},
+   {258},
+   {259},
+   {260},
+   {261},
+   {262},
+   {263},
+   {264},
+   {265},
+   {266},
+   {267},
+   {268},
+   {269},
+   {270},
+   {271},
+   {272},
+   {273},
+   {274},
+   {275},
+   {276},
+   {277},
+   {278},
+   {279},
+   {280},
+   {281},
+   {282},
+   {283},
+   {284},
+   {285},
+   {286},
+   {287},
+   {288},
+   {289},
+   {290},
+   {291},
+   {292},
+   {293},
+   {294},
+   {295},
+   {296},
+   {297},
+   {298},
+   {299},
+   {300},
+   {301},
+   {302},
+   {303},
+   {304},
+   {305},
+   {306},
+   {307},
+   {308},
+   {309},
+   {310},
+   {311},
+   {312},
+   {313},
+   {314},
+   {315},
+   {316},
+   {317},
+   {318},
+   {319},
+   {320},
+   {321},
+   {322},
+   {323},
+   {324},
+   {325},
+   {326},
+   {327},
+   {328},
+   {329},
+   {330},
+   {331},
+   {332},
+   {333},
+   {334},
+   {335},
+   {336},
+   {337},
+   {338},
+   {339},
+   {340},
+   {341},
+   {342},
+   {343},
+   {344},
+   {345},
+   {346},
+   {347},
+   {348},
+   {349},
+   {350},
+   {351},
+   {352},
+   {353},
+   {354},
+   {355},
+   {356},
+   {357},
+   {358},
+   {359},
+   {360},
+   {361},
+   {362},
+   {363},
+   {364},
+   {365},
+   {366},
+   {367},
+   {368},
+   {369},
+   {370},
+   {371},
+   {372},
+   {373},
+   {374},
+   {375},
+   {376},
+   {377},
+   {378},
+   {379},
+   {380},
+   {381},
+   {382},
+   {383},
+   {384},
+   {385},
+   {386},
+   {387},
+   {388},
+   {389},
+   {390},
+   {391},
+   {392},
+   {393},
+   {394},
+   {395},
+   {396},
+   {397},
+   {398},
+   {399},
+   {400},
+   {401},
+   {402},
+   {403},
+   {404},
+   {405},
+   {406},
+   {407},
+   {408},
+   {409},
+   {410},
+   {411},
+   {412},
+   {413},
+   {414},
+   {415},
+   {416},
+   {417},
+   {418},
+   {419},
+   {420},
+   {421},
+   {422},
+   {423},
+   {424},
+   {425},
+   {426},
+   {427},
+   {428},
+   {429},
+   {430},
+   {431},
+   {432},
+   {433},
+   {434},
+   {435},
+   {436},
+   {437},
+   {438},
+   {439},
+   {440},
+   {441},
+   {442},
+   {443},
+   {444},
+   {445},
+   {446},
+   {447},
+   {448},
+   {449},
+   {450},
+   {451},
+   {452},
+   {453},
+   {454},
+   {455},
+   {456},
+   {457},
+   {458},
+   {459},
+   {460},
+   {461},
+   {462},
+   {463},
+   {464},
+   {465},
+   {466},
+   {467},
+   {468},
+   {469},
+   {470},
+   {471},
+   {472},
+   {473},
+   {474},
+   {475},
+   {476},
+   {477},
+   {478},
+   {479},
+   {480},
+   {481},
+   {482},
+   {483},
+   {484},
+   {485},
+   {486},
+   {487},
+   {488},
+   {489},
+   {490},
+   {491},
+   {492},
+   {493},
+   {494},
+   {495},
+   {496},
+   {497},
+   {498},
+   {499},
+   {500},
+   {501},
+   {502},
+   {503},
+   {504},
+   {505},
+   {506},
+   {507},
+   {508},
+   {509},
+   {510},
+   {511},
+   {512},
+   {513},
+   {514},
+   {515},
+   {516},
+   {517},
+   {518},
+   {519},
+   {520},
+   {521},
+   {522},
+   {523},
+   {524},
+   {525},
+   {526},
+   {527},
+   {528},
+   {529},
+   {530},
+   {531},
+   {532},
+   {533},
+   {534},
+   {535},
+   {536},
+   {537},
+   {538},
+   {539},
+   {540},
+   {541},
+   {542},
+   {543},
+   {544},
+   {545},
+   {546},
+   {547},
+   {548},
+   {549},
+   {550},
+   {551},
+   {552},
+   {553},
+   {554},
+   {555},
+   {556},
+   {557},
+   {558},
+   {559},
+   {560},
+   {561},
+   {562},
+   {563},
+   {564},
+   {565},
+   {566},
+   {567},
+   {568},
+   {569},
+   {570},
+   {571},
+   {572},
+   {573},
+   {574},
+   {575},
+   {576},
+   {577},
+   {578},
+   {579},
+   {580},
+   {581},
+   {582},
+   {583},
+   {584},
+   {585},
+   {586},
+   {587},
+   {588},
+   {589},
+   {590},
+   {591},
+   {592},
+   {593},
+   {594},
+   {595},
+   {596},
+   {597},
+   {598},
+   {599},
+   {600},
+   {601},
+   {602},
+   {603},
+   {604},
+   {605},
+   {606},
+   {607},
+   {608},
+   {609},
+   {610},
+   {611},
+   {612},
+   {613},
+   {614},
+   {615},
+   {616},
+   {617},
+   {618},
+   {619},
+   {620},
+   {621},
+   {622},
+   {623},
+   {624},
+   {625},
+   {626},
+   {627},
+   {628},
+   {629},
+   {630},
+   {631},
+   {632},
+   {633},
+   {634},
+   {635},
+   {636},
+   {637},
+   {638},
+   {639},
+   {640},
+   {641},
+   {642},
+   {643},
+   {644},
+   {645},
+   {646},
+   {647},
+   {648},
+   {649},
+   {650},
+   {651},
+   {652},
+   {653},
+   {654},
+   {655},
+   {656},
+   {657},
+   {658},
+   {659},
+   {660},
+   {661},
+   {662},
+   {663},
+   {664},
+   {665},
+   {666},
+   {667},
+   {668},
+   {669},
+   {670},
+   {671},
+   {672},
+   {673},
+   {674},
+   {675},
+   {676},
+   {677},
+   {678},
+   {679},
+   {680},
+   {681},
+   {682},
+   {683},
+   {684},
+   {685},
+   {686},
+   {687},
+   {688},
+   {689},
+   {690},
+   {691},
+   {692},
+   {693},
+   {694},
+   {695},
+   {696},
+   {697},
+   {698},
+   {699},
+   {700},
+   {701},
+   {702},
+   {703},
+   {704},
+   {705},
+   {706},
+   {707},
+   {708},
+   {709},
+   {710},
+   {711},
+   {712},
+   {713},
+   {714},
+   {715},
+   {716},
+   {717},
+   {718},
+   {719},
+   {720},
+   {721},
+   {722},
+   {723},
+   {724},
+   {725},
+   {726},
+   {727},
+   {728},
+   {729},
+   {730},
+   {731},
+   {732},
+   {733},
+   {734},
+   {735},
+   {736},
+   {737},
+   {738},
+   {739},
+   {740},
+   {741},
+   {742},
+   {743},
+   {744},
+   {745},
+   {746},
+   {747},
+   {748},
+   {749},
+   {750},
+   {751},
+   {752},
+   {753},
+   {754},
+   {755},
+   {756},
+   {757},
+   {758},
+   {759},
+   {760},
+   {761},
+   {762},
+   {763},
+   {764},
+   {765},
+   {766},
+   {767},
+   {768},
+   {769},
+   {770},
+   {771},
+   {772},
+   {773},
+   {774},
+   {775},
+   {776},
+   {777},
+   {778},
+   {779},
+   {780},
+   {781},
+   {782},
+   {783},
+   {784},
+   {785},
+   {786},
+   {787},
+   {788},
+   {789},
+   {790},
+   {791},
+   {792},
+   {793},
+   {794},
+   {795},
+   {796},
+   {797},
+   {798},
+   {799},
+   {800},
+   {801},
+   {802},
+   {803},
+   {804},
+   {805},
+   {806},
+   {807},
+   {808},
+   {809},
+   {810},
+   {811},
+   {812},
+   {813},
+   {814},
+   {815},
+   {816},
+   {817},
+   {818},
+   {819},
+   {820},
+   {821},
+   {822},
+   {823},
+   {824},
+   {825},
+   {826},
+   {827},
+   {828},
+   {829},
+   {830},
+   {831},
+   {832},
+   {833},
+   {834},
+   {835},
+   {836},
 },
 -- Table: {2}
 {
@@ -22,65 +848,6673 @@ return {
 -- Table: {3}
 {
    ["zombies"]="low",
-   ["race"]="human",
-   ["health"]="high",
-   ["will_survive"]="no",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
    ["strength"]="med",
 },
 -- Table: {4}
 {
-   ["zombies"]="med",
-   ["race"]="human",
+   ["zombies"]="high",
+   ["race"]="drake",
    ["health"]="med",
-   ["will_survive"]="no",
-   ["strength"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
 },
 -- Table: {5}
 {
    ["zombies"]="low",
-   ["race"]="human",
-   ["health"]="high",
+   ["race"]="drake",
+   ["health"]="med",
    ["will_survive"]="yes",
-   ["strength"]="low",
+   ["strength"]="med",
 },
 -- Table: {6}
 {
-   ["zombies"]="high",
-   ["race"]="elf",
-   ["health"]="high",
-   ["will_survive"]="no",
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
    ["strength"]="med",
 },
 -- Table: {7}
 {
    ["zombies"]="high",
-   ["race"]="human",
+   ["race"]="drake",
    ["health"]="med",
-   ["will_survive"]="no",
-   ["strength"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
 },
 -- Table: {8}
 {
-   ["zombies"]="low",
-   ["race"]="elf",
-   ["health"]="high",
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
    ["will_survive"]="yes",
-   ["strength"]="low",
+   ["strength"]="med",
 },
 -- Table: {9}
 {
-   ["zombies"]="med",
-   ["race"]="elf",
-   ["health"]="high",
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
    ["will_survive"]="yes",
    ["strength"]="med",
 },
 -- Table: {10}
 {
    ["zombies"]="high",
-   ["race"]="human",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {11}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {12}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {13}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {14}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {15}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {16}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {17}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {18}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {19}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {20}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {21}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {22}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {23}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {24}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {25}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {26}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {27}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {28}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {29}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {30}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {31}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {32}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {33}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {34}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {35}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {36}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {37}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {38}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {39}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {40}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {41}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {42}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {43}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {44}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {45}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {46}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {47}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {48}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {49}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {50}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {51}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {52}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {53}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {54}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {55}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {56}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {57}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {58}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {59}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {60}
+{
+   ["zombies"]="low",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {61}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {62}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {63}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {64}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {65}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {66}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {67}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {68}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {69}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {70}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {71}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {72}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {73}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {74}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {75}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {76}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {77}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {78}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {79}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {80}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {81}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {82}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {83}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {84}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {85}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {86}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {87}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {88}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {89}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {90}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {91}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {92}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {93}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {94}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {95}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {96}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {97}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {98}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {99}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {100}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {101}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {102}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {103}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {104}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {105}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {106}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {107}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {108}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {109}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {110}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {111}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {112}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {113}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {114}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {115}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {116}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {117}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {118}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {119}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {120}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {121}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {122}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {123}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {124}
+{
+   ["zombies"]="med",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {125}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {126}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {127}
+{
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {128}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {129}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {130}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {131}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {132}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {133}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {134}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {135}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {136}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {137}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {138}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {139}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {140}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {141}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {142}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {143}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {144}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {145}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {146}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {147}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {148}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {149}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {150}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {151}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {152}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {153}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {154}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {155}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {156}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {157}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {158}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {159}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {160}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {161}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {162}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {163}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {164}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {165}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {166}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {167}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {168}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {169}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {170}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {171}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {172}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {173}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {174}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {175}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {176}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {177}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {178}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {179}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {180}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {181}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {182}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {183}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {184}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {185}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {186}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {187}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {188}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {189}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {190}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {191}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {192}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {193}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {194}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {195}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {196}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {197}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {198}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {199}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {200}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {201}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {202}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {203}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {204}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {205}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {206}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {207}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {208}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {209}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {210}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {211}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {212}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {213}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {214}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {215}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {216}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {217}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {218}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {219}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {220}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {221}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {222}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {223}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {224}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {225}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {226}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {227}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {228}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {229}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {230}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {231}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {232}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {233}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {234}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {235}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {236}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {237}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {238}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {239}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {240}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {241}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {242}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {243}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {244}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {245}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {246}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {247}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {248}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {249}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {250}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {251}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {252}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {253}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {254}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {255}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {256}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {257}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {258}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {259}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {260}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {261}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {262}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {263}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {264}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {265}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {266}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {267}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {268}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {269}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {270}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {271}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {272}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {273}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {274}
+{
+   ["zombies"]="med",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {275}
+{
+   ["zombies"]="med",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {276}
+{
+   ["zombies"]="low",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {277}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {278}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {279}
+{
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {280}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {281}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {282}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {283}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {284}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {285}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {286}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {287}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {288}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {289}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {290}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {291}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {292}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {293}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {294}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {295}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {296}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {297}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {298}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {299}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {300}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {301}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {302}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {303}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {304}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {305}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {306}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {307}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {308}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {309}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {310}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {311}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {312}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {313}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {314}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {315}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {316}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {317}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {318}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {319}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {320}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {321}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {322}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {323}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {324}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {325}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {326}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {327}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {328}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {329}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {330}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {331}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {332}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {333}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {334}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {335}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {336}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {337}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {338}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {339}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {340}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {341}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {342}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {343}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {344}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {345}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {346}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {347}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {348}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {349}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {350}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {351}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {352}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {353}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {354}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {355}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {356}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {357}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {358}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {359}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {360}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {361}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {362}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {363}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {364}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {365}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {366}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {367}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {368}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {369}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {370}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {371}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {372}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {373}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {374}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {375}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {376}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {377}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {378}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {379}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {380}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {381}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {382}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {383}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {384}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {385}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {386}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {387}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {388}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {389}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {390}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {391}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {392}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {393}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
    ["health"]="high",
    ["will_survive"]="no",
    ["strength"]="high",
+},
+-- Table: {394}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {395}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {396}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {397}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="high",
+},
+-- Table: {398}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {399}
+{
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {400}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {401}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {402}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {403}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {404}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {405}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {406}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {407}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {408}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {409}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {410}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {411}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {412}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {413}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {414}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {415}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {416}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {417}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {418}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {419}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {420}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {421}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {422}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {423}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {424}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {425}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {426}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {427}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {428}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {429}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {430}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {431}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {432}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {433}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {434}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {435}
+{
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {436}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {437}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {438}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {439}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {440}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {441}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {442}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {443}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {444}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {445}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {446}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {447}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {448}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {449}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {450}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {451}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {452}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {453}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {454}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {455}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {456}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {457}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {458}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {459}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {460}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {461}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {462}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {463}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {464}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {465}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {466}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {467}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {468}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {469}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {470}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {471}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {472}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {473}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {474}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {475}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {476}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {477}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {478}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {479}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {480}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {481}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {482}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {483}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {484}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {485}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {486}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="no",
+   ["strength"]="high",
+},
+-- Table: {487}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {488}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {489}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="no",
+   ["strength"]="high",
+},
+-- Table: {490}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="high",
+},
+-- Table: {491}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="high",
+},
+-- Table: {492}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="high",
+},
+-- Table: {493}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="high",
+},
+-- Table: {494}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {495}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="high",
+},
+-- Table: {496}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {497}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {498}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {499}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {500}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {501}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {502}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {503}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {504}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {505}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {506}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {507}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {508}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {509}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {510}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {511}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {512}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {513}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {514}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {515}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {516}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {517}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {518}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {519}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {520}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {521}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {522}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {523}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {524}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {525}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {526}
+{
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {527}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {528}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {529}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {530}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {531}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {532}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {533}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {534}
+{
+   ["zombies"]="med",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {535}
+{
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {536}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {537}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {538}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {539}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {540}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {541}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {542}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {543}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {544}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {545}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {546}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {547}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {548}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {549}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {550}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {551}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {552}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {553}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {554}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {555}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {556}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {557}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {558}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {559}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {560}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {561}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {562}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {563}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {564}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {565}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {566}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {567}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {568}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {569}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {570}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {571}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {572}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {573}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {574}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {575}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {576}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {577}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {578}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {579}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {580}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {581}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {582}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {583}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {584}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {585}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {586}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {587}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {588}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {589}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {590}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {591}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {592}
+{
+   ["zombies"]="med",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {593}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {594}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {595}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {596}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {597}
+{
+   ["zombies"]="med",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {598}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {599}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {600}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {601}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {602}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {603}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {604}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {605}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {606}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {607}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {608}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {609}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {610}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {611}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {612}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {613}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {614}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {615}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {616}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {617}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {618}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {619}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {620}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {621}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {622}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {623}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {624}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {625}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {626}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {627}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {628}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {629}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {630}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {631}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {632}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {633}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {634}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {635}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {636}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {637}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {638}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {639}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {640}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {641}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {642}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {643}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {644}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {645}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {646}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {647}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {648}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {649}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {650}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {651}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {652}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {653}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {654}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {655}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {656}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {657}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {658}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {659}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {660}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {661}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {662}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {663}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {664}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {665}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {666}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {667}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {668}
+{
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {669}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {670}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {671}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {672}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {673}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {674}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {675}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {676}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {677}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {678}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {679}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {680}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {681}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {682}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {683}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {684}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {685}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {686}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {687}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {688}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {689}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {690}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {691}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {692}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {693}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {694}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {695}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {696}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {697}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {698}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {699}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {700}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {701}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {702}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {703}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {704}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {705}
+{
+   ["zombies"]="low",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {706}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {707}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {708}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {709}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {710}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {711}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {712}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {713}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {714}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {715}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {716}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {717}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {718}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {719}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {720}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {721}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {722}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {723}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {724}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {725}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {726}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {727}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {728}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {729}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {730}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {731}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {732}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {733}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {734}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {735}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {736}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {737}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {738}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {739}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {740}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {741}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {742}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {743}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {744}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {745}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {746}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {747}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {748}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {749}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {750}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {751}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {752}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {753}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {754}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {755}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {756}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {757}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {758}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {759}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {760}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {761}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {762}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {763}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {764}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {765}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {766}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {767}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {768}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {769}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {770}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {771}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {772}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {773}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {774}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {775}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {776}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {777}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {778}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {779}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="no",
+   ["strength"]="med",
+},
+-- Table: {780}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {781}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {782}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {783}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {784}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {785}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {786}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {787}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {788}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {789}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {790}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {791}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="high",
+   ["will_survive"]="yes",
+   ["strength"]="high",
+},
+-- Table: {792}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {793}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {794}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {795}
+{
+   ["zombies"]="med",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {796}
+{
+   ["zombies"]="med",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {797}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {798}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {799}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {800}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {801}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {802}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {803}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {804}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {805}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {806}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {807}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {808}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {809}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {810}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {811}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="low",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {812}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {813}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {814}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {815}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {816}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {817}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {818}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {819}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {820}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {821}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {822}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {823}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {824}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {825}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {826}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {827}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {828}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {829}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {830}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {831}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {832}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {833}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {834}
+{
+   ["zombies"]="high",
+   ["race"]="drake",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {835}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
+},
+-- Table: {836}
+{
+   ["zombies"]="high",
+   ["race"]="lizard",
+   ["health"]="med",
+   ["will_survive"]="yes",
+   ["strength"]="med",
 },
 }
