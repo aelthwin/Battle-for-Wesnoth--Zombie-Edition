@@ -94,6 +94,7 @@ ai:              The AI performing the move
 
 ]]--
 function this.move_randomly (params)
+	params.unit = this.unit_for_id (params.unit_id)
 	local moves = wesnoth.find_reach (params.unit)
 
 	-- remove vacant tiles from moves

@@ -168,6 +168,8 @@ function this.do_moves ()
 		print (string.format ("\nUnit %d, %d (%s) (%s type) doing moves", unit.x, unit.y, unit.id, unit.type))
 		this.init_unit (unit)
 
+		local unit_x, unit_y, unit_id, unit_side = unpack {unit.x, unit.y, unit.id, unit.side}
+
 
 		-- Action pipeline...
 		local continue = true
@@ -234,10 +236,11 @@ function this.do_moves ()
 					table.foreach (params, print)
 
 					--local ppr, pce, pcc = this.probs.get_all_probs ({
-					local ppr, pce = this.probs.get_all_probs (params)
+					local pce, pcc = this.probs.get_all_probs (params)
 			
 					-- combine
-					local combined_probs = ppr * pce
+					local combined_probs = pce * pcc
+					print ("!!!!!  COMBINED RESULT IS: " .. combined_probs .. " from ("..pce..", "..pcc..")")
 			
 					-- compare
 					if combined_probs > best_prob then
@@ -266,9 +269,8 @@ function this.do_moves ()
 		print ("BAYES: pursuit stage ---")
 		if continue and this.modes[unit.id] == PURSUIT then
 
-			local params  = this.pursuit_params[unit.id]
-			local enemy   = this.helper.unit_for_id (this.targets[unit.id])
-			local unit_id = unit.id
+			local params    = this.pursuit_params[unit.id]
+			local enemy     = this.helper.unit_for_id (this.targets[unit.id])
 
 			-- no path out of here makes us want to wander, so put a stop to
 			-- the pipeline
@@ -289,7 +291,7 @@ function this.do_moves ()
 
 			-- are we still alive?
 			local us = this.helper.unit_for_id (unit_id)
-			if us == nil or us.side ~= unit.side then
+			if us == nil or us.side ~= unit_side then
 				-- we were killed or converted...
 				-- no change to did_survive
 				this.do_update (unit_id)
@@ -302,13 +304,11 @@ function this.do_moves ()
 			-- re-get the enemy unit to find out
 			enemy = this.helper.unit_for_id (this.targets[unit_id])
 
-			if enemy ~= nil and enemy.side == unit.side then
+			if enemy ~= nil and enemy.side == unit_side then
 				-- guess we won  :)
 				-- do an update and go back to wandering
 				this.do_update (unit)
-				this.to_wander_mode ({
-					unit = unit
-				})
+				this.to_wander_mode (unit_id)
 			end
 		end
 
@@ -317,14 +317,14 @@ function this.do_moves ()
 		print ("BAYES: wander stage ---")
 		if continue then
 			this.helper.move_randomly ({
-				unit = unit,
-				ai   = this.ai
+				unit_id = unit_id,
+				ai      = this.ai
 			})
 
 
 		end
 		
-		print ("\nUnit " .. unit.x .. ", " .. unit.y .. "  (" .. unit.id .. ") DONE")
+		print ("\nUnit " .. unit_x .. ", " .. unit_y .. "  (" .. unit_id .. ") DONE")
 	end
 
 	print ("BAYES storing results to probs table after units loop")
@@ -346,9 +346,7 @@ function this.init_unit (unit)
 	-- target was converted or killed prior to our turn?
 	if this.modes[unit.id] == PURSUIT and (enemy == nil or enemy.side == unit.side) then
 		this.do_update (unit.id)
-		this.to_wander_mode ({
-			unit = unit
-		})
+		this.to_wander_mode (unit.id)
 	end
 
 	-- target is out of range?
@@ -367,21 +365,19 @@ function this.init_unit (unit)
 		-- did not find a match, therefore target is out of range
 		if not found_enemy_in_range then
 			this.do_update (unit.id)
-			this.to_wander_mode ({
-				unit = unit
-			})
+			this.to_wander_mode (unit.id)
 		end
 	end
 end
 
 
-function this.to_wander_mode (params)
-	this.modes[params.unit.id]   = WANDER
-	this.targets[params.unit.id] = nil
+function this.to_wander_mode (unit_id)
+	this.modes[unit_id]   = WANDER
+	this.targets[unit_id] = nil
 	-- don't do an update with the params here, we wouldn't know why we're doing it
-	this.pursuit_params[params.unit.id] = nil
-	this.did_engage[params.unit.id] = false
-	this.did_survive[params.unit.id] = false
+	this.pursuit_params[unit_id] = nil
+	this.did_engage[unit_id] = false
+	this.did_survive[unit_id] = false
 end
 
 
