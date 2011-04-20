@@ -816,7 +816,7 @@ static int impl_unit_type_get(lua_State *L)
 	//std::cout << "Number of Attack Types: " ;
 	//std::cout << ut.attacks().size() << std::endl;
 	attack_type *curr_attack;
-	for (int i = 0; i < ut.attacks().size(); i++) {
+	for (unsigned i = 0; i < ut.attacks().size(); i++) {
 		curr_attack = &ut.attacks().at(i);
 		curr_dmg = curr_attack->damage();
 		if (curr_dmg > max_attack) max_attack = curr_dmg;

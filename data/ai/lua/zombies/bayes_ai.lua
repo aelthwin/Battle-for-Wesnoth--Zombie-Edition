@@ -100,7 +100,7 @@ this.pursuit_params = {}   -- maps unit id to the params object that pushed the 
 this.did_engage     = {}   -- maps unit id to whether or not they have engaged their target at least once
 this.did_survive    = {}   -- maps unit id to whether or not they have survived at least one engagement
 
-this.chase_threshold = 0.25 -- total guess for now -- will require tuning
+this.chase_threshold = 0.0 -- set to 0 temporarily so that we can get some data
 
 --[[ Modes ]]--
 local PURSUIT  = 1
@@ -267,6 +267,7 @@ function this.do_moves ()
 		if continue and this.modes[unit.id] == PURSUIT then
 
 			local params = this.pursuit_params[unit.id]
+			local enemy  = this.helper.unit_for_id (this.targets[unit.id])
 
 			-- at this point, we know the enemy exists and is still an enemy
 			-- because those conditions are checked for in init_unit
@@ -282,7 +283,7 @@ function this.do_moves ()
 
 			-- are we still alive?
 			local us = this.helper.unit_for_id (unit.id)
-			if us ~= nil or us.side ~= unit.side then
+			if us == nil or us.side ~= unit.side then
 				-- we were killed or converted...
 				-- no change to did_survive
 				this.do_update (unit)
