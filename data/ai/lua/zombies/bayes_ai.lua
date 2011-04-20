@@ -270,17 +270,22 @@ function this.do_moves ()
 			local enemy   = this.helper.unit_for_id (this.targets[unit.id])
 			local unit_id = unit.id
 
+			-- no path out of here makes us want to wander, so put a stop to
+			-- the pipeline
+			continue = false
+
 			-- at this point, we know the enemy exists and is still an enemy
 			-- because those conditions are checked for in init_unit
 			-- so just do the attack and see what happens
-			this.helper.move_and_attack2 ({
+			local did_engage = this.helper.move_and_attack2 ({
 				unit  = unit,
 				enemy = enemy,
 				ai    = this.ai
 			})
 
 			-- since we did the attack, make sure to register a did_engage
-			this.did_engage[unit_id] = true
+			-- assuming that move_and_attack2 says it happened
+			this.did_engage[unit_id] = this.did_engage[unit_id] or did_engage
 
 			-- are we still alive?
 			local us = this.helper.unit_for_id (unit_id)
@@ -296,6 +301,7 @@ function this.do_moves ()
 			-- is the enemy killed or converted?
 			-- re-get the enemy unit to find out
 			enemy = this.helper.unit_for_id (this.targets[unit_id])
+
 			if enemy ~= nil and enemy.side == unit.side then
 				-- guess we won  :)
 				-- do an update and go back to wandering
@@ -303,12 +309,6 @@ function this.do_moves ()
 				this.to_wander_mode ({
 					unit = unit
 				})
-
-			-- no?  might be pursuing and not caught him yet or attacked but didn't convert
-			-- prevent any random movement
-			-- no update here
-			else
-				continue = false
 			end
 		end
 

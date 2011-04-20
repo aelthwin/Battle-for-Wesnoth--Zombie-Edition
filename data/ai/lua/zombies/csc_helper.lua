@@ -504,6 +504,7 @@ ai:            The AI performing the move
 function this.move_and_attack2 (params)
 	local unit  = params.unit
 	local enemy = params.enemy
+	local result = false
 
 	print ("move_and_attack2: anfangen")
 
@@ -530,6 +531,7 @@ function this.move_and_attack2 (params)
 		if single_move then
 			params.ai.move (unit, dest_x, dest_y)
 			params.ai.attack (unit.x, unit.y, enemy.x, enemy.y)
+			result = true -- return true because we engaged the enemy!
 		else
 			-- find best guess from reachables
 			local best_r  = nil
@@ -555,6 +557,7 @@ function this.move_and_attack2 (params)
 	end
 
 	print ("move_and_attack2: beenden")
+	return result
 end
 
 
