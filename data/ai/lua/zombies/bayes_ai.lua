@@ -358,7 +358,7 @@ function this.init_unit (unit)
 
 		-- look through close units for a match to our target
 		for _, e_unit in pairs (close_units) do
-			if e_unit.id == enemy.unit.id then
+			if e_unit.id == enemy.id then
 				found_enemy_in_range = true
 			end
 		end
